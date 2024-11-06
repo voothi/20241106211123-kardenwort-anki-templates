@@ -380,11 +380,21 @@
         {{/WordDestination}}
     </span>
 
+    {{^WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{hint:SentenceDestination}}<br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+
+    {{#WordDestination}}
     <span>
         {{#SentenceDestination}}
         {{SentenceDestination}}<br><br>
         {{/SentenceDestination}}
     </span>
+    {{/WordDestination}}
 
     <!-- /Definition Template 2 -->
     {{#WordDestinationDefinition}}
