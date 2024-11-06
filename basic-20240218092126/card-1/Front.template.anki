@@ -1,307 +1,300 @@
 <!-- WordSource and SentenceSource -->
 {{^WordDestination}}
-    <!-- 20241024191126 -->
-    <!-- /L2 Template -->
-    <!-- /Word Template -->
-    <!-- /Audio Template -->
+<!-- 20241024191126 -->
+<!-- /L2 Template -->
+<!-- /Word Template -->
+<!-- /Audio Template -->
+<span>
+    {{#WordSourceAudio}}
+    {{WordSourceAudio}}
+    {{/WordSourceAudio}}
+</span>
+<!-- Audio template/ -->
+
+{{#WordSource}}
+{{#Source-en-GB}}
+<span>
+    {{tts en_GB voices=gTTS speed=0.8:WordSource}}
+    <!-- en_GB voices=Microsoft_Susan -->
+    <!-- en_US voices=gTTS -->
+    <!-- en_US voices=Microsoft_Zira -->
+    <!-- en_US voices=gTTS -->
+    <!-- de_DE voices=Microsoft_Stefan -->
+    <!-- de_DE voices=gTTS -->
+    <!-- tts uk_UA -->
+    <!-- tts uk_UA voices=gTTS -->
+    <!-- ru_RU voices=Microsoft_Irina -->
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{/Source-en-GB}}
+
+{{#Source-en-US}}
+<span>
+    {{tts en_US voices=gTTS speed=0.8:WordSource}}
+</span>
+{{/Source-en-US}}
+
+{{#Source-de-DE}}
+<span>
+    {{tts de_DE voices=gTTS speed=0.8:WordSource}}
+</span>
+{{/Source-de-DE}}
+
+{{#Source-uk-UA}}
+<span>
+    {{tts uk_UA:WordSource}}
+</span>
+{{/Source-uk-UA}}
+
+{{#Source-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:WordSource}}
+</span>
+{{/Source-ru-RU}}
+{{/WordSource}}
+
+{{#WordSource}}
+<span>
+    [anki:tts lang=en_GB]
+    [/anki:tts]
+</span>
+{{/WordSource}}
+
+<!-- #WordSource -->
+<input class="hide" id="hd-20" type="checkbox">
+<label for="hd-20">WordSource</label>
+<div>
     <span>
-        {{#WordSourceAudio}}
-        {{WordSourceAudio}}
-        {{/WordSourceAudio}}
+        {{#WordSourceIPA}}
+        {{WordSourceIPA}}<br><br>
+        {{/WordSourceIPA}}
     </span>
-    <!-- Audio template/ -->
 
-    {{#WordSource}}
-    {{#Source-en-GB}}
     <span>
-        {{tts en_GB voices=gTTS speed=0.8:WordSource}}
-        <!-- en_GB voices=Microsoft_Susan -->
-        <!-- en_US voices=gTTS -->
-        <!-- en_US voices=Microsoft_Zira -->
-        <!-- en_US voices=gTTS -->
-        <!-- de_DE voices=Microsoft_Stefan -->
-        <!-- de_DE voices=gTTS -->
-        <!-- tts uk_UA -->
-        <!-- tts uk_UA voices=gTTS -->
-        <!-- ru_RU voices=Microsoft_Irina -->
-        <!-- ru_RU voices=gTTS -->
-    </span>
-    {{/Source-en-GB}}
-
-    {{#Source-en-US}}
-    <span>
-        {{tts en_US voices=gTTS speed=0.8:WordSource}}
-    </span>
-    {{/Source-en-US}}
-
-    {{#Source-de-DE}}
-    <span>
-        {{tts de_DE voices=gTTS speed=0.8:WordSource}}
-    </span>
-    {{/Source-de-DE}}
-
-    {{#Source-uk-UA}}
-    <span>
-        {{tts uk_UA:WordSource}}
-    </span>
-    {{/Source-uk-UA}}
-
-    {{#Source-ru-RU}}
-    <span>
-        {{tts ru_RU voices=gTTS:WordSource}}
-    </span>
-    {{/Source-ru-RU}}
-    {{/WordSource}}
-
-    {{#WordSource}}
-    <span>
-        [anki:tts lang=en_GB]
-        [/anki:tts]
-    </span>
-    {{/WordSource}}
-
-    <!-- #WordSource -->
-    <input class="hide" id="hd-20" type="checkbox">
-    <label for="hd-20">WordSource</label>
-    <div>
-        <span>
-            {{#WordSourceIPA}}
-            {{WordSourceIPA}}<br><br>
-            {{/WordSourceIPA}}
-        </span>
-
-        <span>
-            {{#WordSource}}
-            {{WordSource}}<br>
-            {{/WordSource}}
-        </span>
-
-        <span>
-            {{#WordSourceInflectedForm}}
-            → <br>
-            {{/WordSourceInflectedForm}}
-        </span>
-
-        <span>
-            {{#WordSourceInflectedForm}}
-            {{WordSourceInflectedForm}}
-            {{/WordSourceInflectedForm}}
-        </span>
-    </div>
-    <!-- /WordSource -->
-    <!-- Word Template/ -->
-
-    <br>
-    <!-- SentenceSource TTS Toggle Off -->
-    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-    {{^Toggle-Always-Empty-Field}}
-        <!-- /Sentence Template -->
-        <!-- /Audio#2 Template -->
-        {{^WordSource}}
-        <span>
-            {{#SentenceSourceAudio}}
-            {{SentenceSourceAudio}}
-            {{/SentenceSourceAudio}}
-        </span>
+        {{#WordSource}}
+        {{WordSource}}<br>
         {{/WordSource}}
-        <!-- Audio#2 template/ -->
-
-        {{#SentenceSource}}
-            {{#Source-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS speed=0.8:SentenceSource}}
-            </span>
-            {{/Source-en-GB}}
-
-            {{#Source-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=0.8:SentenceSource}}
-            </span>
-            {{/Source-en-US}}
-
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=0.8:SentenceSource}}
-            </span>
-            {{/Source-de-DE}}
-
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA:SentenceSource}}
-            </span>
-            {{/Source-uk-UA}}
-
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS:SentenceSource}}
-                <!-- ru_RU voices=gTTS -->
-            </span>
-            {{/Source-ru-RU}}
-        {{/SentenceSource}}
-    {{/Toggle-Always-Empty-Field}}
-
-    {{#SentenceSource}}
-    <span>
-        [anki:tts lang=en_GB]
-        [/anki:tts]
     </span>
-    {{/SentenceSource}}
 
-    <!-- #SentenceSource -->
-    <input class="hide" id="hd-10" type="checkbox">
-    <label for="hd-10">SentenceSource</label>
-    <div>
-        <span>
-            {{#SentenceSourceIPA}}
-            {{SentenceSourceIPA}}<br><br>
-            {{/SentenceSourceIPA}}
-        </span>
+    <span>
+        {{#WordSourceInflectedForm}}
+        → <br>
+        {{/WordSourceInflectedForm}}
+    </span>
 
-        <span>
-            {{#SentenceSource}}
-            {{SentenceSource}}
-            {{/SentenceSource}}
-        </span>
-    </div>
-    <!-- /SentenceSource -->
-    <!-- Text Template/ -->
-    <!-- L2 Template/ -->
+    <span>
+        {{#WordSourceInflectedForm}}
+        {{WordSourceInflectedForm}}
+        {{/WordSourceInflectedForm}}
+    </span>
+</div>
+<!-- /WordSource -->
+<!-- Word Template/ -->
+
+<br>
+<!-- SentenceSource TTS Toggle Off -->
+<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+{{^Toggle-Always-Empty-Field}}
+<!-- /Sentence Template -->
+<!-- /Audio#2 Template -->
+{{^WordSource}}
+<span>
+    {{#SentenceSourceAudio}}
+    {{SentenceSourceAudio}}
+    {{/SentenceSourceAudio}}
+</span>
+{{/WordSource}}
+<!-- Audio#2 template/ -->
+
+{{#SentenceSource}}
+{{#Source-en-GB}}
+<span>
+    {{tts en_GB voices=gTTS speed=0.8:SentenceSource}}
+</span>
+{{/Source-en-GB}}
+
+{{#Source-en-US}}
+<span>
+    {{tts en_US voices=gTTS speed=0.8:SentenceSource}}
+</span>
+{{/Source-en-US}}
+
+{{#Source-de-DE}}
+<span>
+    {{tts de_DE voices=gTTS speed=0.8:SentenceSource}}
+</span>
+{{/Source-de-DE}}
+
+{{#Source-uk-UA}}
+<span>
+    {{tts uk_UA:SentenceSource}}
+</span>
+{{/Source-uk-UA}}
+
+{{#Source-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:SentenceSource}}
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{/Source-ru-RU}}
+{{/SentenceSource}}
+{{/Toggle-Always-Empty-Field}}
+
+{{#SentenceSource}}
+<span>
+    [anki:tts lang=en_GB]
+    [/anki:tts]
+</span>
+{{/SentenceSource}}
+
+<!-- #SentenceSource -->
+<input class="hide" id="hd-10" type="checkbox">
+<label for="hd-10">SentenceSource</label>
+<div>
+    <span>
+        {{#SentenceSourceIPA}}
+        {{SentenceSourceIPA}}<br><br>
+        {{/SentenceSourceIPA}}
+    </span>
+
+    <span>
+        {{#SentenceSource}}
+        {{SentenceSource}}
+        {{/SentenceSource}}
+    </span>
+</div>
+<!-- /SentenceSource -->
+<!-- Text Template/ -->
+<!-- L2 Template/ -->
 {{/WordDestination}}
- 
+
 <!-- WordDestination and SentenceDestination -->
 {{#WordDestination}}
-    <!-- /WordDestination -->
+<!-- /WordDestination -->
 
-    <!-- #WordDestination -->
-    <!-- 20241016083918 -->
-    <!-- /L1 Template -->
-    <!-- /Definition#2 Template -->
-    {{#WordDestination}}
-        {{#Destination-en-GB}}
-        <span>
-            {{tts en_GB voices=Microsoft_Susan:WordDestination}}
-        </span>
-        {{/Destination-en-GB}}
+<!-- #WordDestination -->
+<!-- 20241016083918 -->
+<!-- /L1 Template -->
+<!-- /Definition#2 Template -->
+{{#WordDestination}}
+{{#Destination-en-GB}}
+<span>
+    {{tts en_GB voices=Microsoft_Susan:WordDestination}}
+</span>
+{{/Destination-en-GB}}
 
-        {{#Destination-en-US}}
-        <span>
-            {{tts en_US voices=Microsoft_Zira:WordDestination}}
-        </span>
-        {{/Destination-en-US}}
+{{#Destination-en-US}}
+<span>
+    {{tts en_US voices=Microsoft_Zira:WordDestination}}
+</span>
+{{/Destination-en-US}}
 
-        {{#Destination-de-DE}}
-        <span>
-            {{tts de_DE voices=Microsoft_Stefan:WordDestination}}
-        </span>
-        {{/Destination-de-DE}}
+{{#Destination-de-DE}}
+<span>
+    {{tts de_DE voices=Microsoft_Stefan:WordDestination}}
+</span>
+{{/Destination-de-DE}}
 
-        {{#Destination-uk-UA}}
-        <span>
-            {{tts uk_UA:WordDestination}}
-        </span>
-        {{/Destination-uk-UA}}
+{{#Destination-uk-UA}}
+<span>
+    {{tts uk_UA:WordDestination}}
+</span>
+{{/Destination-uk-UA}}
 
-        {{#Destination-ru-RU}}
-        <span>
-            {{tts ru_RU voices=gTTS:WordDestination}}
-        </span>
-        {{/Destination-ru-RU}}
-    {{/WordDestination}}
+{{#Destination-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:WordDestination}}
+</span>
+{{/Destination-ru-RU}}
+{{/WordDestination}}
 
-    {{#WordDestination}}
+{{#WordDestination}}
+<span>
+    [anki:tts lang=en_GB]
+    [/anki:tts]
+</span>
+{{/WordDestination}}
+
+<!-- #WordDestination -->
+<input class="hide" id="hd-40" type="checkbox">
+<label for="hd-40">WordDestination</label>
+<div>
     <span>
-        [anki:tts lang=en_GB]
-        [/anki:tts]
+        {{#WordDestination}}
+        {{WordDestination}}
+        {{/WordDestination}}
     </span>
-    {{/WordDestination}}
+</div>
+<!-- /WordDestination -->
+<!-- Definition#2 Template/ -->
 
-    <!-- #WordDestination -->
-    <input class="hide" id="hd-40" type="checkbox">
-    <label for="hd-40">WordDestination</label>
-    <div>
-        <span>
-            {{#WordDestination}}
-            {{WordDestination}}
-            {{/WordDestination}}
-        </span>
-    </div>
-    <!-- /WordDestination -->
-    <!-- Definition#2 Template/ -->
+<br>
+<!-- /Russian Template -->
+<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+{{#Toggle-Always-Empty-Field}}
+{{#SentenceDestination}}
+{{#Destination-en-GB}}
+<span>
+    {{tts en_GB voices=Microsoft_Susan:SentenceDestination}}
+</span>
+{{/Destination-en-GB}}
 
-    <br>
-    <!-- /Russian Template -->
-    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-    {{#Toggle-Always-Empty-Field}}
+{{#Destination-en-US}}
+<span>
+    {{tts en_US voices=Microsoft_Zira:SentenceDestination}}
+</span>
+{{/Destination-en-US}}
+
+{{#Destination-de-DE}}
+<span>
+    {{tts de_DE voices=Microsoft_Stefan:SentenceDestination}}
+</span>
+{{/Destination-de-DE}}
+
+{{#Destination-uk-UA}}
+<span>
+    {{tts uk_UA:SentenceDestination}}
+</span>
+{{/Destination-uk-UA}}
+
+{{#Destination-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:SentenceDestination}}
+</span>
+{{/Destination-ru-RU}}
+{{/SentenceDestination}}
+
+{{#SentenceDestination}}
+<span>
+    [anki:tts lang=en_GB]
+    [/anki:tts]
+</span>
+{{/SentenceDestination}}
+{{/Toggle-Always-Empty-Field}}
+
+<!-- #SentenceDestination -->
+<input class="hide" id="hd-70" type="checkbox">
+<label for="hd-70">SentenceDestination</label>
+<div>
+    <span>
         {{#SentenceDestination}}
-            {{#Destination-en-GB}}
-            <span>
-                {{tts en_GB voices=Microsoft_Susan:SentenceDestination}}
-            </span>
-            {{/Destination-en-GB}}
-
-            {{#Destination-en-US}}
-            <span>
-                {{tts en_US voices=Microsoft_Zira:SentenceDestination}}
-            </span>
-            {{/Destination-en-US}}
-
-            {{#Destination-de-DE}}
-            <span>
-                {{tts de_DE voices=Microsoft_Stefan:SentenceDestination}}
-            </span>
-            {{/Destination-de-DE}}
-
-            {{#Destination-uk-UA}}
-            <span>
-                {{tts uk_UA:SentenceDestination}}
-            </span>
-            {{/Destination-uk-UA}}
-
-            {{#Destination-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS:SentenceDestination}}
-            </span>
-            {{/Destination-ru-RU}}
+        {{SentenceDestination}}
         {{/SentenceDestination}}
-
-        {{#SentenceDestination}}
-        <span>
-            [anki:tts lang=en_GB]
-            [/anki:tts]
-        </span>
-        {{/SentenceDestination}}
-    {{/Toggle-Always-Empty-Field}}
-
-    <!-- #SentenceDestination -->
-    <input class="hide" id="hd-70" type="checkbox">
-    <label for="hd-70">SentenceDestination</label>
-    <div>
-        <span>
-            {{#SentenceDestination}}
-            {{SentenceDestination}}
-            {{/SentenceDestination}}
-        </span>
-    </div>
-    <!-- /SentenceDestination -->
-    <!-- Russian Template/ -->
-    <!-- L1 Template/ -->
+    </span>
+</div>
+<!-- /SentenceDestination -->
+<!-- Russian Template/ -->
+<!-- L1 Template/ -->
 {{/WordDestination}}
 
 <!-- /Hint Template -->
-<input 
-{{#WordSource}}
-class="show" 
-{{/WordSource}}
-{{^WordSource}}
-class="show" 
-{{/WordSource}}
-id="hd-60" type="checkbox">
+<input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
+    type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
         <hr class="custom-hr">
         <span>☜</span>
-    </div
-    <hr>
+    </div <hr>
 </label>
 
 <div>
@@ -316,6 +309,22 @@ id="hd-60" type="checkbox">
         </span>
     </div>
     <br>
+    {{/WordSource}}
+    <!-- Input Template/ -->
+
+    <!-- /Input Template -->
+    {{^WordSource}}
+    {{#SentenceSource}}
+    <!-- br -->
+    <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
+    <label for="hd-130">InputSentenceSource</label>
+    <div>
+        <span>
+            {{type:SentenceSource}}
+        </span>
+    </div>
+    <br>
+    {{/SentenceSource}}
     {{/WordSource}}
     <!-- Input Template/ -->
 
@@ -356,7 +365,7 @@ id="hd-60" type="checkbox">
         {{/SentenceSource}}
     </span>
     {{/WordSource}}
-    
+
     {{^WordSource}}
     <span>
         {{#SentenceSource}}
@@ -409,39 +418,39 @@ id="hd-60" type="checkbox">
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
             {{^Toggle-Always-Empty-Field}}
-                {{#WordSourceDefinitionClipping}}
-                    {{#Source-en-GB}}
-                    <span>
-                        {{tts en_GB voices=gTTS:WordSourceDefinitionClipping}}
-                    </span>
-                    {{/Source-en-GB}}
-                
-                    {{#Source-en-US}}
-                    <span>
-                        {{tts en_US voices=gTTS:WordSourceDefinitionClipping}}
-                    </span>
-                    {{/Source-en-US}}
-                
-                    {{#Source-de-DE}}
-                    <span>
-                        {{tts de_DE voices=gTTS:WordSourceDefinitionClipping}}
-                    </span>
-                    {{/Source-de-DE}}
-                
-                    {{#Source-uk-UA}}
-                    <span>
-                        {{tts uk_UA voices=gTTS:WordSourceDefinitionClipping}}
-                    </span>
-                    {{/Source-uk-UA}}
-                
-                    {{#Source-ru-RU}}
-                    <span>
-                        {{tts ru_RU voices=gTTS:WordSourceDefinitionClipping}}
-                        <!-- ru_RU voices=gTTS -->
-                    </span>
-                    {{/Source-ru-RU}}
-                    <br>
-                {{/WordSourceDefinitionClipping}}
+            {{#WordSourceDefinitionClipping}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS:WordSourceDefinitionClipping}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS:WordSourceDefinitionClipping}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS:WordSourceDefinitionClipping}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS:WordSourceDefinitionClipping}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS:WordSourceDefinitionClipping}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            <br>
+            {{/WordSourceDefinitionClipping}}
             {{/Toggle-Always-Empty-Field}}
 
             {{#WordSourceDefinitionClipping}}
@@ -566,7 +575,3 @@ id="hd-60" type="checkbox">
     </span>
 </div>
 <!-- Hint Template/ -->
-
-
-
-
