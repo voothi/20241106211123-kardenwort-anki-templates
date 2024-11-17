@@ -179,19 +179,19 @@
 {{#WordDestination}}
 {{#Destination-en-GB}}
 <span>
-    {{tts en_GB voices=Microsoft_Susan:WordDestination}}
+    {{tts en_GB voices=gTTS:WordDestination}}
 </span>
 {{/Destination-en-GB}}
 
 {{#Destination-en-US}}
 <span>
-    {{tts en_US voices=Microsoft_Zira:WordDestination}}
+    {{tts en_US voices=gTTS:WordDestination}}
 </span>
 {{/Destination-en-US}}
 
 {{#Destination-de-DE}}
 <span>
-    {{tts de_DE voices=Microsoft_Stefan:WordDestination}}
+    {{tts de_DE voices=gTTS:WordDestination}}
 </span>
 {{/Destination-de-DE}}
 
@@ -235,19 +235,19 @@
 {{#SentenceDestination}}
 {{#Destination-en-GB}}
 <span>
-    {{tts en_GB voices=Microsoft_Susan:SentenceDestination}}
+    {{tts en_GB voices=gTTS speed=0.8:SentenceDestination}}
 </span>
 {{/Destination-en-GB}}
 
 {{#Destination-en-US}}
 <span>
-    {{tts en_US voices=Microsoft_Zira:SentenceDestination}}
+    {{tts en_US voices=gTTS speed=0.8:SentenceDestination}}
 </span>
 {{/Destination-en-US}}
 
 {{#Destination-de-DE}}
 <span>
-    {{tts de_DE voices=Microsoft_Stefan:SentenceDestination}}
+    {{tts de_DE voices=gTTS speed=0.8:SentenceDestination}}
 </span>
 {{/Destination-de-DE}}
 
