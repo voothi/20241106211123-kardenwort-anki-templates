@@ -114,7 +114,7 @@
 
 {{#WordSource}}
 <span>
-    [anki:tts lang=en_GB]
+    [anki:tts lang=en_US]
     [/anki:tts]
 </span>
 {{/WordSource}}
@@ -200,7 +200,7 @@
 
 {{#SentenceSource}}
 <span>
-    [anki:tts lang=en_GB]
+    [anki:tts lang=en_US]
     [/anki:tts]
 </span>
 {{/SentenceSource}}
@@ -270,7 +270,7 @@
 
 {{#WordDestination}}
 <span>
-    [anki:tts lang=en_GB]
+    [anki:tts lang=en_US]
     [/anki:tts]
 </span>
 {{/WordDestination}}
@@ -327,7 +327,7 @@
 
 {{#SentenceDestination}}
 <span>
-    [anki:tts lang=en_GB]
+    [anki:tts lang=en_US]
     [/anki:tts]
 </span>
 {{/SentenceDestination}}
