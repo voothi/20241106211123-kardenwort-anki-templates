@@ -112,13 +112,6 @@
 {{/Source-ru-RU}}
 {{/WordSource}}
 
-{{#WordSource}}
-<span>
-    [anki:tts lang=en_US]
-    [/anki:tts]
-</span>
-{{/WordSource}}
-
 <!-- #WordSource -->
 <input class="hide" id="hd-20" type="checkbox">
 <label for="hd-20">WordSource</label>
@@ -197,13 +190,6 @@
 </span>
 {{/Source-ru-RU}}
 {{/SentenceSource}}
-
-{{#SentenceSource}}
-<span>
-    [anki:tts lang=en_US]
-    [/anki:tts]
-</span>
-{{/SentenceSource}}
 {{/Toggle-Always-Empty-Field}}
 
 
@@ -269,13 +255,6 @@
 {{/Destination-ru-RU}}
 {{/WordDestination}}
 
-{{#WordDestination}}
-<span>
-    [anki:tts lang=en_US]
-    [/anki:tts]
-</span>
-{{/WordDestination}}
-
 <!-- #WordDestination -->
 <input class="hide" id="hd-40" type="checkbox">
 <label for="hd-40">WordDestination</label>
@@ -325,13 +304,6 @@
 {{/Destination-ru-RU}}
 {{/SentenceDestination}}
 {{/Toggle-Always-Empty-Field}}
-
-{{#SentenceDestination}}
-<span>
-    [anki:tts lang=en_US]
-    [/anki:tts]
-</span>
-{{/SentenceDestination}}
 
 <!-- #SentenceDestination -->
 <input class="hide" id="hd-70" type="checkbox">
