@@ -57,7 +57,7 @@
 <!-- hr -->
 <!-- FrontSide Template/ -->
 
-<!-- WordSource and SentenceSource -->
+<!-- Case 1: WordSource and SentenceSource -->
 {{#WordDestination}}
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
@@ -213,8 +213,9 @@
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
 {{/WordDestination}}
+<!-- Case 1: WordSource and SentenceSource/ -->
 
-<!-- WordDestination and SentenceDestination -->
+<!-- Case 2: WordDestination and SentenceDestination -->
 {{^WordDestination}}
 <!-- /WordDestination -->
 
@@ -318,3 +319,4 @@
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
 {{/WordDestination}}
+<!-- Case 2: WordDestination and SentenceDestination/ -->
