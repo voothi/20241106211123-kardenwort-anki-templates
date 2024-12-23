@@ -53,6 +53,13 @@
 {{/Source-ru-RU}}
 {{/WordSource}}
 
+{{#WordSource}}
+<span>
+    [anki:tts lang=en_US]
+    [/anki:tts]
+</span>
+{{/WordSource}}
+
 <!-- #WordSource -->
 <input class="hide" id="hd-20" type="checkbox">
 <label for="hd-20">WordSource</label>
@@ -133,6 +140,13 @@
 {{/SentenceSource}}
 {{/Toggle-Always-Empty-Field}}
 
+{{#SentenceSource}}
+<span>
+    [anki:tts lang=en_US]
+    [/anki:tts]
+</span>
+{{/SentenceSource}}
+
 <!-- #SentenceSource -->
 <input class="hide" id="hd-10" type="checkbox">
 <label for="hd-10">SentenceSource</label>
@@ -195,6 +209,13 @@
 {{/Destination-ru-RU}}
 {{/WordDestination}}
 
+{{#WordDestination}}
+<span>
+    [anki:tts lang=en_US]
+    [/anki:tts]
+</span>
+{{/WordDestination}}
+
 <!-- #WordDestination -->
 <input class="hide" id="hd-40" type="checkbox">
 <label for="hd-40">WordDestination</label>
@@ -242,6 +263,13 @@
     {{tts ru_RU voices=gTTS:SentenceDestination}}
 </span>
 {{/Destination-ru-RU}}
+{{/SentenceDestination}}
+
+{{#SentenceDestination}}
+<span>
+    [anki:tts lang=en_US]
+    [/anki:tts]
+</span>
 {{/SentenceDestination}}
 {{/Toggle-Always-Empty-Field}}
 
@@ -437,6 +465,13 @@
             {{/WordSourceDefinitionClipping}}
             {{/Toggle-Always-Empty-Field}}
 
+            {{#WordSourceDefinitionClipping}}
+            <span>
+                [anki:tts lang=en_US]
+                [/anki:tts]
+            </span>
+            {{/WordSourceDefinitionClipping}}
+
             {{WordSourceDefinitionClipping}}<br><br>
             {{/WordSourceDefinitionClipping}}
         </span>
@@ -552,3 +587,4 @@
     </span>
 </div>
 <!-- Hint Template/ -->
+ 
