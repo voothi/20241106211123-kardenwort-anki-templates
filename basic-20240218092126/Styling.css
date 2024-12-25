@@ -198,3 +198,21 @@ border-top: 1px solid MediumSeaGreen; /* Устанавливаем зелены
     background-color: lightgrey; /* Фоновый цвет для наглядности */
     margin: 10px 0; /* Отступы для визуального разделения */
 }
+
+.fixed-table {
+  width: 100%; /* Ширина таблицы */
+  height: 70px;
+  border-collapse: collapse; /* Убираем лишние отступы между ячейками */
+}
+
+.fixed-cell {
+  height: 20px; /* Высота ячейки (можно изменить) */
+  border: 1px solid #ccc; /* Граница ячейки */
+  vertical-align: middle; /* Вертикальное выравнивание содержимого */
+  padding: 10px; /* Отступы в ячейке */
+}
+
+.spacer-cell {
+  height: 20px; /* Высота заглушки */
+  width: 0; /* Ширина 0, чтобы не занимать пространство */
+}

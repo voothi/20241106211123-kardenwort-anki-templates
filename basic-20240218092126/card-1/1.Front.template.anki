@@ -3,7 +3,9 @@
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
-<!-- /Audio Template -->
+<table class="fixed-table">
+<tr>
+<td class="fixed-cell">
 <span>
     {{#WordSourceAudio}}
     {{WordSourceAudio}}
@@ -82,7 +84,12 @@
     </span>
 </div>
 <!-- /WordSource -->
-<!-- Word Template/ -->
+<!-- Word Template/ -->WordSource
+</td>
+</tr>
+</table>
+<!-- /Audio Template -->
+
 
 <br>
 <!-- SentenceSource TTS Toggle Off -->
