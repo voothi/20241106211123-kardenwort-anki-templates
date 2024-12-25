@@ -207,7 +207,7 @@ border-top: 1px solid MediumSeaGreen; /* Устанавливаем зелены
 
 .fixed-cell {
   height: 20px; /* Высота ячейки (можно изменить) */
-  border: 1px solid #ccc; /* Граница ячейки */
+  border: 1px solid MediumSeaGreen; /* Граница ячейки */
   vertical-align: middle; /* Вертикальное выравнивание содержимого */
   padding: 10px; /* Отступы в ячейке */
 }
