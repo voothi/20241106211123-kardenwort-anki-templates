@@ -479,9 +479,12 @@
     <!-- /WordSourceDefinition -->
     <!-- Definition Template/ -->
 
+    <input class="show" id="hd-140" type="checkbox">
+    <label for="hd-140">Context</label>
+    <div>
     <span>
         {{#SentenceSourceContextLeft}}
-        {{SentenceSourceContextLeft}}<br><br>
+        {{hint:SentenceSourceContextLeft}}<br>
         {{/SentenceSourceContextLeft}}
     </span>
     <span>
@@ -491,9 +494,12 @@
     </span>
     <span>
         {{#SentenceSourceContextRight}}
-        {{SentenceSourceContextRight}}<br><br>
+        {{hint:SentenceSourceContextRight}}
         {{/SentenceSourceContextRight}}
     </span>
+    </div>
+    <br>
+
     <span>
         {{#TextSource}}
         {{hint:TextSource}}<br>
