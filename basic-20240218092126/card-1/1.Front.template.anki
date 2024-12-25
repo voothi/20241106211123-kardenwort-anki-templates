@@ -98,7 +98,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{^Toggle-Always-Empty-Field}}
+{{#Toggle-Always-Empty-Field}}
 <!-- /Sentence Template -->
 <!-- /Audio#2 Template -->
 {{^WordSource}}
@@ -428,7 +428,7 @@
             {{#WordSourceDefinitionClipping}}
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{^Toggle-Always-Empty-Field}}
+            {{#Toggle-Always-Empty-Field}}
             {{#WordSourceDefinitionClipping}}
             {{#Source-en-GB}}
             <span>

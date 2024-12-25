@@ -291,7 +291,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{^Toggle-Always-Empty-Field}}
+{{#Toggle-Always-Empty-Field}}
 {{#SentenceDestination}}
 {{#Destination-en-GB}}
 <span>
@@ -343,4 +343,3 @@
 <!-- L1 Template/ -->
 {{/WordDestination}}
 <!-- Case 2: WordDestination and SentenceDestination/ -->
- 
