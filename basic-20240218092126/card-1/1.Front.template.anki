@@ -334,17 +334,37 @@
 
     {{#WordSource}}
     <span>
+        {{#SentenceSourceLeftContext}}
+        {{hint:SentenceSourceLeftContext}}<br>
+        {{/SentenceSourceLeftContext}}
+    </span>
+    <span>
         {{#SentenceSource}}
         {{hint:SentenceSource}}<br>
         {{/SentenceSource}}
+    </span>
+    <span>
+        {{#SentenceSourceRightContext}}
+        {{hint:SentenceSourceRightContext}}<br>
+        {{/SentenceSourceRightContext}}
     </span>
     {{/WordSource}}
 
     {{^WordSource}}
     <span>
+        {{#SentenceSourceLeftContext}}
+        {{hint:SentenceSourceLeftContext}}<br>
+        {{/SentenceSourceLeftContext}}
+    </span>
+    <span>
         {{#SentenceSource}}
         {{SentenceSource}}<br><br>
         {{/SentenceSource}}
+    </span>
+    <span>
+        {{#SentenceSourceRightContext}}
+        {{hint:SentenceSourceRightContext}}<br>
+        {{/SentenceSourceRightContext}}
     </span>
     {{/WordSource}}
 
@@ -552,4 +572,3 @@
     </span>
 </div>
 <!-- Hint Template/ -->
- 
