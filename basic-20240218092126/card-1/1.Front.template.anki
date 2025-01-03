@@ -404,6 +404,12 @@
     </span>
     {{/WordDestination}}
     
+    <span>
+        {{#WordSourceSynonym}}
+        {{hint:WordSourceSynonym}}<br>
+        {{/WordSourceSynonym}}
+    </span>
+
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
     <input class="show" id="hd-150" type="checkbox">
