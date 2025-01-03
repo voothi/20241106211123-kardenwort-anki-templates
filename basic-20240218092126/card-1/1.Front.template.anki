@@ -110,6 +110,7 @@
 {{/WordSource}}
 <!-- Audio#2 template/ -->
 
+{{^WordSource}}
 {{#SentenceSource}}
 {{#Source-en-GB}}
 <span>
@@ -142,6 +143,7 @@
 </span>
 {{/Source-ru-RU}}
 {{/SentenceSource}}
+{{/WordSource}}
 {{/Toggle-Always-Empty-Field}}
 
 <!-- #SentenceSource -->
