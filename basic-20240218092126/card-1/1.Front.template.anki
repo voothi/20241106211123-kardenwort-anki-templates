@@ -332,7 +332,7 @@
     {{/WordSource}}
     <!-- Input Template/ -->
 
-    <!-- #WordSourceDefinition -->
+    <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
     <input class="show" id="hd-150" type="checkbox">
     <label for="hd-150">WordSourceDefinitionAI</label>
@@ -384,8 +384,7 @@
     </div>
     <br>
     {{/WordSourceDefinitionAI}}
-    <!-- /WordSourceDefinition -->
-    <!-- Definition Template/ -->
+    <!-- /WordSourceDefinitionAI -->
 
     <span>
         {{#WordSourceIPA}}
