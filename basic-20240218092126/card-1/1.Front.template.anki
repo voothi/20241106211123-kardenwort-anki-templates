@@ -454,6 +454,60 @@
     {{/WordSourceDefinitionAI}}
     <!-- /WordSourceDefinitionAI -->
 
+    <!-- #SentenceSourceWordList -->
+    {{#SentenceSourceWordList}}
+    <input class="show" id="hd-160" type="checkbox">
+    <label for="hd-160">SentenceSourceWordList</label>
+    <div>
+        <span>
+            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+            {{#Toggle-Always-Empty-Field}}
+            {{#SentenceSourceWordList}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS:SentenceSourceWordList}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS:SentenceSourceWordList}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS:SentenceSourceWordList}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS:SentenceSourceWordList}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS:SentenceSourceWordList}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            <br>
+            {{/SentenceSourceWordList}}
+            {{/Toggle-Always-Empty-Field}}
+        </span>
+        <span>
+            {{#SentenceSourceWordList}}
+            {{hint:SentenceSourceWordList}}
+            {{/SentenceSourceWordList}}
+        </span>
+    </div>
+    <br>
+    {{/SentenceSourceWordList}}
+    <!-- /SentenceSourceWordList -->
+
     <!-- /Definition Template 2 -->
     {{#WordDestinationDefinition}}
     <input class="show" id="hd-110" type="checkbox">
