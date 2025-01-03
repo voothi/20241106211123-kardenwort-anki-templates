@@ -332,60 +332,6 @@
     {{/WordSource}}
     <!-- Input Template/ -->
 
-    <!-- #WordSourceDefinitionAI -->
-    {{#WordSourceDefinitionAI}}
-    <input class="show" id="hd-150" type="checkbox">
-    <label for="hd-150">WordSourceDefinitionAI</label>
-    <div>
-        <span>
-            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#Toggle-Always-Empty-Field}}
-            {{#WordSourceDefinitionAI}}
-            {{#Source-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-en-GB}}
-
-            {{#Source-en-US}}
-            <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-en-US}}
-
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-de-DE}}
-
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-uk-UA}}
-
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionAI}}
-                <!-- ru_RU voices=gTTS -->
-            </span>
-            {{/Source-ru-RU}}
-            <br>
-            {{/WordSourceDefinitionAI}}
-            {{/Toggle-Always-Empty-Field}}
-        </span>
-        <span>
-            {{#WordSourceDefinitionAI}}
-            {{hint:WordSourceDefinitionAI}}
-            {{/WordSourceDefinitionAI}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceDefinitionAI}}
-    <!-- /WordSourceDefinitionAI -->
-
     <span>
         {{#WordSourceIPA}}
         {{hint:WordSourceIPA}}<br>
@@ -453,6 +399,60 @@
         {{/SentenceDestination}}
     </span>
     {{/WordDestination}}
+    
+    <!-- #WordSourceDefinitionAI -->
+    {{#WordSourceDefinitionAI}}
+    <input class="show" id="hd-150" type="checkbox">
+    <label for="hd-150">WordSourceDefinitionAI</label>
+    <div>
+        <span>
+            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+            {{#Toggle-Always-Empty-Field}}
+            {{#WordSourceDefinitionAI}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS:WordSourceDefinitionAI}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            <br>
+            {{/WordSourceDefinitionAI}}
+            {{/Toggle-Always-Empty-Field}}
+        </span>
+        <span>
+            {{#WordSourceDefinitionAI}}
+            {{hint:WordSourceDefinitionAI}}
+            {{/WordSourceDefinitionAI}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceDefinitionAI}}
+    <!-- /WordSourceDefinitionAI -->
 
     <!-- /Definition Template 2 -->
     {{#WordDestinationDefinition}}
