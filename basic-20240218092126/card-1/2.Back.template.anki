@@ -126,6 +126,7 @@
 <td class="fixed-cell">
 {{^Toggle-Always-Empty-Field}}
 {{^WordSource}}
+{{#SentenceSource}}
 {{#SentenceDestination}}
 {{#Destination-en-GB}}
 <span>
@@ -157,6 +158,7 @@
 </span>
 {{/Destination-ru-RU}}
 {{/SentenceDestination}}
+{{/SentenceSource}}
 {{/WordSource}}
 {{/Toggle-Always-Empty-Field}}
 
