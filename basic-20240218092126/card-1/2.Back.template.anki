@@ -60,7 +60,7 @@
 
 
 
-<!-- Case 1: Phrasal cards -->
+<!-- Case 1: Passive Learning Cards -->
 {{^WordDestination}}
 <!-- /WordDestination -->
 
@@ -175,12 +175,12 @@
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
 {{/WordDestination}}
-<!-- Case 1: Phrasal cards/ -->
+<!-- Case 1: Passive Learning Cards/ -->
 
 
 
 
-<!-- Case 2: Vocabulary cards -->
+<!-- Case 2: Active Learning Cards -->
 {{#WordDestination}}
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
@@ -347,4 +347,4 @@
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
 {{/WordDestination}}
-<!-- Case 2: Vocabulary cards/ -->
+<!-- Case 2: Active Learning Cards/ -->
