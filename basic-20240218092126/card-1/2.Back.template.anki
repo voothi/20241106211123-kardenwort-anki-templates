@@ -57,7 +57,130 @@
 <!-- hr -->
 <!-- FrontSide Template/ -->
 
-<!-- Case 1: WordSource and SentenceSource -->
+
+
+
+<!-- Case 1: Phrasal cards -->
+{{^WordDestination}}
+<!-- /WordDestination -->
+
+<!-- #WordDestination -->
+<!-- 20241016083918 -->
+<!-- /L1 Template -->
+<!-- /Definition#2 Template -->
+<table class="fixed-table">
+<tr>
+<td class="fixed-cell">
+{{#WordDestination}}
+{{#Destination-en-GB}}
+<span>
+    {{tts en_GB voices=gTTS:WordDestination}}
+</span>
+{{/Destination-en-GB}}
+
+{{#Destination-en-US}}
+<span>
+    {{tts en_US voices=gTTS:WordDestination}}
+</span>
+{{/Destination-en-US}}
+
+{{#Destination-de-DE}}
+<span>
+    {{tts de_DE voices=gTTS:WordDestination}}
+</span>
+{{/Destination-de-DE}}
+
+{{#Destination-uk-UA}}
+<span>
+    {{tts uk_UA:WordDestination}}
+</span>
+{{/Destination-uk-UA}}
+
+{{#Destination-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:WordDestination}}
+</span>
+{{/Destination-ru-RU}}
+{{/WordDestination}}
+
+<!-- #WordDestination -->
+<input class="hide" id="hd-40" type="checkbox">
+<label for="hd-40">WordDestination</label>
+<div>
+    <span>
+        {{#WordDestination}}
+        {{WordDestination}}
+        {{/WordDestination}}
+    </span>
+</div>
+</td>
+</tr>
+</table>
+<!-- /WordDestination -->
+<!-- Definition#2 Template/ -->
+
+<!-- /Russian Template -->
+<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+<table class="fixed-table">
+<tr>
+<td class="fixed-cell">
+{{^Toggle-Always-Empty-Field}}
+{{#SentenceDestination}}
+{{#Destination-en-GB}}
+<span>
+    {{tts en_GB voices=gTTS speed=0.8:SentenceDestination}}
+</span>
+{{/Destination-en-GB}}
+
+{{#Destination-en-US}}
+<span>
+    {{tts en_US voices=gTTS speed=0.8:SentenceDestination}}
+</span>
+{{/Destination-en-US}}
+
+{{#Destination-de-DE}}
+<span>
+    {{tts de_DE voices=gTTS speed=0.8:SentenceDestination}}
+</span>
+{{/Destination-de-DE}}
+
+{{#Destination-uk-UA}}
+<span>
+    {{tts uk_UA:SentenceDestination}}
+</span>
+{{/Destination-uk-UA}}
+
+{{#Destination-ru-RU}}
+<span>
+    {{tts ru_RU voices=gTTS:SentenceDestination}}
+</span>
+{{/Destination-ru-RU}}
+{{/SentenceDestination}}
+{{/Toggle-Always-Empty-Field}}
+
+<!-- #SentenceDestination -->
+<input class="hide" id="hd-70" type="checkbox">
+<label for="hd-70">SentenceDestination</label>
+<div>
+    <span>
+        {{#SentenceDestination}}
+        {{SentenceDestination}}
+        {{/SentenceDestination}}
+    </span>
+</div>
+</td>
+</tr>
+</table>
+<!-- /SentenceDestination -->
+<!-- Russian Template/ -->
+<!-- L1 Template/ -->
+{{/WordDestination}}
+<!-- Case 1: Phrasal cards/ -->
+
+
+
+
+<!-- Case 2: Vocabulary cards -->
 {{#WordDestination}}
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
@@ -224,122 +347,4 @@
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
 {{/WordDestination}}
-<!-- Case 1: WordSource and SentenceSource/ -->
-
-<!-- Case 2: WordDestination and SentenceDestination -->
-{{^WordDestination}}
-<!-- /WordDestination -->
-
-<!-- #WordDestination -->
-<!-- 20241016083918 -->
-<!-- /L1 Template -->
-<!-- /Definition#2 Template -->
-<table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-{{#WordDestination}}
-{{#Destination-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS:WordDestination}}
-</span>
-{{/Destination-en-GB}}
-
-{{#Destination-en-US}}
-<span>
-    {{tts en_US voices=gTTS:WordDestination}}
-</span>
-{{/Destination-en-US}}
-
-{{#Destination-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS:WordDestination}}
-</span>
-{{/Destination-de-DE}}
-
-{{#Destination-uk-UA}}
-<span>
-    {{tts uk_UA:WordDestination}}
-</span>
-{{/Destination-uk-UA}}
-
-{{#Destination-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS:WordDestination}}
-</span>
-{{/Destination-ru-RU}}
-{{/WordDestination}}
-
-<!-- #WordDestination -->
-<input class="hide" id="hd-40" type="checkbox">
-<label for="hd-40">WordDestination</label>
-<div>
-    <span>
-        {{#WordDestination}}
-        {{WordDestination}}
-        {{/WordDestination}}
-    </span>
-</div>
-</td>
-</tr>
-</table>
-<!-- /WordDestination -->
-<!-- Definition#2 Template/ -->
-
-
-<!-- /Russian Template -->
-<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-<table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-{{#Toggle-Always-Empty-Field}}
-{{#SentenceDestination}}
-{{#Destination-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-en-GB}}
-
-{{#Destination-en-US}}
-<span>
-    {{tts en_US voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-en-US}}
-
-{{#Destination-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-de-DE}}
-
-{{#Destination-uk-UA}}
-<span>
-    {{tts uk_UA:SentenceDestination}}
-</span>
-{{/Destination-uk-UA}}
-
-{{#Destination-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS:SentenceDestination}}
-</span>
-{{/Destination-ru-RU}}
-{{/SentenceDestination}}
-{{/Toggle-Always-Empty-Field}}
-
-<!-- #SentenceDestination -->
-<input class="hide" id="hd-70" type="checkbox">
-<label for="hd-70">SentenceDestination</label>
-<div>
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}
-        {{/SentenceDestination}}
-    </span>
-</div>
-</td>
-</tr>
-</table>
-<!-- /SentenceDestination -->
-<!-- Russian Template/ -->
-<!-- L1 Template/ -->
-{{/WordDestination}}
-<!-- Case 2: WordDestination and SentenceDestination/ -->
+<!-- Case 2: Vocabulary cards/ -->

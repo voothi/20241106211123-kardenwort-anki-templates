@@ -1,4 +1,4 @@
-<!-- Case 1: WordSource and SentenceSource -->
+<!-- Case 1: Phrasal cards -->
 {{^WordDestination}}
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
@@ -98,7 +98,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{#Toggle-Always-Empty-Field}}
+{{^Toggle-Always-Empty-Field}}
 <!-- /Sentence Template -->
 <!-- /Audio#2 Template -->
 {{^WordSource}}
@@ -167,12 +167,12 @@
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
 {{/WordDestination}}
-<!-- Case 1: WordSource and SentenceSource/ -->
+<!-- Case 1: Phrasal cards/ -->
 
 
 
 
-<!-- Case 2: WordDestination and SentenceDestination -->
+<!-- Case 2: Vocabulary cards -->
 {{#WordDestination}}
 <!-- /WordDestination -->
 
@@ -286,7 +286,10 @@
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
 {{/WordDestination}}
-<!-- Case 2: WordDestination and SentenceDestination/ -->
+<!-- Case 2: Vocabulary cards/ -->
+
+
+
 
 <!-- /Hint Template -->
 <input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
@@ -478,7 +481,7 @@
     <!-- /WordSourceDefinition -->
     <!-- Definition Template/ -->
 
-    <input class="show" id="hd-140" type="checkbox">
+    <input class="hide" id="hd-140" type="checkbox">
     <label for="hd-140">Context</label>
     <div>
     <span>
