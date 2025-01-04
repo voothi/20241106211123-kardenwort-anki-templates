@@ -74,12 +74,6 @@
 
     <span>
         {{#WordSourceInflectedForm}}
-        → <br>
-        {{/WordSourceInflectedForm}}
-    </span>
-
-    <span>
-        {{#WordSourceInflectedForm}}
         {{WordSourceInflectedForm}}
         {{/WordSourceInflectedForm}}
     </span>
@@ -346,12 +340,6 @@
         {{#WordSource}}
         {{hint:WordSource}}<br>
         {{/WordSource}}
-    </span>
-
-    <span>
-        {{#WordSourceInflectedForm}}
-        → <br>
-        {{/WordSourceInflectedForm}}
     </span>
 
     <span>
