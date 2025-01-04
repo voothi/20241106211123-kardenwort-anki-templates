@@ -392,6 +392,22 @@
     </span>
     {{/WordDestination}}
     
+    {{#WordEnglish}}
+    <span>
+        {{#WordEnglish}}
+        {{WordEnglish}}<br><br>
+        {{/WordEnglish}}
+    </span>
+    {{/WordEnglish}}
+
+    {{#SentenceEnglish}}
+    <span>
+        {{#SentenceEnglish}}
+        {{SentenceEnglish}}<br><br>
+        {{/SentenceEnglish}}
+    </span>
+    {{/SentenceEnglish}}
+
     <span>
         {{#WordSourceSynonym}}
         {{hint:WordSourceSynonym}}<br>
