@@ -330,6 +330,9 @@
     {{/WordSource}}
     <!-- Input Template/ -->
 
+    <input class="show" id="hd-160" type="checkbox">
+    <label for="hd-160">Source</label>
+    <div>
     <span>
         {{#WordSourceIPA}}
         {{hint:WordSourceIPA}}<br>
@@ -369,7 +372,12 @@
         {{/SentenceSource}}
     </span>
     {{/WordSource}}
+    </div>
+    <br>
 
+    <input class="show" id="hd-170" type="checkbox">
+    <label for="hd-170">Destination</label>
+    <div>
     <span>
         {{#WordDestination}}
         {{WordDestination}}<br><br>
@@ -391,22 +399,25 @@
         {{/SentenceDestination}}
     </span>
     {{/WordDestination}}
+    </div>
+    <br>
     
-    {{#WordEnglish}}
+    <input class="show" id="hd-180" type="checkbox">
+    <label for="hd-180">English</label>
+    <div>
     <span>
         {{#WordEnglish}}
         {{WordEnglish}}<br><br>
         {{/WordEnglish}}
     </span>
-    {{/WordEnglish}}
 
-    {{#SentenceEnglish}}
     <span>
         {{#SentenceEnglish}}
         {{SentenceEnglish}}<br><br>
         {{/SentenceEnglish}}
     </span>
-    {{/SentenceEnglish}}
+    </div>
+    <br>
 
     <span>
         {{#WordSourceSynonym}}
