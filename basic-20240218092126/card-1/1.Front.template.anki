@@ -424,18 +424,17 @@
     <!-- Definition Template/ -->
 
     <input class="hide" id="hd-210" type="checkbox">
-    <label for="hd-210">WordSourceMorphemeDefinition</label>
+    <label for="hd-210">WordSourceMorpheme</label>
     <div>
     {{#WordSourceMorphemeFirst}}
-    <span>
-        {{#WordSourceMorphemeFirst}}
-        {{WordSourceMorphemeFirst}}<br><br>
-        {{/WordSourceMorphemeFirst}}
-    </span>
-
     <input class="hide" id="hd-190" type="checkbox">
-    <label for="hd-190">WordSourceMorphemeFirstDefinition</label>
+    <label for="hd-190">WordSourceMorphemeFirst</label>
     <div>
+        <span>
+            {{#WordSourceMorphemeFirst}}
+            {{WordSourceMorphemeFirst}}<br><br>
+            {{/WordSourceMorphemeFirst}}
+        </span>
         <span>
             {{#WordSourceMorphemeFirstDefinition}}
             {{WordSourceMorphemeFirstDefinition}}<br><br>
@@ -446,15 +445,14 @@
     {{/WordSourceMorphemeFirst}}
 
     {{#WordSourceMorphemeSecond}}
-    <span>
-        {{#WordSourceMorphemeSecond}}
-        {{WordSourceMorphemeSecond}}<br><br>
-        {{/WordSourceMorphemeSecond}}
-    </span>
-
     <input class="hide" id="hd-220" type="checkbox">
-    <label for="hd-220">WordSourceMorphemeSecondDefinition</label>
+    <label for="hd-220">WordSourceMorphemeSecond</label>
     <div>
+        <span>
+            {{#WordSourceMorphemeSecond}}
+            {{WordSourceMorphemeSecond}}<br><br>
+            {{/WordSourceMorphemeSecond}}
+        </span>
         <span>
             {{#WordSourceMorphemeSecondDefinition}}
             {{WordSourceMorphemeSecondDefinition}}<br><br>
@@ -465,15 +463,14 @@
     {{/WordSourceMorphemeSecond}}
 
     {{#WordSourceMorphemeThird}}
-    <span>
-        {{#WordSourceMorphemeThird}}
-        {{WordSourceMorphemeThird}}<br><br>
-        {{/WordSourceMorphemeThird}}
-    </span>
-
     <input class="hide" id="hd-230" type="checkbox">
-    <label for="hd-230">WordSourceMorphemeThirdDefinition</label>
+    <label for="hd-230">WordSourceMorphemeThird</label>
     <div>
+        <span>
+            {{#WordSourceMorphemeThird}}
+            {{WordSourceMorphemeThird}}<br><br>
+            {{/WordSourceMorphemeThird}}
+        </span>
         <span>
             {{#WordSourceMorphemeThirdDefinition}}
             {{WordSourceMorphemeThirdDefinition}}<br><br>
@@ -484,15 +481,14 @@
     {{/WordSourceMorphemeThird}}
 
     {{#WordSourceMorphemeFourth}}
-    <span>
-        {{#WordSourceMorphemeFourth}}
-        {{WordSourceMorphemeFourth}}<br><br>
-        {{/WordSourceMorphemeFourth}}
-    </span>
-
     <input class="hide" id="hd-240" type="checkbox">
-    <label for="hd-240">WordSourceMorphemeFourthDefinition</label>
+    <label for="hd-240">WordSourceMorphemeFourth</label>
     <div>
+        <span>
+            {{#WordSourceMorphemeFourth}}
+            {{WordSourceMorphemeFourth}}<br><br>
+            {{/WordSourceMorphemeFourth}}
+        </span>
         <span>
             {{#WordSourceMorphemeFourthDefinition}}
             {{WordSourceMorphemeFourthDefinition}}<br><br>
@@ -503,15 +499,14 @@
     {{/WordSourceMorphemeFourth}}
 
     {{#WordSourceMorphemeFifth}}
-    <span>
-        {{#WordSourceMorphemeFifth}}
-        {{WordSourceMorphemeFifth}}<br><br>
-        {{/WordSourceMorphemeFifth}}
-    </span>
-
     <input class="hide" id="hd-250" type="checkbox">
-    <label for="hd-250">WordSourceMorphemeFifthDefinition</label>
+    <label for="hd-250">WordSourceMorphemeFifth</label>
     <div>
+        <span>
+            {{#WordSourceMorphemeFifth}}
+            {{WordSourceMorphemeFifth}}<br><br>
+            {{/WordSourceMorphemeFifth}}
+        </span>
         <span>
             {{#WordSourceMorphemeFifthDefinition}}
             {{WordSourceMorphemeFifthDefinition}}<br><br>
