@@ -127,7 +127,7 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA:SentenceSource}}
+    {{tts uk_UA voices=gTTS:SentenceSource}}
 </span>
 {{/Source-uk-UA}}
 
@@ -202,7 +202,7 @@
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA:WordDestination}}
+    {{tts uk_UA voices=gTTS::WordDestination}}
 </span>
 {{/Destination-uk-UA}}
 
