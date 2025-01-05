@@ -602,6 +602,7 @@
     </span>
     {{/WordSource}}
 
+    {{#SentenceSourceContextLeft}}
     <input class="hide" id="hd-140" type="checkbox">
     <label for="hd-140">SentenceSourceContext</label>
     <div>
@@ -622,6 +623,7 @@
     </span>
     </div>
     <br>
+    {{/SentenceSourceContextLeft}}
     
     <!-- #SentenceSourceWordList -->
     {{#SentenceSourceWordList}}
