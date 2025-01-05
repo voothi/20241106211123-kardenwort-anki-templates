@@ -683,29 +683,13 @@
     <br>
 
     <input class="show" id="hd-170" type="checkbox">
-    <label for="hd-170">Destination</label>
+    <label for="hd-170">WordDestination</label>
     <div>
     <span>
         {{#WordDestination}}
         {{WordDestination}}<br><br>
         {{/WordDestination}}
     </span>
-
-    {{^WordDestination}}
-    <span>
-        {{#SentenceDestination}}
-        {{hint:SentenceDestination}}<br>
-        {{/SentenceDestination}}
-    </span>
-    {{/WordDestination}}
-
-    {{#WordDestination}}
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}<br><br>
-        {{/SentenceDestination}}
-    </span>
-    {{/WordDestination}}
 
     <!-- /Definition Template 2 -->
     {{#WordDestinationDefinition}}
@@ -721,11 +705,31 @@
     <br>
     {{/WordDestinationDefinition}}
     <!-- Definition Template 2/ -->
+    </div>
+    <br>
 
+    <input class="show" id="hd-280" type="checkbox">
+    <label for="hd-280">SentenceDestination</label>
+    <div>
+    {{^WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{hint:SentenceDestination}}<br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+
+    {{#WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{SentenceDestination}}<br><br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
     </div>
     <br>
     
-    <input class="show" id="hd-180" type="checkbox">
+    <input class="hide" id="hd-180" type="checkbox">
     <label for="hd-180">English</label>
     <div>
     <span>
