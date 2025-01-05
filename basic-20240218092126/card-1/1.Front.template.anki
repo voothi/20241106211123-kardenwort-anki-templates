@@ -68,13 +68,13 @@
 
     <span>
         {{#WordSource}}
-        {{WordSource}}<br>
+        {{WordSource}}<br><br>
         {{/WordSource}}
     </span>
 
     <span>
         {{#WordSourceInflectedForm}}
-        {{WordSourceInflectedForm}}
+        {{WordSourceInflectedForm}}<br><br>
         {{/WordSourceInflectedForm}}
     </span>
 </div>
@@ -154,7 +154,7 @@
 
     <span>
         {{#SentenceSource}}
-        {{SentenceSource}}
+        {{SentenceSource}}<br><br>
         {{/SentenceSource}}
     </span>
 </div>
@@ -219,7 +219,7 @@
 <div>
     <span>
         {{#WordDestination}}
-        {{WordDestination}}
+        {{WordDestination}}<br><br>
         {{/WordDestination}}
     </span>
 </td>
@@ -273,7 +273,7 @@
 <div>
     <span>
         {{#SentenceDestination}}
-        {{SentenceDestination}}
+        {{SentenceDestination}}<br><br>
         {{/SentenceDestination}}
     </span>
 </div>
@@ -709,12 +709,12 @@
 
     <!-- /Definition Template 2 -->
     {{#WordDestinationDefinition}}
-    <input class="show" id="hd-110" type="checkbox">
+    <input class="hide" id="hd-110" type="checkbox">
     <label for="hd-110">WordDestinationDefinition</label>
     <div>
         <span>
             {{#WordDestinationDefinition}}
-            {{hint:WordDestinationDefinition}}
+            {{WordDestinationDefinition}}<br><br>
             {{/WordDestinationDefinition}}
         </span>
     </div>
@@ -759,7 +759,7 @@
     <label for="hd-120">TextURL</label>
     <div>
         <span>
-            <a href={{TextSourceURL}}>{{TextSourceURL}}</a>
+            <a href={{TextSourceURL}}>{{TextSourceURL}}</a><br><br>
         </span>
     </div>
     <br>
@@ -800,7 +800,7 @@
     <label for="hd-110">SourceURL</label>
     <div>
         <span>
-            <a href={{SourceURL}}>{{SourceURL}}</a>
+            <a href={{SourceURL}}>{{SourceURL}}</a><br><br>
         </span>
     </div>
     <br>
