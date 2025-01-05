@@ -92,7 +92,7 @@
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA:WordDestination}}
+    {{tts uk_UA voices=gTTS:WordDestination}}
 </span>
 {{/Destination-uk-UA}}
 
@@ -148,7 +148,7 @@
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA:SentenceDestination}}
+    {{tts uk_UA voices=gTTS:SentenceDestination}}
 </span>
 {{/Destination-uk-UA}}
 
@@ -231,7 +231,7 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA:WordSource}}
+    {{tts uk_UA voices=gTTS:WordSource}}
 </span>
 {{/Source-uk-UA}}
 
@@ -314,7 +314,7 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA:SentenceSource}}
+    {{tts uk_UA voices=gTTS:SentenceSource}}
 </span>
 {{/Source-uk-UA}}
 

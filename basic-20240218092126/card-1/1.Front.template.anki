@@ -45,7 +45,7 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA:WordSource}}
+    {{tts uk_UA voices=gTTS:WordSource}}
 </span>
 {{/Source-uk-UA}}
 
@@ -255,7 +255,7 @@
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA:SentenceDestination}}
+    {{tts uk_UA voices=gTTS:SentenceDestination}}
 </span>
 {{/Destination-uk-UA}}
 
