@@ -373,6 +373,11 @@
     </span>
     {{/WordSource}}
 
+    <span>
+        {{#WordSourceSynonym}}
+        {{hint:WordSourceSynonym}}<br>
+        {{/WordSourceSynonym}}
+    </span>
 
     <!-- /Definition Template -->
     {{#WordSourceDefinition}}
@@ -656,16 +661,10 @@
     </div>
     <br>
 
-    <span>
-        {{#WordSourceSynonym}}
-        {{hint:WordSourceSynonym}}<br>
-        {{/WordSourceSynonym}}
-    </span>
-
     <!-- #SentenceSourceWordList -->
     {{#SentenceSourceWordList}}
-    <input class="show" id="hd-160" type="checkbox">
-    <label for="hd-160">SentenceSourceWordList</label>
+    <input class="show" id="hd-260" type="checkbox">
+    <label for="hd-260">SentenceSourceWordList</label>
     <div>
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
