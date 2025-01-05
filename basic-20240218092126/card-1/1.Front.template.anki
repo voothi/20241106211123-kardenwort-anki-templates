@@ -214,7 +214,7 @@
 {{/WordDestination}}
 
 <!-- #WordDestination -->
-<input class="show" id="hd-40" type="checkbox">
+<input class="hide" id="hd-40" type="checkbox">
 <label for="hd-40">WordDestination</label>
 <div>
     <span>
@@ -233,7 +233,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{#ToggleAlwaysEmptyField}}
+{{^ToggleAlwaysEmptyField}}
 {{#SentenceDestination}}
 {{#Destination-en-GB}}
 <span>
@@ -268,7 +268,7 @@
 {{/ToggleAlwaysEmptyField}}
 
 <!-- #SentenceDestination -->
-<input class="show" id="hd-70" type="checkbox">
+<input class="hide" id="hd-70" type="checkbox">
 <label for="hd-70">SentenceDestination</label>
 <div>
     <span>
@@ -373,7 +373,7 @@
             {{#WordSourceDefinitionClipping}}
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionClipping}}
             {{#Source-en-GB}}
             <span>
@@ -528,7 +528,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionAI}}
             {{#Source-en-GB}}
             <span>
@@ -633,7 +633,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#SentenceSourceWordList}}
             {{#Source-en-GB}}
             <span>
