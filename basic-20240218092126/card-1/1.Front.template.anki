@@ -435,7 +435,7 @@
     {{#WordSourceMorphemeFirst}}
     <span>
         {{#WordSourceMorphemeFirst}}
-        {{hint:WordSourceMorphemeFirst}}<br>
+        {{WordSourceMorphemeFirst}}<br><br>
         {{/WordSourceMorphemeFirst}}
     </span>
 
@@ -444,7 +444,7 @@
     <div>
         <span>
             {{#WordSourceMorphemeFirstDefinition}}
-            {{hint:WordSourceMorphemeFirstDefinition}}<br>
+            {{WordSourceMorphemeFirstDefinition}}<br><br>
             {{/WordSourceMorphemeFirstDefinition}}
         </span>
     </div>
@@ -454,7 +454,7 @@
     {{#WordSourceMorphemeSecond}}
     <span>
         {{#WordSourceMorphemeSecond}}
-        {{hint:WordSourceMorphemeSecond}}<br>
+        {{WordSourceMorphemeSecond}}<br><br>
         {{/WordSourceMorphemeSecond}}
     </span>
 
@@ -463,7 +463,7 @@
     <div>
         <span>
             {{#WordSourceMorphemeSecondDefinition}}
-            {{hint:WordSourceMorphemeSecondDefinition}}<br>
+            {{WordSourceMorphemeSecondDefinition}}<br><br>
             {{/WordSourceMorphemeSecondDefinition}}
         </span>
     </div>
@@ -473,7 +473,7 @@
     {{#WordSourceMorphemeThird}}
     <span>
         {{#WordSourceMorphemeThird}}
-        {{hint:WordSourceMorphemeThird}}<br>
+        {{WordSourceMorphemeThird}}<br><br>
         {{/WordSourceMorphemeThird}}
     </span>
 
@@ -482,7 +482,7 @@
     <div>
         <span>
             {{#WordSourceMorphemeThirdDefinition}}
-            {{hint:WordSourceMorphemeThirdDefinition}}<br>
+            {{WordSourceMorphemeThirdDefinition}}<br><br>
             {{/WordSourceMorphemeThirdDefinition}}
         </span>
     </div>
@@ -492,7 +492,7 @@
     {{#WordSourceMorphemeFourth}}
     <span>
         {{#WordSourceMorphemeFourth}}
-        {{hint:WordSourceMorphemeFourth}}<br>
+        {{WordSourceMorphemeFourth}}<br><br>
         {{/WordSourceMorphemeFourth}}
     </span>
 
@@ -501,7 +501,7 @@
     <div>
         <span>
             {{#WordSourceMorphemeFourthDefinition}}
-            {{hint:WordSourceMorphemeFourthDefinition}}<br>
+            {{WordSourceMorphemeFourthDefinition}}<br><br>
             {{/WordSourceMorphemeFourthDefinition}}
         </span>
     </div>
@@ -511,7 +511,7 @@
     {{#WordSourceMorphemeFifth}}
     <span>
         {{#WordSourceMorphemeFifth}}
-        {{hint:WordSourceMorphemeFifth}}<br>
+        {{WordSourceMorphemeFifth}}<br><br>
         {{/WordSourceMorphemeFifth}}
     </span>
 
@@ -520,7 +520,7 @@
     <div>
         <span>
             {{#WordSourceMorphemeFifthDefinition}}
-            {{hint:WordSourceMorphemeFifthDefinition}}<br>
+            {{WordSourceMorphemeFifthDefinition}}<br><br>
             {{/WordSourceMorphemeFifthDefinition}}
         </span>
     </div>
