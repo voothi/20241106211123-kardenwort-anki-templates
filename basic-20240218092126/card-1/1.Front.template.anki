@@ -423,6 +423,7 @@
     <!-- /WordSourceDefinition -->
     <!-- Definition Template/ -->
 
+    {{#WordSourceMorphemeFirst}}
     <input class="hide" id="hd-210" type="checkbox">
     <label for="hd-210">WordSourceMorpheme</label>
     <div>
@@ -517,6 +518,7 @@
     {{/WordSourceMorphemeFifth}}
     </div>
     <br>
+    {{/WordSourceMorphemeFirst}}
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
