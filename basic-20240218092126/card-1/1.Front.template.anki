@@ -372,7 +372,7 @@
 
     <!-- #WordSourceDefinition -->
     {{#WordSourceDefinition}}
-    <input class="show" id="hd-30" type="checkbox">
+    <input class="hide" id="hd-30" type="checkbox">
     <label for="hd-30">WordSourceDefinition</label>
     <div>
         <span>
@@ -420,7 +420,7 @@
         </span>
         <span>
             {{#WordSourceDefinition}}
-            {{hint:WordSourceDefinition}}
+            {{WordSourceDefinition}}<br><br>
             {{/WordSourceDefinition}}
         </span>
     </div>
@@ -430,7 +430,7 @@
     <!-- Definition Template/ -->
 
     <input class="hide" id="hd-210" type="checkbox">
-    <label for="hd-210">WordSourceMorpheme</label>
+    <label for="hd-210">WordSourceMorphemeDefinition</label>
     <div>
     {{#WordSourceMorphemeFirst}}
     <span>
