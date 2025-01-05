@@ -340,7 +340,7 @@
 
     <span>
         {{#SentenceSource}}
-        {{SentenceSource}}
+        {{SentenceSource}}<br><br>
         {{/SentenceSource}}
     </span>
 </div>

@@ -214,7 +214,7 @@
 {{/WordDestination}}
 
 <!-- #WordDestination -->
-<input class="hide" id="hd-40" type="checkbox">
+<input class="show" id="hd-40" type="checkbox">
 <label for="hd-40">WordDestination</label>
 <div>
     <span>
@@ -268,7 +268,7 @@
 {{/Toggle-Always-Empty-Field}}
 
 <!-- #SentenceDestination -->
-<input class="hide" id="hd-70" type="checkbox">
+<input class="show" id="hd-70" type="checkbox">
 <label for="hd-70">SentenceDestination</label>
 <div>
     <span>
@@ -290,7 +290,7 @@
 
 
 <!-- /Hint Template -->
-<input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
+<input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
     type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
