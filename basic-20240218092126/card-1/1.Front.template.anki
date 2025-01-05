@@ -331,7 +331,7 @@
     <!-- Input Template/ -->
 
     <input class="show" id="hd-160" type="checkbox">
-    <label for="hd-160">Source</label>
+    <label for="hd-160">WordSource</label>
     <div>
     <span>
         {{#WordSourceIPA}}
@@ -356,22 +356,6 @@
         {{hint:SentenceSourceIPA}}<br>
         {{/SentenceSourceIPA}}
     </span>
-
-    {{#WordSource}}
-    <span>
-        {{#SentenceSource}}
-        {{hint:SentenceSource}}<br>
-        {{/SentenceSource}}
-    </span>
-    {{/WordSource}}
-
-    {{^WordSource}}
-    <span>
-        {{#SentenceSource}}
-        {{SentenceSource}}<br><br>
-        {{/SentenceSource}}
-    </span>
-    {{/WordSource}}
 
     <span>
         {{#WordSourceSynonym}}
@@ -601,65 +585,24 @@
     </div>
     <br>
 
-    <input class="show" id="hd-170" type="checkbox">
-    <label for="hd-170">Destination</label>
+    <input class="show" id="hd-270" type="checkbox">
+    <label for="hd-160">SentenceSource</label>
     <div>
+    {{#WordSource}}
     <span>
-        {{#WordDestination}}
-        {{WordDestination}}<br><br>
-        {{/WordDestination}}
+        {{#SentenceSource}}
+        {{hint:SentenceSource}}<br>
+        {{/SentenceSource}}
     </span>
+    {{/WordSource}}
 
-    {{^WordDestination}}
+    {{^WordSource}}
     <span>
-        {{#SentenceDestination}}
-        {{hint:SentenceDestination}}<br>
-        {{/SentenceDestination}}
+        {{#SentenceSource}}
+        {{SentenceSource}}<br><br>
+        {{/SentenceSource}}
     </span>
-    {{/WordDestination}}
-
-    {{#WordDestination}}
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}<br><br>
-        {{/SentenceDestination}}
-    </span>
-    {{/WordDestination}}
-
-    <!-- /Definition Template 2 -->
-    {{#WordDestinationDefinition}}
-    <input class="show" id="hd-110" type="checkbox">
-    <label for="hd-110">WordDestinationDefinition</label>
-    <div>
-        <span>
-            {{#WordDestinationDefinition}}
-            {{hint:WordDestinationDefinition}}
-            {{/WordDestinationDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordDestinationDefinition}}
-    <!-- Definition Template 2/ -->
-
-    </div>
-    <br>
-    
-    <input class="show" id="hd-180" type="checkbox">
-    <label for="hd-180">English</label>
-    <div>
-    <span>
-        {{#WordEnglish}}
-        {{WordEnglish}}<br><br>
-        {{/WordEnglish}}
-    </span>
-
-    <span>
-        {{#SentenceEnglish}}
-        {{SentenceEnglish}}<br><br>
-        {{/SentenceEnglish}}
-    </span>
-    </div>
-    <br>
+    {{/WordSource}}
 
     <!-- #SentenceSourceWordList -->
     {{#SentenceSourceWordList}}
@@ -732,6 +675,67 @@
         {{#SentenceSourceContextRight}}
         {{hint:SentenceSourceContextRight}}
         {{/SentenceSourceContextRight}}
+    </span>
+    </div>
+    <br>
+    </div>
+
+    <input class="show" id="hd-170" type="checkbox">
+    <label for="hd-170">Destination</label>
+    <div>
+    <span>
+        {{#WordDestination}}
+        {{WordDestination}}<br><br>
+        {{/WordDestination}}
+    </span>
+
+    {{^WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{hint:SentenceDestination}}<br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+
+    {{#WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{SentenceDestination}}<br><br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+
+    <!-- /Definition Template 2 -->
+    {{#WordDestinationDefinition}}
+    <input class="show" id="hd-110" type="checkbox">
+    <label for="hd-110">WordDestinationDefinition</label>
+    <div>
+        <span>
+            {{#WordDestinationDefinition}}
+            {{hint:WordDestinationDefinition}}
+            {{/WordDestinationDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordDestinationDefinition}}
+    <!-- Definition Template 2/ -->
+
+    </div>
+    <br>
+    
+    <input class="show" id="hd-180" type="checkbox">
+    <label for="hd-180">English</label>
+    <div>
+    <span>
+        {{#WordEnglish}}
+        {{WordEnglish}}<br><br>
+        {{/WordEnglish}}
+    </span>
+
+    <span>
+        {{#SentenceEnglish}}
+        {{SentenceEnglish}}<br><br>
+        {{/SentenceEnglish}}
     </span>
     </div>
     <br>
