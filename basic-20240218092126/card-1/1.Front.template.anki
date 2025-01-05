@@ -357,12 +357,6 @@
         {{/SentenceSourceIPA}}
     </span>
 
-    <span>
-        {{#WordSourceSynonymAI}}
-        {{hint:WordSourceSynonymAI}}<br>
-        {{/WordSourceSynonymAI}}
-    </span>
-
     <!-- /Definition Template -->
     {{#WordSourceDefinition}}
     <span>
@@ -531,7 +525,7 @@
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
-    <input class="show" id="hd-150" type="checkbox">
+    <input class="hide" id="hd-150" type="checkbox">
     <label for="hd-150">WordSourceDefinitionAI</label>
     <div>
         <span>
@@ -575,13 +569,20 @@
         </span>
         <span>
             {{#WordSourceDefinitionAI}}
-            {{hint:WordSourceDefinitionAI}}
+            {{WordSourceDefinitionAI}}<br><br>
             {{/WordSourceDefinitionAI}}
         </span>
     </div>
     <br>
     {{/WordSourceDefinitionAI}}
     <!-- /WordSourceDefinitionAI -->
+
+    <span>
+        {{#WordSourceSynonymAI}}
+        {{hint:WordSourceSynonymAI}}<br>
+        {{/WordSourceSynonymAI}}
+    </span>
+
     </div>
     <br>
 
