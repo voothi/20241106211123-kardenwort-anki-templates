@@ -399,6 +399,22 @@
         {{/SentenceDestination}}
     </span>
     {{/WordDestination}}
+
+    <!-- /Definition Template 2 -->
+    {{#WordDestinationDefinition}}
+    <input class="show" id="hd-110" type="checkbox">
+    <label for="hd-110">WordDestinationDefinition</label>
+    <div>
+        <span>
+            {{#WordDestinationDefinition}}
+            {{hint:WordDestinationDefinition}}
+            {{/WordDestinationDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordDestinationDefinition}}
+    <!-- Definition Template 2/ -->
+
     </div>
     <br>
     
@@ -478,21 +494,6 @@
     <br>
     {{/SentenceSourceWordList}}
     <!-- /SentenceSourceWordList -->
-
-    <!-- /Definition Template 2 -->
-    {{#WordDestinationDefinition}}
-    <input class="show" id="hd-110" type="checkbox">
-    <label for="hd-110">WordDestinationDefinition</label>
-    <div>
-        <span>
-            {{#WordDestinationDefinition}}
-            {{hint:WordDestinationDefinition}}
-            {{/WordDestinationDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordDestinationDefinition}}
-    <!-- Definition Template 2/ -->
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
