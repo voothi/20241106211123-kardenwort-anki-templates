@@ -522,7 +522,7 @@
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAI}}
-    <input class="hide" id="hd-150" type="checkbox">
+    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
     <label for="hd-150">WordSourceDefinitionAI</label>
     <div>
         <span>
