@@ -124,7 +124,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{^Toggle-Always-Empty-Field}}
+{{^ToggleAlwaysEmptyField}}
 {{^WordSource}}
 {{#SentenceSource}}
 {{#SentenceDestination}}
@@ -160,7 +160,7 @@
 {{/SentenceDestination}}
 {{/SentenceSource}}
 {{/WordSource}}
-{{/Toggle-Always-Empty-Field}}
+{{/ToggleAlwaysEmptyField}}
 
 <!-- #SentenceDestination -->
 <input class="hide" id="hd-70" type="checkbox">
@@ -281,7 +281,7 @@
 <table class="fixed-table">
 <tr>
 <td class="fixed-cell">
-{{#Toggle-Always-Empty-Field}}
+{{#ToggleAlwaysEmptyField}}
 <!-- /Sentence Template -->
 <!-- /Audio#2 Template -->
 {{^WordSource}}
@@ -325,7 +325,7 @@
 </span>
 {{/Source-ru-RU}}
 {{/SentenceSource}}
-{{/Toggle-Always-Empty-Field}}
+{{/ToggleAlwaysEmptyField}}
 
 
 <!-- #SentenceSource -->
