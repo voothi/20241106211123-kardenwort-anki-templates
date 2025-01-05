@@ -671,12 +671,6 @@
     </span>
 
     <span>
-        {{#SentenceEnglish}}
-        {{hint:SentenceEnglish}}<br>
-        {{/SentenceEnglish}}
-    </span>
-
-    <span>
         {{#SentenceUkrainian}}
         {{hint:SentenceUkrainian}}<br>
         {{/SentenceUkrainian}}
