@@ -358,9 +358,9 @@
     </span>
 
     <span>
-        {{#WordSourceSynonym}}
-        {{hint:WordSourceSynonym}}<br>
-        {{/WordSourceSynonym}}
+        {{#WordSourceSynonymAI}}
+        {{hint:WordSourceSynonymAI}}<br>
+        {{/WordSourceSynonymAI}}
     </span>
 
     <!-- /Definition Template -->
