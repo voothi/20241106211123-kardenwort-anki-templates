@@ -586,7 +586,7 @@
     <br>
 
     <input class="show" id="hd-270" type="checkbox">
-    <label for="hd-160">SentenceSource</label>
+    <label for="hd-270">SentenceSource</label>
     <div>
     {{#WordSource}}
     <span>
@@ -604,9 +604,30 @@
     </span>
     {{/WordSource}}
 
+    <input class="hide" id="hd-140" type="checkbox">
+    <label for="hd-140">SentenceSourceContext</label>
+    <div>
+    <span>
+        {{#SentenceSourceContextLeft}}
+        {{hint:SentenceSourceContextLeft}}<br>
+        {{/SentenceSourceContextLeft}}
+    </span>
+    <span>
+        {{#SentenceSource}}
+        {{SentenceSource}}<br><br>
+        {{/SentenceSource}}
+    </span>
+    <span>
+        {{#SentenceSourceContextRight}}
+        {{hint:SentenceSourceContextRight}}<br>
+        {{/SentenceSourceContextRight}}
+    </span>
+    </div>
+    <br>
+    
     <!-- #SentenceSourceWordList -->
     {{#SentenceSourceWordList}}
-    <input class="show" id="hd-260" type="checkbox">
+    <input class="hide" id="hd-260" type="checkbox">
     <label for="hd-260">SentenceSourceWordList</label>
     <div>
         <span>
@@ -650,35 +671,15 @@
         </span>
         <span>
             {{#SentenceSourceWordList}}
-            {{hint:SentenceSourceWordList}}
+            {{hint:SentenceSourceWordList}}<br>
             {{/SentenceSourceWordList}}
         </span>
     </div>
     <br>
     {{/SentenceSourceWordList}}
     <!-- /SentenceSourceWordList -->
-
-    <input class="hide" id="hd-140" type="checkbox">
-    <label for="hd-140">Context</label>
-    <div>
-    <span>
-        {{#SentenceSourceContextLeft}}
-        {{hint:SentenceSourceContextLeft}}<br>
-        {{/SentenceSourceContextLeft}}
-    </span>
-    <span>
-        {{#SentenceSource}}
-        {{SentenceSource}}<br><br>
-        {{/SentenceSource}}
-    </span>
-    <span>
-        {{#SentenceSourceContextRight}}
-        {{hint:SentenceSourceContextRight}}
-        {{/SentenceSourceContextRight}}
-    </span>
     </div>
     <br>
-    </div>
 
     <input class="show" id="hd-170" type="checkbox">
     <label for="hd-170">Destination</label>
