@@ -425,60 +425,6 @@
         {{/WordSourceSynonym}}
     </span>
 
-    <!-- #WordSourceDefinitionAI -->
-    {{#WordSourceDefinitionAI}}
-    <input class="show" id="hd-150" type="checkbox">
-    <label for="hd-150">WordSourceDefinitionAI</label>
-    <div>
-        <span>
-            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#Toggle-Always-Empty-Field}}
-            {{#WordSourceDefinitionAI}}
-            {{#Source-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-en-GB}}
-
-            {{#Source-en-US}}
-            <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-en-US}}
-
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-de-DE}}
-
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionAI}}
-            </span>
-            {{/Source-uk-UA}}
-
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionAI}}
-                <!-- ru_RU voices=gTTS -->
-            </span>
-            {{/Source-ru-RU}}
-            <br>
-            {{/WordSourceDefinitionAI}}
-            {{/Toggle-Always-Empty-Field}}
-        </span>
-        <span>
-            {{#WordSourceDefinitionAI}}
-            {{hint:WordSourceDefinitionAI}}
-            {{/WordSourceDefinitionAI}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceDefinitionAI}}
-    <!-- /WordSourceDefinitionAI -->
-
     <!-- #SentenceSourceWordList -->
     {{#SentenceSourceWordList}}
     <input class="show" id="hd-160" type="checkbox">
@@ -548,6 +494,60 @@
     {{/WordDestinationDefinition}}
     <!-- Definition Template 2/ -->
 
+    <!-- #WordSourceDefinitionAI -->
+    {{#WordSourceDefinitionAI}}
+    <input class="show" id="hd-150" type="checkbox">
+    <label for="hd-150">WordSourceDefinitionAI</label>
+    <div>
+        <span>
+            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+            {{#Toggle-Always-Empty-Field}}
+            {{#WordSourceDefinitionAI}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS:WordSourceDefinitionAI}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS:WordSourceDefinitionAI}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            <br>
+            {{/WordSourceDefinitionAI}}
+            {{/Toggle-Always-Empty-Field}}
+        </span>
+        <span>
+            {{#WordSourceDefinitionAI}}
+            {{hint:WordSourceDefinitionAI}}
+            {{/WordSourceDefinitionAI}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceDefinitionAI}}
+    <!-- /WordSourceDefinitionAI -->
+
     <!-- /Definition Template -->
     {{#WordSourceDefinition}}
     <span>
@@ -613,6 +613,108 @@
     {{/WordSourceDefinition}}
     <!-- /WordSourceDefinition -->
     <!-- Definition Template/ -->
+
+    <input class="hide" id="hd-210" type="checkbox">
+    <label for="hd-210">WordSourceMorpheme</label>
+    <div>
+    {{#WordSourceMorphemeFirst}}
+    <span>
+        {{#WordSourceMorphemeFirst}}
+        {{hint:WordSourceMorphemeFirst}}<br>
+        {{/WordSourceMorphemeFirst}}
+    </span>
+
+    <input class="hide" id="hd-190" type="checkbox">
+    <label for="hd-190">WordSourceMorphemeFirstDefinition</label>
+    <div>
+        <span>
+            {{#WordSourceMorphemeFirstDefinition}}
+            {{hint:WordSourceMorphemeFirstDefinition}}<br>
+            {{/WordSourceMorphemeFirstDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceMorphemeFirst}}
+
+    {{#WordSourceMorphemeSecond}}
+    <span>
+        {{#WordSourceMorphemeSecond}}
+        {{hint:WordSourceMorphemeSecond}}<br>
+        {{/WordSourceMorphemeSecond}}
+    </span>
+
+    <input class="hide" id="hd-220" type="checkbox">
+    <label for="hd-220">WordSourceMorphemeSecondDefinition</label>
+    <div>
+        <span>
+            {{#WordSourceMorphemeSecondDefinition}}
+            {{hint:WordSourceMorphemeSecondDefinition}}<br>
+            {{/WordSourceMorphemeSecondDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceMorphemeSecond}}
+
+    {{#WordSourceMorphemeThird}}
+    <span>
+        {{#WordSourceMorphemeThird}}
+        {{hint:WordSourceMorphemeThird}}<br>
+        {{/WordSourceMorphemeThird}}
+    </span>
+
+    <input class="hide" id="hd-230" type="checkbox">
+    <label for="hd-230">WordSourceMorphemeThirdDefinition</label>
+    <div>
+        <span>
+            {{#WordSourceMorphemeThirdDefinition}}
+            {{hint:WordSourceMorphemeThirdDefinition}}<br>
+            {{/WordSourceMorphemeThirdDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceMorphemeThird}}
+
+    {{#WordSourceMorphemeFourth}}
+    <span>
+        {{#WordSourceMorphemeFourth}}
+        {{hint:WordSourceMorphemeFourth}}<br>
+        {{/WordSourceMorphemeFourth}}
+    </span>
+
+    <input class="hide" id="hd-240" type="checkbox">
+    <label for="hd-240">WordSourceMorphemeFourthDefinition</label>
+    <div>
+        <span>
+            {{#WordSourceMorphemeFourthDefinition}}
+            {{hint:WordSourceMorphemeFourthDefinition}}<br>
+            {{/WordSourceMorphemeFourthDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceMorphemeFourth}}
+
+    {{#WordSourceMorphemeFifth}}
+    <span>
+        {{#WordSourceMorphemeFifth}}
+        {{hint:WordSourceMorphemeFifth}}<br>
+        {{/WordSourceMorphemeFifth}}
+    </span>
+
+    <input class="hide" id="hd-250" type="checkbox">
+    <label for="hd-250">WordSourceMorphemeFifthDefinition</label>
+    <div>
+        <span>
+            {{#WordSourceMorphemeFifthDefinition}}
+            {{hint:WordSourceMorphemeFifthDefinition}}<br>
+            {{/WordSourceMorphemeFifthDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceMorphemeFifth}}
+
+    </div>
+    <br>
+
 
     <input class="hide" id="hd-140" type="checkbox">
     <label for="hd-140">Context</label>
