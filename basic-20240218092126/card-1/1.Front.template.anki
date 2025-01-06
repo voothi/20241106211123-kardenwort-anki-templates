@@ -575,7 +575,7 @@
     <!-- /WordSourceDefinitionAI -->
 
     <!-- #WordSourceDefinitionAI -->
-    {{#WordSourceDefinitionAISentenceSource}}
+    {{#WordSourceDefinitionAISentenceDestination}}
     <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-290" type="checkbox">
     <label for="hd-290">WordSourceDefinitionAISentenceDestination</label>
     <div>
@@ -625,7 +625,7 @@
         </span>
     </div>
     <br>
-    {{/WordSourceDefinitionAISentenceSource}}
+    {{/WordSourceDefinitionAISentenceDestination}}
     <!-- /WordSourceDefinitionAI -->
 
     <span>
