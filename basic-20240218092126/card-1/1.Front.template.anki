@@ -523,7 +523,7 @@
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceSource}}
     <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
-    <label for="hd-150">WordSourceDefinitionAI</label>
+    <label for="hd-150">WordSourceDefinitionAISentenceSource</label>
     <div>
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
@@ -568,6 +568,60 @@
             {{#WordSourceDefinitionAISentenceSource}}
             {{WordSourceDefinitionAISentenceSource}}<br><br>
             {{/WordSourceDefinitionAISentenceSource}}
+        </span>
+    </div>
+    <br>
+    {{/WordSourceDefinitionAISentenceSource}}
+    <!-- /WordSourceDefinitionAI -->
+
+    <!-- #WordSourceDefinitionAI -->
+    {{#WordSourceDefinitionAISentenceSource}}
+    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-290" type="checkbox">
+    <label for="hd-290">WordSourceDefinitionAISentenceDestination</label>
+    <div>
+        <span>
+            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordSourceDefinitionAISentenceDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Destination-ru-RU}}
+            <br>
+            {{/WordSourceDefinitionAISentenceDestination}}
+            {{/ToggleAlwaysEmptyField}}
+        </span>
+        <span>
+            {{#WordSourceDefinitionAISentenceDestination}}
+            {{WordSourceDefinitionAISentenceDestination}}<br><br>
+            {{/WordSourceDefinitionAISentenceDestination}}
         </span>
     </div>
     <br>
