@@ -625,58 +625,58 @@
     <br>
     {{/SentenceSourceContextLeft}}
     
-    <!-- #SentenceSourceWordList -->
-    {{#SentenceSourceWordList}}
+    <!-- #SentenceSourceWordlist -->
+    {{#SentenceSourceWordlist}}
     <input class="hide" id="hd-260" type="checkbox">
-    <label for="hd-260">SentenceSourceWordList</label>
+    <label for="hd-260">SentenceSourceWordlist</label>
     <div>
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
             {{^ToggleAlwaysEmptyField}}
-            {{#SentenceSourceWordList}}
+            {{#SentenceSourceWordlist}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:SentenceSourceWordList}}
+                {{tts en_GB voices=gTTS:SentenceSourceWordlist}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS:SentenceSourceWordList}}
+                {{tts en_US voices=gTTS:SentenceSourceWordlist}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:SentenceSourceWordList}}
+                {{tts de_DE voices=gTTS:SentenceSourceWordlist}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:SentenceSourceWordList}}
+                {{tts uk_UA voices=gTTS:SentenceSourceWordlist}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:SentenceSourceWordList}}
+                {{tts ru_RU voices=gTTS:SentenceSourceWordlist}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
             <br>
-            {{/SentenceSourceWordList}}
+            {{/SentenceSourceWordlist}}
             {{/ToggleAlwaysEmptyField}}
         </span>
         <span>
-            {{#SentenceSourceWordList}}
-            {{SentenceSourceWordList}}<br><br>
-            {{/SentenceSourceWordList}}
+            {{#SentenceSourceWordlist}}
+            {{SentenceSourceWordlist}}<br><br>
+            {{/SentenceSourceWordlist}}
         </span>
     </div>
     <br>
-    {{/SentenceSourceWordList}}
+    {{/SentenceSourceWordlist}}
     <!-- /SentenceSourceWordList -->
     </div>
     <br>
