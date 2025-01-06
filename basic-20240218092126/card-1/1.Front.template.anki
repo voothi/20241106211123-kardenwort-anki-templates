@@ -104,8 +104,8 @@
 {{/WordSource}}
 <!-- Audio#2 template/ -->
 
-{{^WordSource}}
-{{#SentenceDestination}}
+<!-- ^WordSource -->
+<!-- #SentenceDestination -->
 {{#SentenceSource}}
 {{#Source-en-GB}}
 <span>
@@ -138,8 +138,8 @@
 </span>
 {{/Source-ru-RU}}
 {{/SentenceSource}}
-{{/SentenceDestination}}
-{{/WordSource}}
+<!-- /SentenceDestination -->
+<!-- /WordSource -->
 {{/ToggleAlwaysEmptyField}}
 
 <!-- #SentenceSource -->
