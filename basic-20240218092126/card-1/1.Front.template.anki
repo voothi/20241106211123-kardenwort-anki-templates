@@ -521,7 +521,7 @@
     {{/WordSourceMorphemeFirst}}
 
     <!-- #WordSourceDefinitionAI -->
-    {{#WordSourceDefinitionAI}}
+    {{#WordSourceDefinitionAISentenceSource}}
     <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
     <label for="hd-150">WordSourceDefinitionAI</label>
     <div>
@@ -529,49 +529,49 @@
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
             {{^ToggleAlwaysEmptyField}}
-            {{#WordSourceDefinitionAI}}
+            {{#WordSourceDefinitionAISentenceSource}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionAI}}
+                {{tts en_GB voices=gTTS:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionAI}}
+                {{tts en_US voices=gTTS:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionAI}}
+                {{tts de_DE voices=gTTS:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionAI}}
+                {{tts uk_UA voices=gTTS:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionAI}}
+                {{tts ru_RU voices=gTTS:WordSourceDefinitionAISentenceSource}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
             <br>
-            {{/WordSourceDefinitionAI}}
+            {{/WordSourceDefinitionAISentenceSource}}
             {{/ToggleAlwaysEmptyField}}
         </span>
         <span>
-            {{#WordSourceDefinitionAI}}
-            {{WordSourceDefinitionAI}}<br><br>
-            {{/WordSourceDefinitionAI}}
+            {{#WordSourceDefinitionAISentenceSource}}
+            {{WordSourceDefinitionAISentenceSource}}<br><br>
+            {{/WordSourceDefinitionAISentenceSource}}
         </span>
     </div>
     <br>
-    {{/WordSourceDefinitionAI}}
+    {{/WordSourceDefinitionAISentenceSource}}
     <!-- /WordSourceDefinitionAI -->
 
     <span>
