@@ -290,7 +290,7 @@
 
 
 <!-- /Hint Template -->
-<input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
+<input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
     type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
