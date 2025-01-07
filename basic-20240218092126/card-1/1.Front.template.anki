@@ -299,12 +299,12 @@
     </div <hr>
 </label>
 <div>
-    <input class="hide" id="hd-320" type="checkbox">
+    <input class="show" id="hd-320" type="checkbox">
     <label for="hd-320">Source</label>
     <div>
 
     <input class="hide" id="hd-160" type="checkbox">
-    <label for="hd-160">WordSource</label>
+    <label for="hd-160">Word</label>
     <div>
     <!-- /Input Template -->
     {{#WordSource}}
@@ -501,13 +501,17 @@
     <br>
     {{/WordSourceMorphemeFirst}}
 
+    <input class="hide" id="hd-340" type="checkbox">
+    <label for="hd-340">AI</label>
+    <div>
+
     <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-300" type="checkbox">
-    <label for="hd-300">DefinitionAI</label>
+    <label for="hd-300">Definition</label>
     <div>
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceSource}}
-    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
-    <label for="hd-150">SentenceSource</label>
+    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
+    <label for="hd-150">Source</label>
     <div>
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
@@ -560,8 +564,8 @@
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceDestination}}
-    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-290" type="checkbox">
-    <label for="hd-290">SentenceDestination</label>
+    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-290" type="checkbox">
+    <label for="hd-290">Destination</label>
     <div>
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
@@ -615,7 +619,7 @@
     <br>
 
     <input class="hide" id="hd-310" type="checkbox">
-    <label for="hd-310">SynonymAI</label>
+    <label for="hd-310">Synonym</label>
     <div>
     <span>
         {{#WordSourceSynonymAI}}
@@ -626,9 +630,11 @@
     <br>
     </div>
     <br>
+    </div>
+    <br>
 
     <input class="hide" id="hd-270" type="checkbox">
-    <label for="hd-270">SentenceSource</label>
+    <label for="hd-270">Sentence</label>
     <div>
 
     <span>
@@ -750,8 +756,12 @@
     </div>
     <br>
     
+    <input class="show" id="hd-330" type="checkbox">
+    <label for="hd-330">Destination</label>
+    <div>
+
     <input class="hide" id="hd-170" type="checkbox">
-    <label for="hd-170">WordDestination</label>
+    <label for="hd-170">Word</label>
     <div>
     <span>
         {{#WordDestination}}
@@ -777,7 +787,7 @@
     <br>
 
     <input class="hide" id="hd-280" type="checkbox">
-    <label for="hd-280">SentenceDestination</label>
+    <label for="hd-280">Sentence</label>
     <div>
     {{^WordDestination}}
     <span>
@@ -796,7 +806,9 @@
     {{/WordDestination}}
     </div>
     <br>
-    
+    </div>
+    <br>
+
     <input class="hide" id="hd-180" type="checkbox">
     <label for="hd-180">English</label>
     <div>
