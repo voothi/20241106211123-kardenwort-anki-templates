@@ -520,6 +520,9 @@
     <br>
     {{/WordSourceMorphemeFirst}}
 
+    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-300" type="checkbox">
+    <label for="hd-300">WordSourceDefinitionAI</label>
+    <div>
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceSource}}
     <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
@@ -528,7 +531,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionAISentenceSource}}
             {{#Source-en-GB}}
             <span>
@@ -582,7 +585,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionAISentenceDestination}}
             {{#Destination-en-GB}}
             <span>
@@ -627,6 +630,8 @@
     <br>
     {{/WordSourceDefinitionAISentenceDestination}}
     <!-- /WordSourceDefinitionAI -->
+    </div>
+    <br>
 
     <span>
         {{#WordSourceSynonymAI}}
