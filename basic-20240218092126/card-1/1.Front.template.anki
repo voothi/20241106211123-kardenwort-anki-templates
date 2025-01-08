@@ -299,7 +299,59 @@
     </div <hr>
 </label>
 <div>
-    
+    <input class="hide" id="hd-330" type="checkbox">
+    <label for="hd-330">Destination</label>
+    <div>
+
+    <input class="hide" id="hd-170" type="checkbox">
+    <label for="hd-170">Word</label>
+    <div>
+    <span>
+        {{#WordDestination}}
+        {{WordDestination}}<br><br>
+        {{/WordDestination}}
+    </span>
+
+    <!-- /Definition Template 2 -->
+    {{#WordDestinationDefinition}}
+    <input class="hide" id="hd-110" type="checkbox">
+    <label for="hd-110">Definition</label>
+    <div>
+        <span>
+            {{#WordDestinationDefinition}}
+            {{WordDestinationDefinition}}<br><br>
+            {{/WordDestinationDefinition}}
+        </span>
+    </div>
+    <br>
+    {{/WordDestinationDefinition}}
+    <!-- Definition Template 2/ -->
+    </div>
+    <br>
+
+    <input class="show" id="hd-280" type="checkbox">
+    <label for="hd-280">Sentence</label>
+    <div>
+    {{^WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{SentenceDestination}}<br><br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+
+    {{#WordDestination}}
+    <span>
+        {{#SentenceDestination}}
+        {{SentenceDestination}}<br><br>
+        {{/SentenceDestination}}
+    </span>
+    {{/WordDestination}}
+    </div>
+    <br>
+    </div>
+    <br>
+
     <input class="hide" id="hd-350" type="checkbox">
     <label for="hd-350">Ukrainian</label>
     <div>
@@ -841,59 +893,6 @@
     </div>
     <br>
     
-    <input class="hide" id="hd-330" type="checkbox">
-    <label for="hd-330">Destination</label>
-    <div>
-
-    <input class="hide" id="hd-170" type="checkbox">
-    <label for="hd-170">Word</label>
-    <div>
-    <span>
-        {{#WordDestination}}
-        {{WordDestination}}<br><br>
-        {{/WordDestination}}
-    </span>
-
-    <!-- /Definition Template 2 -->
-    {{#WordDestinationDefinition}}
-    <input class="hide" id="hd-110" type="checkbox">
-    <label for="hd-110">Definition</label>
-    <div>
-        <span>
-            {{#WordDestinationDefinition}}
-            {{WordDestinationDefinition}}<br><br>
-            {{/WordDestinationDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordDestinationDefinition}}
-    <!-- Definition Template 2/ -->
-    </div>
-    <br>
-
-    <input class="show" id="hd-280" type="checkbox">
-    <label for="hd-280">Sentence</label>
-    <div>
-    {{^WordDestination}}
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}<br><br>
-        {{/SentenceDestination}}
-    </span>
-    {{/WordDestination}}
-
-    {{#WordDestination}}
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}<br><br>
-        {{/SentenceDestination}}
-    </span>
-    {{/WordDestination}}
-    </div>
-    <br>
-    </div>
-    <br>
-
     <span>
         {{#TextSource}}
         {{hint:TextSource}}<br>
