@@ -45,13 +45,13 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA voices=gTTS:WordSource}}
+    {{tts uk_UA voices=gTTS speed=0.8:WordSource}}
 </span>
 {{/Source-uk-UA}}
 
 {{#Source-ru-RU}}
 <span>
-    {{tts ru_RU voices=gTTS:WordSource}}
+    {{tts ru_RU voices=gTTS speed=0.8:WordSource}}
 </span>
 {{/Source-ru-RU}}
 {{/WordSource}}
@@ -127,13 +127,13 @@
 
 {{#Source-uk-UA}}
 <span>
-    {{tts uk_UA voices=gTTS:SentenceSource}}
+    {{tts uk_UA voices=gTTS speed=0.8:SentenceSource}}
 </span>
 {{/Source-uk-UA}}
 
 {{#Source-ru-RU}}
 <span>
-    {{tts ru_RU voices=gTTS:SentenceSource}}
+    {{tts ru_RU voices=gTTS speed=0.8:SentenceSource}}
     <!-- ru_RU voices=gTTS -->
 </span>
 {{/Source-ru-RU}}
@@ -184,31 +184,31 @@
 {{#WordDestination}}
 {{#Destination-en-GB}}
 <span>
-    {{tts en_GB voices=gTTS:WordDestination}}
+    {{tts en_GB voices=gTTS speed=0.8:WordDestination}}
 </span>
 {{/Destination-en-GB}}
 
 {{#Destination-en-US}}
 <span>
-    {{tts en_US voices=gTTS:WordDestination}}
+    {{tts en_US voices=gTTS speed=0.8:WordDestination}}
 </span>
 {{/Destination-en-US}}
 
 {{#Destination-de-DE}}
 <span>
-    {{tts de_DE voices=gTTS:WordDestination}}
+    {{tts de_DE voices=gTTS speed=0.8:WordDestination}}
 </span>
 {{/Destination-de-DE}}
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA voices=gTTS::WordDestination}}
+    {{tts uk_UA voices=gTTS speed=0.8:WordDestination}}
 </span>
 {{/Destination-uk-UA}}
 
 {{#Destination-ru-RU}}
 <span>
-    {{tts ru_RU voices=gTTS:WordDestination}}
+    {{tts ru_RU voices=gTTS speed=0.8:WordDestination}}
 </span>
 {{/Destination-ru-RU}}
 {{/WordDestination}}
@@ -255,13 +255,13 @@
 
 {{#Destination-uk-UA}}
 <span>
-    {{tts uk_UA voices=gTTS:SentenceDestination}}
+    {{tts uk_UA voices=gTTS speed=0.8:SentenceDestination}}
 </span>
 {{/Destination-uk-UA}}
 
 {{#Destination-ru-RU}}
 <span>
-    {{tts ru_RU voices=gTTS:SentenceDestination}}
+    {{tts ru_RU voices=gTTS speed=0.8:SentenceDestination}}
 </span>
 {{/Destination-ru-RU}}
 {{/SentenceDestination}}
@@ -359,7 +359,7 @@
     {{^ToggleAlwaysEmptyField}}
     {{#WordUkrainian}}
     <span>
-        {{tts uk_UA voices=gTTS:WordUkrainian}}
+        {{tts uk_UA voices=gTTS speed=0.8:WordUkrainian}}
     </span>
     <br>
     {{/WordUkrainian}}
@@ -375,7 +375,7 @@
     {{^ToggleAlwaysEmptyField}}
     {{#SentenceUkrainian}}
     <span>
-        {{tts uk_UA voices=gTTS:SentenceUkrainian}}
+        {{tts uk_UA voices=gTTS speed=0.8:SentenceUkrainian}}
     </span>
     <br>
     {{/SentenceUkrainian}}
@@ -397,7 +397,7 @@
     {{#WordEnglish}}
     <span>
         <!-- tts en_GB voices=gTTS:WordEnglish -->
-        {{tts en_US voices=gTTS:WordEnglish}}
+        {{tts en_US voices=gTTS speed=0.8:WordEnglish}}
     </span>
     <br>
     {{/WordEnglish}}
@@ -414,7 +414,7 @@
     {{#SentenceEnglish}}
     <span>
         <!-- tts en_GB voices=gTTS:WordEnglish -->
-        {{tts en_US voices=gTTS:SentenceEnglish}}
+        {{tts en_US voices=gTTS speed=0.8:SentenceEnglish}}
     </span>
     <br>
     {{/SentenceEnglish}}
@@ -494,31 +494,31 @@
             {{#WordSourceDefinitionClipping}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionClipping}}
+                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionClipping}}
+                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionClipping}}
+                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionClipping}}
+                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionClipping}}
+                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
@@ -709,31 +709,31 @@
             {{#SentenceSourceWordlist}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:SentenceSourceWordlist}}
+                {{tts en_GB voices=gTTS speed=0.8:SentenceSourceWordlist}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS:SentenceSourceWordlist}}
+                {{tts en_US voices=gTTS speed=0.8:SentenceSourceWordlist}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:SentenceSourceWordlist}}
+                {{tts de_DE voices=gTTS speed=0.8:SentenceSourceWordlist}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:SentenceSourceWordlist}}
+                {{tts uk_UA voices=gTTS speed=0.8:SentenceSourceWordlist}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:SentenceSourceWordlist}}
+                {{tts ru_RU voices=gTTS speed=0.8:SentenceSourceWordlist}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
@@ -775,31 +775,31 @@
             {{#WordSourceDefinitionAISentenceSource}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionAISentenceSource}}
+                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionAISentenceSource}}
+                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionAISentenceSource}}
+                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionAISentenceSource}}
+                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionAISentenceSource}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionAISentenceSource}}
+                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionAISentenceSource}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
@@ -829,31 +829,31 @@
             {{#WordSourceDefinitionAISentenceDestination}}
             {{#Destination-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionAISentenceDestination}}
             </span>
             {{/Destination-en-GB}}
 
             {{#Destination-en-US}}
             <span>
-                {{tts en_US voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionAISentenceDestination}}
             </span>
             {{/Destination-en-US}}
 
             {{#Destination-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionAISentenceDestination}}
             </span>
             {{/Destination-de-DE}}
 
             {{#Destination-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionAISentenceDestination}}
             </span>
             {{/Destination-uk-UA}}
 
             {{#Destination-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS:WordSourceDefinitionAISentenceDestination}}
+                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionAISentenceDestination}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Destination-ru-RU}}
