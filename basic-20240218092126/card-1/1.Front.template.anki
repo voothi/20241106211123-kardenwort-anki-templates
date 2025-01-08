@@ -290,7 +290,7 @@
 
 
 <!-- /Hint Template -->
-<input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
+<input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
     type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
@@ -299,7 +299,7 @@
     </div <hr>
 </label>
 <div>
-    <input class="show" id="hd-320" type="checkbox">
+    <input class="hide" id="hd-320" type="checkbox">
     <label for="hd-320">Source</label>
     <div>
 
@@ -756,7 +756,7 @@
     </div>
     <br>
     
-    <input class="show" id="hd-330" type="checkbox">
+    <input class="hide" id="hd-330" type="checkbox">
     <label for="hd-330">Destination</label>
     <div>
 
@@ -792,7 +792,7 @@
     {{^WordDestination}}
     <span>
         {{#SentenceDestination}}
-        {{hint:SentenceDestination}}<br>
+        {{SentenceDestination}}<br><br>
         {{/SentenceDestination}}
     </span>
     {{/WordDestination}}
