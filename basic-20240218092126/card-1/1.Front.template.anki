@@ -587,7 +587,7 @@
     <div>
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceSource}}
-    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
+    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="show" {{/WordDestination}} id="hd-150" type="checkbox">
     <label for="hd-150">Source</label>
     <div>
         <span>
@@ -641,7 +641,7 @@
 
     <!-- #WordSourceDefinitionAI -->
     {{#WordSourceDefinitionAISentenceDestination}}
-    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-290" type="checkbox">
+    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="show" {{/WordDestination}} id="hd-290" type="checkbox">
     <label for="hd-290">Destination</label>
     <div>
         <span>
