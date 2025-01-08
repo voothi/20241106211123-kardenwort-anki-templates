@@ -826,6 +826,23 @@
     </div>
     <br>
 
+    <input class="hide" id="hd-350" type="checkbox">
+    <label for="hd-350">Ukrainian</label>
+    <div>
+    <span>
+        {{#WordUkrainian}}
+        {{WordUkrainian}}<br><br>
+        {{/WordUkrainian}}
+    </span>
+
+    <span>
+        {{#SentenceUkrainian}}
+        {{SentenceUkrainian}}<br><br>
+        {{/SentenceUkrainian}}
+    </span>
+    </div>
+    <br>
+
     <span>
         {{#TextSource}}
         {{hint:TextSource}}<br>
@@ -859,12 +876,6 @@
         {{#SentenceGerman}}
         {{hint:SentenceGerman}}<br>
         {{/SentenceGerman}}
-    </span>
-
-    <span>
-        {{#SentenceUkrainian}}
-        {{hint:SentenceUkrainian}}<br>
-        {{/SentenceUkrainian}}
     </span>
 
     <span>
