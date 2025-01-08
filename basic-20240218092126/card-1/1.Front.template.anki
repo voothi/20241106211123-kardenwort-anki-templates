@@ -397,6 +397,11 @@
     {{/WordSource}}
     <!-- Input Template/ -->
 
+    {{#WordSource}}
+    <!-- br -->
+    <input class="hide" id="hd-360" type="checkbox"><!-- hide | show -->
+    <label for="hd-360">Word</label>
+    <div>
     <span>
         {{#WordSourceIPA}}
         {{WordSourceIPA}}<br><br>
@@ -414,6 +419,9 @@
         {{WordSourceInflectedForm}}<br><br>
         {{/WordSourceInflectedForm}}
     </span>
+    </div>
+    <br>
+    {{/WordSource}}
 
     <!-- /Definition Template -->
     {{#WordSourceDefinition}}
@@ -593,7 +601,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionAISentenceSource}}
             {{#Source-en-GB}}
             <span>
@@ -647,7 +655,7 @@
         <span>
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordSourceDefinitionAISentenceDestination}}
             {{#Destination-en-GB}}
             <span>
