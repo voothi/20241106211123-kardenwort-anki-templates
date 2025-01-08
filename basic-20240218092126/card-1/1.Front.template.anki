@@ -483,7 +483,6 @@
     {{/WordSourceDefinition}}
 
     <!-- #WordSourceDefinition -->
-    {{#WordSourceDefinition}}
     <input class="hide" id="hd-30" type="checkbox">
     <label for="hd-30">Definition</label>
     <div>
@@ -535,108 +534,100 @@
             {{WordSourceDefinition}}<br><br>
             {{/WordSourceDefinition}}
         </span>
+        
+        {{#WordSourceMorphemeFirst}}
+        <input class="hide" id="hd-190" type="checkbox">
+        <label for="hd-190">First</label>
+        <div>
+            <span>
+                {{#WordSourceMorphemeFirst}}
+                {{WordSourceMorphemeFirst}}<br><br>
+                {{/WordSourceMorphemeFirst}}
+            </span>
+            <span>
+                {{#WordSourceMorphemeFirstDefinition}}
+                {{WordSourceMorphemeFirstDefinition}}<br><br>
+                {{/WordSourceMorphemeFirstDefinition}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceMorphemeFirst}}
+
+        {{#WordSourceMorphemeSecond}}
+        <input class="hide" id="hd-220" type="checkbox">
+        <label for="hd-220">Second</label>
+        <div>
+            <span>
+                {{#WordSourceMorphemeSecond}}
+                {{WordSourceMorphemeSecond}}<br><br>
+                {{/WordSourceMorphemeSecond}}
+            </span>
+            <span>
+                {{#WordSourceMorphemeSecondDefinition}}
+                {{WordSourceMorphemeSecondDefinition}}<br><br>
+                {{/WordSourceMorphemeSecondDefinition}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceMorphemeSecond}}
+
+        {{#WordSourceMorphemeThird}}
+        <input class="hide" id="hd-230" type="checkbox">
+        <label for="hd-230">Third</label>
+        <div>
+            <span>
+                {{#WordSourceMorphemeThird}}
+                {{WordSourceMorphemeThird}}<br><br>
+                {{/WordSourceMorphemeThird}}
+            </span>
+            <span>
+                {{#WordSourceMorphemeThirdDefinition}}
+                {{WordSourceMorphemeThirdDefinition}}<br><br>
+                {{/WordSourceMorphemeThirdDefinition}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceMorphemeThird}}
+
+        {{#WordSourceMorphemeFourth}}
+        <input class="hide" id="hd-240" type="checkbox">
+        <label for="hd-240">Fourth</label>
+        <div>
+            <span>
+                {{#WordSourceMorphemeFourth}}
+                {{WordSourceMorphemeFourth}}<br><br>
+                {{/WordSourceMorphemeFourth}}
+            </span>
+            <span>
+                {{#WordSourceMorphemeFourthDefinition}}
+                {{WordSourceMorphemeFourthDefinition}}<br><br>
+                {{/WordSourceMorphemeFourthDefinition}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceMorphemeFourth}}
+
+        {{#WordSourceMorphemeFifth}}
+        <input class="hide" id="hd-250" type="checkbox">
+        <label for="hd-250">Fifth</label>
+        <div>
+            <span>
+                {{#WordSourceMorphemeFifth}}
+                {{WordSourceMorphemeFifth}}<br><br>
+                {{/WordSourceMorphemeFifth}}
+            </span>
+            <span>
+                {{#WordSourceMorphemeFifthDefinition}}
+                {{WordSourceMorphemeFifthDefinition}}<br><br>
+                {{/WordSourceMorphemeFifthDefinition}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceMorphemeFifth}}
     </div>
     <br>
-    {{/WordSourceDefinition}}
     <!-- /WordSourceDefinition -->
     <!-- Definition Template/ -->
-
-    {{#WordSourceMorphemeFirst}}
-    <input class="hide" id="hd-210" type="checkbox">
-    <label for="hd-210">Morpheme</label>
-    <div>
-    {{#WordSourceMorphemeFirst}}
-    <input class="hide" id="hd-190" type="checkbox">
-    <label for="hd-190">First</label>
-    <div>
-        <span>
-            {{#WordSourceMorphemeFirst}}
-            {{WordSourceMorphemeFirst}}<br><br>
-            {{/WordSourceMorphemeFirst}}
-        </span>
-        <span>
-            {{#WordSourceMorphemeFirstDefinition}}
-            {{WordSourceMorphemeFirstDefinition}}<br><br>
-            {{/WordSourceMorphemeFirstDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceMorphemeFirst}}
-
-    {{#WordSourceMorphemeSecond}}
-    <input class="hide" id="hd-220" type="checkbox">
-    <label for="hd-220">Second</label>
-    <div>
-        <span>
-            {{#WordSourceMorphemeSecond}}
-            {{WordSourceMorphemeSecond}}<br><br>
-            {{/WordSourceMorphemeSecond}}
-        </span>
-        <span>
-            {{#WordSourceMorphemeSecondDefinition}}
-            {{WordSourceMorphemeSecondDefinition}}<br><br>
-            {{/WordSourceMorphemeSecondDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceMorphemeSecond}}
-
-    {{#WordSourceMorphemeThird}}
-    <input class="hide" id="hd-230" type="checkbox">
-    <label for="hd-230">Third</label>
-    <div>
-        <span>
-            {{#WordSourceMorphemeThird}}
-            {{WordSourceMorphemeThird}}<br><br>
-            {{/WordSourceMorphemeThird}}
-        </span>
-        <span>
-            {{#WordSourceMorphemeThirdDefinition}}
-            {{WordSourceMorphemeThirdDefinition}}<br><br>
-            {{/WordSourceMorphemeThirdDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceMorphemeThird}}
-
-    {{#WordSourceMorphemeFourth}}
-    <input class="hide" id="hd-240" type="checkbox">
-    <label for="hd-240">Fourth</label>
-    <div>
-        <span>
-            {{#WordSourceMorphemeFourth}}
-            {{WordSourceMorphemeFourth}}<br><br>
-            {{/WordSourceMorphemeFourth}}
-        </span>
-        <span>
-            {{#WordSourceMorphemeFourthDefinition}}
-            {{WordSourceMorphemeFourthDefinition}}<br><br>
-            {{/WordSourceMorphemeFourthDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceMorphemeFourth}}
-
-    {{#WordSourceMorphemeFifth}}
-    <input class="hide" id="hd-250" type="checkbox">
-    <label for="hd-250">Fifth</label>
-    <div>
-        <span>
-            {{#WordSourceMorphemeFifth}}
-            {{WordSourceMorphemeFifth}}<br><br>
-            {{/WordSourceMorphemeFifth}}
-        </span>
-        <span>
-            {{#WordSourceMorphemeFifthDefinition}}
-            {{WordSourceMorphemeFifthDefinition}}<br><br>
-            {{/WordSourceMorphemeFifthDefinition}}
-        </span>
-    </div>
-    <br>
-    {{/WordSourceMorphemeFifth}}
-    </div>
-    <br>
-    {{/WordSourceMorphemeFirst}}
 
     <input class="hide" id="hd-340" type="checkbox">
     <label for="hd-340">AI</label>
