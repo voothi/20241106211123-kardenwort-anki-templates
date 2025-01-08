@@ -765,7 +765,7 @@
     <!-- #WordSourceDefinitionAI -->
 
     {{#WordSourceDefinitionAISentenceSource}}
-    <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="show" {{/WordDestination}} id="hd-150" type="checkbox">
+    <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-150" type="checkbox">
     <label for="hd-150">Source</label>
     <div>
         <span>
