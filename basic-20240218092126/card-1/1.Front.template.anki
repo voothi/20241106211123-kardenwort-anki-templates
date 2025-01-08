@@ -812,11 +812,33 @@
     <input class="hide" id="hd-180" type="checkbox">
     <label for="hd-180">English</label>
     <div>
+    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+    {{^ToggleAlwaysEmptyField}}
+    {{#WordEnglish}}
+    <span>
+        <!-- tts en_GB voices=gTTS:WordEnglish -->
+        {{tts en_US voices=gTTS:WordEnglish}}
+    </span>
+    <br>
+    {{/WordEnglish}}
+    {{/ToggleAlwaysEmptyField}}
+  
     <span>
         {{#WordEnglish}}
         {{WordEnglish}}<br><br>
         {{/WordEnglish}}
     </span>
+
+    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+    {{^ToggleAlwaysEmptyField}}
+    {{#SentenceEnglish}}
+    <span>
+        <!-- tts en_GB voices=gTTS:WordEnglish -->
+        {{tts en_US voices=gTTS:SentenceEnglish}}
+    </span>
+    <br>
+    {{/SentenceEnglish}}
+    {{/ToggleAlwaysEmptyField}}
 
     <span>
         {{#SentenceEnglish}}
@@ -829,11 +851,31 @@
     <input class="hide" id="hd-350" type="checkbox">
     <label for="hd-350">Ukrainian</label>
     <div>
+    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+    {{^ToggleAlwaysEmptyField}}
+    {{#WordUkrainian}}
+    <span>
+        {{tts uk_UA voices=gTTS:WordUkrainian}}
+    </span>
+    <br>
+    {{/WordUkrainian}}
+    {{/ToggleAlwaysEmptyField}}
+    
     <span>
         {{#WordUkrainian}}
         {{WordUkrainian}}<br><br>
         {{/WordUkrainian}}
     </span>
+    
+    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+    {{^ToggleAlwaysEmptyField}}
+    {{#SentenceUkrainian}}
+    <span>
+        {{tts uk_UA voices=gTTS:SentenceUkrainian}}
+    </span>
+    <br>
+    {{/SentenceUkrainian}}
+    {{/ToggleAlwaysEmptyField}}
 
     <span>
         {{#SentenceUkrainian}}
