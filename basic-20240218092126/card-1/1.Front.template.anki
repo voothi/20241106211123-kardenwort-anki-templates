@@ -633,7 +633,7 @@
     </div>
     <br>
 
-    <input class="hide" id="hd-270" type="checkbox">
+    <input class="show" id="hd-270" type="checkbox">
     <label for="hd-270">Sentence</label>
     <div>
 
@@ -786,7 +786,7 @@
     </div>
     <br>
 
-    <input class="hide" id="hd-280" type="checkbox">
+    <input class="show" id="hd-280" type="checkbox">
     <label for="hd-280">Sentence</label>
     <div>
     {{^WordDestination}}
