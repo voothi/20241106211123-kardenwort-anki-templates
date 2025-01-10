@@ -632,6 +632,7 @@
     </div>
     <br>
 
+    {{#SentenceSource}}
     <input class="show" id="hd-270" type="checkbox">
     <label for="hd-270">Sentence</label>
     <div>
@@ -752,6 +753,7 @@
     <!-- /SentenceSourceWordList -->
     </div>
     <br>
+    {{/SentenceSource}}
     </div>
     <br>
     
