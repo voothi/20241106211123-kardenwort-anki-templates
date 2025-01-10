@@ -314,7 +314,7 @@
             <!-- /Definition Template 2 -->
             {{#WordDestinationDefinitionFirst}}
             <input class="hide" id="hd-110" type="checkbox">
-            <label for="hd-110">Definition</label>
+            <label for="hd-110">DefinitionFirst</label>
             <div>
                 <span>
                     {{#WordDestinationDefinitionFirst}}
@@ -325,6 +325,19 @@
             <br>
             {{/WordDestinationDefinitionFirst}}
             <!-- Definition Template 2/ -->
+
+            {{#WordDestinationDefinitionSecond}}
+            <input class="hide" id="hd-390" type="checkbox">
+            <label for="hd-390">DefinitionSecond</label>
+            <div>
+                <span>
+                    {{#WordDestinationDefinitionSecond}}
+                    {{WordDestinationDefinitionSecond}}<br><br>
+                    {{/WordDestinationDefinitionSecond}}
+                </span>
+            </div>
+            <br>
+            {{/WordDestinationDefinitionSecond}}
         </div>
         <br>
 
