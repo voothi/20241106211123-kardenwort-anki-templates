@@ -329,6 +329,7 @@
     </div>
     <br>
 
+    {{#SentenceDestination}}
     <input class="show" id="hd-280" type="checkbox">
     <label for="hd-280">Sentence</label>
     <div>
@@ -349,6 +350,7 @@
     {{/WordDestination}}
     </div>
     <br>
+    {{/SentenceDestination}}
     </div>
     <br>
 
