@@ -69,52 +69,52 @@
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
 <table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-{{#WordDestination}}
-{{#Destination-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS speed=0.8:WordDestination}}
-</span>
-{{/Destination-en-GB}}
+    <tr>
+        <td class="fixed-cell">
+            {{#WordDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=0.8:WordDestination}}
+            </span>
+            {{/Destination-en-GB}}
 
-{{#Destination-en-US}}
-<span>
-    {{tts en_US voices=gTTS speed=0.8:WordDestination}}
-</span>
-{{/Destination-en-US}}
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=0.8:WordDestination}}
+            </span>
+            {{/Destination-en-US}}
 
-{{#Destination-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS speed=0.8:WordDestination}}
-</span>
-{{/Destination-de-DE}}
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=0.8:WordDestination}}
+            </span>
+            {{/Destination-de-DE}}
 
-{{#Destination-uk-UA}}
-<span>
-    {{tts uk_UA voices=gTTS speed=0.8:WordDestination}}
-</span>
-{{/Destination-uk-UA}}
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=0.8:WordDestination}}
+            </span>
+            {{/Destination-uk-UA}}
 
-{{#Destination-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS speed=0.8:WordDestination}}
-</span>
-{{/Destination-ru-RU}}
-{{/WordDestination}}
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=0.8:WordDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/WordDestination}}
 
-<!-- #WordDestination -->
-<input class="hide" id="hd-40" type="checkbox">
-<label for="hd-40">WordDestination</label>
-<div>
-    <span>
-        {{#WordDestination}}
-        {{WordDestination}}
-        {{/WordDestination}}
-    </span>
-</div>
-</td>
-</tr>
+            <!-- #WordDestination -->
+            <input class="hide" id="hd-40" type="checkbox">
+            <label for="hd-40">WordDestination</label>
+            <div>
+                <span>
+                    {{#WordDestination}}
+                    {{WordDestination}}
+                    {{/WordDestination}}
+                </span>
+            </div>
+        </td>
+    </tr>
 </table>
 <!-- /WordDestination -->
 <!-- Definition#2 Template/ -->
@@ -122,58 +122,58 @@
 <!-- /Russian Template -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 <table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-{{^ToggleAlwaysEmptyField}}
-{{^WordSource}}
-{{#SentenceSource}}
-{{#SentenceDestination}}
-{{#Destination-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-en-GB}}
+    <tr>
+        <td class="fixed-cell">
+            {{^ToggleAlwaysEmptyField}}
+            {{^WordSource}}
+            {{#SentenceSource}}
+            {{#SentenceDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=0.8:SentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
 
-{{#Destination-en-US}}
-<span>
-    {{tts en_US voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-en-US}}
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=0.8:SentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
 
-{{#Destination-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-de-DE}}
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=0.8:SentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
 
-{{#Destination-uk-UA}}
-<span>
-    {{tts uk_UA voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-uk-UA}}
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=0.8:SentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
 
-{{#Destination-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS speed=0.8:SentenceDestination}}
-</span>
-{{/Destination-ru-RU}}
-{{/SentenceDestination}}
-{{/SentenceSource}}
-{{/WordSource}}
-{{/ToggleAlwaysEmptyField}}
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=0.8:SentenceDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceDestination}}
+            {{/SentenceSource}}
+            {{/WordSource}}
+            {{/ToggleAlwaysEmptyField}}
 
-<!-- #SentenceDestination -->
-<input class="hide" id="hd-70" type="checkbox">
-<label for="hd-70">SentenceDestination</label>
-<div>
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}
-        {{/SentenceDestination}}
-    </span>
-</div>
-</td>
-</tr>
+            <!-- #SentenceDestination -->
+            <input class="hide" id="hd-70" type="checkbox">
+            <label for="hd-70">SentenceDestination</label>
+            <div>
+                <span>
+                    {{#SentenceDestination}}
+                    {{SentenceDestination}}
+                    {{/SentenceDestination}}
+                </span>
+            </div>
+        </td>
+    </tr>
 </table>
 <!-- /SentenceDestination -->
 <!-- Russian Template/ -->
@@ -190,88 +190,88 @@
 <!-- /L2 Template -->
 <!-- /Word Template -->
 <table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-<!-- /Audio Template -->
-<span>
-    {{#WordSourceAudio}}
-    {{WordSourceAudio}}
-    {{/WordSourceAudio}}
-</span>
-<!-- Audio template/ -->
+    <tr>
+        <td class="fixed-cell">
+            <!-- /Audio Template -->
+            <span>
+                {{#WordSourceAudio}}
+                {{WordSourceAudio}}
+                {{/WordSourceAudio}}
+            </span>
+            <!-- Audio template/ -->
 
-{{#WordSource}}
-{{#Source-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS speed=0.8:WordSource}}
-    <!-- en_GB voices=Microsoft_Susan -->
-    <!-- en_US voices=gTTS -->
-    <!-- en_US voices=Microsoft_Zira -->
-    <!-- en_US voices=gTTS -->
-    <!-- de_DE voices=Microsoft_Stefan -->
-    <!-- de_DE voices=gTTS -->
-    <!-- tts uk_UA -->
-    <!-- tts uk_UA voices=gTTS -->
-    <!-- ru_RU voices=Microsoft_Irina -->
-    <!-- ru_RU voices=gTTS -->
-</span>
-{{/Source-en-GB}}
+            {{#WordSource}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=0.8:WordSource}}
+                <!-- en_GB voices=Microsoft_Susan -->
+                <!-- en_US voices=gTTS -->
+                <!-- en_US voices=Microsoft_Zira -->
+                <!-- en_US voices=gTTS -->
+                <!-- de_DE voices=Microsoft_Stefan -->
+                <!-- de_DE voices=gTTS -->
+                <!-- tts uk_UA -->
+                <!-- tts uk_UA voices=gTTS -->
+                <!-- ru_RU voices=Microsoft_Irina -->
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-en-GB}}
 
-{{#Source-en-US}}
-<span>
-    {{tts en_US voices=gTTS speed=0.8:WordSource}}
-</span>
-{{/Source-en-US}}
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=0.8:WordSource}}
+            </span>
+            {{/Source-en-US}}
 
-{{#Source-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS speed=0.8:WordSource}}
-</span>
-{{/Source-de-DE}}
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=0.8:WordSource}}
+            </span>
+            {{/Source-de-DE}}
 
-{{#Source-uk-UA}}
-<span>
-    {{tts uk_UA voices=gTTS speed=0.8:WordSource}}
-</span>
-{{/Source-uk-UA}}
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=0.8:WordSource}}
+            </span>
+            {{/Source-uk-UA}}
 
-{{#Source-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS speed=0.8:WordSource}}
-</span>
-{{/Source-ru-RU}}
-{{/WordSource}}
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=0.8:WordSource}}
+            </span>
+            {{/Source-ru-RU}}
+            {{/WordSource}}
 
-<!-- #WordSource -->
-<input class="hide" id="hd-20" type="checkbox">
-<label for="hd-20">WordSource</label>
-<div>
-    <span>
-        {{#WordSourceIPA}}
-        {{WordSourceIPA}}<br><br>
-        {{/WordSourceIPA}}
-    </span>
+            <!-- #WordSource -->
+            <input class="hide" id="hd-20" type="checkbox">
+            <label for="hd-20">WordSource</label>
+            <div>
+                <span>
+                    {{#WordSourceIPA}}
+                    {{WordSourceIPA}}<br><br>
+                    {{/WordSourceIPA}}
+                </span>
 
-    <span>
-        {{#WordSource}}
-        {{WordSource}}<br>
-        {{/WordSource}}
-    </span>
+                <span>
+                    {{#WordSource}}
+                    {{WordSource}}<br>
+                    {{/WordSource}}
+                </span>
 
-    <span>
-        {{#WordSourceInflectedForm}}
-        → <br>
-        {{/WordSourceInflectedForm}}
-    </span>
+                <span>
+                    {{#WordSourceInflectedForm}}
+                    → <br>
+                    {{/WordSourceInflectedForm}}
+                </span>
 
-    <span>
-        {{#WordSourceInflectedForm}}
-        {{WordSourceInflectedForm}}
-        {{/WordSourceInflectedForm}}
-    </span>
-</div>
-</td>
-</tr>
+                <span>
+                    {{#WordSourceInflectedForm}}
+                    {{WordSourceInflectedForm}}
+                    {{/WordSourceInflectedForm}}
+                </span>
+            </div>
+        </td>
+    </tr>
 </table>
 <!-- /WordSource -->
 <!-- Word Template/ -->
@@ -279,73 +279,73 @@
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 <table class="fixed-table">
-<tr>
-<td class="fixed-cell">
-{{^ToggleAlwaysEmptyField}}
-<!-- /Sentence Template -->
-<!-- /Audio#2 Template -->
-{{^WordSource}}
-<span>
-    {{#SentenceSourceAudio}}
-    {{SentenceSourceAudio}}
-    {{/SentenceSourceAudio}}
-</span>
-{{/WordSource}}
-<!-- Audio#2 template/ -->
+    <tr>
+        <td class="fixed-cell">
+            {{^ToggleAlwaysEmptyField}}
+            <!-- /Sentence Template -->
+            <!-- /Audio#2 Template -->
+            {{^WordSource}}
+            <span>
+                {{#SentenceSourceAudio}}
+                {{SentenceSourceAudio}}
+                {{/SentenceSourceAudio}}
+            </span>
+            {{/WordSource}}
+            <!-- Audio#2 template/ -->
 
-{{#SentenceSource}}
-{{#Source-en-GB}}
-<span>
-    {{tts en_GB voices=gTTS speed=0.8:SentenceSource}}
-</span>
-{{/Source-en-GB}}
+            {{#SentenceSource}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=0.8:SentenceSource}}
+            </span>
+            {{/Source-en-GB}}
 
-{{#Source-en-US}}
-<span>
-    {{tts en_US voices=gTTS speed=0.8:SentenceSource}}
-</span>
-{{/Source-en-US}}
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=0.8:SentenceSource}}
+            </span>
+            {{/Source-en-US}}
 
-{{#Source-de-DE}}
-<span>
-    {{tts de_DE voices=gTTS speed=0.8:SentenceSource}}
-</span>
-{{/Source-de-DE}}
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=0.8:SentenceSource}}
+            </span>
+            {{/Source-de-DE}}
 
-{{#Source-uk-UA}}
-<span>
-    {{tts uk_UA voices=gTTS speed=0.8:SentenceSource}}
-</span>
-{{/Source-uk-UA}}
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=0.8:SentenceSource}}
+            </span>
+            {{/Source-uk-UA}}
 
-{{#Source-ru-RU}}
-<span>
-    {{tts ru_RU voices=gTTS speed=0.8:SentenceSource}}
-    <!-- ru_RU voices=gTTS -->
-</span>
-{{/Source-ru-RU}}
-{{/SentenceSource}}
-{{/ToggleAlwaysEmptyField}}
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=0.8:SentenceSource}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            {{/SentenceSource}}
+            {{/ToggleAlwaysEmptyField}}
 
 
-<!-- #SentenceSource -->
-<input class="hide" id="hd-10" type="checkbox">
-<label for="hd-10">SentenceSource</label>
-<div>
-    <span>
-        {{#SentenceSourceIPA}}
-        {{SentenceSourceIPA}}<br><br>
-        {{/SentenceSourceIPA}}
-    </span>
+            <!-- #SentenceSource -->
+            <input class="hide" id="hd-10" type="checkbox">
+            <label for="hd-10">SentenceSource</label>
+            <div>
+                <span>
+                    {{#SentenceSourceIPA}}
+                    {{SentenceSourceIPA}}<br><br>
+                    {{/SentenceSourceIPA}}
+                </span>
 
-    <span>
-        {{#SentenceSource}}
-        {{SentenceSource}}<br><br>
-        {{/SentenceSource}}
-    </span>
-</div>
-</td>
-</tr>
+                <span>
+                    {{#SentenceSource}}
+                    {{SentenceSource}}<br><br>
+                    {{/SentenceSource}}
+                </span>
+            </div>
+        </td>
+    </tr>
 </table>
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
