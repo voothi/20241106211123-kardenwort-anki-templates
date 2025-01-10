@@ -39,15 +39,15 @@
 </span>
 {{/SentenceDestination}}
 
-{{#WordDestinationDefinition}}
+{{#WordDestinationDefinitionFirst}}
 <span class="field-hide">
     <span>
-        {{#WordDestinationDefinition}}
-        • {{WordDestinationDefinition}}<br>
-        {{/WordDestinationDefinition}}
+        {{#WordDestinationDefinitionFirst}}
+        • {{WordDestinationDefinitionFirst}}<br>
+        {{/WordDestinationDefinitionFirst}}
     </span>
 </span>
-{{/WordDestinationDefinition}}
+{{/WordDestinationDefinitionFirst}}
 <!-- Feature for Browse Mode on AnkiDroid/ -->
 
 <!-- /FrontSide Template -->
