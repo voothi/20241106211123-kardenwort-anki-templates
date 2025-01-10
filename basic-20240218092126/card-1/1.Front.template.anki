@@ -302,7 +302,6 @@
     <input class="hide" id="hd-330" type="checkbox">
     <label for="hd-330">Destination</label>
     <div>
-
         <input class="hide" id="hd-170" type="checkbox">
         <label for="hd-170">Word</label>
         <div>
@@ -897,7 +896,7 @@
                     {{/WordSourceDefinitionAISentenceDestination}}
                     {{/ToggleAlwaysEmptyField}}
                 </span>
-                
+
                 <span>
                     {{#WordSourceDefinitionAISentenceDestination}}
                     {{WordSourceDefinitionAISentenceDestination}}<br><br>
