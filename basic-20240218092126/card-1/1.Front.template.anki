@@ -488,55 +488,61 @@
     <input class="hide" id="hd-30" type="checkbox">
     <label for="hd-30">Definition</label>
     <div>
-        <span>
-            {{#WordSourceDefinitionFirstClipping}}
-            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordSourceDefinitionFirstClipping}}
-            {{#Source-en-GB}}
+        {{#WordSourceDefinitionFirst}}
+        <input class="hide" id="hd-370" type="checkbox">
+        <label for="hd-370">DefinitionFirst</label>
+        <div>
             <span>
-                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
-            </span>
-            {{/Source-en-GB}}
+                {{#WordSourceDefinitionFirstClipping}}
+                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+                {{^ToggleAlwaysEmptyField}}
+                {{#WordSourceDefinitionFirstClipping}}
+                {{#Source-en-GB}}
+                <span>
+                    {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                </span>
+                {{/Source-en-GB}}
 
-            {{#Source-en-US}}
+                {{#Source-en-US}}
+                <span>
+                    {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                </span>
+                {{/Source-en-US}}
+
+                {{#Source-de-DE}}
+                <span>
+                    {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                </span>
+                {{/Source-de-DE}}
+
+                {{#Source-uk-UA}}
+                <span>
+                    {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                </span>
+                {{/Source-uk-UA}}
+
+                {{#Source-ru-RU}}
+                <span>
+                    {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                    <!-- ru_RU voices=gTTS -->
+                </span>
+                {{/Source-ru-RU}}
+                <br>
+                {{/WordSourceDefinitionFirstClipping}}
+                {{/ToggleAlwaysEmptyField}}
+
+                {{WordSourceDefinitionFirstClipping}}<br><br>
+                {{/WordSourceDefinitionFirstClipping}}
+            </span>
             <span>
-                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
+                {{#WordSourceDefinitionFirst}}
+                {{WordSourceDefinitionFirst}}<br><br>
+                {{/WordSourceDefinitionFirst}}
             </span>
-            {{/Source-en-US}}
+        </div>
+        {{/WordSourceDefinitionFirst}}
 
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
-            </span>
-            {{/Source-de-DE}}
-
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
-            </span>
-            {{/Source-uk-UA}}
-
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
-                <!-- ru_RU voices=gTTS -->
-            </span>
-            {{/Source-ru-RU}}
-            <br>
-            {{/WordSourceDefinitionFirstClipping}}
-            {{/ToggleAlwaysEmptyField}}
-
-            {{WordSourceDefinitionFirstClipping}}<br><br>
-            {{/WordSourceDefinitionFirstClipping}}
-        </span>
-        <span>
-            {{#WordSourceDefinitionFirst}}
-            {{WordSourceDefinitionFirst}}<br><br>
-            {{/WordSourceDefinitionFirst}}
-        </span>
-        
         {{#WordSourceMorphemeFirst}}
         <input class="hide" id="hd-190" type="checkbox">
         <label for="hd-190">MorphemeFirst</label>
