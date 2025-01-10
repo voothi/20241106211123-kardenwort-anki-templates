@@ -313,18 +313,18 @@
     </span>
 
     <!-- /Definition Template 2 -->
-    {{#WordDestinationDefinition}}
+    {{#WordDestinationDefinitionFirst}}
     <input class="hide" id="hd-110" type="checkbox">
     <label for="hd-110">Definition</label>
     <div>
         <span>
-            {{#WordDestinationDefinition}}
-            {{WordDestinationDefinition}}<br><br>
-            {{/WordDestinationDefinition}}
+            {{#WordDestinationDefinitionFirst}}
+            {{WordDestinationDefinitionFirst}}<br><br>
+            {{/WordDestinationDefinitionFirst}}
         </span>
     </div>
     <br>
-    {{/WordDestinationDefinition}}
+    {{/WordDestinationDefinitionFirst}}
     <!-- Definition Template 2/ -->
     </div>
     <br>
@@ -478,63 +478,63 @@
     {{/WordSource}}
 
     <!-- /Definition Template -->
-    {{#WordSourceDefinition}}
+    {{#WordSourceDefinitionFirst}}
     <span>
         <!-- tts de_DE voices=Microsoft_Stefan:WordSourceDefinitionClipping -->
     </span>
-    {{/WordSourceDefinition}}
+    {{/WordSourceDefinitionFirst}}
 
     <!-- #WordSourceDefinition -->
     <input class="hide" id="hd-30" type="checkbox">
     <label for="hd-30">Definition</label>
     <div>
         <span>
-            {{#WordSourceDefinitionClipping}}
+            {{#WordSourceDefinitionFirstClipping}}
             <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
             <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
             {{^ToggleAlwaysEmptyField}}
-            {{#WordSourceDefinitionClipping}}
+            {{#WordSourceDefinitionFirstClipping}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
+                {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
+                {{tts en_US voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
+                {{tts de_DE voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
+                {{tts uk_UA voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionClipping}}
+                {{tts ru_RU voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
             <br>
-            {{/WordSourceDefinitionClipping}}
+            {{/WordSourceDefinitionFirstClipping}}
             {{/ToggleAlwaysEmptyField}}
 
-            {{WordSourceDefinitionClipping}}<br><br>
-            {{/WordSourceDefinitionClipping}}
+            {{WordSourceDefinitionFirstClipping}}<br><br>
+            {{/WordSourceDefinitionFirstClipping}}
         </span>
         <span>
-            {{#WordSourceDefinition}}
-            {{WordSourceDefinition}}<br><br>
-            {{/WordSourceDefinition}}
+            {{#WordSourceDefinitionFirst}}
+            {{WordSourceDefinitionFirst}}<br><br>
+            {{/WordSourceDefinitionFirst}}
         </span>
         
         {{#WordSourceMorphemeFirst}}
