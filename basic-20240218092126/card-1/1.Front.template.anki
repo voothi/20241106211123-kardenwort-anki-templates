@@ -541,7 +541,21 @@
                 {{/WordSourceDefinitionFirst}}
             </span>
         </div>
+        <br>
         {{/WordSourceDefinitionFirst}}
+
+        {{#WordSourceDefinitionSecond}}
+        <input class="hide" id="hd-380" type="checkbox">
+        <label for="hd-380">DefinitionSecond</label>
+        <div>
+            <span>
+                {{#WordSourceDefinitionSecond}}
+                {{WordSourceDefinitionSecond}}<br><br>
+                {{/WordSourceDefinitionSecond}}
+            </span>
+        </div>
+        <br>
+        {{/WordSourceDefinitionSecond}}
 
         {{#WordSourceMorphemeFirst}}
         <input class="hide" id="hd-190" type="checkbox">
