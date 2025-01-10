@@ -539,7 +539,7 @@
         
         {{#WordSourceMorphemeFirst}}
         <input class="hide" id="hd-190" type="checkbox">
-        <label for="hd-190">First</label>
+        <label for="hd-190">MorphemeFirst</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFirst}}
@@ -557,7 +557,7 @@
 
         {{#WordSourceMorphemeSecond}}
         <input class="hide" id="hd-220" type="checkbox">
-        <label for="hd-220">Second</label>
+        <label for="hd-220">MorphemeSecond</label>
         <div>
             <span>
                 {{#WordSourceMorphemeSecond}}
@@ -575,7 +575,7 @@
 
         {{#WordSourceMorphemeThird}}
         <input class="hide" id="hd-230" type="checkbox">
-        <label for="hd-230">Third</label>
+        <label for="hd-230">MorphemeThird</label>
         <div>
             <span>
                 {{#WordSourceMorphemeThird}}
@@ -593,7 +593,7 @@
 
         {{#WordSourceMorphemeFourth}}
         <input class="hide" id="hd-240" type="checkbox">
-        <label for="hd-240">Fourth</label>
+        <label for="hd-240">MorphemeFourth</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFourth}}
@@ -611,7 +611,7 @@
 
         {{#WordSourceMorphemeFifth}}
         <input class="hide" id="hd-250" type="checkbox">
-        <label for="hd-250">Fifth</label>
+        <label for="hd-250">MorphemeFifth</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFifth}}
