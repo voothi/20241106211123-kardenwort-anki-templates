@@ -758,7 +758,8 @@
     <input class="hide" id="hd-340" type="checkbox">
     <label for="hd-340">AI</label>
     <div>
-
+    
+    {{#WordSourceDefinitionAISentenceSource}}
     <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide" {{/WordDestination}} id="hd-300" type="checkbox">
     <label for="hd-300">Definition</label>
     <div>
@@ -872,7 +873,9 @@
     <!-- /WordSourceDefinitionAI -->
     </div>
     <br>
+    {{/WordSourceDefinitionAISentenceSource}}
 
+    {{#WordSourceSynonymAI}}
     <input class="hide" id="hd-310" type="checkbox">
     <label for="hd-310">Synonym</label>
     <div>
@@ -883,6 +886,7 @@
     </span>
     </div>
     <br>
+    {{/WordSourceSynonymAI}}
     </div>
     <br>
 
