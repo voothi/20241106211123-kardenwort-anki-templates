@@ -61,10 +61,6 @@
 
 
 <!-- Case 2 -->
-{{^WordDestination}}
-<!-- /WordDestination -->
-
-<!-- #WordDestination -->
 <!-- 20241016083918 -->
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
@@ -178,5 +174,4 @@
 <!-- /SentenceDestination -->
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
-{{/WordDestination}}
 <!-- Case 2/ -->

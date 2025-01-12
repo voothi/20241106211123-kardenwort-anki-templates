@@ -1,5 +1,4 @@
 <!-- Case 1 -->
-{{^WordDestination}}
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
@@ -162,9 +161,7 @@
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
-{{/WordDestination}}
 <!-- Case 1/ -->
-
 
 
 
