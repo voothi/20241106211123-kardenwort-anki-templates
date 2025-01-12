@@ -439,31 +439,6 @@
             </span>
             {{/WordSource}}
 
-            {{#SentenceSourceContextLeft}}
-            <input class="hide" id="hd-140" type="checkbox">
-            <label for="hd-140">Context</label>
-            <div>
-                <span>
-                    {{#SentenceSourceContextLeft}}
-                    {{SentenceSourceContextLeft}}<br><br>
-                    {{/SentenceSourceContextLeft}}
-                </span>
-
-                <span>
-                    {{#SentenceSource}}
-                    {{SentenceSource}}<br><br>
-                    {{/SentenceSource}}
-                </span>
-
-                <span>
-                    {{#SentenceSourceContextRight}}
-                    {{SentenceSourceContextRight}}<br><br>
-                    {{/SentenceSourceContextRight}}
-                </span>
-            </div>
-            <br>
-            {{/SentenceSourceContextLeft}}
-
             <!-- #SentenceSourceWordlist -->
             {{#SentenceSourceWordlist}}
             <input class="hide" id="hd-260" type="checkbox">
@@ -518,6 +493,29 @@
             <br>
             {{/SentenceSourceWordlist}}
             <!-- /SentenceSourceWordList -->
+
+        </div>
+        <br>
+        <input class="hide" id="hd-140" type="checkbox">
+        <label for="hd-140">SentenceContext</label>
+        <div>
+            <span>
+                {{#SentenceSourceContextLeft}}
+                {{SentenceSourceContextLeft}}<br><br>
+                {{/SentenceSourceContextLeft}}
+            </span>
+
+            <span>
+                {{#SentenceSource}}
+                {{SentenceSource}}<br><br>
+                {{/SentenceSource}}
+            </span>
+
+            <span>
+                {{#SentenceSourceContextRight}}
+                {{SentenceSourceContextRight}}<br><br>
+                {{/SentenceSourceContextRight}}
+            </span>
         </div>
         <br>
         {{/SentenceSource}}
