@@ -281,7 +281,7 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
             {{^WordSource}}

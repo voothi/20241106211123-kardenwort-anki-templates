@@ -81,10 +81,8 @@
         </td>
     </tr>
 </table>
-
 <!-- /WordSource -->
 <!-- Word Template/ -->
-<!-- /Audio Template -->
 
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
@@ -222,6 +220,7 @@
                     {{WordDestination}}<br><br>
                     {{/WordDestination}}
                 </span>
+            </div>
         </td>
     </tr>
 </table>
@@ -233,7 +232,7 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
             {{#Destination-en-GB}}
             <span>
@@ -386,7 +385,7 @@
         </span>
 
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{^ToggleAlwaysEmptyField}}
+        {{#ToggleAlwaysEmptyField}}
         {{#SentenceUkrainian}}
         <span>
             {{tts uk_UA voices=gTTS speed=0.8:SentenceUkrainian}}
@@ -424,7 +423,7 @@
         </span>
 
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{^ToggleAlwaysEmptyField}}
+        {{#ToggleAlwaysEmptyField}}
         {{#SentenceEnglish}}
         <span>
             <!-- tts en_GB voices=gTTS:WordEnglish -->
@@ -507,7 +506,7 @@
                     {{#WordSourceDefinitionFirstClipping}}
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                     <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                    {{^ToggleAlwaysEmptyField}}
+                    {{#ToggleAlwaysEmptyField}}
                     {{#WordSourceDefinitionFirstClipping}}
                     {{#Source-en-GB}}
                     <span>
@@ -746,7 +745,7 @@
                 <span>
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                     <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                    {{^ToggleAlwaysEmptyField}}
+                    {{#ToggleAlwaysEmptyField}}
                     {{#SentenceSourceWordlist}}
                     {{#Source-en-GB}}
                     <span>
@@ -817,7 +816,7 @@
                 <span>
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                     <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                    {{^ToggleAlwaysEmptyField}}
+                    {{#ToggleAlwaysEmptyField}}
                     {{#WordSourceDefinitionAISentenceSource}}
                     {{#Source-en-GB}}
                     <span>
@@ -873,7 +872,7 @@
                 <span>
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                     <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                    {{^ToggleAlwaysEmptyField}}
+                    {{#ToggleAlwaysEmptyField}}
                     {{#WordSourceDefinitionAISentenceDestination}}
                     {{#Destination-en-GB}}
                     <span>
