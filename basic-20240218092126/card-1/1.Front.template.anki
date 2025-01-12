@@ -95,13 +95,13 @@
             {{^ToggleAlwaysEmptyField}}
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
-            {{^WordSource}}
+            <!-- ^WordSource -->
             <span>
                 {{#SentenceSourceAudio}}
                 {{SentenceSourceAudio}}
                 {{/SentenceSourceAudio}}
             </span>
-            {{/WordSource}}
+            <!-- /WordSource -->
             <!-- Audio#2 template/ -->
 
             <!-- ^WordSource -->
