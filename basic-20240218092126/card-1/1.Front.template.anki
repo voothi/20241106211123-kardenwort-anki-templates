@@ -176,149 +176,6 @@
     </div <hr>
 </label>
 <div>
-    <input class="hide" id="hd-330" type="checkbox">
-    <label for="hd-330">Destination</label>
-    <div>
-        <input class="hide" id="hd-170" type="checkbox">
-        <label for="hd-170">Word</label>
-        <div>
-            <span>
-                {{#WordDestination}}
-                {{WordDestination}}<br><br>
-                {{/WordDestination}}
-            </span>
-
-            <!-- /Definition Template 2 -->
-            {{#WordDestinationDefinitionFirst}}
-            <input class="hide" id="hd-110" type="checkbox">
-            <label for="hd-110">DefinitionFirst</label>
-            <div>
-                <span>
-                    {{#WordDestinationDefinitionFirst}}
-                    {{WordDestinationDefinitionFirst}}<br><br>
-                    {{/WordDestinationDefinitionFirst}}
-                </span>
-            </div>
-            <br>
-            {{/WordDestinationDefinitionFirst}}
-            <!-- Definition Template 2/ -->
-
-            {{#WordDestinationDefinitionSecond}}
-            <input class="hide" id="hd-390" type="checkbox">
-            <label for="hd-390">DefinitionSecond</label>
-            <div>
-                <span>
-                    {{#WordDestinationDefinitionSecond}}
-                    {{WordDestinationDefinitionSecond}}<br><br>
-                    {{/WordDestinationDefinitionSecond}}
-                </span>
-            </div>
-            <br>
-            {{/WordDestinationDefinitionSecond}}
-        </div>
-        <br>
-
-        {{#SentenceDestination}}
-        <input class="show" id="hd-280" type="checkbox">
-        <label for="hd-280">Sentence</label>
-        <div>
-            {{^WordDestination}}
-            <span>
-                {{#SentenceDestination}}
-                {{SentenceDestination}}<br><br>
-                {{/SentenceDestination}}
-            </span>
-            {{/WordDestination}}
-
-            {{#WordDestination}}
-            <span>
-                {{#SentenceDestination}}
-                {{SentenceDestination}}<br><br>
-                {{/SentenceDestination}}
-            </span>
-            {{/WordDestination}}
-        </div>
-        <br>
-        {{/SentenceDestination}}
-    </div>
-    <br>
-
-    <input class="hide" id="hd-350" type="checkbox">
-    <label for="hd-350">Ukrainian</label>
-    <div>
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#WordUkrainian}}
-        <span>
-            {{tts uk_UA voices=gTTS speed=0.8:WordUkrainian}}
-        </span>
-        <br>
-        {{/WordUkrainian}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#WordUkrainian}}
-            {{WordUkrainian}}<br><br>
-            {{/WordUkrainian}}
-        </span>
-
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#SentenceUkrainian}}
-        <span>
-            {{tts uk_UA voices=gTTS speed=0.8:SentenceUkrainian}}
-        </span>
-        <br>
-        {{/SentenceUkrainian}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#SentenceUkrainian}}
-            {{SentenceUkrainian}}<br><br>
-            {{/SentenceUkrainian}}
-        </span>
-    </div>
-    <br>
-
-    <input class="hide" id="hd-180" type="checkbox">
-    <label for="hd-180">English</label>
-    <div>
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#WordEnglish}}
-        <span>
-            <!-- tts en_GB voices=gTTS:WordEnglish -->
-            {{tts en_US voices=gTTS speed=0.8:WordEnglish}}
-        </span>
-        <br>
-        {{/WordEnglish}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#WordEnglish}}
-            {{WordEnglish}}<br><br>
-            {{/WordEnglish}}
-        </span>
-
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#SentenceEnglish}}
-        <span>
-            <!-- tts en_GB voices=gTTS:WordEnglish -->
-            {{tts en_US voices=gTTS speed=0.8:SentenceEnglish}}
-        </span>
-        <br>
-        {{/SentenceEnglish}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#SentenceEnglish}}
-            {{SentenceEnglish}}<br><br>
-            {{/SentenceEnglish}}
-        </span>
-    </div>
-    <br>
-
     <input class="hide" id="hd-320" type="checkbox">
     <label for="hd-320">Source</label>
     <div>
@@ -673,6 +530,149 @@
     </div>
     <br>
 
+    <input class="hide" id="hd-330" type="checkbox">
+    <label for="hd-330">Destination</label>
+    <div>
+        <input class="hide" id="hd-170" type="checkbox">
+        <label for="hd-170">Word</label>
+        <div>
+            <span>
+                {{#WordDestination}}
+                {{WordDestination}}<br><br>
+                {{/WordDestination}}
+            </span>
+
+            <!-- /Definition Template 2 -->
+            {{#WordDestinationDefinitionFirst}}
+            <input class="hide" id="hd-110" type="checkbox">
+            <label for="hd-110">DefinitionFirst</label>
+            <div>
+                <span>
+                    {{#WordDestinationDefinitionFirst}}
+                    {{WordDestinationDefinitionFirst}}<br><br>
+                    {{/WordDestinationDefinitionFirst}}
+                </span>
+            </div>
+            <br>
+            {{/WordDestinationDefinitionFirst}}
+            <!-- Definition Template 2/ -->
+
+            {{#WordDestinationDefinitionSecond}}
+            <input class="hide" id="hd-390" type="checkbox">
+            <label for="hd-390">DefinitionSecond</label>
+            <div>
+                <span>
+                    {{#WordDestinationDefinitionSecond}}
+                    {{WordDestinationDefinitionSecond}}<br><br>
+                    {{/WordDestinationDefinitionSecond}}
+                </span>
+            </div>
+            <br>
+            {{/WordDestinationDefinitionSecond}}
+        </div>
+        <br>
+
+        {{#SentenceDestination}}
+        <input class="show" id="hd-280" type="checkbox">
+        <label for="hd-280">Sentence</label>
+        <div>
+            {{^WordDestination}}
+            <span>
+                {{#SentenceDestination}}
+                {{SentenceDestination}}<br><br>
+                {{/SentenceDestination}}
+            </span>
+            {{/WordDestination}}
+
+            {{#WordDestination}}
+            <span>
+                {{#SentenceDestination}}
+                {{SentenceDestination}}<br><br>
+                {{/SentenceDestination}}
+            </span>
+            {{/WordDestination}}
+        </div>
+        <br>
+        {{/SentenceDestination}}
+    </div>
+    <br>
+
+    <input class="hide" id="hd-350" type="checkbox">
+    <label for="hd-350">Ukrainian</label>
+    <div>
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#WordUkrainian}}
+        <span>
+            {{tts uk_UA voices=gTTS speed=0.8:WordUkrainian}}
+        </span>
+        <br>
+        {{/WordUkrainian}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#WordUkrainian}}
+            {{WordUkrainian}}<br><br>
+            {{/WordUkrainian}}
+        </span>
+
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#SentenceUkrainian}}
+        <span>
+            {{tts uk_UA voices=gTTS speed=0.8:SentenceUkrainian}}
+        </span>
+        <br>
+        {{/SentenceUkrainian}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#SentenceUkrainian}}
+            {{SentenceUkrainian}}<br><br>
+            {{/SentenceUkrainian}}
+        </span>
+    </div>
+    <br>
+
+    <input class="hide" id="hd-180" type="checkbox">
+    <label for="hd-180">English</label>
+    <div>
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#WordEnglish}}
+        <span>
+            <!-- tts en_GB voices=gTTS:WordEnglish -->
+            {{tts en_US voices=gTTS speed=0.8:WordEnglish}}
+        </span>
+        <br>
+        {{/WordEnglish}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#WordEnglish}}
+            {{WordEnglish}}<br><br>
+            {{/WordEnglish}}
+        </span>
+
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#SentenceEnglish}}
+        <span>
+            <!-- tts en_GB voices=gTTS:WordEnglish -->
+            {{tts en_US voices=gTTS speed=0.8:SentenceEnglish}}
+        </span>
+        <br>
+        {{/SentenceEnglish}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#SentenceEnglish}}
+            {{SentenceEnglish}}<br><br>
+            {{/SentenceEnglish}}
+        </span>
+    </div>
+    <br>
+
     <input class="hide" id="hd-340" type="checkbox">
     <label for="hd-340">AI</label>
     <div>
@@ -812,7 +812,7 @@
         {{/WordSourceSynonymAI}}
     </div>
     <br>
-
+    
     <span>
         {{#TextSource}}
         {{hint:TextSource}}<br>
