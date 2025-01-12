@@ -247,7 +247,7 @@
     <label for="hd-350">Ukrainian</label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{^ToggleAlwaysEmptyField}}
+        {{#ToggleAlwaysEmptyField}}
         {{#WordUkrainian}}
         <span>
             {{tts uk_UA voices=gTTS speed=0.8:WordUkrainian}}
@@ -284,7 +284,7 @@
     <label for="hd-180">English</label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{^ToggleAlwaysEmptyField}}
+        {{#ToggleAlwaysEmptyField}}
         {{#WordEnglish}}
         <span>
             <!-- tts en_GB voices=gTTS:WordEnglish -->
@@ -384,8 +384,7 @@
                     {{#WordSourceDefinitionFirstClipping}}
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                     <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                    {{#ToggleAlwaysEmptyField}}
-                    {{#WordSourceDefinitionFirstClipping}}
+                    {{^ToggleAlwaysEmptyField}}
                     {{#Source-en-GB}}
                     <span>
                         {{tts en_GB voices=gTTS speed=0.8:WordSourceDefinitionFirstClipping}}
@@ -417,7 +416,6 @@
                     </span>
                     {{/Source-ru-RU}}
                     <br>
-                    {{/WordSourceDefinitionFirstClipping}}
                     {{/ToggleAlwaysEmptyField}}
 
                     {{WordSourceDefinitionFirstClipping}}<br><br>
