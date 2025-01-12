@@ -176,50 +176,61 @@
     </div <hr>
 </label>
 <div>
+    <!-- /Input Template -->
+    {{#WordSource}}
+    <!-- br -->
+    <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
+    <label for="hd-90">Input</label>
+    <div>
+        <span>
+            {{type:WordSource}}
+        </span>
+    </div>
+    <br>
+    {{/WordSource}}
+    <!-- Input Template/ -->
+
+    <!-- /Input Template -->
+    {{^WordSource}}
+    {{#SentenceSource}}
+    <!-- br -->
+    <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
+    <label for="hd-130">Input</label>
+    <div>
+        <span>
+            {{type:SentenceSource}}
+        </span>
+    </div>
+    <br>
+    {{/SentenceSource}}
+    {{/WordSource}}
+    <!-- Input Template/ -->
+
     <input class="hide" id="hd-320" type="checkbox">
     <label for="hd-320">Source</label>
     <div>
         <input class="hide" id="hd-160" type="checkbox">
         <label for="hd-160">Word</label>
         <div>
-            <!-- /Input Template -->
             {{#WordSource}}
             <!-- br -->
-            <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
-            <label for="hd-90">Input</label>
-            <div>
-                <span>
-                    {{type:WordSource}}
-                </span>
-            </div>
-            <br>
-            {{/WordSource}}
-            <!-- Input Template/ -->
+            <span>
+                {{#WordSourceIPA}}
+                {{WordSourceIPA}}<br><br>
+                {{/WordSourceIPA}}
+            </span>
 
-            {{#WordSource}}
-            <!-- br -->
-            <input class="hide" id="hd-360" type="checkbox"><!-- hide | show -->
-            <label for="hd-360">Word</label>
-            <div>
-                <span>
-                    {{#WordSourceIPA}}
-                    {{WordSourceIPA}}<br><br>
-                    {{/WordSourceIPA}}
-                </span>
+            <span>
+                {{#WordSource}}
+                {{WordSource}}<br><br>
+                {{/WordSource}}
+            </span>
 
-                <span>
-                    {{#WordSource}}
-                    {{WordSource}}<br><br>
-                    {{/WordSource}}
-                </span>
-
-                <span>
-                    {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}<br><br>
-                    {{/WordSourceInflectedForm}}
-                </span>
-            </div>
-            <br>
+            <span>
+                {{#WordSourceInflectedForm}}
+                {{WordSourceInflectedForm}}<br><br>
+                {{/WordSourceInflectedForm}}
+            </span>
             {{/WordSource}}
 
             <!-- /Definition Template -->
@@ -398,7 +409,6 @@
             <br> -->
             <!-- /WordSourceDefinition -->
             <!-- Definition Template/ -->
-
         </div>
         <br>
 
@@ -412,22 +422,6 @@
                 {{SentenceSourceIPA}}<br><br>
                 {{/SentenceSourceIPA}}
             </span>
-
-            <!-- /Input Template -->
-            {{^WordSource}}
-            {{#SentenceSource}}
-            <!-- br -->
-            <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
-            <label for="hd-130">Input</label>
-            <div>
-                <span>
-                    {{type:SentenceSource}}
-                </span>
-            </div>
-            <br>
-            {{/SentenceSource}}
-            {{/WordSource}}
-            <!-- Input Template/ -->
 
             {{#WordSource}}
             <span>
@@ -812,7 +806,7 @@
         {{/WordSourceSynonymAI}}
     </div>
     <br>
-    
+
     <span>
         {{#TextSource}}
         {{hint:TextSource}}<br>
