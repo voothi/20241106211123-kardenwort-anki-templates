@@ -226,6 +226,7 @@
     <input class="show" id="hd-320" type="checkbox">
     <label for="hd-320">Source</label>
     <div>
+        {{#WordSource}}
         <input class="hide" id="hd-160" type="checkbox">
         <label for="hd-160">Word</label>
         <div>
@@ -256,9 +257,8 @@
                 <!-- tts de_DE voices=Microsoft_Stefan:WordSourceDefinitionClipping -->
             </span>
             {{/WordSourceDefinitionFirst}}
-
-
         </div>
+        {{/WordSource}}
         <br>
 
         <!-- #WordSourceDefinition -->
@@ -461,7 +461,10 @@
         <br>
 
         <input class="hide" id="hd-140" type="checkbox">
-        <label for="hd-140">Sentence Context</label>
+        <label for="hd-140">Sentence Context
+            {{#SentenceSourceContextLeft}}●{{/SentenceSourceContextLeft}}{{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}
+            {{^SentenceSourceContextLeft}}○{{/SentenceSourceContextLeft}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
+        </label>
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
