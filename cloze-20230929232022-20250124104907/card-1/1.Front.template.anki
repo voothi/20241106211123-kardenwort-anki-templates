@@ -1,17 +1,17 @@
 <!-- 20240315133741 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
-{{#Word}}
+{{#WordSource}}
 <!-- /Audio Template -->
 <span>
-    {{#WordAudio}}
-    {{WordAudio}}
-    {{/WordAudio}}
+    {{#WordSourceAudio}}
+    {{WordSourceAudio}}
+    {{/WordSourceAudio}}
 </span>
 <!-- Audio template/ -->
 
 <span>
-    {{tts de_DE voices=Microsoft_Stefan speed=0.7:Word}}
+    {{tts de_DE voices=Microsoft_Stefan speed=0.7:WordSource}}
     <!-- de_DE | en_GB -->
     <!-- de_DE voices=Microsoft_Stefan -->
     <!-- de_DE voices=gTTS -->
@@ -20,40 +20,40 @@
     <!-- ru_RU voices=Microsoft_Irina -->
     <!-- ru_RU voices=gTTS -->
 </span>
-{{/Word}}
+{{/WordSource}}
 
-{{#Word}}
+{{#WordSource}}
 <input class="hide" id="hd-20" type="checkbox">
 <label for="hd-20">Word</label>
 <div>
     <span>
-        {{#Word}}
-        {{Word}}
-        {{/Word}}
+        {{#WordSource}}
+        {{WordSource}}
+        {{/WordSource}}
     </span>
 
     <span>
-        {{#WordIPA}}
-        <br><br>{{WordIPA}}
-        {{/WordIPA}}
+        {{#WordSourceIPA}}
+        <br><br>{{WordSourceIPA}}
+        {{/WordSourceIPA}}
     </span>
 </div>
-{{/Word}}
+{{/WordSource}}
 <!-- Word Template/ -->
 
 <!-- /Sentence Template -->
-{{#Sentence}}
+{{#SentenceSource}}
 <br>
 <!-- /Audio#2 Template -->
 <span>
-    {{#SentenceAudio}}
-    {{SentenceAudio}}
-    {{/SentenceAudio}}
+    {{#SentenceSourceAudio}}
+    {{SentenceSourceAudio}}
+    {{/SentenceSourceAudio}}
 </span>
 <!-- Audio#2 template/ -->
 
 <span>
-    {{tts de_DE voices=Microsoft_Stefan:Sentence}}
+    {{tts de_DE voices=Microsoft_Stefan:SentenceSource}}
     <!-- de_DE | en_GB -->
     <!-- de_DE voices=Microsoft_Stefan -->
     <!-- de_DE voices=gTTS -->
@@ -62,25 +62,25 @@
     <!-- ru_RU voices=Microsoft_Irina -->
     <!-- ru_RU voices=gTTS -->
 </span>
-{{#Sentence}}
+{{#SentenceSource}}
 
-{{/Sentence}}
+{{/SentenceSource}}
 <input class="hide" id="hd-10" type="checkbox">
 <label for="hd-10">Sentence</label>
 <div>
     <span>
-        {{#Sentence}}
-        {{Sentence}}
-        {{/Sentence}}
+        {{#SentenceSource}}
+        {{SentenceSource}}
+        {{/SentenceSource}}
     </span>
 
     <span>
-        {{#SentenceIPA}}
-        <br><br>{{SentenceIPA}}
-        {{/SentenceIPA}}
+        {{#SentenceSourceIPA}}
+        <br><br>{{SentenceSourceIPA}}
+        {{/SentenceSourceIPA}}
     </span>
 </div>
-{{/Sentence}}
+{{/SentenceSource}}
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
 
@@ -89,19 +89,19 @@
 <label for="hd-60"><hr></label>
 <div>
     <!-- /Input Template -->
-    {{#Word}}
+    {{#WordSource}}
     <!-- br -->
     <input class="show" id="hd-90" type="checkbox"><!-- hide | show -->
     <label for="hd-90">Input</label>
     <div>
         <span>
-            {{type:Word}}
+            {{type:WordSource}}
         </span>
     </div>
 
     <br>
 
-    {{/Word}}
+    {{/WordSource}}
     <!-- Input Template/ -->
 
     <span>
@@ -117,19 +117,19 @@
     </span>
 
     <span>
-        {{#Word}}
-        {{hint:Word}}<br>
-        {{/Word}}
+        {{#WordSource}}
+        {{hint:WordSource}}<br>
+        {{/WordSource}}
     </span>
 
     <span>
-        {{#WordRussian}}
-        {{hint:WordRussian}}<br>
-        {{/WordRussian}}
+        {{#WordDestination}}
+        {{hint:WordDestination}}<br>
+        {{/WordDestination}}
     </span>
 
     <!-- /Definition Template -->
-    {{#WordDefinition}}
+    {{#WordSourceDefinitionFirst}}
     <span>
         <!-- tts de_DE voices=Microsoft_Stefan:WordDefinition -->
         <!-- de_DE | en_GB -->
@@ -140,65 +140,65 @@
         <!-- ru_RU voices=Microsoft_Irina -->
         <!-- ru_RU voices=gTTS -->
     </span>
-    {{/WordDefinition}}
+    {{/WordSourceDefinitionFirst}}
 
-    {{#WordDefinition}}
+    {{#WordSourceDefinitionFirst}}
     <input class="hide" id="hd-30" type="checkbox">
     <label for="hd-30">WordDefinition</label>
     <div>
         <span>
-            {{#WordDefinition}}
-            {{WordDefinition}}
-            {{/WordDefinition}}
+            {{#WordSourceDefinitionFirst}}
+            {{WordSourceDefinitionFirst}}
+            {{/WordSourceDefinitionFirst}}
         </span>
     </div>
 
     <br>
     
-    {{/WordDefinition}}
+    {{/WordSourceDefinitionFirst}}
     <!-- Definition Template/ -->
 
     <span>
-        {{#Sentence}}
-        {{hint:Sentence}}<br>
-        {{/Sentence}}
+        {{#SentenceSource}}
+        {{hint:SentenceSource}}<br>
+        {{/SentenceSource}}
     </span>
 
     <span>
-        {{#SentenceRussian}}
-        {{hint:SentenceRussian}}<br>
-        {{/SentenceRussian}}
+        {{#SentenceDestination}}
+        {{hint:SentenceDestination}}<br>
+        {{/SentenceDestination}}
     </span>
 
     <span>
-        {{#Text}}
-        {{hint:Text}}<br>
-        {{/Text}}
+        {{#TextSource}}
+        {{hint:TextSource}}<br>
+        {{/TextSource}}
     </span>
 
     <span>
-        {{#TextRussian}}
-        {{hint:TextRussian}}<br>
-        {{/TextRussian}}
+        {{#TextDestination}}
+        {{hint:TextDestination}}<br>
+        {{/TextDestination}}
     </span>
 
-    {{#TextURL}}
+    {{#TextSourceURL}}
     <input class="hide" id="hd-120" type="checkbox">
     <label for="hd-120">TextURL</label>
     <div>
         <span>
-            <a href={{TextURL}}>{{TextURL}}</a>
+            <a href={{TextSourceURL}}>{{TextSourceURL}}</a>
         </span>
     </div>
 
     <br>
 
-    {{/TextURL}}
+    {{/TextSourceURL}}
 
     <span>
-        {{#WordCloze}}
-        {{hint:WordCloze}}<br>
-        {{/WordCloze}}
+        {{#SentenceSourceCloze}}
+        {{hint:SentenceSourceCloze}}<br>
+        {{/SentenceSourceCloze}}
     </span>
 
     <span>
@@ -249,8 +249,8 @@
 </div>
 <!-- Hint Template/ -->
 
-<span id="cloze-original" hidden="">{{WordCloze}}</span>
-<span id="cloze-anki-rendered" hidden="">{{cloze:WordCloze}}</span>
+<span id="cloze-original" hidden="">{{SentenceSourceCloze}}</span>
+<span id="cloze-anki-rendered" hidden="">{{cloze:SentenceSourceCloze}}</span>
 <span id="cloze-overlapping-config" hidden="">{{Overlapping}}</span>
 <span id="cloze-js-rendered"></span><br><br>
 

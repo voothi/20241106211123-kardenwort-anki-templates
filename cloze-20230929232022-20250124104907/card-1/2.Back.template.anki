@@ -1,5 +1,5 @@
 <!-- 20240315133018 -->
-<div id="cloze-is-back" hidden="">{{cloze:WordCloze}}</div>
+<div id="cloze-is-back" hidden="">{{cloze:SentenceSourceCloze}}</div>
 
 <!-- /FrontSide Template -->
 {{FrontSide}}
@@ -10,49 +10,49 @@
 
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
-{{#WordRussian}}
+{{#WordDestination}}
 <span>
-    {{tts ru_RU voices=Microsoft_Irina:WordRussian}}
+    {{tts ru_RU voices=Microsoft_Irina:WordDestination}}
     <!-- ru_RU -->
     <!-- ru_RU voices=Microsoft_Irina -->
     <!-- ru_RU voices=gTTS -->
 </span>
-{{/WordRussian}}
+{{/WordDestination}}
 
-{{#WordRussian}}
+{{#WordDestination}}
 <input class="hide" id="hd-40" type="checkbox">
 <label for="hd-40">WordRussian</label>
 <div>
     <span>
-        {{#WordRussian}}
-        {{WordRussian}}
-        {{/WordRussian}}
+        {{#WordDestination}}
+        {{WordDestination}}
+        {{/WordDestination}}
     </span>
 </div>
-{{/WordRussian}}
+{{/WordDestination}}
 <!-- Definition#2 Template/ -->
 
 <!-- /Russian Template -->
-{{#SentenceRussian}}
+{{#SentenceDestination}}
 <br>
 <span>
-    {{tts ru_RU voices=Microsoft_Irina:SentenceRussian}}
+    {{tts ru_RU voices=Microsoft_Irina:SentenceDestination}}
     <!-- ru_RU -->
     <!-- ru_RU voices=Microsoft_Irina -->
     <!-- ru_RU voices=gTTS -->
 </span>
-{{/SentenceRussian}}
+{{/SentenceDestination}}
 
-{{#SentenceRussian}}
+{{#SentenceDestination}}
 <input class="hide" id="hd-70" type="checkbox">
 <label for="hd-70">SentenceRussian</label>
 <div>
     <span>
-        {{#SentenceRussian}}
-        {{SentenceRussian}}
-        {{/SentenceRussian}}
+        {{#SentenceDestination}}
+        {{SentenceDestination}}
+        {{/SentenceDestination}}
     </span>
 </div>
-{{/SentenceRussian}}
+{{/SentenceDestination}}
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
