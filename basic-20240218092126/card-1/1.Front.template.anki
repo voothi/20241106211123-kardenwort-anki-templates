@@ -258,8 +258,8 @@
             </span>
             {{/WordSourceDefinitionFirst}}
         </div>
-        {{/WordSource}}
         <br>
+        {{/WordSource}}
 
         <!-- #WordSourceDefinition -->
         <!-- <input class="hide" id="hd-30" type="checkbox">
@@ -435,7 +435,6 @@
         <input class="hide" id="hd-270" type="checkbox">
         <label for="hd-270">Sentence</label>
         <div>
-
             <span>
                 {{#SentenceSourceIPA}}
                 {{SentenceSourceIPA}}<br><br>
