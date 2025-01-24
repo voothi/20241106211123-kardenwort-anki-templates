@@ -115,6 +115,7 @@
 <!-- 20241016083918 -->
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
+{{#WordDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -163,11 +164,13 @@
         </td>
     </tr>
 </table>
+{{/WordDestination}}
 <!-- /WordDestination -->
 <!-- Definition#2 Template/ -->
 
 <!-- /Russian Template -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+{{#SentenceDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -223,6 +226,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceDestination}}
 <!-- /SentenceDestination -->
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
