@@ -105,7 +105,9 @@
 
             <!-- #WordDestination -->
             <input class="hide" id="hd-40" type="checkbox">
-            <label for="hd-40">Destination Word</label>
+            <label for="hd-40">Destination Word
+                {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
+            </label>
             <div>
                 <span>
                     {{#WordDestination}}
@@ -166,7 +168,9 @@
 
             <!-- #SentenceDestination -->
             <input class="hide" id="hd-70" type="checkbox">
-            <label for="hd-70">Destination Sentence</label>
+            <label for="hd-70">Destination Sentence
+                {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+            </label>
             <div>
                 <span>
                     {{#SentenceDestination}}
