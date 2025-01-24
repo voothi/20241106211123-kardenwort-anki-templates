@@ -204,6 +204,18 @@
     </div>
     <br>
     {{/SentenceSource}}
+
+    {{^SentenceSource}}
+    <!-- br -->
+    <input class="hide" id="hd-135" type="checkbox"><!-- hide | show -->
+    <label for="hd-135">Source Sentence Cloze Input</label>
+    <div>
+        <span>
+            {{type:SentenceSourceCloze}}
+        </span>
+    </div>
+    <br>
+    {{/SentenceSource}}
     {{/WordSource}}
     <!-- Input Template/ -->
 

@@ -288,7 +288,7 @@
     {{#WordSource}}
     <!-- br -->
     <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
-    <label for="hd-90">Input</label>
+    <label for="hd-90">Source Word Input</label>
     <div>
         <span>
             {{type:WordSource}}
@@ -303,7 +303,7 @@
     {{#SentenceSource}}
     <!-- br -->
     <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
-    <label for="hd-130">Input</label>
+    <label for="hd-130">Source Sentence Input</label>
     <div>
         <span>
             {{type:SentenceSource}}
