@@ -121,7 +121,7 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#Source-en-GB}}
             {{tts en_GB voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
             <span>
