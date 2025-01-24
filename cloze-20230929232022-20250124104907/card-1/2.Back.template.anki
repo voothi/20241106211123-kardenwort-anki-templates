@@ -181,37 +181,43 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
-            {{#Source-en-GB}}
-            {{tts en_GB voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-            <span>
-            </span>
-            {{/Source-en-GB}}
+            {{#SentenceSourceCloze}}
+            <input class="hide" id="hd-410" type="checkbox">
+            <label for="hd-410">SentenceSourceCloze</label>
+            <div>
+                {{^ToggleAlwaysEmptyField}}
+                {{#Source-en-GB}}
+                {{tts en_GB voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                <span>
+                </span>
+                {{/Source-en-GB}}
 
-            {{#Source-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-            </span>
-            {{/Source-en-US}}
+                {{#Source-en-US}}
+                <span>
+                    {{tts en_US voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-en-US}}
 
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-            </span>
-            {{/Source-de-DE}}
+                {{#Source-de-DE}}
+                <span>
+                    {{tts de_DE voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-de-DE}}
 
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-            </span>
-            {{/Source-uk-UA}}
+                {{#Source-uk-UA}}
+                <span>
+                    {{tts uk_UA voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-uk-UA}}
 
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-            </span>
-            {{/Source-ru-RU}}
-            {{/ToggleAlwaysEmptyField}}
+                {{#Source-ru-RU}}
+                <span>
+                    {{tts ru_RU voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-ru-RU}}
+                {{/ToggleAlwaysEmptyField}}
+            </div>
+            {{/SentenceSourceCloze}}
         </td>
     </tr>
 </table>
