@@ -12,6 +12,7 @@ It will prevent the automatic reprodution of any audio file on the back side of 
 <table class="fixed-table" id="audioDecoy">
     <tr>
         <td class="fixed-cell">
+            {{^ToggleAlwaysEmptyField}}
             <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
@@ -61,6 +62,7 @@ It will prevent the automatic reprodution of any audio file on the back side of 
             </span>
             {{/Source-ru-RU}}
             {{/WordSource}}
+            {{/ToggleAlwaysEmptyField}}
 
             <!-- #WordSource -->
             <input class="hide" id="hd-20" type="checkbox">

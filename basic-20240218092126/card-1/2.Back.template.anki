@@ -70,6 +70,7 @@ It will prevent the automatic reprodution of any audio file on the back side of 
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
+            {{#ToggleAlwaysEmptyField}}
             <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
@@ -119,6 +120,7 @@ It will prevent the automatic reprodution of any audio file on the back side of 
             </span>
             {{/Source-ru-RU}}
             {{/WordSource}}
+            {{/ToggleAlwaysEmptyField}}
 
             <!-- #WordSource -->
             <input class="hide" id="hd-20" type="checkbox">
@@ -153,7 +155,7 @@ It will prevent the automatic reprodution of any audio file on the back side of 
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
             <!-- ^WordSource -->
