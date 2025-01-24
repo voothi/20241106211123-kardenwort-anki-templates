@@ -89,13 +89,10 @@
                     else document.addEventListener("DOMContentLoaded", delayedRender);
                 })();
             </script>
-
+            {{tts ru_RU voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
         </td>
     </tr>
 </table>
-
-
-
 
 <!-- Case 1 -->
 <!-- 20241024191126 -->
