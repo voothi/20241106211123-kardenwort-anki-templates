@@ -60,51 +60,119 @@
 
 <!-- tts de_DE voices=Microsoft_Stefan:cloze-only:WordCloze -->
 
+<!-- Case 2 -->
+<!-- 20241016083918 -->
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
-{{#WordDestination}}
-<span>
-    {{tts ru_RU voices=Microsoft_Irina:WordDestination}}
-    <!-- ru_RU -->
-    <!-- ru_RU voices=Microsoft_Irina -->
-    <!-- ru_RU voices=gTTS -->
-</span>
-{{/WordDestination}}
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{#WordDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:WordDestination}}
+            </span>
+            {{/Destination-en-GB}}
 
-{{#WordDestination}}
-<input class="hide" id="hd-40" type="checkbox">
-<label for="hd-40">WordRussian</label>
-<div>
-    <span>
-        {{#WordDestination}}
-        {{WordDestination}}
-        {{/WordDestination}}
-    </span>
-</div>
-{{/WordDestination}}
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:WordDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:WordDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/WordDestination}}
+
+            <!-- #WordDestination -->
+            <input class="hide" id="hd-40" type="checkbox">
+            <label for="hd-40">WordDestination</label>
+            <div>
+                <span>
+                    {{#WordDestination}}
+                    {{WordDestination}}<br><br>
+                    {{/WordDestination}}
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- /WordDestination -->
 <!-- Definition#2 Template/ -->
 
 <!-- /Russian Template -->
-{{#SentenceDestination}}
-<br>
-<span>
-    {{tts ru_RU voices=Microsoft_Irina:SentenceDestination}}
-    <!-- ru_RU -->
-    <!-- ru_RU voices=Microsoft_Irina -->
-    <!-- ru_RU voices=gTTS -->
-</span>
-{{/SentenceDestination}}
+<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{#ToggleAlwaysEmptyField}}
+            <!-- ^WordSource -->
+            <!-- #SentenceSource -->
+            {{#SentenceDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
 
-{{#SentenceDestination}}
-<input class="hide" id="hd-70" type="checkbox">
-<label for="hd-70">SentenceRussian</label>
-<div>
-    <span>
-        {{#SentenceDestination}}
-        {{SentenceDestination}}
-        {{/SentenceDestination}}
-    </span>
-</div>
-{{/SentenceDestination}}
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceDestination}}
+            <!-- /SentenceSource -->
+            <!-- /WordSource -->
+            {{/ToggleAlwaysEmptyField}}
+
+            <!-- #SentenceDestination -->
+            <input class="hide" id="hd-70" type="checkbox">
+            <label for="hd-70">SentenceDestination</label>
+            <div>
+                <span>
+                    {{#SentenceDestination}}
+                    {{SentenceDestination}}<br><br>
+                    {{/SentenceDestination}}
+                </span>
+            </div>
+            <br>
+        </td>
+    </tr>
+</table>
+<!-- /SentenceDestination -->
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
+<!-- Case 2/ -->
