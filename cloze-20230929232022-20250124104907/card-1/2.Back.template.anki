@@ -1,4 +1,56 @@
 <!-- 20240315133018 -->
+<!-- /Feature for Browse Mode on AnkiDroid -->
+{{#WordDestination}}
+<span class="field-hide">
+    <span>
+        {{#WordDestination}}
+        • {{WordDestination}}<br>
+        {{/WordDestination}}
+    </span>
+</span>
+{{/WordDestination}}
+
+{{#WordSourceIPA}}
+<span class="field-hide">
+    <span>
+        {{#WordSourceIPA}}
+        • {{WordSourceIPA}}<br>
+        {{/WordSourceIPA}}
+    </span>
+</span>
+{{/WordSourceIPA}}
+
+{{#SentenceSource}}
+<span class="field-hide">
+    <span>
+        {{#SentenceSource}}
+        • {{SentenceSource}}<br>
+        {{/SentenceSource}}
+    </span>
+</span>
+{{/SentenceSource}}
+
+{{#SentenceDestination}}
+<span class="field-hide">
+    <span>
+        {{#SentenceDestination}}
+        • {{SentenceDestination}}<br>
+        {{/SentenceDestination}}
+    </span>
+</span>
+{{/SentenceDestination}}
+
+{{#WordDestinationDefinitionFirst}}
+<span class="field-hide">
+    <span>
+        {{#WordDestinationDefinitionFirst}}
+        • {{WordDestinationDefinitionFirst}}<br>
+        {{/WordDestinationDefinitionFirst}}
+    </span>
+</span>
+{{/WordDestinationDefinitionFirst}}
+<!-- Feature for Browse Mode on AnkiDroid/ -->
+
 <div id="cloze-is-back" hidden="">{{cloze:SentenceSourceCloze}}</div>
 
 <!-- /FrontSide Template -->
