@@ -54,9 +54,10 @@
 <div id="cloze-is-back" hidden="">{{cloze:SentenceSourceCloze}}</div>
 
 <!-- /FrontSide Template -->
+<!-- FrontSide -->
 {{FrontSide}}
-
-<!-- id="answer" -->
+<!-- hr id="answer" -->
+<!-- hr -->
 <!-- FrontSide Template/ -->
 
 
@@ -153,7 +154,9 @@
 
             <!-- #WordDestination -->
             <input class="hide" id="hd-40" type="checkbox">
-            <label for="hd-40">Destination Word</label>
+            <label for="hd-40">Destination Word
+                {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
+            </label>
             <div>
                 <span>
                     {{#WordDestination}}
@@ -174,7 +177,7 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             <!-- ^WordSource -->
             <!-- #SentenceSource -->
             {{#SentenceDestination}}
@@ -214,7 +217,9 @@
 
             <!-- #SentenceDestination -->
             <input class="hide" id="hd-70" type="checkbox">
-            <label for="hd-70">Destination Sentence</label>
+            <label for="hd-70">Destination Sentence
+                {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+            </label>
             <div>
                 <span>
                     {{#SentenceDestination}}
