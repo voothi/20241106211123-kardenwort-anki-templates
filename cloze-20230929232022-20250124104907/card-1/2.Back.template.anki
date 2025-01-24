@@ -59,7 +59,55 @@
 <!-- id="answer" -->
 <!-- FrontSide Template/ -->
 
-<!-- tts de_DE voices=Microsoft_Stefan:cloze-only:WordCloze -->
+
+
+
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{#SentenceSourceCloze}}
+            <input class="show" id="hd-410" type="checkbox">
+            <label for="hd-410">SentenceSourceCloze</label>
+            <div>
+                {{^ToggleAlwaysEmptyField}}
+                {{#Source-en-GB}}
+                {{tts en_GB voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                <span>
+                </span>
+                {{/Source-en-GB}}
+
+                {{#Source-en-US}}
+                <span>
+                    {{tts en_US voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-en-US}}
+
+                {{#Source-de-DE}}
+                <span>
+                    {{tts de_DE voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-de-DE}}
+
+                {{#Source-uk-UA}}
+                <span>
+                    {{tts uk_UA voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-uk-UA}}
+
+                {{#Source-ru-RU}}
+                <span>
+                    {{tts ru_RU voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
+                </span>
+                {{/Source-ru-RU}}
+                {{/ToggleAlwaysEmptyField}}
+            </div>
+            {{/SentenceSourceCloze}}
+        </td>
+    </tr>
+</table>
+
+
+
 
 <!-- Case 2 -->
 <!-- 20241016083918 -->
@@ -177,47 +225,3 @@
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
 <!-- Case 2/ -->
-
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            {{#SentenceSourceCloze}}
-            <input class="hide" id="hd-410" type="checkbox">
-            <label for="hd-410">SentenceSourceCloze</label>
-            <div>
-                {{^ToggleAlwaysEmptyField}}
-                {{#Source-en-GB}}
-                {{tts en_GB voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-                <span>
-                </span>
-                {{/Source-en-GB}}
-
-                {{#Source-en-US}}
-                <span>
-                    {{tts en_US voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-                </span>
-                {{/Source-en-US}}
-
-                {{#Source-de-DE}}
-                <span>
-                    {{tts de_DE voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-                </span>
-                {{/Source-de-DE}}
-
-                {{#Source-uk-UA}}
-                <span>
-                    {{tts uk_UA voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-                </span>
-                {{/Source-uk-UA}}
-
-                {{#Source-ru-RU}}
-                <span>
-                    {{tts ru_RU voices=gTTS speed=1.0:cloze-only:SentenceSourceCloze}}
-                </span>
-                {{/Source-ru-RU}}
-                {{/ToggleAlwaysEmptyField}}
-            </div>
-            {{/SentenceSourceCloze}}
-        </td>
-    </tr>
-</table>
