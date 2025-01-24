@@ -192,7 +192,7 @@
 
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-
+{{#SentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -265,6 +265,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSource}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
