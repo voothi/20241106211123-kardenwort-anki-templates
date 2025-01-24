@@ -1,0 +1,58 @@
+<!-- 20240315133018 -->
+<div id="cloze-is-back" hidden="">{{cloze:WordCloze}}</div>
+
+<!-- /FrontSide Template -->
+{{FrontSide}}
+<!-- id="answer" -->
+<!-- FrontSide Template/ -->
+
+<!-- tts de_DE voices=Microsoft_Stefan:cloze-only:WordCloze -->
+
+<!-- /L1 Template -->
+<!-- /Definition#2 Template -->
+{{#WordRussian}}
+<span>
+    {{tts ru_RU voices=Microsoft_Irina:WordRussian}}
+    <!-- ru_RU -->
+    <!-- ru_RU voices=Microsoft_Irina -->
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{/WordRussian}}
+
+{{#WordRussian}}
+<input class="hide" id="hd-40" type="checkbox">
+<label for="hd-40">WordRussian</label>
+<div>
+    <span>
+        {{#WordRussian}}
+        {{WordRussian}}
+        {{/WordRussian}}
+    </span>
+</div>
+{{/WordRussian}}
+<!-- Definition#2 Template/ -->
+
+<!-- /Russian Template -->
+{{#SentenceRussian}}
+<br>
+<span>
+    {{tts ru_RU voices=Microsoft_Irina:SentenceRussian}}
+    <!-- ru_RU -->
+    <!-- ru_RU voices=Microsoft_Irina -->
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{/SentenceRussian}}
+
+{{#SentenceRussian}}
+<input class="hide" id="hd-70" type="checkbox">
+<label for="hd-70">SentenceRussian</label>
+<div>
+    <span>
+        {{#SentenceRussian}}
+        {{SentenceRussian}}
+        {{/SentenceRussian}}
+    </span>
+</div>
+{{/SentenceRussian}}
+<!-- Russian Template/ -->
+<!-- L1 Template/ -->

@@ -1,0 +1,135 @@
+/* 20240310142949 */
+/* /CSS Template */
+
+.card {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    background-color: white;
+  }
+  
+  .cloze {
+   font-weight: bold;
+   color: MediumSeaGreen !important;
+  }
+  
+  a.hint {
+   color: MediumSeaGreen !important;
+   text-decoration: none;
+  }
+  
+  .nightMode .cloze {
+   color: MediumSeaGreen !important;
+  }
+  
+  .mobile .disabled {
+    display: none;
+    visibility: hidden;
+  }
+  
+  /* скрываем чекбоксы и блоки с содержанием */
+  .hide,
+  .hide+label~div {
+    display: none;
+  }
+  
+  /* вид текста label */
+  .hide+label,
+  .hide:checked+label {
+    padding: 0;
+    color: MediumSeaGreen !important;
+    cursor: pointer;
+    border-bottom: 1px dotted green;
+  }
+  
+  /* вид текста label при активном переключателе */
+  .hide:checked+label {
+    color: red;
+    border-bottom: 0;
+  }
+  
+  /* когда чекбокс активен показываем блоки с содержанием  */
+  .hide:checked+label+div {
+    display: block;
+    background: transparent;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+  }
+  
+  /* скрываем чекбоксы и блоки с содержанием */
+  .show,
+  .show+label~div {
+    display: none;
+  }
+  
+  /* вид текста label */
+  .show+label,
+  .show:not(:checked)+label {
+    padding: 0;
+    color: MediumSeaGreen !important;
+    cursor: pointer;
+    border-bottom: 1px dotted green;
+  }
+  
+  /* вид текста label при активном переключателе */
+  .show:not(:checked)+label {
+    color: red;
+    border-bottom: 0;
+  }
+  
+  /* когда чекбокс активен показываем блоки с содержанием  */
+  .show:not(:checked)+label+div {
+    display: block;
+    background: transparent;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+  }
+  
+  .svg-container {
+    display: inline-block;
+    /* Сделать контейнер inline-block элементом */
+    vertical-align: middle;
+    /* Выравнивание по вертикали по середине строки */
+    text-align: center;
+    /* Выравнивание по горизонтали по центру строки */
+  }
+  
+  .centered-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Вертикальное выравнивание по центру */
+    align-items: center;
+    /* Горизонтальное выравнивание по центру */
+  }
+  
+  /*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
+  .android .ankitts {
+    display: none;
+  }
+  
+  .field-audio {
+      display: none;
+      visibility: hidden;
+  }
+  
+  /*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
+  html:not(.android) .ankidroidTtsButton {
+    display: none;
+  }
+  
+  #answer-delete {
+    border: none;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .right {
+      float: right;
+  }
+  /* CSS Template/ */

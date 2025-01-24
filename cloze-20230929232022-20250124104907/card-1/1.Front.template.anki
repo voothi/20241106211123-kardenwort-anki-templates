@@ -1,0 +1,339 @@
+<!-- 20240315133741 -->
+<!-- /L2 Template -->
+<!-- /Word Template -->
+{{#Word}}
+<!-- /Audio Template -->
+<span>
+    {{#WordAudio}}
+    {{WordAudio}}
+    {{/WordAudio}}
+</span>
+<!-- Audio template/ -->
+
+<span>
+    {{tts de_DE voices=Microsoft_Stefan speed=0.7:Word}}
+    <!-- de_DE | en_GB -->
+    <!-- de_DE voices=Microsoft_Stefan -->
+    <!-- de_DE voices=gTTS -->
+    <!-- en_GB voices=Microsoft_Susan -->
+    <!-- en_US voices=gTTS -->
+    <!-- ru_RU voices=Microsoft_Irina -->
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{/Word}}
+
+{{#Word}}
+<input class="hide" id="hd-20" type="checkbox">
+<label for="hd-20">Word</label>
+<div>
+    <span>
+        {{#Word}}
+        {{Word}}
+        {{/Word}}
+    </span>
+
+    <span>
+        {{#WordIPA}}
+        <br><br>{{WordIPA}}
+        {{/WordIPA}}
+    </span>
+</div>
+{{/Word}}
+<!-- Word Template/ -->
+
+<!-- /Sentence Template -->
+{{#Sentence}}
+<br>
+<!-- /Audio#2 Template -->
+<span>
+    {{#SentenceAudio}}
+    {{SentenceAudio}}
+    {{/SentenceAudio}}
+</span>
+<!-- Audio#2 template/ -->
+
+<span>
+    {{tts de_DE voices=Microsoft_Stefan:Sentence}}
+    <!-- de_DE | en_GB -->
+    <!-- de_DE voices=Microsoft_Stefan -->
+    <!-- de_DE voices=gTTS -->
+    <!-- en_GB voices=Microsoft_Susan -->
+    <!-- en_US voices=gTTS -->
+    <!-- ru_RU voices=Microsoft_Irina -->
+    <!-- ru_RU voices=gTTS -->
+</span>
+{{#Sentence}}
+
+{{/Sentence}}
+<input class="hide" id="hd-10" type="checkbox">
+<label for="hd-10">Sentence</label>
+<div>
+    <span>
+        {{#Sentence}}
+        {{Sentence}}
+        {{/Sentence}}
+    </span>
+
+    <span>
+        {{#SentenceIPA}}
+        <br><br>{{SentenceIPA}}
+        {{/SentenceIPA}}
+    </span>
+</div>
+{{/Sentence}}
+<!-- Text Template/ -->
+<!-- L2 Template/ -->
+
+<!-- /Hint Template -->
+<input class="hide" id="hd-60" type="checkbox">
+<label for="hd-60"><hr></label>
+<div>
+    <!-- /Input Template -->
+    {{#Word}}
+    <!-- br -->
+    <input class="show" id="hd-90" type="checkbox"><!-- hide | show -->
+    <label for="hd-90">Input</label>
+    <div>
+        <span>
+            {{type:Word}}
+        </span>
+    </div>
+
+    <br>
+
+    {{/Word}}
+    <!-- Input Template/ -->
+
+    <span>
+        {{#Tags}}
+        {{hint:Tags}}<br>
+        {{/Tags}}
+    </span>
+
+    <span>
+        {{#Quotation}}
+        {{hint:Quotation}}<br>
+        {{/Quotation}}
+    </span>
+
+    <span>
+        {{#Word}}
+        {{hint:Word}}<br>
+        {{/Word}}
+    </span>
+
+    <span>
+        {{#WordRussian}}
+        {{hint:WordRussian}}<br>
+        {{/WordRussian}}
+    </span>
+
+    <!-- /Definition Template -->
+    {{#WordDefinition}}
+    <span>
+        <!-- tts de_DE voices=Microsoft_Stefan:WordDefinition -->
+        <!-- de_DE | en_GB -->
+        <!-- de_DE voices=Microsoft_Stefan -->
+        <!-- de_DE voices=gTTS -->
+        <!-- en_GB voices=Microsoft_Susan -->
+        <!-- en_US voices=gTTS -->
+        <!-- ru_RU voices=Microsoft_Irina -->
+        <!-- ru_RU voices=gTTS -->
+    </span>
+    {{/WordDefinition}}
+
+    {{#WordDefinition}}
+    <input class="hide" id="hd-30" type="checkbox">
+    <label for="hd-30">WordDefinition</label>
+    <div>
+        <span>
+            {{#WordDefinition}}
+            {{WordDefinition}}
+            {{/WordDefinition}}
+        </span>
+    </div>
+
+    <br>
+    
+    {{/WordDefinition}}
+    <!-- Definition Template/ -->
+
+    <span>
+        {{#Sentence}}
+        {{hint:Sentence}}<br>
+        {{/Sentence}}
+    </span>
+
+    <span>
+        {{#SentenceRussian}}
+        {{hint:SentenceRussian}}<br>
+        {{/SentenceRussian}}
+    </span>
+
+    <span>
+        {{#Text}}
+        {{hint:Text}}<br>
+        {{/Text}}
+    </span>
+
+    <span>
+        {{#TextRussian}}
+        {{hint:TextRussian}}<br>
+        {{/TextRussian}}
+    </span>
+
+    {{#TextURL}}
+    <input class="hide" id="hd-120" type="checkbox">
+    <label for="hd-120">TextURL</label>
+    <div>
+        <span>
+            <a href={{TextURL}}>{{TextURL}}</a>
+        </span>
+    </div>
+
+    <br>
+
+    {{/TextURL}}
+
+    <span>
+        {{#WordCloze}}
+        {{hint:WordCloze}}<br>
+        {{/WordCloze}}
+    </span>
+
+    <span>
+        {{#SentenceGerman}}
+        {{hint:SentenceGerman}}<br>
+        {{/SentenceGerman}}
+    </span>
+
+    <span>
+        {{#SentenceEnglish}}
+        {{hint:SentenceEnglish}}<br>
+        {{/SentenceEnglish}}
+    </span>
+
+    <span>
+        {{#SentenceUkrainian}}
+        {{hint:SentenceUkrainian}}<br>
+        {{/SentenceUkrainian}}
+    </span>
+
+    <span>
+        {{#Image}}
+        {{hint:Image}}<br>
+        {{/Image}}
+    </span>
+
+    <span>
+        {{#Source}}
+        {{hint:Source}}<br>
+        {{/Source}}
+    </span>
+
+    {{#SourceURL}}
+    <input class="hide" id="hd-110" type="checkbox">
+    <label for="hd-110">SourceURL</label>
+    <div>
+        <span>
+            <a href={{SourceURL}}>{{SourceURL}}</a><br>
+        </span>
+    </div>
+    {{/SourceURL}}
+
+    <span>
+        {{#Overlapping}}
+        {{hint:Overlapping}}
+        {{/Overlapping}}
+    </span>
+</div>
+<!-- Hint Template/ -->
+
+<span id="cloze-original" hidden="">{{WordCloze}}</span>
+<span id="cloze-anki-rendered" hidden="">{{cloze:WordCloze}}</span>
+<span id="cloze-overlapping-config" hidden="">{{Overlapping}}</span>
+<span id="cloze-js-rendered"></span><br><br>
+
+<script>
+  // This ceremony makes sure the render function is run exactly once:
+  (function () {
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
+    var alreadyRendered = false;
+
+    function render() {
+      if (alreadyRendered) return;
+      alreadyRendered = true;
+
+      var config = document.getElementById("cloze-overlapping-config").innerText.split(/[,\s|.]+/);
+      var leadingClozes = config[0] === "0" ? 0 : (+config[0] || 0);
+      var followingClozes = +config[1] || 0;
+      var showAllClozes = (config[2] || "true").toLowerCase() === "true"; // Set to false to omit, e.g. for long lyrics/poems
+      var revealAllClozes = (config[3] || "false").toLowerCase() === "true"; // On the back, reveal other clozes we didnʼt ask for?
+      var revealAllCustomPlaceholders = (config[4] || "false").toLowerCase() === "true";
+
+      var divOriginal = document.getElementById("cloze-original");
+      var divJsRendered = document.getElementById("cloze-js-rendered");
+
+      var currentCloze = +(
+        (document.body.className.match(/(^|\s)card(\d+)(\s|$)/) || [])[2] ||
+        ((document.getElementById("qa_box") && document.getElementById("qa_box").className && document.getElementById("qa_box").className.match(/(^|\s)card(\d+)(\s|$)/)) || [])[2] ||
+        0
+      );
+
+      var allClozes = (function () {
+        var allMatches = divOriginal.innerHTML.match(/\{\{c\d+::[\s\S]*?\}\}/g);
+        var res = {};
+        for (var i = 0; i < allMatches.length; i++) {
+          var match = allMatches[i].match(/\{\{c(\d+)::([\s\S]*?)(::([\s\S]*?))?\}\}/);
+          res[+match[1]] = res[+match[1]] || { askAll: false, clozes: {} };
+          if (match[2] === "ask-all")
+            res[+match[1]].askAll = true;
+          res[+match[1]].clozes[allMatches[i]] = { content: match[2], placeholder: match[4] ? match[4] : "..." };
+        }
+        return res;
+      })();
+
+      var isBackSide = document.getElementById("cloze-is-back") ? true : false;
+
+      var question = divOriginal.innerHTML;
+      for (var i in allClozes) {
+        for (var orig in allClozes[i].clozes) {
+          var replacement = "";
+          var markBlue = false;
+          var needle = new RegExp(escapeRegExp(orig), "g");
+          if (allClozes[i].askAll)
+            replacement = "";
+          else if (i == currentCloze || allClozes[currentCloze].askAll) {
+            markBlue = true;
+            replacement = isBackSide ? allClozes[i].clozes[orig].content : "[" + allClozes[i].clozes[orig].placeholder + "]";
+          } else if (currentCloze - leadingClozes <= i && i <= currentCloze + followingClozes)
+            replacement = allClozes[i].clozes[orig].content;
+          else if (showAllClozes && !allClozes[i].askAll)
+            replacement = (isBackSide && revealAllClozes) ? allClozes[i].clozes[orig].content : "[" + (revealAllCustomPlaceholders ? allClozes[i].clozes[orig].placeholder : "...") + "]";
+          else {
+            replacement = "";
+            // Also get rid of following new lines, commas, dots, etc.
+            needle = new RegExp(escapeRegExp(orig) + "(<br>|[\\s,.])*", "g");
+          }
+          question = question.replace(needle, function () {
+            return (markBlue ? "<span class=\"cloze\">" : "") + replacement + (markBlue ? "</span>" : "");
+          });
+        }
+      }
+
+      divJsRendered.innerHTML = question;
+    }
+
+    function delayedRender() {
+      if (window.requestAnimationFrame) window.requestAnimationFrame(render); // less flickering
+      else window.setTimeout(render, 0);
+    };
+
+    window.onload = delayedRender();
+    if (document.readyState === "complete") delayedRender();
+    else document.addEventListener("DOMContentLoaded", delayedRender);
+  })();
+</script>
