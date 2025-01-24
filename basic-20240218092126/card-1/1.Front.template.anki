@@ -2,6 +2,7 @@
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
+{{#WordSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -82,11 +83,13 @@
         </td>
     </tr>
 </table>
+{{/WordSource}}
 <!-- /WordSource -->
 <!-- Word Template/ -->
 
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+{{#SentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -159,6 +162,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSource}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
