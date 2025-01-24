@@ -4,7 +4,7 @@
 <!-- /Word Template -->
 <table class="fixed-table">
     <tr>
-        <td class="fixed-cell">
+        <td class="fixed-cell" id="audioDecoy">
             <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
@@ -83,9 +83,16 @@
 <!-- /WordSource -->
 <!-- Word Template/ -->
 
+<!-- [Hacky solution] add this code to the Back template. 
+It will prevent the automatic reprodution of any audio file on the back side of the card. -->
+<!-- <span id="audioDecoy" hidden>[sound:silence.mp3]</span> -->
+<script>
+    var blockAudio = document.querySelector('#audioDecoy .replay-button');
+    if (blockAudio) { blockAudio.click(); }
+</script>
+
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -167,7 +174,7 @@
 
 
 <!-- /Hint Template -->
-<input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}} id="hd-60"
+<input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
     type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
