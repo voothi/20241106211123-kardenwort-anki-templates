@@ -60,7 +60,11 @@
 
             <!-- #WordSource -->
             <input class="hide" id="hd-20" type="checkbox">
-            <label for="hd-20">Source Word</label>
+            <label for="hd-20">Source Word
+                {{#WordSourceIPA}}●{{/WordSourceIPA}}{{^WordSourceIPA}}○{{/WordSourceIPA}}
+                {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
+                {{#WordSourceInflectedForm}}●{{/WordSourceInflectedForm}}{{^WordSourceInflectedForm}}○{{/WordSourceInflectedForm}}
+            </label>
             <div>
                 <span>
                     {{#WordSourceIPA}}
@@ -145,7 +149,10 @@
 
             <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
-            <label for="hd-10">Source Sentence</label>
+            <label for="hd-10">Source Sentence
+                {{#SentenceSourceIPA}}●{{/SentenceSourceIPA}}{{^SentenceSourceIPA}}○{{/SentenceSourceIPA}}
+                {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+            </label>
             <div>
                 <span>
                     {{#SentenceSourceIPA}}
@@ -185,7 +192,9 @@
     {{#WordSource}}
     <!-- br -->
     <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
-    <label for="hd-90">Source Word Input</label>
+    <label for="hd-90">Source Word Input
+        {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
+    </label>
     <div>
         <span>
             {{type:WordSource}}
@@ -200,7 +209,9 @@
     {{#SentenceSource}}
     <!-- br -->
     <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
-    <label for="hd-130">Source Sentence Input</label>
+    <label for="hd-130">Source Sentence Input
+        {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+    </label>
     <div>
         <span>
             {{type:SentenceSource}}
@@ -212,7 +223,9 @@
     {{^SentenceSource}}
     <!-- br -->
     <input class="hide" id="hd-135" type="checkbox"><!-- hide | show -->
-    <label for="hd-135">Source Sentence Cloze Input</label>
+    <label for="hd-135">Source Sentence Cloze Input
+        {{#SentenceSourceCloze}}●{{/SentenceSourceCloze}}{{^SentenceSourceCloze}}○{{/SentenceSourceCloze}}
+    </label>
     <div>
         <span>
             {{type:SentenceSourceCloze}}
@@ -224,11 +237,18 @@
     <!-- Input Template/ -->
 
     <input class="show" id="hd-320" type="checkbox">
-    <label for="hd-320">Source</label>
+    <label for="hd-320">Source
+        {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
+        {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+    </label>
     <div>
         {{#WordSource}}
         <input class="hide" id="hd-160" type="checkbox">
-        <label for="hd-160">Word</label>
+        <label for="hd-160">Word
+            {{#WordSourceIPA}}●{{/WordSourceIPA}}{{^WordSourceIPA}}○{{/WordSourceIPA}}
+            {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
+            {{#WordSourceInflectedForm}}●{{/WordSourceInflectedForm}}{{^WordSourceInflectedForm}}○{{/WordSourceInflectedForm}}
+        </label>
         <div>
             {{#WordSource}}
             <!-- br -->
@@ -267,7 +287,10 @@
             <div> -->
         {{#WordSourceDefinitionFirst}}
         <input class="hide" id="hd-370" type="checkbox">
-        <label for="hd-370">Word Definition First</label>
+        <label for="hd-370">Word Definition First
+            {{#WordSourceDefinitionFirstClipping}}●{{/WordSourceDefinitionFirstClipping}}{{^WordSourceDefinitionFirstClipping}}○{{/WordSourceDefinitionFirstClipping}}
+            {{#WordSourceDefinitionFirst}}●{{/WordSourceDefinitionFirst}}{{^WordSourceDefinitionFirst}}○{{/WordSourceDefinitionFirst}}
+        </label>
         <div>
             <span>
                 {{#WordSourceDefinitionFirstClipping}}
@@ -321,7 +344,9 @@
 
         {{#WordSourceDefinitionSecond}}
         <input class="hide" id="hd-380" type="checkbox">
-        <label for="hd-380">Word Definition Second</label>
+        <label for="hd-380">Word Definition Second
+            {{#WordSourceDefinitionSecond}}●{{/WordSourceDefinitionSecond}}{{^WordSourceDefinitionSecond}}○{{/WordSourceDefinitionSecond}}
+        </label>
         <div>
             <span>
                 {{#WordSourceDefinitionSecond}}
@@ -334,7 +359,10 @@
 
         {{#WordSourceMorphemeFirst}}
         <input class="hide" id="hd-190" type="checkbox">
-        <label for="hd-190">Word Morpheme First</label>
+        <label for="hd-190">Word Morpheme First
+            {{#WordSourceMorphemeFirst}}●{{/WordSourceMorphemeFirst}}{{^WordSourceMorphemeFirst}}○{{/WordSourceMorphemeFirst}}
+            {{#WordSourceMorphemeFirstDefinition}}●{{/WordSourceMorphemeFirstDefinition}}{{^WordSourceMorphemeFirstDefinition}}○{{/WordSourceMorphemeFirstDefinition}}
+        </label>
         <div>
             <span>
                 {{#WordSourceMorphemeFirst}}
@@ -353,7 +381,10 @@
 
         {{#WordSourceMorphemeSecond}}
         <input class="hide" id="hd-220" type="checkbox">
-        <label for="hd-220">Word Morpheme Second</label>
+        <label for="hd-220">Word Morpheme Second
+            {{#WordSourceMorphemeSecond}}●{{/WordSourceMorphemeSecond}}{{^WordSourceMorphemeSecond}}○{{/WordSourceMorphemeSecond}}
+            {{#WordSourceMorphemeSecondDefinition}}●{{/WordSourceMorphemeSecondDefinition}}{{^WordSourceMorphemeSecondDefinition}}○{{/WordSourceMorphemeSecondDefinition}}
+        </label>
         <div>
             <span>
                 {{#WordSourceMorphemeSecond}}
@@ -372,7 +403,10 @@
 
         {{#WordSourceMorphemeThird}}
         <input class="hide" id="hd-230" type="checkbox">
-        <label for="hd-230">Word Morpheme Third</label>
+        <label for="hd-230">Word Morpheme Third
+            {{#WordSourceMorphemeThird}}●{{/WordSourceMorphemeThird}}{{^WordSourceMorphemeThird}}○{{/WordSourceMorphemeThird}}
+            {{#WordSourceMorphemeThirdDefinition}}●{{/WordSourceMorphemeThirdDefinition}}{{^WordSourceMorphemeThirdDefinition}}○{{/WordSourceMorphemeThirdDefinition}}
+        </label>
         <div>
             <span>
                 {{#WordSourceMorphemeThird}}
@@ -391,7 +425,10 @@
 
         {{#WordSourceMorphemeFourth}}
         <input class="hide" id="hd-240" type="checkbox">
-        <label for="hd-240">Word Morpheme Fourth</label>
+        <label for="hd-240">Word Morpheme Fourth
+            {{#WordSourceMorphemeFourth}}●{{/WordSourceMorphemeFourth}}{{^WordSourceMorphemeFourth}}○{{/WordSourceMorphemeFourth}}
+            {{#WordSourceMorphemeFourthDefinition}}●{{/WordSourceMorphemeFourthDefinition}}{{^WordSourceMorphemeFourthDefinition}}○{{/WordSourceMorphemeFourthDefinition}}
+        </label>
         <div>
             <span>
                 {{#WordSourceMorphemeFourth}}
@@ -410,7 +447,10 @@
 
         {{#WordSourceMorphemeFifth}}
         <input class="hide" id="hd-250" type="checkbox">
-        <label for="hd-250">Word Morpheme Fifth</label>
+        <label for="hd-250">Word Morpheme Fifth
+            {{#WordSourceMorphemeFifth}}●{{/WordSourceMorphemeFifth}}{{^WordSourceMorphemeFifth}}○{{/WordSourceMorphemeFifth}}
+            {{#WordSourceMorphemeFifthDefinition}}●{{/WordSourceMorphemeFifthDefinition}}{{^WordSourceMorphemeFifthDefinition}}○{{/WordSourceMorphemeFifthDefinition}}
+        </label>
         <div>
             <span>
                 {{#WordSourceMorphemeFifth}}
@@ -433,7 +473,10 @@
 
         {{#SentenceSource}}
         <input class="hide" id="hd-270" type="checkbox">
-        <label for="hd-270">Sentence</label>
+        <label for="hd-270">Sentence
+            {{#SentenceSourceIPA}}●{{/SentenceSourceIPA}}{{^SentenceSourceIPA}}○{{/SentenceSourceIPA}}
+            {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+        </label>
         <div>
             <span>
                 {{#SentenceSourceIPA}}
@@ -461,8 +504,9 @@
 
         <input class="hide" id="hd-140" type="checkbox">
         <label for="hd-140">Sentence Context
-            {{#SentenceSourceContextLeft}}●{{/SentenceSourceContextLeft}}{{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}
-            {{^SentenceSourceContextLeft}}○{{/SentenceSourceContextLeft}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
+            {{#SentenceSourceContextLeft}}●{{/SentenceSourceContextLeft}}{{^SentenceSourceContextLeft}}○{{/SentenceSourceContextLeft}}
+            {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+            {{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
         </label>
         <div>
             <span>
@@ -487,7 +531,9 @@
         <!-- #SentenceSourceWordlist -->
         {{#SentenceSourceWordlist}}
         <input class="hide" id="hd-260" type="checkbox">
-        <label for="hd-260">Wordlist</label>
+        <label for="hd-260">Wordlist
+            {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
+        </label>
         <div>
             <span>
                 <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
@@ -543,10 +589,17 @@
     <br>
 
     <input class="show" id="hd-330" type="checkbox">
-    <label for="hd-330">Destination</label>
+    <label for="hd-330">Destination
+        {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
+        {{#WordDestinationDefinitionFirst}}●{{/WordDestinationDefinitionFirst}}{{^WordDestinationDefinitionFirst}}○{{/WordDestinationDefinitionFirst}}
+        {{#WordDestinationDefinitionSecond}}●{{/WordDestinationDefinitionSecond}}{{^WordDestinationDefinitionSecond}}○{{/WordDestinationDefinitionSecond}}
+        {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+    </label>
     <div>
         <input class="hide" id="hd-170" type="checkbox">
-        <label for="hd-170">Word</label>
+        <label for="hd-170">Word
+            {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
+        </label>
         <div>
             <span>
                 {{#WordDestination}}
@@ -559,7 +612,9 @@
         <!-- /Definition Template 2 -->
         {{#WordDestinationDefinitionFirst}}
         <input class="hide" id="hd-110" type="checkbox">
-        <label for="hd-110">Word Definition First</label>
+        <label for="hd-110">Word Definition First
+            {{#WordDestinationDefinitionFirst}}●{{/WordDestinationDefinitionFirst}}{{^WordDestinationDefinitionFirst}}○{{/WordDestinationDefinitionFirst}}
+        </label>
         <div>
             <span>
                 {{#WordDestinationDefinitionFirst}}
@@ -573,7 +628,9 @@
 
         {{#WordDestinationDefinitionSecond}}
         <input class="hide" id="hd-390" type="checkbox">
-        <label for="hd-390">Word Definition Second</label>
+        <label for="hd-390">Word Definition Second
+            {{#WordDestinationDefinitionSecond}}●{{/WordDestinationDefinitionSecond}}{{^WordDestinationDefinitionSecond}}○{{/WordDestinationDefinitionSecond}}
+        </label>
         <div>
             <span>
                 {{#WordDestinationDefinitionSecond}}
@@ -586,7 +643,9 @@
 
         {{#SentenceDestination}}
         <input class="hide" id="hd-280" type="checkbox">
-        <label for="hd-280">Sentence</label>
+        <label for="hd-280">Sentence
+            {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+        </label>
         <div>
             {{^WordDestination}}
             <span>
@@ -611,8 +670,8 @@
 
     <input class="hide" id="hd-350" type="checkbox">
     <label for="hd-350">Ukrainian
-        {{#WordUkrainian}}●{{/WordUkrainian}}{{#SentenceUkrainian}}●{{/SentenceUkrainian}}
-        {{^WordUkrainian}}○{{/WordUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
+        {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
+        {{#SentenceUkrainian}}●{{/SentenceUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
     </label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
@@ -651,8 +710,8 @@
 
     <input class="hide" id="hd-180" type="checkbox">
     <label for="hd-180">English
-        {{#WordEnglish}}●{{/WordEnglish}}{{#SentenceEnglish}}●{{/SentenceEnglish}}
-        {{^WordEnglish}}○{{/WordEnglish}}{{^SentenceEnglish}}○{{/SentenceEnglish}}
+        {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
+        {{#SentenceEnglish}}●{{/SentenceEnglish}}{{^SentenceEnglish}}○{{/SentenceEnglish}}
     </label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
@@ -692,7 +751,11 @@
     <br>
 
     <input class="hide" id="hd-340" type="checkbox">
-    <label for="hd-340">AI</label>
+    <label for="hd-340">AI
+        {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
+        {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
+        {{#WordSourceSynonymAI}}●{{/WordSourceSynonymAI}}{{^WordSourceSynonymAI}}○{{/WordSourceSynonymAI}}
+    </label>
     <div>
 
         {{#WordSourceDefinitionAISentenceSource}}
@@ -818,7 +881,9 @@
 
         {{#WordSourceSynonymAI}}
         <input class="hide" id="hd-310" type="checkbox">
-        <label for="hd-310">Synonym</label>
+        <label for="hd-310">Synonym
+            {{#WordSourceSynonymAI}}●{{/WordSourceSynonymAI}}{{^WordSourceSynonymAI}}○{{/WordSourceSynonymAI}}
+        </label>
         <div>
             <span>
                 {{#WordSourceSynonymAI}}
@@ -845,7 +910,9 @@
 
     {{#TextSourceURL}}
     <input class="hide" id="hd-120" type="checkbox">
-    <label for="hd-120">Text URL</label>
+    <label for="hd-120">Text URL
+        {{#TextSourceURL}}●{{/TextSourceURL}}{{^TextSourceURL}}○{{/TextSourceURL}}
+    </label>
     <div>
         <span>
             <a href={{TextSourceURL}}>{{TextSourceURL}}</a><br><br>
@@ -880,7 +947,9 @@
 
     {{#SourceURL}}
     <input class="hide" id="hd-110" type="checkbox">
-    <label for="hd-110">Source URL</label>
+    <label for="hd-110">Source URL
+        {{#SourceURL}}●{{/SourceURL}}{{^SourceURL}}○{{/SourceURL}}
+    </label>
     <div>
         <span>
             <a href={{SourceURL}}>{{SourceURL}}</a><br><br>
