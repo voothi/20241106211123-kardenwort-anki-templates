@@ -596,6 +596,7 @@
         {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
     </label>
     <div>
+        {{#WordDestination}}
         <input class="hide" id="hd-170" type="checkbox">
         <label for="hd-170">Word
             {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
@@ -608,6 +609,7 @@
             </span>
         </div>
         <br>
+        {{/WordDestination}}
 
         <!-- /Definition Template 2 -->
         {{#WordDestinationDefinitionFirst}}
