@@ -115,6 +115,14 @@
 <!-- /WordDestination -->
 <!-- Definition#2 Template/ -->
 
+<!-- [Hacky solution] add this code to the Back template. 
+It will prevent the automatic reprodution of any audio file on the back side of the card. -->
+<!-- <span id="audioDecoy" hidden>[sound:silence.mp3]</span> -->
+<script>
+    var blockAudio = document.querySelector('#audioDecoy .replay-button');
+    if (blockAudio) { blockAudio.click(); }
+</script>
+
 <!-- /Russian Template -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 <table class="fixed-table">
