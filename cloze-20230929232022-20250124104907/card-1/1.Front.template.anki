@@ -353,6 +353,7 @@
         {{#WordSource}}
         <input class="hide" id="hd-160" type="checkbox">
         <label for="hd-160">Word
+            {{#WordSourceAudio}}●{{/WordSourceAudio}}{{^WordSourceAudio}}○{{/WordSourceAudio}}
             {{#WordSourceIPA}}●{{/WordSourceIPA}}{{^WordSourceIPA}}○{{/WordSourceIPA}}
             {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
             {{#WordSourceInflectedForm}}●{{/WordSourceInflectedForm}}{{^WordSourceInflectedForm}}○{{/WordSourceInflectedForm}}

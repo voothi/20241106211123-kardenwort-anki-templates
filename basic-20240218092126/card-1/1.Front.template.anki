@@ -150,6 +150,7 @@
             <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
             <label for="hd-10">Source Sentence
+                {{#SentenceSourceAudio}}●{{/SentenceSourceAudio}}{{^SentenceSourceAudio}}○{{/SentenceSourceAudio}}
                 {{#SentenceSourceIPA}}●{{/SentenceSourceIPA}}{{^SentenceSourceIPA}}○{{/SentenceSourceIPA}}
                 {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
             </label>
@@ -245,6 +246,7 @@
         {{#WordSource}}
         <input class="hide" id="hd-160" type="checkbox">
         <label for="hd-160">Word
+            {{#WordSourceAudio}}●{{/WordSourceAudio}}{{^WordSourceAudio}}○{{/WordSourceAudio}}
             {{#WordSourceIPA}}●{{/WordSourceIPA}}{{^WordSourceIPA}}○{{/WordSourceIPA}}
             {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
             {{#WordSourceInflectedForm}}●{{/WordSourceInflectedForm}}{{^WordSourceInflectedForm}}○{{/WordSourceInflectedForm}}
