@@ -4,7 +4,7 @@
         <td class="fixed-cell">
             {{#SentenceSourceCloze}}
             <input class="show" id="hd-400" type="checkbox">
-            <label for="hd-400">SentenceSourceCloze</label>
+            <label for="hd-400">Source Sentence Cloze</label>
             <div>
                 <span id="cloze-original" hidden="">{{SentenceSourceCloze}}</span>
                 <span id="cloze-anki-rendered" hidden="">{{cloze:SentenceSourceCloze}}</span>
@@ -162,7 +162,7 @@
 
             <!-- #WordSource -->
             <input class="hide" id="hd-20" type="checkbox">
-            <label for="hd-20">WordSource</label>
+            <label for="hd-20">Source Word</label>
             <div>
                 <span>
                     {{#WordSourceIPA}}
@@ -248,7 +248,7 @@
 
             <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
-            <label for="hd-10">SentenceSource</label>
+            <label for="hd-10">Source Sentence</label>
             <div>
                 <span>
                     {{#SentenceSourceIPA}}
@@ -358,7 +358,7 @@
             <div> -->
         {{#WordSourceDefinitionFirst}}
         <input class="hide" id="hd-370" type="checkbox">
-        <label for="hd-370">WordDefinitionFirst</label>
+        <label for="hd-370">Word Definition First</label>
         <div>
             <span>
                 {{#WordSourceDefinitionFirstClipping}}
@@ -412,7 +412,7 @@
 
         {{#WordSourceDefinitionSecond}}
         <input class="hide" id="hd-380" type="checkbox">
-        <label for="hd-380">WordDefinitionSecond</label>
+        <label for="hd-380">Word Definition Second</label>
         <div>
             <span>
                 {{#WordSourceDefinitionSecond}}
@@ -425,7 +425,7 @@
 
         {{#WordSourceMorphemeFirst}}
         <input class="hide" id="hd-190" type="checkbox">
-        <label for="hd-190">WordMorphemeFirst</label>
+        <label for="hd-190">Word Morpheme First</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFirst}}
@@ -444,7 +444,7 @@
 
         {{#WordSourceMorphemeSecond}}
         <input class="hide" id="hd-220" type="checkbox">
-        <label for="hd-220">WordMorphemeSecond</label>
+        <label for="hd-220">Word Morpheme Second</label>
         <div>
             <span>
                 {{#WordSourceMorphemeSecond}}
@@ -463,7 +463,7 @@
 
         {{#WordSourceMorphemeThird}}
         <input class="hide" id="hd-230" type="checkbox">
-        <label for="hd-230">WordMorphemeThird</label>
+        <label for="hd-230">Word Morpheme Third</label>
         <div>
             <span>
                 {{#WordSourceMorphemeThird}}
@@ -482,7 +482,7 @@
 
         {{#WordSourceMorphemeFourth}}
         <input class="hide" id="hd-240" type="checkbox">
-        <label for="hd-240">WordMorphemeFourth</label>
+        <label for="hd-240">Word Morpheme Fourth</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFourth}}
@@ -501,7 +501,7 @@
 
         {{#WordSourceMorphemeFifth}}
         <input class="hide" id="hd-250" type="checkbox">
-        <label for="hd-250">WordMorphemeFifth</label>
+        <label for="hd-250">Word Morpheme Fifth</label>
         <div>
             <span>
                 {{#WordSourceMorphemeFifth}}
@@ -552,7 +552,7 @@
         <br>
 
         <input class="hide" id="hd-140" type="checkbox">
-        <label for="hd-140">SentenceContext</label>
+        <label for="hd-140">Sentence Context</label>
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
@@ -648,7 +648,7 @@
         <!-- /Definition Template 2 -->
         {{#WordDestinationDefinitionFirst}}
         <input class="hide" id="hd-110" type="checkbox">
-        <label for="hd-110">WordDefinitionFirst</label>
+        <label for="hd-110">Word Definition First</label>
         <div>
             <span>
                 {{#WordDestinationDefinitionFirst}}
@@ -662,7 +662,7 @@
 
         {{#WordDestinationDefinitionSecond}}
         <input class="hide" id="hd-390" type="checkbox">
-        <label for="hd-390">WordDefinitionSecond</label>
+        <label for="hd-390">Word Definition Second</label>
         <div>
             <span>
                 {{#WordDestinationDefinitionSecond}}
@@ -928,7 +928,7 @@
 
     {{#TextSourceURL}}
     <input class="hide" id="hd-120" type="checkbox">
-    <label for="hd-120">TextURL</label>
+    <label for="hd-120">Text URL</label>
     <div>
         <span>
             <a href={{TextSourceURL}}>{{TextSourceURL}}</a><br><br>
@@ -963,7 +963,7 @@
 
     {{#SourceURL}}
     <input class="hide" id="hd-110" type="checkbox">
-    <label for="hd-110">SourceURL</label>
+    <label for="hd-110">Source URL</label>
     <div>
         <span>
             <a href={{SourceURL}}>{{SourceURL}}</a><br><br>
