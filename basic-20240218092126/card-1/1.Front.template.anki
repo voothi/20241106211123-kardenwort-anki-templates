@@ -611,7 +611,10 @@
     <br>
 
     <input class="hide" id="hd-350" type="checkbox">
-    <label for="hd-350">Ukrainian</label>
+    <label for="hd-350">Ukrainian
+        {{#WordUkrainian}}●{{/WordUkrainian}}{{#SentenceUkrainian}}●{{/SentenceUkrainian}}
+        {{^WordUkrainian}}○{{/WordUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
+    </label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
@@ -648,7 +651,10 @@
     <br>
 
     <input class="hide" id="hd-180" type="checkbox">
-    <label for="hd-180">English</label>
+    <label for="hd-180">English
+        {{#WordEnglish}}●{{/WordEnglish}}{{#SentenceEnglish}}●{{/SentenceEnglish}}
+        {{^WordEnglish}}○{{/WordEnglish}}{{^SentenceEnglish}}○{{/SentenceEnglish}}
+    </label>
     <div>
         <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
