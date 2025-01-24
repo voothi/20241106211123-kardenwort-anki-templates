@@ -1,10 +1,17 @@
+<!-- [Hacky solution] add this code to the Back template. 
+It will prevent the automatic reprodution of any audio file on the back side of the card. -->
+<script>
+    var blockAudio = document.querySelector('#audioDecoy .replay-button');
+    if (blockAudio) { blockAudio.click(); }
+</script>
+
 <!-- Case 1 -->
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
-<table class="fixed-table">
+<table class="fixed-table" id="audioDecoy">
     <tr>
-        <td class="fixed-cell" id="audioDecoy">
+        <td class="fixed-cell">
             <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
@@ -82,14 +89,6 @@
 </table>
 <!-- /WordSource -->
 <!-- Word Template/ -->
-
-<!-- [Hacky solution] add this code to the Back template. 
-It will prevent the automatic reprodution of any audio file on the back side of the card. -->
-<span id="audioDecoy" hidden>[sound:silence.mp3]</span>
-<script>
-    var blockAudio = document.querySelector('#audioDecoy .replay-button');
-    if (blockAudio) { blockAudio.click(); }
-</script>
 
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
