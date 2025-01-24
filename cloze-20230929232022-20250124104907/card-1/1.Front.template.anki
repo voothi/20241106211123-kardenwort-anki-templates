@@ -1,3 +1,4 @@
+{{#SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -98,11 +99,14 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceCloze}}
 
 <!-- Case 1 -->
 <!-- 20241024191126 -->
 <!-- /L2 Template -->
 <!-- /Word Template -->
+{{#WordSource}}
+{{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -181,6 +185,8 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceCloze}}
+{{/WordSource}}
 <!-- /WordSource -->
 <!-- Word Template/ -->
 
