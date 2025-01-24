@@ -58,11 +58,174 @@ It will prevent the automatic reprodution of any audio file on the back side of 
 <!-- Feature for Browse Mode on AnkiDroid/ -->
 
 <!-- /FrontSide Template -->
-<!-- { {FrontSide} } -->
-{{FrontSide}}
+<!-- FrontSide -->
 <!-- hr id="answer" -->
 <!-- hr -->
 <!-- FrontSide Template/ -->
+
+<!-- Case 1 -->
+<!-- 20241024191126 -->
+<!-- /L2 Template -->
+<!-- /Word Template -->
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            <!-- /Audio template -->
+            <span>
+                {{#WordSourceAudio}}
+                {{WordSourceAudio}}
+                {{/WordSourceAudio}}
+            </span>
+            <!-- Audio template/ -->
+
+            {{#WordSource}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:WordSource}}
+                <!-- en_GB voices=Microsoft_Susan -->
+                <!-- en_US voices=gTTS -->
+                <!-- en_US voices=Microsoft_Zira -->
+                <!-- en_US voices=gTTS -->
+                <!-- de_DE voices=Microsoft_Stefan -->
+                <!-- de_DE voices=gTTS -->
+                <!-- tts uk_UA -->
+                <!-- tts uk_UA voices=gTTS -->
+                <!-- ru_RU voices=Microsoft_Irina -->
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:WordSource}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordSource}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordSource}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:WordSource}}
+            </span>
+            {{/Source-ru-RU}}
+            {{/WordSource}}
+
+            <!-- #WordSource -->
+            <input class="hide" id="hd-20" type="checkbox">
+            <label for="hd-20">WordSource</label>
+            <div>
+                <span>
+                    {{#WordSourceIPA}}
+                    {{WordSourceIPA}}<br><br>
+                    {{/WordSourceIPA}}
+                </span>
+
+                <span>
+                    {{#WordSource}}
+                    {{WordSource}}<br><br>
+                    {{/WordSource}}
+                </span>
+
+                <span>
+                    {{#WordSourceInflectedForm}}
+                    {{WordSourceInflectedForm}}<br><br>
+                    {{/WordSourceInflectedForm}}
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- /WordSource -->
+<!-- Word Template/ -->
+
+<!-- SentenceSource TTS Toggle Off -->
+<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{^ToggleAlwaysEmptyField}}
+            <!-- /Sentence Template -->
+            <!-- /Audio#2 Template -->
+            <!-- ^WordSource -->
+            <span>
+                {{#SentenceSourceAudio}}
+                {{SentenceSourceAudio}}
+                {{/SentenceSourceAudio}}
+            </span>
+            <!-- /WordSource -->
+            <!-- Audio#2 template/ -->
+
+            <!-- ^WordSource -->
+            <!-- #SentenceDestination -->
+            {{#SentenceSource}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceSource}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceSource}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceSource}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceSource}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceSource}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            {{/SentenceSource}}
+            <!-- /SentenceDestination -->
+            <!-- /WordSource -->
+            {{/ToggleAlwaysEmptyField}}
+
+            <!-- #SentenceSource -->
+            <input class="hide" id="hd-10" type="checkbox">
+            <label for="hd-10">SentenceSource</label>
+            <div>
+                <span>
+                    {{#SentenceSourceIPA}}
+                    {{SentenceSourceIPA}}<br><br>
+                    {{/SentenceSourceIPA}}
+                </span>
+
+                <span>
+                    {{#SentenceSource}}
+                    {{SentenceSource}}<br><br>
+                    {{/SentenceSource}}
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- /SentenceSource -->
+<!-- Text Template/ -->
+<!-- L2 Template/ -->
+<!-- Case 1/ -->
 
 
 
