@@ -755,7 +755,6 @@
     <input class="hide" id="hd-340" type="checkbox">
     <label for="hd-340">AI
         {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
-        {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
         {{#WordSourceSynonymAI}}●{{/WordSourceSynonymAI}}{{^WordSourceSynonymAI}}○{{/WordSourceSynonymAI}}
     </label>
     <div>
@@ -763,14 +762,19 @@
         {{#WordSourceDefinitionAISentenceSource}}
         <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
             {{/WordDestination}} id="hd-300" type="checkbox">
-        <label for="hd-300">Definition</label>
+        <label for="hd-300">Definition
+            {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
+            {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
+        </label>
         <div>
             <!-- #WordSourceDefinitionAI -->
 
             {{#WordSourceDefinitionAISentenceSource}}
             <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
                 {{/WordDestination}} id="hd-150" type="checkbox">
-            <label for="hd-150">Source</label>
+            <label for="hd-150">Source
+                {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
+            </label>
             <div>
                 <span>
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
@@ -826,7 +830,9 @@
             {{#WordSourceDefinitionAISentenceDestination}}
             <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
                 {{/WordDestination}} id="hd-290" type="checkbox">
-            <label for="hd-290">Destination</label>
+            <label for="hd-290">Destination
+                {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
+            </label>
             <div>
                 <span>
                     <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
