@@ -4,7 +4,10 @@
         <td class="fixed-cell">
             {{#SentenceSourceCloze}}
             <input class="show" id="hd-400" type="checkbox">
-            <label for="hd-400">Source Sentence Cloze</label>
+            <label for="hd-400">Source Sentence Cloze
+                {{#SentenceSourceCloze}}●{{/SentenceSourceCloze}}{{^SentenceSourceCloze}}○{{/SentenceSourceCloze}}
+                {{#Overlapping}}●{{/Overlapping}}{{^Overlapping}}○{{/Overlapping}}
+            </label>
             <div>
                 <span id="cloze-original" hidden="">{{SentenceSourceCloze}}</span>
                 <span id="cloze-anki-rendered" hidden="">{{cloze:SentenceSourceCloze}}</span>
