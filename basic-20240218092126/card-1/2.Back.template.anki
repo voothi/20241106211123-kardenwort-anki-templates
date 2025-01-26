@@ -1,5 +1,3 @@
-<span id="side2"></span>
-
 <!-- /Feature for Browse Mode on AnkiDroid -->
 {{#WordDestination}}
 <span class="field-hide">
@@ -189,3 +187,5 @@
 <!-- Russian Template/ -->
 <!-- L1 Template/ -->
 <!-- Case 2/ -->
+
+<span id="side2"></span>
