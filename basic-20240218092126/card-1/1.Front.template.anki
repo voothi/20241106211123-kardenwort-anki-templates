@@ -1,31 +1,16 @@
 <script>
-    var isBackSide = document.getElementById("side2") !== null;
-
-    var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130"];
-
-    checkboxIds.forEach(function (id) {
-        var checkbox = document.getElementById(id);
-        if (checkbox) {
-            if (isBackSide) {
-                checkbox.classList.remove("hide");
-                checkbox.classList.add("show");
-            } else {
-                checkbox.classList.remove("show");
-                checkbox.classList.add("hide");
-            }
-        }
-    });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
+    function updateCheckboxVisibility() {
+        // Проверяем, есть ли элемент с id "side2"
         var isBackSide = document.getElementById("side2") !== null;
 
+        // Массив с id чекбоксов
         var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130"];
 
+        // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
             var checkbox = document.getElementById(id);
-            if (checkbox) {
+            if (checkbox) { // Проверяем, существует ли чекбокс
+                // Если на оборотной стороне, меняем класс
                 if (isBackSide) {
                     checkbox.classList.remove("hide");
                     checkbox.classList.add("show");
@@ -35,7 +20,15 @@
                 }
             }
         });
-    });
+    }
+
+    var isAndroid = /Android/i.test(navigator.userAgent);
+
+    if (isAndroid) {
+        document.addEventListener("DOMContentLoaded", updateCheckboxVisibility);
+    } else {
+        updateCheckboxVisibility();
+    }
 </script>
 
 <!-- Case 1 -->
