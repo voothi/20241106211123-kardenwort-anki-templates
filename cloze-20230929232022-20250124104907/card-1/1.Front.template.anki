@@ -1,17 +1,22 @@
 <span id="side1"></span>
 
 <script>
-    isBackSide = document.getElementById("side2") !== null;
+    var isBackSide = document.getElementById("side2") !== null;
 
-    checkbox = document.getElementById("hd-70");
+    var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130"];
 
-    if (isBackSide) {
-        checkbox.classList.remove("hide");
-        checkbox.classList.add("show");
-    } else {
-        checkbox.classList.remove("show");
-        checkbox.classList.add("hide");
-    }
+    checkboxIds.forEach(function (id) {
+        var checkbox = document.getElementById(id);
+        if (checkbox) {
+            if (isBackSide) {
+                checkbox.classList.remove("hide");
+                checkbox.classList.add("show");
+            } else {
+                checkbox.classList.remove("show");
+                checkbox.classList.add("hide");
+            }
+        }
+    });
 </script>
 
 <!-- Case 1 -->
