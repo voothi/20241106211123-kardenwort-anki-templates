@@ -584,7 +584,7 @@
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
-                {{SentenceSourceContextLeft}}<br><br>
+                {{hint:SentenceSourceContextLeft}}<br>
                 {{/SentenceSourceContextLeft}}
             </span>
 
@@ -596,7 +596,7 @@
 
             <span>
                 {{#SentenceSourceContextRight}}
-                {{SentenceSourceContextRight}}<br><br>
+                {{hint:SentenceSourceContextRight}}<br>
                 {{/SentenceSourceContextRight}}
             </span>
         </div>
