@@ -198,6 +198,38 @@
             {{/Source-ru-RU}}
             {{/WordSourceAudio}}
             {{/WordSource}}
+
+            {{#WordSourceInflectedForm}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:WordSourceInflectedForm}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:WordSourceInflectedForm}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordSourceInflectedForm}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordSourceInflectedForm}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:WordSourceInflectedForm}}
+            </span>
+            {{/Source-ru-RU}}
+            {{/WordSourceInflectedForm}}
             {{/ToggleAlwaysEmptyField}}
 
             <!-- #WordSource -->
