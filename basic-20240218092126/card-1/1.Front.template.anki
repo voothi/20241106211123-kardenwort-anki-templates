@@ -584,19 +584,19 @@
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
-                {{hint:SentenceSourceContextLeft}}<br>
+                {{SentenceSourceContextLeft}}<br><br><br>
                 {{/SentenceSourceContextLeft}}
             </span>
 
             <span>
                 {{#SentenceSource}}
-                {{SentenceSource}}<br><br>
+                {{SentenceSource}}<br><br><br>
                 {{/SentenceSource}}
             </span>
 
             <span>
                 {{#SentenceSourceContextRight}}
-                {{hint:SentenceSourceContextRight}}<br>
+                {{SentenceSourceContextRight}}<br><br>
                 {{/SentenceSourceContextRight}}
             </span>
         </div>
