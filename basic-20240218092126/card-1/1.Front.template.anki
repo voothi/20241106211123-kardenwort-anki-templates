@@ -584,13 +584,13 @@
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
-                {{SentenceSourceContextLeft}}<br><br><br>
+                {{SentenceSourceContextLeft}}<br>
                 {{/SentenceSourceContextLeft}}
             </span>
 
             <span>
                 {{#SentenceSource}}
-                {{SentenceSource}}<br><br><br>
+                <b>{{SentenceSource}}</b><br>
                 {{/SentenceSource}}
             </span>
 
