@@ -146,7 +146,7 @@
                     {{/WordSource}}
                 </span>
 
-                <span>
+                <span class="green">
                     {{#WordSourceInflectedForm}}
                     {{WordSourceInflectedForm}}<br><br>
                     {{/WordSourceInflectedForm}}
@@ -231,11 +231,23 @@
                     {{/SentenceSourceIPA}}
                 </span>
 
-                <span>
-                    {{#SentenceSource}}
-                    {{SentenceSource}}<br><br>
-                    {{/SentenceSource}}
-                </span>
+            <span>
+                {{#SentenceSourceContextLeft}}
+                {{SentenceSourceContextLeft}}<br>
+                {{/SentenceSourceContextLeft}}
+            </span>
+
+            <span class="green">
+                {{#SentenceSource}}
+                {{SentenceSource}}<br>
+                {{/SentenceSource}}
+            </span>
+
+            <span>
+                {{#SentenceSourceContextRight}}
+                {{SentenceSourceContextRight}}<br><br>
+                {{/SentenceSourceContextRight}}
+            </span>
             </div>
         </td>
     </tr>

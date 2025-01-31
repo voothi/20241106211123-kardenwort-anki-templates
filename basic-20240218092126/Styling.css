@@ -14,6 +14,11 @@
  color: MediumSeaGreen !important;
 }
 
+.green {
+  font-weight: bold;
+  color: MediumSeaGreen !important;
+ }
+
 a.hint {
  color: MediumSeaGreen !important;
  text-decoration: none;
