@@ -123,6 +123,38 @@
             </span>
             {{/Source-ru-RU}}
             {{/WordSourceInflectedForm}}
+
+            {{#WordSourceContext}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:WordSourceContext}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:WordSourceContext}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordSourceContext}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordSourceContext}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:WordSourceContext}}
+            </span>
+            {{/Source-ru-RU}}
+            {{/WordSourceContext}}
             {{/ToggleAlwaysEmptyField}}
 
             <!-- #WordSource -->
@@ -132,6 +164,7 @@
                 {{#WordSourceIPA}}●{{/WordSourceIPA}}{{^WordSourceIPA}}○{{/WordSourceIPA}}
                 {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
                 {{#WordSourceInflectedForm}}●{{/WordSourceInflectedForm}}{{^WordSourceInflectedForm}}○{{/WordSourceInflectedForm}}
+                {{#WordSourceContext}}●{{/WordSourceContext}}{{^WordSourceContext}}○{{/WordSourceContext}}
             </label>
             <div>
                 <span>
@@ -150,6 +183,12 @@
                     {{#WordSourceInflectedForm}}
                     {{WordSourceInflectedForm}}<br><br>
                     {{/WordSourceInflectedForm}}
+                </span>
+
+                <span class="green">
+                    {{#WordSourceContext}}
+                    {{WordSourceContext}}<br><br>
+                    {{/WordSourceContext}}
                 </span>
             </div>
         </td>
