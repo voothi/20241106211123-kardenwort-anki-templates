@@ -114,6 +114,7 @@
 <!-- /L1 Template -->
 <!-- /Definition#2 Template -->
 {{#WordDestination}}
+{{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -164,6 +165,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceCloze}}
 {{/WordDestination}}
 <!-- /WordDestination -->
 <!-- Definition#2 Template/ -->
@@ -171,6 +173,7 @@
 <!-- /Russian Template -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceDestination}}
+{{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -228,6 +231,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceCloze}}
 {{/SentenceDestination}}
 <!-- /SentenceDestination -->
 <!-- Russian Template/ -->

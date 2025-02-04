@@ -309,6 +309,7 @@
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
+{{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -399,6 +400,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceCloze}}
 {{/SentenceSource}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
