@@ -37,7 +37,7 @@
         <td class="fixed-cell">
             {{#SentenceSourceCloze}}
             <input class="show" id="hd-400" type="checkbox">
-            <label for="hd-400">Source Sentence Cloze
+            <label for="hd-400">Sentence Cloze
                 {{#SentenceSourceCloze}}●{{/SentenceSourceCloze}}{{^SentenceSourceCloze}}○{{/SentenceSourceCloze}}
                 {{#Overlapping}}●{{/Overlapping}}{{^Overlapping}}○{{/Overlapping}}
             </label>
