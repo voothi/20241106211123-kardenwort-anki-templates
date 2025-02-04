@@ -99,7 +99,7 @@
             {{/ToggleAlwaysEmptyField}}
 
             {{#SentenceSourceCloze}}
-            <input class="show" id="hd-410" type="checkbox">
+            <input class="hide" id="hd-410" type="checkbox">
             <label for="hd-410">Sentence Cloze</label>
             <div>
             </div>
