@@ -69,7 +69,7 @@
         <td class="fixed-cell">
             {{#SentenceSourceCloze}}
             <input class="show" id="hd-410" type="checkbox">
-            <label for="hd-410">Source Sentence Cloze</label>
+            <label for="hd-410">Sentence Cloze</label>
             <div>
                 {{^ToggleAlwaysEmptyField}}
                 {{#Source-en-GB}}
