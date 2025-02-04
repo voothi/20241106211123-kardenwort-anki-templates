@@ -65,7 +65,7 @@
                             var followingClozes = +config[1] || 0;
                             var showAllClozes = (config[2] || "true").toLowerCase() === "true"; // Set to false to omit, e.g. for long lyrics/poems
                             var revealAllClozes = (config[3] || "false").toLowerCase() === "true"; // On the back, reveal other clozes we didnʼt ask for?
-                            var revealAllCustomPlaceholders = (config[4] || "false").toLowerCase() === "true";
+                            var revealAllCustomPlaceholders = (config[4] || "true").toLowerCase() === "true";
 
                             var divOriginal = document.getElementById("cloze-original");
                             var divJsRendered = document.getElementById("cloze-js-rendered");
