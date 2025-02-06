@@ -14,9 +14,6 @@
                 if (isBackSide) {
                     checkbox.classList.remove("hide");
                     checkbox.classList.add("show");
-                } else {
-                    checkbox.classList.remove("show");
-                    checkbox.classList.add("hide");
                 }
             }
         });
@@ -313,8 +310,8 @@
     <!-- /Input Template -->
     {{#WordSource}}
     <!-- br -->
-    <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
-    <label for="hd-90">Source Word Input
+    <input class="show" id="hd-90" type="checkbox"><!-- hide | show -->
+    <label for="hd-90">Input
         {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
     </label>
     <div>
@@ -330,8 +327,8 @@
     {{^WordSource}}
     {{#SentenceSource}}
     <!-- br -->
-    <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
-    <label for="hd-130">Source Sentence Input
+    <input class="show" id="hd-130" type="checkbox"><!-- hide | show -->
+    <label for="hd-130">Input
         {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
     </label>
     <div>
