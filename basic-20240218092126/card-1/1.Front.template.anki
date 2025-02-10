@@ -1,4 +1,32 @@
 <script>
+    // Function to execute the click action
+    function executeClickAction() {
+        // Check if the title of the document is "previewer"
+        // and if there is an element with id "side1"
+        if (document.title === "previewer" && document.getElementById("side1") !== null) {
+            // Automatically click on soundLink or replaybutton elements
+            var elem = document.querySelector(".soundLink, .replaybutton");
+            if (elem) {
+                elem.click();
+            } else {
+                var onLoadHandler = function() {
+                    var elem = document.querySelector(".soundLink, .replaybutton");
+                    if (elem) {
+                        elem.click();
+                    }
+                    // Remove the onload handler to prevent multiple calls
+                    window.removeEventListener("load", onLoadHandler);
+                };
+                window.addEventListener("load", onLoadHandler);
+            }
+        }
+    }
+
+    // Set a delay of 100 ms before executing the script
+    setTimeout(executeClickAction, 100);
+</script>
+
+<script>
     function updateCheckboxVisibility() {
         // Проверяем, есть ли элемент с id "side2"
         var isBackSide = document.getElementById("side2") !== null;
