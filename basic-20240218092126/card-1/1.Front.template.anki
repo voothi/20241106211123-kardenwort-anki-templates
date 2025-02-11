@@ -9,7 +9,7 @@
             if (elem) {
                 elem.click();
             } else {
-                var onLoadHandler = function() {
+                var onLoadHandler = function () {
                     var elem = document.querySelector(".soundLink, .replaybutton");
                     if (elem) {
                         elem.click();
@@ -295,23 +295,23 @@
                     {{/SentenceSourceIPA}}
                 </span>
 
-            <span>
-                {{#SentenceSourceContextLeft}}
-                {{SentenceSourceContextLeft}}<br>
-                {{/SentenceSourceContextLeft}}
-            </span>
+                <span>
+                    {{#SentenceSourceContextLeft}}
+                    {{SentenceSourceContextLeft}}<br>
+                    {{/SentenceSourceContextLeft}}
+                </span>
 
-            <span class="green">
-                {{#SentenceSource}}
-                {{SentenceSource}}<br>
-                {{/SentenceSource}}
-            </span>
+                <span class="green">
+                    {{#SentenceSource}}
+                    {{SentenceSource}}<br>
+                    {{/SentenceSource}}
+                </span>
 
-            <span>
-                {{#SentenceSourceContextRight}}
-                {{SentenceSourceContextRight}}<br><br>
-                {{/SentenceSourceContextRight}}
-            </span>
+                <span>
+                    {{#SentenceSourceContextRight}}
+                    {{SentenceSourceContextRight}}<br><br>
+                    {{/SentenceSourceContextRight}}
+                </span>
             </div>
         </td>
     </tr>
