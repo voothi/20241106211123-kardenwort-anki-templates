@@ -223,6 +223,69 @@
 <!-- /WordSource -->
 <!-- Word Template/ -->
 
+{{#WordSourceDefinitionAISentenceSource}}
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{#WordSourceDefinitionAISentenceSource}}
+            <span>
+                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+                {{^ToggleAlwaysEmptyField}}
+                {{#WordSourceDefinitionAISentenceSource}}
+                {{#Source-en-GB}}
+                <span>
+                    {{tts en_GB voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
+                </span>
+                {{/Source-en-GB}}
+
+                {{#Source-en-US}}
+                <span>
+                    {{tts en_US voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
+                </span>
+                {{/Source-en-US}}
+
+                {{#Source-de-DE}}
+                <span>
+                    {{tts de_DE voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
+                </span>
+                {{/Source-de-DE}}
+
+                {{#Source-uk-UA}}
+                <span>
+                    {{tts uk_UA voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
+                </span>
+                {{/Source-uk-UA}}
+
+                {{#Source-ru-RU}}
+                <span>
+                    {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
+                    <!-- ru_RU voices=gTTS -->
+                </span>
+                {{/Source-ru-RU}}
+                {{/WordSourceDefinitionAISentenceSource}}
+                {{/ToggleAlwaysEmptyField}}
+            </span>
+
+            <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
+                {{/WordDestination}} id="hd-155" type="checkbox">
+            <label for="hd-155">Definition
+                {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
+            </label>
+            <div>
+                <span>
+                    {{#WordSourceDefinitionAISentenceSource}}
+                    {{WordSourceDefinitionAISentenceSource}}<br><br>
+                    {{/WordSourceDefinitionAISentenceSource}}
+                </span>
+            </div>
+            <br>
+            {{/WordSourceDefinitionAISentenceSource}}
+        </td>
+    </tr>
+</table>
+{{/WordSourceDefinitionAISentenceSource}}
+
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
