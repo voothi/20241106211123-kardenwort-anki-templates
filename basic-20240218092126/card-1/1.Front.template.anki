@@ -32,7 +32,7 @@
         var isBackSide = document.getElementById("side2") !== null;
 
         // Массив с id чекбоксов
-        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260"];
+        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295"];
 
         // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
@@ -227,7 +227,6 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{#WordSourceDefinitionAISentenceSource}}
             <span>
                 <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
@@ -280,7 +279,6 @@
                 </span>
             </div>
             <br>
-            {{/WordSourceDefinitionAISentenceSource}}
         </td>
     </tr>
 </table>
