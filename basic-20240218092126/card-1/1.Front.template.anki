@@ -32,7 +32,7 @@
         var isBackSide = document.getElementById("side2") !== null;
 
         // Массив с id чекбоксов
-        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295"];
+        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295", "hd-15"];
 
         // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
@@ -319,6 +319,66 @@
     </tr>
 </table>
 {{/SentenceSource}}
+
+{{#SentenceSourceRewriteAI}}
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            <!-- ^WordSource -->
+            <!-- #SentenceDestination -->
+            {{^ToggleAlwaysEmptyField}}
+            {{#SentenceSourceRewriteAI}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            {{/SentenceSourceRewriteAI}}
+            <!-- /SentenceDestination -->
+            <!-- /WordSource -->
+            {{/ToggleAlwaysEmptyField}}
+
+            <!-- #SentenceSource -->
+            <input class="hide" id="hd-15" type="checkbox">
+            <label for="hd-15">Rewrite
+                {{#SentenceSourceRewriteAI}}●{{/SentenceSourceRewriteAI}}{{^SentenceSourceRewriteAI}}○{{/SentenceSourceRewriteAI}}
+            </label>
+            <div>
+                <span>
+                    {{#SentenceSourceRewriteAI}}
+                    {{SentenceSourceRewriteAI}}<br><br>
+                    {{/SentenceSourceRewriteAI}}
+                </span>
+            </div>
+        </td>
+    </tr>
+</table>
+{{/SentenceSourceRewriteAI}}
 
 {{#WordSourceDefinitionAISentenceSource}}
 <table class="fixed-table">
