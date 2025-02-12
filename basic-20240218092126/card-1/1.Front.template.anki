@@ -442,6 +442,27 @@
     </tr>
 </table>
 {{/WordSourceDefinitionAISentenceSource}}
+
+{{#WordSourceMorphologyAI}}
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            <input class="hide" id="hd-195" type="checkbox">
+            <label for="hd-195">Morphology
+                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
+            </label>
+            <div>
+                <span>
+                    {{#WordSourceMorphologyAI}}
+                    {{WordSourceMorphologyAI}}<br><br>
+                    {{/WordSourceMorphologyAI}}
+                </span>
+            </div>
+            <br>
+        </td>
+    </tr>
+</table>
+{{/WordSourceMorphologyAI}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
