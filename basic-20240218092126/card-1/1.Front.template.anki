@@ -226,6 +226,7 @@
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
+{{^SentenceSourceRewriteAI}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -318,6 +319,7 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceRewriteAI}}
 {{/SentenceSource}}
 
 {{#SentenceSourceRewriteAI}}
