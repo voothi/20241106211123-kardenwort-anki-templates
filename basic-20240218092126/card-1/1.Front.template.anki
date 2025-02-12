@@ -32,7 +32,7 @@
         var isBackSide = document.getElementById("side2") !== null;
 
         // Массив с id чекбоксов
-        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295", "hd-15"];
+        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295", "hd-15", "hd-195"];
 
         // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
