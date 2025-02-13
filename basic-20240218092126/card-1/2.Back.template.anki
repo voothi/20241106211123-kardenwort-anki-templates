@@ -194,7 +194,6 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^WordSourceDefinitionAISentenceDestination}}
             {{^ToggleAlwaysEmptyField}}
             <!-- ^WordSource -->
             <!-- #SentenceSource -->
@@ -232,7 +231,6 @@
             <!-- /SentenceSource -->
             <!-- /WordSource -->
             {{/ToggleAlwaysEmptyField}}
-            {{/WordSourceDefinitionAISentenceDestination}}
 
             <!-- #SentenceDestination -->
             <input class="hide" id="hd-75" type="checkbox">

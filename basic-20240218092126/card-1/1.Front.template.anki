@@ -248,7 +248,6 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^WordSourceDefinitionAISentenceSource}}
             {{^ToggleAlwaysEmptyField}}
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
@@ -300,7 +299,6 @@
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
             {{/ToggleAlwaysEmptyField}}
-            {{/WordSourceDefinitionAISentenceSource}}
 
             <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
