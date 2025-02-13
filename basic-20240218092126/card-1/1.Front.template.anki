@@ -244,7 +244,7 @@
 <!-- SentenceSource TTS Toggle Off -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
-{{^SentenceSourceRewriteAI}}
+{{^SentenceSourceRewriteAISentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -337,68 +337,68 @@
         </td>
     </tr>
 </table>
-{{/SentenceSourceRewriteAI}}
+{{/SentenceSourceRewriteAISentenceSource}}
 {{/SentenceSource}}
 
-{{#SentenceSourceRewriteAI}}
+{{#SentenceSourceRewriteAISentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             <!-- ^WordSource -->
             <!-- #SentenceDestination -->
             {{^ToggleAlwaysEmptyField}}
-            {{#SentenceSourceRewriteAI}}
+            {{#SentenceSourceRewriteAISentenceSource}}
             {{#Source-en-GB}}
             <span>
-                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
             </span>
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
             <span>
-                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
             </span>
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
             <span>
-                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
             </span>
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
             <span>
-                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
             <span>
-                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAI}}
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
                 <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
-            {{/SentenceSourceRewriteAI}}
+            {{/SentenceSourceRewriteAISentenceSource}}
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
             {{/ToggleAlwaysEmptyField}}
 
             <!-- #SentenceSource -->
             <input class="hide" id="hd-15" type="checkbox">
-            <label for="hd-15">Rewrite
-                {{#SentenceSourceRewriteAI}}●{{/SentenceSourceRewriteAI}}{{^SentenceSourceRewriteAI}}○{{/SentenceSourceRewriteAI}}
+            <label for="hd-15">Sentence Rewrite
+                {{#SentenceSourceRewriteAISentenceSource}}●{{/SentenceSourceRewriteAISentenceSource}}{{^SentenceSourceRewriteAISentenceSource}}○{{/SentenceSourceRewriteAISentenceSource}}
             </label>
             <div>
                 <span>
-                    {{#SentenceSourceRewriteAI}}
-                    {{SentenceSourceRewriteAI}}<br><br>
-                    {{/SentenceSourceRewriteAI}}
+                    {{#SentenceSourceRewriteAISentenceSource}}
+                    {{SentenceSourceRewriteAISentenceSource}}<br><br>
+                    {{/SentenceSourceRewriteAISentenceSource}}
                 </span>
             </div>
         </td>
     </tr>
 </table>
-{{/SentenceSourceRewriteAI}}
+{{/SentenceSourceRewriteAISentenceSource}}
 
 {{#WordSourceDefinitionAISentenceSource}}
 <table class="fixed-table">
