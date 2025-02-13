@@ -125,6 +125,7 @@
 <!-- /Russian Template -->
 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceDestination}}
+{{^SentenceSourceRewriteAISentenceDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -184,9 +185,72 @@
         </td>
     </tr>
 </table>
+{{/SentenceSourceRewriteAISentenceDestination}}
 {{/SentenceDestination}}
 <!-- /SentenceDestination -->
 <!-- Russian Template/ -->
+
+{{#SentenceSourceRewriteAISentenceDestination}}
+<table class="fixed-table">
+    <tr>
+        <td class="fixed-cell">
+            {{^WordSourceDefinitionAISentenceDestination}}
+            {{^ToggleAlwaysEmptyField}}
+            <!-- ^WordSource -->
+            <!-- #SentenceSource -->
+            {{#SentenceSourceRewriteAISentenceDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceSourceRewriteAISentenceDestination}}
+            <!-- /SentenceSource -->
+            <!-- /WordSource -->
+            {{/ToggleAlwaysEmptyField}}
+            {{/WordSourceDefinitionAISentenceDestination}}
+
+            <!-- #SentenceDestination -->
+            <input class="hide" id="hd-75" type="checkbox">
+            <label for="hd-75">Sentence Rewrite
+                {{#SentenceSourceRewriteAISentenceDestination}}●{{/SentenceSourceRewriteAISentenceDestination}}{{^SentenceSourceRewriteAISentenceDestination}}○{{/SentenceSourceRewriteAISentenceDestination}}
+            </label>
+            <div>
+                <span>
+                    {{#SentenceSourceRewriteAISentenceDestination}}
+                    {{SentenceSourceRewriteAISentenceDestination}}<br><br>
+                    {{/SentenceSourceRewriteAISentenceDestination}}
+                </span>
+            </div>
+            <br>
+        </td>
+    </tr>
+</table>
+{{/SentenceSourceRewriteAISentenceDestination}}
 
 {{#WordSourceDefinitionAISentenceDestination}}
 <table class="fixed-table">
