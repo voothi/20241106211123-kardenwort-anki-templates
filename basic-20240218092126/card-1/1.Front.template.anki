@@ -1,17 +1,32 @@
 <script>
     // Function to execute the click action
     function executeClickAction() {
-        // Check if the title of the document is "previewer"
-        // and if there is an element with id "side1"
-        // if (document.title === "previewer" && document.getElementById("side1") !== null) {
-        if (document.getElementById("side1") !== null) {
-            // Automatically click on soundLink or replaybutton elements
-            var elem = document.querySelector(".soundLink, .replaybutton");
+        // Check if there is an element with id "side1" and no element with id "side2"
+        if (document.getElementById("side1") !== null && document.getElementById("side2") !== null) {
+            // Automatically click on soundLink or replaybutton elements related to sound2
+            var elem = document.querySelector("#sound2 .soundLink, .replaybutton");
             if (elem) {
                 elem.click();
             } else {
                 var onLoadHandler = function () {
-                    var elem = document.querySelector(".soundLink, .replaybutton");
+                    var elem = document.querySelector("#sound2 .soundLink, .replaybutton");
+                    if (elem) {
+                        elem.click();
+                    }
+                    // Remove the onload handler to prevent multiple calls
+                    window.removeEventListener("load", onLoadHandler);
+                };
+                window.addEventListener("load", onLoadHandler);
+            }
+        } 
+        else {
+            // Automatically click on soundLink or replaybutton elements related to sound1
+            var elem = document.querySelector("#sound1 .soundLink, .replaybutton");
+            if (elem) {
+                elem.click();
+            } else {
+                var onLoadHandler = function () {
+                    var elem = document.querySelector("#sound1 .soundLink, .replaybutton");
                     if (elem) {
                         elem.click();
                     }
@@ -22,7 +37,6 @@
             }
         }
     }
-
     // Set a delay of 100 ms before executing the script
     setTimeout(executeClickAction, 100);
 </script>
@@ -99,7 +113,7 @@
             {{/Source-en-US}}
 
             {{#Source-de-DE}}
-            <span>
+            <span id="sound1">
                 {{tts de_DE voices=gTTS speed=1.0:WordSource}}
             </span>
             {{/Source-de-DE}}

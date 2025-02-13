@@ -97,7 +97,7 @@
             {{/Destination-uk-UA}}
 
             {{#Destination-ru-RU}}
-            <span>
+            <span id="sound2">
                 {{tts ru_RU voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-ru-RU}}
