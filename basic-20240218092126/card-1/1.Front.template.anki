@@ -50,7 +50,7 @@
         var isBackSide = document.getElementById("side2") !== null;
 
         // Массив с id чекбоксов
-        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295", "hd-15", "hd-75"]; //, "hd-195"
+        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260", "hd-155", "hd-295", "hd-15", "hd-75", "hd-195"]; //, "hd-195"
 
         // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
@@ -249,6 +249,7 @@
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
+            {{^WordSourceMorphologyAI}}
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
             <!-- ^WordSource -->
@@ -296,9 +297,10 @@
             {{/Source-ru-RU}}
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
+            {{/WordSourceMorphologyAI}}
+            {{/ToggleAlwaysEmptyField}}
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
-            {{/ToggleAlwaysEmptyField}}
 
             <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
@@ -345,6 +347,7 @@
             <!-- ^WordSource -->
             <!-- #SentenceDestination -->
             {{^ToggleAlwaysEmptyField}}
+            {{^WordSourceMorphologyAI}}
             {{#SentenceSourceRewriteAISentenceSource}}
             {{#Source-en-GB}}
             <span>
@@ -379,6 +382,7 @@
             {{/SentenceSourceRewriteAISentenceSource}}
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
+            {{/WordSourceMorphologyAI}}
             {{/ToggleAlwaysEmptyField}}
 
             <!-- #SentenceSource -->
@@ -406,6 +410,7 @@
                 <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
                 <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                 {{^ToggleAlwaysEmptyField}}
+                {{^WordSourceMorphologyAI}}
                 {{#WordSourceDefinitionAISentenceSource}}
                 {{#Source-en-GB}}
                 <span>
@@ -438,6 +443,7 @@
                 </span>
                 {{/Source-ru-RU}}
                 {{/WordSourceDefinitionAISentenceSource}}
+                {{/WordSourceMorphologyAI}}
                 {{/ToggleAlwaysEmptyField}}
             </span>
 
@@ -458,27 +464,6 @@
     </tr>
 </table>
 {{/WordSourceDefinitionAISentenceSource}}
-
-{{#WordSourceMorphologyAI}}
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            <input class="hide" id="hd-195" type="checkbox">
-            <label for="hd-195">Morphology
-                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
-            </label>
-            <div>
-                <span>
-                    {{#WordSourceMorphologyAI}}
-                    {{WordSourceMorphologyAI}}<br><br>
-                    {{/WordSourceMorphologyAI}}
-                </span>
-            </div>
-            <br>
-        </td>
-    </tr>
-</table>
-{{/WordSourceMorphologyAI}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
