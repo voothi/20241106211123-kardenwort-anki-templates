@@ -41,8 +41,8 @@
     }
     
     // Set a delay of 100 ms before executing the script
-    // setTimeout(executeClickAction, 1);
-    executeClickAction();
+    setTimeout(executeClickAction, 20);
+    // executeClickAction();
 </script>
 
 <script>
