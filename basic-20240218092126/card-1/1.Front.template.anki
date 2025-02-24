@@ -319,13 +319,13 @@
 
                 <span>
                     {{#SentenceSourceContextLeft}}
-                    {{SentenceSourceContextLeft}}<br>
+                    {{SentenceSourceContextLeft}}<br><br>
                     {{/SentenceSourceContextLeft}}
                 </span>
 
                 <span class="green">
                     {{#SentenceSource}}
-                    {{SentenceSource}}<br>
+                    {{SentenceSource}}<br><br>
                     {{/SentenceSource}}
                 </span>
 
