@@ -219,19 +219,19 @@
 
                 <span>
                     {{#WordSource}}
-                    {{WordSource}}<br><br>
+                    <b>{{WordSource}}</b><br><br>
                     {{/WordSource}}
                 </span>
 
-                <span class="green">
+                <span>
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}<br><br>
+                    <b>{{WordSourceInflectedForm}}</b><br><br>
                     {{/WordSourceInflectedForm}}
                 </span>
 
-                <span class="green">
+                <span>
                     {{#WordSourceContext}}
-                    {{WordSourceContext}}<br><br>
+                    <b>{{WordSourceContext}}</b><br><br>
                     {{/WordSourceContext}}
                 </span>
             </div>
@@ -323,9 +323,9 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span class="green">
+                <span>
                     {{#SentenceSource}}
-                    {{SentenceSource}}<br><br>
+                    <b>{{SentenceSource}}</b><br><br>
                     {{/SentenceSource}}
                 </span>
 
