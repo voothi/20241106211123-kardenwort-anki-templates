@@ -250,7 +250,7 @@
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceMorphologyAI}}
+            <!-- ^WordSourceMorphologyAI -->
             <!-- /Sentence Template -->
             <!-- /Audio#2 Template -->
             <!-- ^WordSource -->
@@ -298,7 +298,7 @@
             {{/Source-ru-RU}}
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
-            {{/WordSourceMorphologyAI}}
+            <!-- /WordSourceMorphologyAI -->
             {{/ToggleAlwaysEmptyField}}
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
