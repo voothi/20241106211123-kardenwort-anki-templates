@@ -808,13 +808,13 @@
         <div>
             <span>
                 {{#SentenceSourceContextLeft}}
-                {{SentenceSourceContextLeft}}<br>
+                {{SentenceSourceContextLeft}}<br><br>
                 {{/SentenceSourceContextLeft}}
             </span>
 
             <span>
                 {{#SentenceSource}}
-                <b>{{SentenceSource}}</b><br>
+                <b>{{SentenceSource}}</b><br><br>
                 {{/SentenceSource}}
             </span>
 
