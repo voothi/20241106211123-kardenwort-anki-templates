@@ -132,7 +132,7 @@
             <!-- ^WordSource -->
             <!-- #SentenceSource -->
             {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceMorphologyAI}}
+            <!-- ^WordSourceMorphologyAI -->
             {{^WordSourceDefinitionAISentenceDestination}}
             {{#SentenceDestination}}
             {{#Destination-en-GB}}
@@ -166,7 +166,7 @@
             {{/Destination-ru-RU}}
             {{/SentenceDestination}}
             {{/WordSourceDefinitionAISentenceDestination}}
-            {{/WordSourceMorphologyAI}}
+            <!-- /WordSourceMorphologyAI -->
             {{/ToggleAlwaysEmptyField}}
             <!-- /SentenceSource -->
             <!-- /WordSource -->
