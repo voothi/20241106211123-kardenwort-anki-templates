@@ -19,6 +19,11 @@
   color: MediumSeaGreen !important;
  }
 
+ .context {
+  color: rgb(116, 125, 120);
+ }
+
+
 a.hint {
  color: MediumSeaGreen !important;
  text-decoration: none;

@@ -317,7 +317,7 @@
                     {{/SentenceSourceIPA}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#SentenceSourceContextLeft}}
                     {{SentenceSourceContextLeft}}<br><br>
                     {{/SentenceSourceContextLeft}}
@@ -329,7 +329,7 @@
                     {{/SentenceSource}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#SentenceSourceContextRight}}
                     {{SentenceSourceContextRight}}<br><br>
                     {{/SentenceSourceContextRight}}
@@ -806,7 +806,7 @@
             {{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
         </label>
         <div>
-            <span>
+            <span class="context">
                 {{#SentenceSourceContextLeft}}
                 {{SentenceSourceContextLeft}}<br><br>
                 {{/SentenceSourceContextLeft}}
@@ -818,7 +818,7 @@
                 {{/SentenceSource}}
             </span>
 
-            <span>
+            <span class="context">
                 {{#SentenceSourceContextRight}}
                 {{SentenceSourceContextRight}}<br><br>
                 {{/SentenceSourceContextRight}}
