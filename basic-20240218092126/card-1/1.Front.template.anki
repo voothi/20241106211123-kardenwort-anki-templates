@@ -8,7 +8,7 @@
         var sound2Selector = "#sound2 .soundLink, .replaybutton";
 
         // Function to handle clicking sound elements
-        var clickSoundElement = function(selector) {
+        var clickSoundElement = function (selector) {
             var elem = document.querySelector(selector);
             if (elem) {
                 elem.click();
@@ -39,7 +39,7 @@
             }
         }
     }
-    
+
     // Set a delay of 100 ms before executing the script
     setTimeout(executeClickAction, 20);
     // executeClickAction();
@@ -946,26 +946,46 @@
             {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
         </label>
         <div>
-            {{^WordDestination}}
             <span>
                 {{#SentenceDestination}}
                 {{SentenceDestination}}<br><br>
                 {{/SentenceDestination}}
             </span>
-            {{/WordDestination}}
+        </div>
+        <br>
+        {{/SentenceDestination}}
 
-            {{#WordDestination}}
+        {{#SentenceDestination}}
+        <input class="hide" id="hd-285" type="checkbox">
+        <label for="hd-285">Context
+            {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
+            {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+            {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
+        </label>
+        <div>
+            <span class="context">
+                {{#SentenceDestinationContextLeft}}
+                {{SentenceDestinationContextLeft}}<br><br>
+                {{/SentenceDestinationContextLeft}}
+            </span>
+
             <span>
                 {{#SentenceDestination}}
                 {{SentenceDestination}}<br><br>
                 {{/SentenceDestination}}
             </span>
-            {{/WordDestination}}
+
+            <span class="context">
+                {{#SentenceDestinationContextRight}}
+                {{SentenceDestinationContextRight}}<br><br>
+                {{/SentenceDestinationContextRight}}
+            </span>
         </div>
         <br>
         {{/SentenceDestination}}
     </div>
     <br>
+
 
     <input class="hide" id="hd-350" type="checkbox">
     <label for="hd-350">Ukrainian

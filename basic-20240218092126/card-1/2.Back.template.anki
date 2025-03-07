@@ -174,13 +174,27 @@
             <!-- #SentenceDestination -->
             <input class="hide" id="hd-70" type="checkbox">
             <label for="hd-70">Sentence
+                {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
                 {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
+                {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
             </label>
             <div>
+                <span class="context">
+                    {{#SentenceDestinationContextLeft}}
+                    {{SentenceDestinationContextLeft}}<br><br>
+                    {{/SentenceDestinationContextLeft}}
+                </span>
+
                 <span>
                     {{#SentenceDestination}}
                     {{SentenceDestination}}<br><br>
                     {{/SentenceDestination}}
+                </span>
+
+                <span class="context">
+                    {{#SentenceDestinationContextRight}}
+                    {{SentenceDestinationContextRight}}<br><br>
+                    {{/SentenceDestinationContextRight}}
                 </span>
             </div>
             <br>
@@ -345,20 +359,20 @@
                 {{tts uk_UA voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-uk-UA}}
-            
+
             {{#Destination-ru-RU}}
             <span id="sound2">
                 {{tts ru_RU voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-ru-RU}}
             {{/ToggleAlwaysEmptyField}}
-            
+
             <input class="hide" id="hd-195" type="checkbox">
             <label for="hd-195">Morphology
                 {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
             </label>
             <div>
-                
+
                 <span>
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}<br><br>
