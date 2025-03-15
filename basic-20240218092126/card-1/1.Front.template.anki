@@ -1306,17 +1306,17 @@
         {{Tags}}<br><br>
         {{/Tags}}
     </span>
+        
+    <span>
+        {{#Quotation}}
+        {{hint:Quotation}}<br>
+        {{/Quotation}}
+    </span>
 
     <span>
         {{#Note}}
         {{Note}}<br><br>
         {{/Note}}
-    </span>
-
-    <span>
-        {{#Quotation}}
-        {{hint:Quotation}}<br>
-        {{/Quotation}}
     </span>
 </div>
 <!-- Hint Template/ -->
