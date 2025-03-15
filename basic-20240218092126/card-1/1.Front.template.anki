@@ -474,8 +474,10 @@
 
 
 <!-- /Hint Template -->
-<input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
-    type="checkbox">
+<input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} {{^WordSource}}
+    {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} {{^WordSource}} {{#SentenceSource}}
+    class="hide" {{/SentenceSource}} {{/WordSource}} {{#WordSource}} {{^SentenceSource}} class="hide"
+    {{/SentenceSource}} {{/WordSource}} id="hd-60" type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
         <hr class="custom-hr">
@@ -1306,7 +1308,7 @@
         {{Tags}}<br><br>
         {{/Tags}}
     </span>
-        
+
     <span>
         {{#Quotation}}
         {{hint:Quotation}}<br>
