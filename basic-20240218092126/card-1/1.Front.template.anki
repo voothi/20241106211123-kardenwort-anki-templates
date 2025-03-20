@@ -973,19 +973,19 @@
             {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
         </label>
         <div>
-            <span class="context">
+            <span>
                 {{#SentenceDestinationContextLeft}}
                 {{SentenceDestinationContextLeft}}<br><br>
                 {{/SentenceDestinationContextLeft}}
             </span>
 
-            <span>
+            <span class="sentence">
                 {{#SentenceDestination}}
                 {{SentenceDestination}}<br><br>
                 {{/SentenceDestination}}
             </span>
 
-            <span class="context">
+            <span>
                 {{#SentenceDestinationContextRight}}
                 {{SentenceDestinationContextRight}}<br><br>
                 {{/SentenceDestinationContextRight}}
