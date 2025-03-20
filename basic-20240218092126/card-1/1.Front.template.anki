@@ -319,7 +319,11 @@
 
                 <span class="context">
                     {{#SentenceSourceContextLeft}}
-                    {{SentenceSourceContextLeft}}<br><br>
+                    <!-- { {hint:SentenceSourceContextLeft} }<br><br> -->
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
+                        ...</a>
+                    <span id="hint0ba529b0c8ad4af4" class=hint style="display: none">{{SentenceSourceContextLeft}}</span><br>
                     {{/SentenceSourceContextLeft}}
                 </span>
 
@@ -331,7 +335,11 @@
 
                 <span class="context">
                     {{#SentenceSourceContextRight}}
-                    {{SentenceSourceContextRight}}<br><br>
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('hint51cebd3ef40e9ccb').style.display='block'; return false;">
+                        ...</a>
+                    <span id="hint51cebd3ef40e9ccb" class=hint style="display: none">{{SentenceSourceContextRight}}</span><br>
+                    <!-- { {hint:SentenceSourceContextRight} }<br><br> -->
                     {{/SentenceSourceContextRight}}
                 </span>
             </div>
