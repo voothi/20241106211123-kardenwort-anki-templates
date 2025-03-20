@@ -816,19 +816,19 @@
             {{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
         </label>
         <div>
-            <span class="context">
+            <span>
                 {{#SentenceSourceContextLeft}}
                 {{SentenceSourceContextLeft}}<br><br>
                 {{/SentenceSourceContextLeft}}
             </span>
 
-            <span>
+            <span class="sentence">
                 {{#SentenceSource}}
                 {{SentenceSource}}<br><br>
                 {{/SentenceSource}}
             </span>
 
-            <span class="context">
+            <span>
                 {{#SentenceSourceContextRight}}
                 {{SentenceSourceContextRight}}<br><br>
                 {{/SentenceSourceContextRight}}
