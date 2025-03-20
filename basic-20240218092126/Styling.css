@@ -10,27 +10,30 @@
 }
 
 .cloze {
- font-weight: bold;
- color: MediumSeaGreen !important;
+  font-weight: bold;
+  color: MediumSeaGreen !important;
 }
 
 .green {
   font-weight: bold;
   color: MediumSeaGreen !important;
- }
+}
 
- .context {
-  color: rgb(116, 125, 120);
- }
+.context {
+  color: rgb(165, 165, 165);
+}
 
+.sentence {
+  color: rgb(165, 165, 165);
+}
 
 a.hint {
- color: MediumSeaGreen !important;
- text-decoration: none;
+  color: MediumSeaGreen !important;
+  text-decoration: none;
 }
 
 .nightMode .cloze {
- color: MediumSeaGreen !important;
+  color: MediumSeaGreen !important;
 }
 
 .mobile .disabled {
@@ -124,13 +127,13 @@ a.hint {
 }
 
 .field-audio {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .field-hide {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 /*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
@@ -145,84 +148,109 @@ html:not(.android) .ankidroidTtsButton {
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 
 /* CSS Template/ */
 
 .line-wrapper {
-display: flex; /* Используем флексбокс для размещения элементов на одной строке */
-align-items: center; /* Выравниваем элементы по центру по вертикали */
+  display: flex;
+  /* Используем флексбокс для размещения элементов на одной строке */
+  align-items: center;
+  /* Выравниваем элементы по центру по вертикали */
 }
 
 .custom-hr {
-flex: 1; /* Растягиваем горизонтальную линию на всю доступную ширину */
-margin-right: 5px; /* Добавляем небольшой отступ между линией и символом */
-border: none;
-border-top: 1px solid MediumSeaGreen; /* Устанавливаем зеленый цвет линии */
+  flex: 1;
+  /* Растягиваем горизонтальную линию на всю доступную ширину */
+  margin-right: 5px;
+  /* Добавляем небольшой отступ между линией и символом */
+  border: none;
+  border-top: 1px solid MediumSeaGreen;
+  /* Устанавливаем зеленый цвет линии */
 }
 
 .layout-table {
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
 }
 
 .layout-table td {
-    padding: 10px 10px; /* отступ внутри ячеек */
+  padding: 10px 10px;
+  /* отступ внутри ячеек */
 }
 
 .container-9333 {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .text-group-1192 {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* расстояние между кнопкой и текстом */
-    margin-bottom: 20px; /* фиксированный отступ между WordSource и SentenceSource */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* расстояние между кнопкой и текстом */
+  margin-bottom: 20px;
+  /* фиксированный отступ между WordSource и SentenceSource */
 }
 
 .spacer {
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Или use display: none; для полного скрытия, но это уберёт элемент из потока */
+  height: 50px;
+  /* Задайте нужную высоту */
+  visibility: hidden;
+  /* Или use display: none; для полного скрытия, но это уберёт элемент из потока */
 }
 
 .container-4453 {
-    position: relative; /* Для позиционирования псевдоэлемента */
+  position: relative;
+  /* Для позиционирования псевдоэлемента */
 }
 
 .container-4453::before {
-    content: '';
-    display: block;
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Или use display: none; для полного скрытия */
+  content: '';
+  display: block;
+  height: 50px;
+  /* Задайте нужную высоту */
+  visibility: hidden;
+  /* Или use display: none; для полного скрытия */
 }
 
 .svc-element-20241027120232 {
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Элемент изначально невидимый */
-    background-color: lightgrey; /* Фоновый цвет для наглядности */
-    margin: 10px 0; /* Отступы для визуального разделения */
+  height: 50px;
+  /* Задайте нужную высоту */
+  visibility: hidden;
+  /* Элемент изначально невидимый */
+  background-color: lightgrey;
+  /* Фоновый цвет для наглядности */
+  margin: 10px 0;
+  /* Отступы для визуального разделения */
 }
 
 .fixed-table {
-  width: 100%; /* Ширина таблицы */
+  width: 100%;
+  /* Ширина таблицы */
   height: 70px;
-  border-collapse: collapse; /* Убираем лишние отступы между ячейками */
+  border-collapse: collapse;
+  /* Убираем лишние отступы между ячейками */
 }
 
 .fixed-cell {
-  height: 20px; /* Высота ячейки (можно изменить) */
-  border: 1px solid MediumSeaGreen; /* Граница ячейки */
-  vertical-align: middle; /* Вертикальное выравнивание содержимого */
-  padding: 10px; /* Отступы в ячейке */
+  height: 20px;
+  /* Высота ячейки (можно изменить) */
+  border: 1px solid MediumSeaGreen;
+  /* Граница ячейки */
+  vertical-align: middle;
+  /* Вертикальное выравнивание содержимого */
+  padding: 10px;
+  /* Отступы в ячейке */
 }
 
 .spacer-cell {
-  height: 20px; /* Высота заглушки */
-  width: 0; /* Ширина 0, чтобы не занимать пространство */
+  height: 20px;
+  /* Высота заглушки */
+  width: 0;
+  /* Ширина 0, чтобы не занимать пространство */
 }
