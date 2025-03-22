@@ -213,7 +213,7 @@
             <div>
                 <span>
                     {{#WordSourceIPA}}
-                    {{WordSourceIPA}}<br><br>
+                    [{{WordSourceIPA}}]<br><br>
                     {{/WordSourceIPA}}
                 </span>
 
@@ -560,7 +560,7 @@
             <!-- br -->
             <span>
                 {{#WordSourceIPA}}
-                {{WordSourceIPA}}<br><br>
+                [{{WordSourceIPA}}]<br><br>
                 {{/WordSourceIPA}}
             </span>
 
