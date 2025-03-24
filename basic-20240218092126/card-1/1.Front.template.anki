@@ -837,7 +837,7 @@
         <br>
         <!-- #SentenceSourceWordlist -->
         {{#SentenceSourceWordlist}}
-        <input class="hide" id="hd-260" type="checkbox">
+        <input class="show" id="hd-260" type="checkbox">
         <label for="hd-260">Wordlist
             {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
         </label>
