@@ -111,7 +111,7 @@
             {{/Source-en-GB}}
 
             {{#Source-en-US}}
-            <span>
+            <span id="sound1">
                 {{tts en_US voices=gTTS speed=1.0:WordSource}}
             </span>
             {{/Source-en-US}}
