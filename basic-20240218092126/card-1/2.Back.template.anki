@@ -221,7 +221,7 @@
             <!-- ^WordSource -->
             <!-- #SentenceSource -->
             {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceMorphologyAI}}
+            <!-- { {^WordSourceMorphologyAI} } -->
             {{#SentenceSourceRewriteAISentenceDestination}}
             {{#Destination-en-GB}}
             <span>
@@ -253,7 +253,7 @@
             </span>
             {{/Destination-ru-RU}}
             {{/SentenceSourceRewriteAISentenceDestination}}
-            {{/WordSourceMorphologyAI}}
+            <!-- { {/WordSourceMorphologyAI} } -->
             {{/ToggleAlwaysEmptyField}}
             <!-- /SentenceSource -->
             <!-- /WordSource -->

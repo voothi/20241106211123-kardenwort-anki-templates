@@ -356,7 +356,7 @@
             <!-- ^WordSource -->
             <!-- #SentenceDestination -->
             {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceMorphologyAI}}
+            <!-- { {^WordSourceMorphologyAI} } -->
             {{#SentenceSourceRewriteAISentenceSource}}
             {{#Source-en-GB}}
             <span>
@@ -391,7 +391,7 @@
             {{/SentenceSourceRewriteAISentenceSource}}
             <!-- /SentenceDestination -->
             <!-- /WordSource -->
-            {{/WordSourceMorphologyAI}}
+            <!-- { {/WordSourceMorphologyAI} } -->
             {{/ToggleAlwaysEmptyField}}
 
             <!-- #SentenceSource -->
