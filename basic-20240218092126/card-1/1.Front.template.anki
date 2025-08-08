@@ -964,6 +964,12 @@
                 {{SentenceDestination}}<br><br>
                 {{/SentenceDestination}}
             </span>
+
+            <span class="sentence2">
+                {{#SentenceDestination2}}
+                {{SentenceDestination2}}<br><br>
+                {{/SentenceDestination2}}
+            </span>
         </div>
         <br>
         {{/SentenceDestination}}
@@ -985,7 +991,7 @@
                 {{/SentenceDestinationContextLeft}}
             </span>
 
-            <span>
+            <span class="context2">
                 {{#SentenceDestination2ContextLeft}}
                 {{SentenceDestination2ContextLeft}}<br><br>
                 {{/SentenceDestination2ContextLeft}}
@@ -1009,7 +1015,7 @@
                 {{/SentenceDestinationContextRight}}
             </span>
 
-            <span>
+            <span class="context2">
                 {{#SentenceDestination2ContextRight}}
                 {{SentenceDestination2ContextRight}}<br><br>
                 {{/SentenceDestination2ContextRight}}
