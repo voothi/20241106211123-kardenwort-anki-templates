@@ -308,7 +308,10 @@
             <label for="hd-10">Sentence
                 {{#SentenceSourceAudio}}▶{{/SentenceSourceAudio}}{{^SentenceSourceAudio}}▷{{/SentenceSourceAudio}}
                 {{#SentenceSourceIPA}}●{{/SentenceSourceIPA}}{{^SentenceSourceIPA}}○{{/SentenceSourceIPA}}
+                {{#SentenceSourceContextLeft}}●{{/SentenceSourceContextLeft}}{{^SentenceSourceContextLeft}}○{{/SentenceSourceContextLeft}}
                 {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
+                {{#SentenceSourceContextRight}}●{{/SentenceSourceContextRight}}{{^SentenceSourceContextRight}}○{{/SentenceSourceContextRight}}
+            
             </label>
             <div>
                 <span>
