@@ -192,9 +192,9 @@
                 <span class="context">
                     {{#SentenceDestination2ContextLeft}}
                     <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
+                        onclick="this.style.display='none'; document.getElementById('hint12cdbd3sh30e9dcb').style.display='block'; return false;">
                         ...</a>
-                    <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span><br>
+                    <span id="hint12cdbd3sh30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span><br>
                     {{/SentenceDestination2ContextLeft}}
                 </span>
 
@@ -227,9 +227,9 @@
                     {{#SentenceDestination2ContextRight}}
                     <!-- { {SentenceDestinationContextRight} }<br><br> -->
                     <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
+                        onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
                         ...</a>
-                    <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span><br>
+                    <span id="hint31cgbsge2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span><br>
                     {{/SentenceDestination2ContextRight}}
                 </span>
             </div>
