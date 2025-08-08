@@ -206,10 +206,7 @@
 
                 <span>
                     {{#SentenceDestination2}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint12soen2ef30e9dcb').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint12soen2ef30e9dcb" class=hint style="display: none">{{SentenceDestination2}}</span><br>
+                    {{SentenceDestination2}}<br><br>
                     {{/SentenceDestination2}}
                 </span>
 
