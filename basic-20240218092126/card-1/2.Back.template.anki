@@ -188,11 +188,29 @@
                     <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestinationContextLeft}}</span><br>
                     {{/SentenceDestinationContextLeft}}
                 </span>
+                
+                <span class="context">
+                    {{#SentenceDestination2ContextLeft}}
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
+                        ...</a>
+                    <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span><br>
+                    {{/SentenceDestination2ContextLeft}}
+                </span>
 
                 <span>
                     {{#SentenceDestination}}
                     {{SentenceDestination}}<br><br>
                     {{/SentenceDestination}}
+                </span>
+
+                <span>
+                    {{#SentenceDestination2}}
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('hint12soen2ef30e9dcb').style.display='block'; return false;">
+                        ...</a>
+                    <span id="hint12soen2ef30e9dcb" class=hint style="display: none">{{SentenceDestination2}}</span><br>
+                    {{/SentenceDestination2}}
                 </span>
 
                 <span class="context">
@@ -203,6 +221,16 @@
                         ...</a>
                     <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestinationContextRight}}</span><br>
                     {{/SentenceDestinationContextRight}}
+                </span>
+
+                <span class="context">
+                    {{#SentenceDestination2ContextRight}}
+                    <!-- { {SentenceDestinationContextRight} }<br><br> -->
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
+                        ...</a>
+                    <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span><br>
+                    {{/SentenceDestination2ContextRight}}
                 </span>
             </div>
             <br>
