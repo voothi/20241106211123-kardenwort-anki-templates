@@ -974,6 +974,9 @@
             {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
             {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
             {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
+            {{#SentenceDestination2ContextLeft}}●{{/SentenceDestination2ContextLeft}}{{^SentenceDestination2ContextLeft}}○{{/SentenceDestination2ContextLeft}}
+            {{#SentenceDestination2}}●{{/SentenceDestination2}}{{^SentenceDestination2}}○{{/SentenceDestination2}}
+            {{#SentenceDestination2ContextRight}}●{{/SentenceDestination2ContextRight}}{{^SentenceDestination2ContextRight}}○{{/SentenceDestination2ContextRight}}
         </label>
         <div>
             <span>
@@ -982,16 +985,34 @@
                 {{/SentenceDestinationContextLeft}}
             </span>
 
+            <span>
+                {{#SentenceDestination2ContextLeft}}
+                {{SentenceDestination2ContextLeft}}<br><br>
+                {{/SentenceDestination2ContextLeft}}
+            </span>
+
             <span class="sentence">
                 {{#SentenceDestination}}
                 {{SentenceDestination}}<br><br>
                 {{/SentenceDestination}}
             </span>
 
+            <span class="sentence">
+                {{#SentenceDestination2}}
+                {{SentenceDestination2}}<br><br>
+                {{/SentenceDestination2}}
+            </span>
+
             <span>
                 {{#SentenceDestinationContextRight}}
                 {{SentenceDestinationContextRight}}<br><br>
                 {{/SentenceDestinationContextRight}}
+            </span>
+
+            <span>
+                {{#SentenceDestination2ContextRight}}
+                {{SentenceDestination2ContextRight}}<br><br>
+                {{/SentenceDestination2ContextRight}}
             </span>
         </div>
         <br>
