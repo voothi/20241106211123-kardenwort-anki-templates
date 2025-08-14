@@ -1238,30 +1238,5 @@
 </div>
 <!-- Hint Template/ -->
 
-<script>
-  function scrollToActiveCloze() {
-    try {
-      // Ищем первый элемент с классом 'cloze'.
-      // Anki автоматически присваивает этот класс активному пропуску.
-      const clozeElement = document.querySelector('.cloze');
-
-      if (clozeElement) {
-        // Прокручиваем к элементу.
-        // Опция { block: 'center' } попытается разместить элемент по центру экрана.
-        // Опция { behavior: 'smooth' } делает прокрутку плавной.
-        clozeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    } catch (e) {
-      // Защита от возможных ошибок, чтобы не сломать отображение всей карточки.
-      console.error("Scroll to cloze failed:", e);
-    }
-  }
-
-  // Используем setTimeout, чтобы скрипт сработал после того,
-  // как Anki и ваши другие скрипты полностью отрисуют карточку.
-  // 100 миллисекунд — это небольшая, но надежная задержка.
-  setTimeout(scrollToActiveCloze, 100);
-</script>
-
 <span id="side1"></span>
 {{cloze:WordSource}}
