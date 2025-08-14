@@ -118,6 +118,15 @@
                             }
 
                             divJsRendered.innerHTML = question;
+                            // --- НАЧАЛО НОВОГО КОДА ДЛЯ ПРОКРУТКИ ---
+                            // Этот код выполнится сразу после отрисовки, гарантируя, что элемент .cloze уже существует
+                            setTimeout(function() {
+                                var clozeElement = divJsRendered.querySelector('.cloze');
+                                if (clozeElement) {
+                                    clozeElement.scrollIntoView({ behavior: 'auto', block: 'center' });
+                                }
+                            }, 0);
+                            // --- КОНЕЦ НОВОГО КОДА ДЛЯ ПРОКРУТКИ ---
                         }
 
                         function delayedRender() {
