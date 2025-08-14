@@ -1239,3 +1239,4 @@
 <!-- Hint Template/ -->
 
 <span id="side1"></span>
+{{cloze:WordSource}}
