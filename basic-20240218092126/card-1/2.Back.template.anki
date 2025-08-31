@@ -370,25 +370,25 @@
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
             {{#Destination-en-GB}}
-            <span>
+            <span id="sound2">
                 {{tts en_GB voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-en-GB}}
 
             {{#Destination-en-US}}
-            <span>
+            <span id="sound2">
                 {{tts en_US voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-en-US}}
 
             {{#Destination-de-DE}}
-            <span>
+            <span id="sound2">
                 {{tts de_DE voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-de-DE}}
 
             {{#Destination-uk-UA}}
-            <span>
+            <span id="sound2">
                 {{tts uk_UA voices=gTTS speed=1.0:WordSourceMorphologyAI}}
             </span>
             {{/Destination-uk-UA}}

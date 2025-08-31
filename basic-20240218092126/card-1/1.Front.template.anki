@@ -95,7 +95,7 @@
             {{#WordSource}}
             {{^WordSourceAudio}}
             {{#Source-en-GB}}
-            <span>
+            <span id="sound1">
                 {{tts en_GB voices=gTTS speed=1.0:WordSource}}
                 <!-- en_GB voices=Microsoft_Susan -->
                 <!-- en_US voices=gTTS -->
@@ -123,13 +123,13 @@
             {{/Source-de-DE}}
 
             {{#Source-uk-UA}}
-            <span>
+            <span id="sound1">
                 {{tts uk_UA voices=gTTS speed=1.0:WordSource}}
             </span>
             {{/Source-uk-UA}}
 
             {{#Source-ru-RU}}
-            <span>
+            <span id="sound1">
                 {{tts ru_RU voices=gTTS speed=1.0:WordSource}}
             </span>
             {{/Source-ru-RU}}
