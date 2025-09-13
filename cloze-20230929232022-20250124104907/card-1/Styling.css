@@ -1,6 +1,3 @@
-/* 20241016083922 */
-/* /CSS Template */
-
 .card {
   font-family: Arial;
   font-size: 20px;
@@ -33,13 +30,11 @@ a.hint {
   visibility: hidden;
 }
 
-/* скрываем чекбоксы и блоки с содержанием */
 .hide,
 .hide+label~div {
   display: none;
 }
 
-/* вид текста label */
 .hide+label,
 .hide:checked+label {
   padding: 0;
@@ -48,13 +43,11 @@ a.hint {
   border-bottom: 1px dotted green;
 }
 
-/* вид текста label при активном переключателе */
 .hide:checked+label {
   color: red;
   border-bottom: 0;
 }
 
-/* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked+label+div {
   display: block;
   background: transparent;
@@ -64,13 +57,11 @@ a.hint {
   padding: 10px;
 }
 
-/* скрываем чекбоксы и блоки с содержанием */
 .show,
 .show+label~div {
   display: none;
 }
 
-/* вид текста label */
 .show+label,
 .show:not(:checked)+label {
   padding: 0;
@@ -79,13 +70,11 @@ a.hint {
   border-bottom: 1px dotted green;
 }
 
-/* вид текста label при активном переключателе */
 .show:not(:checked)+label {
   color: red;
   border-bottom: 0;
 }
 
-/* когда чекбокс активен показываем блоки с содержанием  */
 .show:not(:checked)+label+div {
   display: block;
   background: transparent;
@@ -97,23 +86,17 @@ a.hint {
 
 .svg-container {
   display: inline-block;
-  /* Сделать контейнер inline-block элементом */
   vertical-align: middle;
-  /* Выравнивание по вертикали по середине строки */
   text-align: center;
-  /* Выравнивание по горизонтали по центру строки */
 }
 
 .centered-element {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Вертикальное выравнивание по центру */
   align-items: center;
-  /* Горизонтальное выравнивание по центру */
 }
 
-/*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
 .android .ankitts {
   display: none;
 }
@@ -128,7 +111,6 @@ a.hint {
 	visibility: hidden;
 }
 
-/*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
 html:not(.android) .ankidroidTtsButton {
   display: none;
 }
@@ -143,19 +125,16 @@ html:not(.android) .ankidroidTtsButton {
     float: right;
 }
 
-
-/* CSS Template/ */
-
 .line-wrapper {
-display: flex; /* Используем флексбокс для размещения элементов на одной строке */
-align-items: center; /* Выравниваем элементы по центру по вертикали */
+display: flex;
+align-items: center;
 }
 
 .custom-hr {
-flex: 1; /* Растягиваем горизонтальную линию на всю доступную ширину */
-margin-right: 5px; /* Добавляем небольшой отступ между линией и символом */
+flex: 1;
+margin-right: 5px;
 border: none;
-border-top: 1px solid MediumSeaGreen; /* Устанавливаем зеленый цвет линии */
+border-top: 1px solid MediumSeaGreen;
 }
 
 .layout-table {
@@ -165,7 +144,7 @@ border-top: 1px solid MediumSeaGreen; /* Устанавливаем зелены
 }
 
 .layout-table td {
-    padding: 10px 10px; /* отступ внутри ячеек */
+    padding: 10px 10px;
 }
 
 .container-9333 {
@@ -177,47 +156,47 @@ border-top: 1px solid MediumSeaGreen; /* Устанавливаем зелены
 .text-group-1192 {
     display: flex;
     align-items: center;
-    gap: 10px; /* расстояние между кнопкой и текстом */
-    margin-bottom: 20px; /* фиксированный отступ между WordSource и SentenceSource */
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .spacer {
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Или use display: none; для полного скрытия, но это уберёт элемент из потока */
+    height: 50px;
+    visibility: hidden;
 }
 
 .container-4453 {
-    position: relative; /* Для позиционирования псевдоэлемента */
+    position: relative;
 }
 
 .container-4453::before {
     content: '';
     display: block;
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Или use display: none; для полного скрытия */
+    height: 50px;
+    visibility: hidden;
 }
 
 .svc-element-20241027120232 {
-    height: 50px; /* Задайте нужную высоту */
-    visibility: hidden; /* Элемент изначально невидимый */
-    background-color: lightgrey; /* Фоновый цвет для наглядности */
-    margin: 10px 0; /* Отступы для визуального разделения */
+    height: 50px;
+    visibility: hidden;
+    background-color: lightgrey;
+    margin: 10px 0;
 }
 
 .fixed-table {
-  width: 100%; /* Ширина таблицы */
+  width: 100%;
   height: 70px;
-  border-collapse: collapse; /* Убираем лишние отступы между ячейками */
+  border-collapse: collapse;
 }
 
 .fixed-cell {
-  height: 20px; /* Высота ячейки (можно изменить) */
-  border: 1px solid MediumSeaGreen; /* Граница ячейки */
-  vertical-align: middle; /* Вертикальное выравнивание содержимого */
-  padding: 10px; /* Отступы в ячейке */
+  height: 20px;
+  border: 1px solid MediumSeaGreen;
+  vertical-align: middle; 
+  padding: 10px;
 }
 
 .spacer-cell {
-  height: 20px; /* Высота заглушки */
-  width: 0; /* Ширина 0, чтобы не занимать пространство */
+  height: 20px;
+  width: 0;
 }
