@@ -258,7 +258,6 @@
             {{/WordSourceContext}}
             {{/ToggleAlwaysEmptyField}}
 
-            <!-- #WordSource -->
             <input class="hide" id="hd-20" type="checkbox">
             <label for="hd-20">Word
                 {{#WordSourceAudio}}▶{{/WordSourceAudio}}{{^WordSourceAudio}}▷{{/WordSourceAudio}}
@@ -392,7 +391,6 @@
 </label>
 <div>
     {{#WordSource}}
-    <!-- br -->
     <input class="hide" id="hd-90" type="checkbox">
     <label for="hd-90">Source Word Input
         {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
@@ -407,8 +405,7 @@
 
     {{^WordSource}}
     {{#SentenceSource}}
-    <!-- br -->
-    <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
+    <input class="hide" id="hd-130" type="checkbox">
     <label for="hd-130">Source Sentence Input
         {{#SentenceSource}}●{{/SentenceSource}}{{^SentenceSource}}○{{/SentenceSource}}
     </label>
@@ -421,8 +418,7 @@
     {{/SentenceSource}}
 
     {{^SentenceSource}}
-    <!-- br -->
-    <input class="hide" id="hd-135" type="checkbox"><!-- hide | show -->
+    <input class="hide" id="hd-135" type="checkbox">
     <label for="hd-135">Source Sentence Cloze Input
         {{#SentenceSourceCloze}}●{{/SentenceSourceCloze}}{{^SentenceSourceCloze}}○{{/SentenceSourceCloze}}
     </label>
@@ -451,7 +447,6 @@
         </label>
         <div>
             {{#WordSource}}
-            <!-- br -->
             <span>
                 {{#WordSourceIPA}}
                 {{WordSourceIPA}}<br><br>
@@ -1168,7 +1163,6 @@
         {{/Quotation}}
     </span>
 </div>
-<!-- Hint Template/ -->
 
 <span id="side1"></span>
 {{cloze:WordSource}}
