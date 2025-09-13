@@ -7,22 +7,38 @@
 }
 
 .cloze {
- font-weight: bold;
- color: MediumSeaGreen !important;
+  font-weight: bold;
+  color: MediumSeaGreen !important;
 }
 
 .green {
   font-weight: bold;
   color: MediumSeaGreen !important;
- }
+}
+
+.context {
+  color: rgb(165, 165, 165);
+}
+
+.context2 {
+  color: rgb(210, 210, 210);
+}
+
+.sentence {
+  color: rgb(165, 165, 165);
+}
+
+.sentence2 {
+  color: rgb(210, 210, 210);
+}
 
 a.hint {
- color: MediumSeaGreen !important;
- text-decoration: none;
+  color: MediumSeaGreen !important;
+  text-decoration: none;
 }
 
 .nightMode .cloze {
- color: MediumSeaGreen !important;
+  color: MediumSeaGreen !important;
 }
 
 .mobile .disabled {
@@ -102,13 +118,13 @@ a.hint {
 }
 
 .field-audio {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .field-hide {
-	display: none;
-	visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 html:not(.android) .ankidroidTtsButton {
@@ -122,65 +138,65 @@ html:not(.android) .ankidroidTtsButton {
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .line-wrapper {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .custom-hr {
-flex: 1;
-margin-right: 5px;
-border: none;
-border-top: 1px solid MediumSeaGreen;
+  flex: 1;
+  margin-right: 5px;
+  border: none;
+  border-top: 1px solid MediumSeaGreen;
 }
 
 .layout-table {
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
 }
 
 .layout-table td {
-    padding: 10px 10px;
+  padding: 10px 10px;
 }
 
 .container-9333 {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .text-group-1192 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .spacer {
-    height: 50px;
-    visibility: hidden;
+  height: 50px;
+  visibility: hidden;
 }
 
 .container-4453 {
-    position: relative;
+  position: relative;
 }
 
 .container-4453::before {
-    content: '';
-    display: block;
-    height: 50px;
-    visibility: hidden;
+  content: '';
+  display: block;
+  height: 50px;
+  visibility: hidden;
 }
 
 .svc-element-20241027120232 {
-    height: 50px;
-    visibility: hidden;
-    background-color: lightgrey;
-    margin: 10px 0;
+  height: 50px;
+  visibility: hidden;
+  background-color: lightgrey;
+  margin: 10px 0;
 }
 
 .fixed-table {
@@ -192,7 +208,7 @@ border-top: 1px solid MediumSeaGreen;
 .fixed-cell {
   height: 20px;
   border: 1px solid MediumSeaGreen;
-  vertical-align: middle; 
+  vertical-align: middle;
   padding: 10px;
 }
 

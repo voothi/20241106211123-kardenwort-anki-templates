@@ -46,7 +46,6 @@ a.hint {
   visibility: hidden;
 }
 
-/* скрываем чекбоксы и блоки с содержанием */
 .hide,
 .hide+label~div {
   display: none;
