@@ -1,4 +1,3 @@
-<!-- /Feature for Browse Mode on AnkiDroid -->
 {{#WordDestination}}
 <span class="field-hide">
     <span>
@@ -48,25 +47,9 @@
     </span>
 </span>
 {{/WordDestinationDefinitionFirst}}
-<!-- Feature for Browse Mode on AnkiDroid/ -->
 
-
-
-
-<!-- /FrontSide Template -->
-<!-- FrontSide -->
 {{FrontSide}}
-<!-- hr id="answer" -->
-<!-- hr -->
-<!-- FrontSide Template/ -->
 
-
-
-
-<!-- Case 2 -->
-<!-- 20241016083918 -->
-<!-- /L1 Template -->
-<!-- /Definition#2 Template -->
 {{#WordDestination}}
 <table class="fixed-table">
     <tr>
@@ -103,7 +86,6 @@
             {{/Destination-ru-RU}}
             {{/WordDestination}}
 
-            <!-- #WordDestination -->
             <input class="hide" id="hd-40" type="checkbox">
             <label for="hd-40">Word
                 {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
@@ -119,20 +101,13 @@
     </tr>
 </table>
 {{/WordDestination}}
-<!-- /WordDestination -->
-<!-- Definition#2 Template/ -->
 
-<!-- /Russian Template -->
-<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceDestination}}
 {{^SentenceSourceRewriteAISentenceDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            <!-- ^WordSource -->
-            <!-- #SentenceSource -->
             {{^ToggleAlwaysEmptyField}}
-            <!-- ^WordSourceMorphologyAI -->
             {{^WordSourceDefinitionAISentenceDestination}}
             {{#SentenceDestination}}
             {{#Destination-en-GB}}
@@ -166,12 +141,8 @@
             {{/Destination-ru-RU}}
             {{/SentenceDestination}}
             {{/WordSourceDefinitionAISentenceDestination}}
-            <!-- /WordSourceMorphologyAI -->
             {{/ToggleAlwaysEmptyField}}
-            <!-- /SentenceSource -->
-            <!-- /WordSource -->
 
-            <!-- #SentenceDestination -->
             <input class="hide" id="hd-70" type="checkbox">
             <label for="hd-70">Sentence
                 {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
@@ -180,7 +151,6 @@
             </label>
             <div>
                 <span class="context">
-                    <!-- { {SentenceDestinationContextLeft} }<br><br> -->
                     {{#SentenceDestinationContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
@@ -212,7 +182,6 @@
 
                 <span class="context">
                     {{#SentenceDestinationContextRight}}
-                    <!-- { {SentenceDestinationContextRight} }<br><br> -->
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
                         ...</a>
@@ -222,7 +191,6 @@
 
                 <span class="context2">
                     {{#SentenceDestination2ContextRight}}
-                    <!-- { {SentenceDestinationContextRight} }<br><br> -->
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
                         ...</a>
@@ -236,17 +204,12 @@
 </table>
 {{/SentenceSourceRewriteAISentenceDestination}}
 {{/SentenceDestination}}
-<!-- /SentenceDestination -->
-<!-- Russian Template/ -->
 
 {{#SentenceSourceRewriteAISentenceDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            <!-- ^WordSource -->
-            <!-- #SentenceSource -->
             {{^ToggleAlwaysEmptyField}}
-            <!-- { {^WordSourceMorphologyAI} } -->
             {{#SentenceSourceRewriteAISentenceDestination}}
             {{#Destination-en-GB}}
             <span>
@@ -278,12 +241,8 @@
             </span>
             {{/Destination-ru-RU}}
             {{/SentenceSourceRewriteAISentenceDestination}}
-            <!-- { {/WordSourceMorphologyAI} } -->
             {{/ToggleAlwaysEmptyField}}
-            <!-- /SentenceSource -->
-            <!-- /WordSource -->
 
-            <!-- #SentenceDestination -->
             <input class="hide" id="hd-75" type="checkbox">
             <label for="hd-75">Sentence Rewrite
                 {{#SentenceSourceRewriteAISentenceDestination}}●{{/SentenceSourceRewriteAISentenceDestination}}{{^SentenceSourceRewriteAISentenceDestination}}○{{/SentenceSourceRewriteAISentenceDestination}}
@@ -306,8 +265,6 @@
     <tr>
         <td class="fixed-cell">
             <span>
-                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                 {{^ToggleAlwaysEmptyField}}
                 {{^WordSourceMorphologyAI}}
                 {{#WordSourceDefinitionAISentenceDestination}}
@@ -338,7 +295,6 @@
                 {{#Destination-ru-RU}}
                 <span>
                     {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                    <!-- ru_RU voices=gTTS -->
                 </span>
                 {{/Destination-ru-RU}}
                 {{/WordSourceDefinitionAISentenceDestination}}
@@ -417,7 +373,5 @@
     </tr>
 </table>
 {{/WordSourceMorphologyAI}}
-<!-- L1 Template/ -->
-<!-- Case 2/ -->
 
 <span id="side2"></span>

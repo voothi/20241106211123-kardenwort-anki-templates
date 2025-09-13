@@ -1,5 +1,4 @@
 <script>
-    // Function to execute the click action
     function executeClickAction() {
         var side1 = document.getElementById("side1");
         var side2 = document.getElementById("side2");
@@ -7,7 +6,6 @@
         var sound1Selector = "#sound1 .soundLink, .replaybutton";
         var sound2Selector = "#sound2 .soundLink, .replaybutton";
 
-        // Function to handle clicking sound elements
         var clickSoundElement = function (selector) {
             var elem = document.querySelector(selector);
             if (elem) {
@@ -18,7 +16,6 @@
                     if (elem) {
                         elem.click();
                     }
-                    // Remove the onload handler to prevent multiple calls
                     window.removeEventListener("load", onLoadHandler);
                 };
                 window.addEventListener("load", onLoadHandler);
@@ -27,10 +24,8 @@
 
         if (side1 !== null) {
             if (side2 === null) {
-                // Only side1 exists
                 clickSoundElement(sound1Selector);
             } else {
-                // Both side1 and side2 exist
                 if (titleIsPreviewer) {
                     clickSoundElement(sound1Selector);
                 } else {
@@ -40,24 +35,18 @@
         }
     }
 
-    // Set a delay of 100 ms before executing the script
     setTimeout(executeClickAction, 20);
-    // executeClickAction();
 </script>
 
 <script>
     function updateCheckboxVisibility() {
-        // Проверяем, есть ли элемент с id "side2"
         var isBackSide = document.getElementById("side2") !== null;
 
-        // Массив с id чекбоксов
         var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-260", "hd-155", "hd-295", "hd-15", "hd-75", "hd-195"]; //, "hd-195", "hd-90", "hd-130"
 
-        // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
             var checkbox = document.getElementById(id);
-            if (checkbox) { // Проверяем, существует ли чекбокс
-                // Если на оборотной стороне, меняем класс
+            if (checkbox) {
                 if (isBackSide) {
                     checkbox.classList.remove("hide");
                     checkbox.classList.add("show");
@@ -75,22 +64,16 @@
     }
 </script>
 
-<!-- Case 1 -->
-<!-- 20241024191126 -->
-<!-- /L2 Template -->
-<!-- /Word Template -->
 {{#WordSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
                 {{WordSourceAudio}}
                 {{/WordSourceAudio}}
             </span>
-            <!-- Audio template/ -->
 
             {{#WordSource}}
             {{^WordSourceAudio}}
@@ -239,31 +222,19 @@
     </tr>
 </table>
 {{/WordSource}}
-<!-- WordSource/ -->
-<!-- Word Template/ -->
 
-<!-- SentenceSource TTS Toggle Off -->
-<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
 {{^SentenceSourceRewriteAISentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            <!-- ^WordSourceMorphologyAI -->
-            <!-- /Sentence Template -->
-            <!-- /Audio#2 Template -->
-            <!-- ^WordSource -->
             <span>
                 {{#SentenceSourceAudio}}
                 {{SentenceSourceAudio}}
                 {{/SentenceSourceAudio}}
             </span>
-            <!-- /WordSource -->
-            <!-- Audio#2 template/ -->
 
-            <!-- ^WordSource -->
-            <!-- #SentenceDestination -->
             {{#SentenceSource}}
             {{^SentenceSourceAudio}}
             {{#Source-en-GB}}
@@ -293,17 +264,12 @@
             {{#Source-ru-RU}}
             <span>
                 {{tts ru_RU voices=gTTS speed=1.0:SentenceSource}}
-                <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
-            <!-- /WordSourceMorphologyAI -->
             {{/ToggleAlwaysEmptyField}}
-            <!-- /SentenceDestination -->
-            <!-- /WordSource -->
 
-            <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
             <label for="hd-10">Sentence
                 {{#SentenceSourceAudio}}▶{{/SentenceSourceAudio}}{{^SentenceSourceAudio}}▷{{/SentenceSourceAudio}}
