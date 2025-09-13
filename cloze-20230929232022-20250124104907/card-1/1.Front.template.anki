@@ -1,16 +1,12 @@
 <script>
     function updateCheckboxVisibility() {
-        // Проверяем, есть ли элемент с id "side2"
         var isBackSide = document.getElementById("side2") !== null;
 
-        // Массив с id чекбоксов
         var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-70", "hd-90", "hd-130", "hd-260"];
 
-        // Итерируемся по каждому id чекбокса
         checkboxIds.forEach(function (id) {
             var checkbox = document.getElementById(id);
-            if (checkbox) { // Проверяем, существует ли чекбокс
-                // Если на оборотной стороне, меняем класс
+            if (checkbox) {
                 if (isBackSide) {
                     checkbox.classList.remove("hide");
                     checkbox.classList.add("show");
@@ -48,7 +44,6 @@
                 <span id="cloze-js-rendered"></span><br><br>
 
                 <script>
-                    // This ceremony makes sure the render function is run exactly once:
                     (function () {
                         function escapeRegExp(string) {
                             return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -108,7 +103,6 @@
                                         replacement = (isBackSide && revealAllClozes) ? allClozes[i].clozes[orig].content : "[" + (revealAllCustomPlaceholders ? allClozes[i].clozes[orig].placeholder : "...") + "]";
                                     else {
                                         replacement = "";
-                                        // Also get rid of following new lines, commas, dots, etc.
                                         needle = new RegExp(escapeRegExp(orig) + "(<br>|[\\s,.])*", "g");
                                     }
                                     question = question.replace(needle, function () {
@@ -118,15 +112,12 @@
                             }
 
                             divJsRendered.innerHTML = question;
-                            // --- НАЧАЛО НОВОГО КОДА ДЛЯ ПРОКРУТКИ ---
-                            // Этот код выполнится сразу после отрисовки, гарантируя, что элемент .cloze уже существует
                             setTimeout(function() {
                                 var clozeElement = divJsRendered.querySelector('.cloze');
                                 if (clozeElement) {
                                     clozeElement.scrollIntoView({ behavior: 'auto', block: 'center' });
                                 }
                             }, 0);
-                            // --- КОНЕЦ НОВОГО КОДА ДЛЯ ПРОКРУТКИ ---
                         }
 
                         function delayedRender() {
@@ -146,23 +137,17 @@
 </table>
 {{/SentenceSourceCloze}}
 
-<!-- Case 1 -->
-<!-- 20241024191126 -->
-<!-- /L2 Template -->
-<!-- /Word Template -->
 {{#WordSource}}
 {{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            <!-- /Audio template -->
             <span>
                 {{#WordSourceAudio}}
                 {{WordSourceAudio}}
                 {{/WordSourceAudio}}
             </span>
-            <!-- Audio template/ -->
 
             {{#WordSource}}
             {{^WordSourceAudio}}
@@ -312,30 +297,19 @@
 </table>
 {{/SentenceSourceCloze}}
 {{/WordSource}}
-<!-- /WordSource -->
-<!-- Word Template/ -->
 
-<!-- SentenceSource TTS Toggle Off -->
-<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceSource}}
 {{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            <!-- /Sentence Template -->
-            <!-- /Audio#2 Template -->
-            <!-- ^WordSource -->
             <span>
                 {{#SentenceSourceAudio}}
                 {{SentenceSourceAudio}}
                 {{/SentenceSourceAudio}}
             </span>
-            <!-- /WordSource -->
-            <!-- Audio#2 template/ -->
 
-            <!-- ^WordSource -->
-            <!-- #SentenceDestination -->
             {{#SentenceSource}}
             {{^SentenceSourceAudio}}
             {{#Source-en-GB}}
@@ -365,16 +339,12 @@
             {{#Source-ru-RU}}
             <span>
                 {{tts ru_RU voices=gTTS speed=1.0:SentenceSource}}
-                <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-ru-RU}}
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
-            <!-- /SentenceDestination -->
-            <!-- /WordSource -->
             {{/ToggleAlwaysEmptyField}}
 
-            <!-- #SentenceSource -->
             <input class="hide" id="hd-10" type="checkbox">
             <label for="hd-10">Sentence
                 {{#SentenceSourceAudio}}▶{{/SentenceSourceAudio}}{{^SentenceSourceAudio}}▷{{/SentenceSourceAudio}}
@@ -411,15 +381,7 @@
 </table>
 {{/SentenceSourceCloze}}
 {{/SentenceSource}}
-<!-- /SentenceSource -->
-<!-- Text Template/ -->
-<!-- L2 Template/ -->
-<!-- Case 1/ -->
 
-
-
-
-<!-- /Hint Template -->
 <input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="hide" {{/WordSource}} id="hd-60"
     type="checkbox">
 <label for="hd-60">
@@ -429,10 +391,9 @@
     </div <hr>
 </label>
 <div>
-    <!-- /Input Template -->
     {{#WordSource}}
     <!-- br -->
-    <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
+    <input class="hide" id="hd-90" type="checkbox">
     <label for="hd-90">Source Word Input
         {{#WordSource}}●{{/WordSource}}{{^WordSource}}○{{/WordSource}}
     </label>
@@ -443,9 +404,7 @@
     </div>
     <br>
     {{/WordSource}}
-    <!-- Input Template/ -->
 
-    <!-- /Input Template -->
     {{^WordSource}}
     {{#SentenceSource}}
     <!-- br -->
@@ -475,7 +434,6 @@
     <br>
     {{/SentenceSource}}
     {{/WordSource}}
-    <!-- Input Template/ -->
 
     <input class="show" id="hd-320" type="checkbox">
     <label for="hd-320">Source
@@ -513,7 +471,6 @@
             </span>
             {{/WordSource}}
 
-            <!-- /Definition Template -->
             {{#WordSourceDefinitionFirst}}
             <span>
                 <!-- tts de_DE voices=Microsoft_Stefan:WordSourceDefinitionClipping -->
@@ -523,10 +480,6 @@
         <br>
         {{/WordSource}}
 
-        <!-- #WordSourceDefinition -->
-        <!-- <input class="hide" id="hd-30" type="checkbox">
-            <label for="hd-30">Definition</label>
-            <div> -->
         {{#WordSourceDefinitionFirst}}
         <input class="hide" id="hd-370" type="checkbox">
         <label for="hd-370">Word Definition First
@@ -536,8 +489,6 @@
         <div>
             <span>
                 {{#WordSourceDefinitionFirstClipping}}
-                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                 {{^ToggleAlwaysEmptyField}}
                 {{#Source-en-GB}}
                 <span>
@@ -566,7 +517,6 @@
                 {{#Source-ru-RU}}
                 <span>
                     {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionFirstClipping}}
-                    <!-- ru_RU voices=gTTS -->
                 </span>
                 {{/Source-ru-RU}}
                 <br>
@@ -708,10 +658,6 @@
         </div>
         <br>
         {{/WordSourceMorphemeFifth}}
-        <!-- </div>
-            <br> -->
-        <!-- /WordSourceDefinition -->
-        <!-- Definition Template/ -->
 
         {{#SentenceSource}}
         <input class="hide" id="hd-270" type="checkbox">
@@ -771,7 +717,6 @@
             </span>
         </div>
         <br>
-        <!-- #SentenceSourceWordlist -->
         {{#SentenceSourceWordlist}}
         <input class="hide" id="hd-260" type="checkbox">
         <label for="hd-260">Wordlist
@@ -779,8 +724,6 @@
         </label>
         <div>
             <span>
-                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                 {{#ToggleAlwaysEmptyField}}
                 {{#SentenceSourceWordlist}}
                 {{#Source-en-GB}}
@@ -810,7 +753,6 @@
                 {{#Source-ru-RU}}
                 <span>
                     {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceWordlist}}
-                    <!-- ru_RU voices=gTTS -->
                 </span>
                 {{/Source-ru-RU}}
                 <br>
@@ -826,7 +768,6 @@
         </div>
         <br>
         {{/SentenceSourceWordlist}}
-        <!-- /SentenceSourceWordList -->
         {{/SentenceSource}}
     </div>
     <br>
@@ -854,7 +795,6 @@
         <br>
         {{/WordDestination}}
 
-        <!-- /Definition Template 2 -->
         {{#WordDestinationDefinitionFirst}}
         <input class="hide" id="hd-110" type="checkbox">
         <label for="hd-110">Word Definition First
@@ -869,7 +809,6 @@
         </div>
         <br>
         {{/WordDestinationDefinitionFirst}}
-        <!-- Definition Template 2/ -->
 
         {{#WordDestinationDefinitionSecond}}
         <input class="hide" id="hd-390" type="checkbox">
@@ -919,7 +858,6 @@
         {{#SentenceUkrainian}}●{{/SentenceUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
     </label>
     <div>
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
         {{#WordUkrainian}}
         <span>
@@ -935,7 +873,6 @@
             {{/WordUkrainian}}
         </span>
 
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
         {{#SentenceUkrainian}}
         <span>
@@ -959,11 +896,9 @@
         {{#SentenceEnglish}}●{{/SentenceEnglish}}{{^SentenceEnglish}}○{{/SentenceEnglish}}
     </label>
     <div>
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
         {{#WordEnglish}}
         <span>
-            <!-- tts en_GB voices=gTTS:WordEnglish -->
             {{tts en_US voices=gTTS speed=1.0:WordEnglish}}
         </span>
         <br>
@@ -976,11 +911,9 @@
             {{/WordEnglish}}
         </span>
 
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
         {{#ToggleAlwaysEmptyField}}
         {{#SentenceEnglish}}
         <span>
-            <!-- tts en_GB voices=gTTS:WordEnglish -->
             {{tts en_US voices=gTTS speed=1.0:SentenceEnglish}}
         </span>
         <br>
@@ -1010,7 +943,6 @@
             {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
         </label>
         <div>
-            <!-- #WordSourceDefinitionAI -->
 
             {{#WordSourceDefinitionAISentenceSource}}
             <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
@@ -1020,8 +952,6 @@
             </label>
             <div>
                 <span>
-                    <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                     {{#ToggleAlwaysEmptyField}}
                     {{#WordSourceDefinitionAISentenceSource}}
                     {{#Source-en-GB}}
@@ -1051,7 +981,6 @@
                     {{#Source-ru-RU}}
                     <span>
                         {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                        <!-- ru_RU voices=gTTS -->
                     </span>
                     {{/Source-ru-RU}}
                     <br>
@@ -1067,9 +996,7 @@
             </div>
             <br>
             {{/WordSourceDefinitionAISentenceSource}}
-            <!-- /WordSourceDefinitionAI -->
 
-            <!-- #WordSourceDefinitionAI -->
             {{#WordSourceDefinitionAISentenceDestination}}
             <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
                 {{/WordDestination}} id="hd-290" type="checkbox">
@@ -1078,8 +1005,6 @@
             </label>
             <div>
                 <span>
-                    <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                    <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
                     {{#ToggleAlwaysEmptyField}}
                     {{#WordSourceDefinitionAISentenceDestination}}
                     {{#Destination-en-GB}}
@@ -1109,7 +1034,6 @@
                     {{#Destination-ru-RU}}
                     <span>
                         {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                        <!-- ru_RU voices=gTTS -->
                     </span>
                     {{/Destination-ru-RU}}
                     <br>
@@ -1125,7 +1049,6 @@
             </div>
             <br>
             {{/WordSourceDefinitionAISentenceDestination}}
-            <!-- /WordSourceDefinitionAI -->
         </div>
         <br>
         {{/WordSourceDefinitionAISentenceSource}}
