@@ -1,5 +1,3 @@
-<!-- 20240315133018 -->
-<!-- /Feature for Browse Mode on AnkiDroid -->
 {{#WordDestination}}
 <span class="field-hide">
     <span>
@@ -49,16 +47,10 @@
     </span>
 </span>
 {{/WordDestinationDefinitionFirst}}
-<!-- Feature for Browse Mode on AnkiDroid/ -->
 
 <div id="cloze-is-back" hidden="">{{cloze:SentenceSourceCloze}}</div>
 
-<!-- /FrontSide Template -->
-<!-- FrontSide -->
 {{FrontSide}}
-<!-- hr id="answer" -->
-<!-- hr -->
-<!-- FrontSide Template/ -->
 
 {{#SentenceSourceCloze}}
 <table class="fixed-table">
@@ -109,10 +101,6 @@
 </table>
 {{/SentenceSourceCloze}}
 
-<!-- Case 2 -->
-<!-- 20241016083918 -->
-<!-- /L1 Template -->
-<!-- /Definition#2 Template -->
 {{#WordDestination}}
 {{^SentenceSourceCloze}}
 <table class="fixed-table">
@@ -150,7 +138,6 @@
             {{/Destination-ru-RU}}
             {{/WordDestination}}
 
-            <!-- #WordDestination -->
             <input class="hide" id="hd-40" type="checkbox">
             <label for="hd-40">Word
                 {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
@@ -167,19 +154,13 @@
 </table>
 {{/SentenceSourceCloze}}
 {{/WordDestination}}
-<!-- /WordDestination -->
-<!-- Definition#2 Template/ -->
 
-<!-- /Russian Template -->
-<!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
 {{#SentenceDestination}}
 {{^SentenceSourceCloze}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
-            <!-- ^WordSource -->
-            <!-- #SentenceSource -->
             {{#SentenceDestination}}
             {{#Destination-en-GB}}
             <span>
@@ -211,11 +192,8 @@
             </span>
             {{/Destination-ru-RU}}
             {{/SentenceDestination}}
-            <!-- /SentenceSource -->
-            <!-- /WordSource -->
             {{/ToggleAlwaysEmptyField}}
 
-            <!-- #SentenceDestination -->
             <input class="hide" id="hd-70" type="checkbox">
             <label for="hd-70">Sentence
                 {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
@@ -233,9 +211,5 @@
 </table>
 {{/SentenceSourceCloze}}
 {{/SentenceDestination}}
-<!-- /SentenceDestination -->
-<!-- Russian Template/ -->
-<!-- L1 Template/ -->
-<!-- Case 2/ -->
 
 <span id="side2"></span>
