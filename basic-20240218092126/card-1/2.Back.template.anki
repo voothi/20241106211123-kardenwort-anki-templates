@@ -150,53 +150,64 @@
                 {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
             </label>
             <div>
-                <span class="context">
-                    {{#SentenceDestinationContextLeft}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestinationContextLeft}}</span><br>
-                    {{/SentenceDestinationContextLeft}}
-                </span>
-                
-                <span class="context2">
-                    {{#SentenceDestination2ContextLeft}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint12cdbd3sh30e9dcb').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint12cdbd3sh30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span><br>
-                    {{/SentenceDestination2ContextLeft}}
-                </span>
+                <input class="hide" id="hd-200" type="checkbox">
+                <label for="hd-200">Sentence 1
+                </label>
+                <div>
+                    <span class="context">
+                        {{#SentenceDestinationContextLeft}}
+                        <a class="hint" href="#"
+                            onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
+                            ...</a>
+                        <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestinationContextLeft}}</span><br>
+                        {{/SentenceDestinationContextLeft}}
+                    </span>
 
-                <span>
-                    {{#SentenceDestination}}
-                    {{SentenceDestination}}<br><br>
-                    {{/SentenceDestination}}
-                </span>
+                    <span>
+                        {{#SentenceDestination}}
+                        {{SentenceDestination}}<br><br>
+                        {{/SentenceDestination}}
+                    </span>
 
-                <span class="sentence2">
-                    {{#SentenceDestination2}}
-                    {{SentenceDestination2}}<br><br>
-                    {{/SentenceDestination2}}
-                </span>
+                    <span class="context">
+                        {{#SentenceDestinationContextRight}}
+                        <a class="hint" href="#"
+                            onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
+                            ...</a>
+                        <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestinationContextRight}}</span><br>
+                        {{/SentenceDestinationContextRight}}
+                    </span>
+                </div>
+                <br>
 
-                <span class="context">
-                    {{#SentenceDestinationContextRight}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestinationContextRight}}</span><br>
-                    {{/SentenceDestinationContextRight}}
-                </span>
+                <input class="hide" id="hd-210" type="checkbox">
+                <label for="hd-210">Sentence 2
+                </label>
+                <div>
+                    <span class="context">
+                        {{#SentenceDestination2ContextLeft}}
+                        <a class="hint" href="#"
+                            onclick="this.style.display='none'; document.getElementById('hint12cdbd3sh30e9dcb').style.display='block'; return false;">
+                            ...</a>
+                        <span id="hint12cdbd3sh30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span><br>
+                        {{/SentenceDestination2ContextLeft}}
+                    </span>
 
-                <span class="context2">
-                    {{#SentenceDestination2ContextRight}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint31cgbsge2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span><br>
-                    {{/SentenceDestination2ContextRight}}
-                </span>
+                    <span>
+                        {{#SentenceDestination2}}
+                        {{SentenceDestination2}}<br><br>
+                        {{/SentenceDestination2}}
+                    </span>
+
+                    <span class="context">
+                        {{#SentenceDestination2ContextRight}}
+                        <a class="hint" href="#"
+                            onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
+                            ...</a>
+                        <span id="hint31cgbsge2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span><br>
+                        {{/SentenceDestination2ContextRight}}
+                    </span>
+                </div>
             </div>
             <br>
         </td>
