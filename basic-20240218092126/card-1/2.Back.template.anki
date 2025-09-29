@@ -149,8 +149,10 @@
                 {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
                 {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
             </label>
+            
             <div>
-                <input class="hide" id="hd-200" type="checkbox">
+                {{#SentenceDestination}}
+                <input class="show" id="hd-200" type="checkbox">
                 <label for="hd-200">Sentence 1
                 </label>
                 <div>
@@ -179,8 +181,10 @@
                     </span>
                 </div>
                 <br>
+                {{/SentenceDestination}}
 
-                <input class="hide" id="hd-210" type="checkbox">
+                {{#SentenceDestination2}}
+                <input class="show" id="hd-210" type="checkbox">
                 <label for="hd-210">Sentence 2
                 </label>
                 <div>
@@ -208,6 +212,7 @@
                         {{/SentenceDestination2ContextRight}}
                     </span>
                 </div>
+                {{/SentenceDestination2}}
             </div>
             <br>
         </td>
