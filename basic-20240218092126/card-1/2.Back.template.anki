@@ -1,12 +1,12 @@
-{{#WordDestination}}
+{{#WordSource}}
 <span class="field-hide">
     <span>
-        {{#WordDestination}}
-        • {{WordDestination}}<br>
-        {{/WordDestination}}
+        {{#WordSource}}
+        • {{WordSource}}<br>
+        {{/WordSource}}
     </span>
 </span>
-{{/WordDestination}}
+{{/WordSource}}
 
 {{#WordSourceIPA}}
 <span class="field-hide">
@@ -17,6 +17,16 @@
     </span>
 </span>
 {{/WordSourceIPA}}
+
+{{#WordDestination}}
+<span class="field-hide">
+    <span>
+        {{#WordDestination}}
+        • {{WordDestination}}<br>
+        {{/WordDestination}}
+    </span>
+</span>
+{{/WordDestination}}
 
 {{#SentenceSource}}
 <span class="field-hide">
