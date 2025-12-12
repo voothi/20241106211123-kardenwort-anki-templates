@@ -2,7 +2,7 @@
 <span class="field-hide">
     <span>
         {{#WordSource}}
-        • {{WordSource}}<br>
+        {{WordSource}}<br>
         {{/WordSource}}
     </span>
 </span>
@@ -12,7 +12,7 @@
 <span class="field-hide">
     <span>
         {{#WordSourceIPA}}
-        • {{WordSourceIPA}}<br>
+        [{{WordSourceIPA}}]<br>
         {{/WordSourceIPA}}
     </span>
 </span>
@@ -22,7 +22,7 @@
 <span class="field-hide">
     <span>
         {{#WordDestination}}
-        • {{WordDestination}}<br>
+        {{WordDestination}}<br>
         {{/WordDestination}}
     </span>
 </span>
@@ -32,7 +32,7 @@
 <span class="field-hide">
     <span>
         {{#SentenceSource}}
-        • {{SentenceSource}}<br>
+        {{SentenceSource}}<br>
         {{/SentenceSource}}
     </span>
 </span>
@@ -42,7 +42,7 @@
 <span class="field-hide">
     <span>
         {{#SentenceDestination}}
-        • {{SentenceDestination}}<br>
+        {{SentenceDestination}}<br>
         {{/SentenceDestination}}
     </span>
 </span>
@@ -52,7 +52,7 @@
 <span class="field-hide">
     <span>
         {{#SentenceDestination2}}
-        • {{SentenceDestination2}}<br>
+        {{SentenceDestination2}}<br>
         {{/SentenceDestination2}}
     </span>
 </span>
@@ -62,7 +62,7 @@
 <span class="field-hide">
     <span>
         {{#WordDestinationDefinitionFirst}}
-        • {{WordDestinationDefinitionFirst}}<br>
+        {{WordDestinationDefinitionFirst}}<br>
         {{/WordDestinationDefinitionFirst}}
     </span>
 </span>
