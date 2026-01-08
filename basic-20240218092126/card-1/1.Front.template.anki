@@ -963,8 +963,7 @@
                 class="hide"
             {{/SentenceSource}}
         {{/WordSource}}
-            id="hd-70" type="checkbox">
-        <input class="hide" id="hd-260" type="checkbox">
+            id="hd-260" type="checkbox">
         <label for="hd-260">Wordlist
             {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
         </label>
