@@ -191,18 +191,30 @@
             {{/ToggleAlwaysEmptyField}}
 
             <input
-                {{#SentenceDestination2}}
-                    class="show"
-                {{/SentenceDestination2}}
-                {{^SentenceDestination2}}
-                    class="hide"
-                {{/SentenceDestination2}}
                 {{#SentenceDestination}}
-                    class="show"
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
                 {{/SentenceDestination}}
+
+                {{#SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
                 {{^SentenceDestination}}
-                    class="hide"
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
                 {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="hide"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
                     id="hd-70" type="checkbox">
             <!-- <input class="show" id="hd-70" type="checkbox"> -->
             <label for="hd-70">Sentence
