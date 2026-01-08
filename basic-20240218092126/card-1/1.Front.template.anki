@@ -994,8 +994,31 @@
     </div>
     <br>
 
+    <input
+    {{#WordUkrainian}}
+        {{#SentenceUkrainian}}
+            class="show"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
 
-    <input class="hide" id="hd-350" type="checkbox">
+    {{#WordUkrainian}}
+        {{^SentenceUkrainian}}
+            class="show"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+
+    {{^WordUkrainian}}
+        {{#SentenceUkrainian}}
+            class="show"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+
+    {{^WordUkrainian}}
+        {{^SentenceUkrainian}}
+            class="hide"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+        id="hd-350" type="checkbox">
     <label for="hd-350">Ukrainian
         {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
         {{#SentenceUkrainian}}●{{/SentenceUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
@@ -1035,7 +1058,31 @@
     </div>
     <br>
 
-    <input class="hide" id="hd-180" type="checkbox">
+    <input
+    {{#WordEnglish}}
+        {{#SentenceEnglish}}
+            class="show"
+        {{/SentenceEnglish}}
+    {{/WordEnglish}}
+
+    {{#WordEnglish}}
+        {{^SentenceEnglish}}
+            class="show"
+        {{/SentenceEnglish}}
+    {{/WordEnglish}}
+
+    {{^WordEnglish}}
+        {{#SentenceEnglish}}
+            class="show"
+        {{/SentenceEnglish}}
+    {{/WordEnglish}}
+
+    {{^WordEnglish}}
+        {{^SentenceEnglish}}
+            class="hide"
+        {{/SentenceEnglish}}
+    {{/WordEnglish}}
+        id="hd-180" type="checkbox">
     <label for="hd-180">English
         {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
         {{#SentenceEnglish}}●{{/SentenceEnglish}}{{^SentenceEnglish}}○{{/SentenceEnglish}}
@@ -1077,7 +1124,31 @@
     </div>
     <br>
 
-    <input class="hide" id="hd-340" type="checkbox">
+    <input
+    {{#WordSourceDefinitionAISentenceSource}}
+        {{#WordSourceSynonymAI}}
+            class="show"
+        {{/WordSourceSynonymAI}}
+    {{/WordSourceDefinitionAISentenceSource}}
+
+    {{#WordSourceDefinitionAISentenceSource}}
+        {{^WordSourceSynonymAI}}
+            class="show"
+        {{/WordSourceSynonymAI}}
+    {{/WordSourceDefinitionAISentenceSource}}
+
+    {{^WordSourceDefinitionAISentenceSource}}
+        {{#WordSourceSynonymAI}}
+            class="show"
+        {{/WordSourceSynonymAI}}
+    {{/WordSourceDefinitionAISentenceSource}}
+
+    {{^WordSourceDefinitionAISentenceSource}}
+        {{^WordSourceSynonymAI}}
+            class="hide"
+        {{/WordSourceSynonymAI}}
+    {{/WordSourceDefinitionAISentenceSource}}
+        id="hd-340" type="checkbox">
     <label for="hd-340">AI
         {{#WordSourceDefinitionAISentenceSource}}●{{/WordSourceDefinitionAISentenceSource}}{{^WordSourceDefinitionAISentenceSource}}○{{/WordSourceDefinitionAISentenceSource}}
         {{#WordSourceSynonymAI}}●{{/WordSourceSynonymAI}}{{^WordSourceSynonymAI}}○{{/WordSourceSynonymAI}}
