@@ -513,70 +513,6 @@
     <!-- Input Template/ -->
 
     <input
-    {{#WordUkrainian}}
-        {{#SentenceUkrainian}}
-            class="hide"
-        {{/SentenceUkrainian}}
-    {{/WordUkrainian}}
-
-    {{#WordUkrainian}}
-        {{^SentenceUkrainian}}
-            class="show"
-        {{/SentenceUkrainian}}
-    {{/WordUkrainian}}
-
-    {{^WordUkrainian}}
-        {{#SentenceUkrainian}}
-            class="hide"
-        {{/SentenceUkrainian}}
-    {{/WordUkrainian}}
-
-    {{^WordUkrainian}}
-        {{^SentenceUkrainian}}
-            class="hide"
-        {{/SentenceUkrainian}}
-    {{/WordUkrainian}}
-        id="hd-350" type="checkbox">
-    <label for="hd-350">Ukrainian
-        {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
-        {{#SentenceUkrainian}}●{{/SentenceUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
-    </label>
-    <div>
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#WordUkrainian}}
-        <span>
-            {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
-        </span>
-        <br>
-        {{/WordUkrainian}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#WordUkrainian}}
-            {{WordUkrainian}}<br><br>
-            {{/WordUkrainian}}
-        </span>
-
-        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-        {{#ToggleAlwaysEmptyField}}
-        {{#SentenceUkrainian}}
-        <span>
-            {{tts uk_UA voices=gTTS speed=1.0:SentenceUkrainian}}
-        </span>
-        <br>
-        {{/SentenceUkrainian}}
-        {{/ToggleAlwaysEmptyField}}
-
-        <span>
-            {{#SentenceUkrainian}}
-            {{SentenceUkrainian}}<br><br>
-            {{/SentenceUkrainian}}
-        </span>
-    </div>
-    <br>
-
-    <input
     {{#WordEnglish}}
         {{#SentenceEnglish}}
             class="hide"
@@ -638,6 +574,70 @@
             {{#SentenceEnglish}}
             {{SentenceEnglish}}<br><br>
             {{/SentenceEnglish}}
+        </span>
+    </div>
+    <br>
+
+    <input
+    {{#WordUkrainian}}
+        {{#SentenceUkrainian}}
+            class="hide"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+
+    {{#WordUkrainian}}
+        {{^SentenceUkrainian}}
+            class="show"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+
+    {{^WordUkrainian}}
+        {{#SentenceUkrainian}}
+            class="hide"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+
+    {{^WordUkrainian}}
+        {{^SentenceUkrainian}}
+            class="hide"
+        {{/SentenceUkrainian}}
+    {{/WordUkrainian}}
+        id="hd-350" type="checkbox">
+    <label for="hd-350">Ukrainian
+        {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
+        {{#SentenceUkrainian}}●{{/SentenceUkrainian}}{{^SentenceUkrainian}}○{{/SentenceUkrainian}}
+    </label>
+    <div>
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#WordUkrainian}}
+        <span>
+            {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
+        </span>
+        <br>
+        {{/WordUkrainian}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#WordUkrainian}}
+            {{WordUkrainian}}<br><br>
+            {{/WordUkrainian}}
+        </span>
+
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#SentenceUkrainian}}
+        <span>
+            {{tts uk_UA voices=gTTS speed=1.0:SentenceUkrainian}}
+        </span>
+        <br>
+        {{/SentenceUkrainian}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#SentenceUkrainian}}
+            {{SentenceUkrainian}}<br><br>
+            {{/SentenceUkrainian}}
         </span>
     </div>
     <br>
