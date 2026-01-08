@@ -192,6 +192,33 @@
             {{/ToggleAlwaysEmptyField}}
 
             <input
+                {{#WordDestination}}
+                {{#SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="hide"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{#SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="hide"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="hide"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="hide"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+                {{/WordDestination}}
+
+                {{^WordDestination}}
                 {{#SentenceDestination}}
                     {{#SentenceDestination2}}
                         class="show"
@@ -215,6 +242,7 @@
                         class="hide"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
+                {{/WordDestination}}
                     id="hd-70" type="checkbox">
             <label for="hd-70">Sentence
                 {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
