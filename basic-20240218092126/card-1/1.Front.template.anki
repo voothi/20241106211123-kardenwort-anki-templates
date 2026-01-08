@@ -938,7 +938,6 @@
         <br>
         <!-- #SentenceSourceWordlist -->
         {{#SentenceSourceWordlist}}
-
         <input
         {{#WordSource}}
             {{#SentenceSource}}
