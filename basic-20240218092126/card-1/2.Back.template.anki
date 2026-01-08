@@ -214,9 +214,7 @@
                         class="hide"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
-
                     id="hd-70" type="checkbox">
-            <!-- <input class="show" id="hd-70" type="checkbox"> -->
             <label for="hd-70">Sentence
                 {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
                 {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
