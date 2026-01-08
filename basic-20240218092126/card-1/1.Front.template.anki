@@ -536,8 +536,8 @@
             class="hide"
         {{/SentenceGerman}}
     {{/WordGerman}}
-        id="hd-180" type="checkbox">
-    <label for="hd-180">German
+        id="hd-360" type="checkbox">
+    <label for="hd-360">German
         {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
         {{#SentenceGerman}}●{{/SentenceGerman}}{{^SentenceGerman}}○{{/SentenceGerman}}
     </label>
