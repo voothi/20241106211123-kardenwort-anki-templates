@@ -938,7 +938,33 @@
         <br>
         <!-- #SentenceSourceWordlist -->
         {{#SentenceSourceWordlist}}
-        <input class="show" id="hd-260" type="checkbox">
+
+        <input
+        {{#WordSource}}
+            {{#SentenceSource}}
+                class="hide"
+            {{/SentenceSource}}
+        {{/WordSource}}
+
+        {{#WordSource}}
+            {{^SentenceSource}}
+                class="hide"
+            {{/SentenceSource}}
+        {{/WordSource}}
+
+        {{^WordSource}}
+            {{#SentenceSource}}
+                class="show"
+            {{/SentenceSource}}
+        {{/WordSource}}
+
+        {{^WordSource}}
+            {{^SentenceSource}}
+                class="hide"
+            {{/SentenceSource}}
+        {{/WordSource}}
+            id="hd-70" type="checkbox">
+        <input class="hide" id="hd-260" type="checkbox">
         <label for="hd-260">Wordlist
             {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
         </label>
