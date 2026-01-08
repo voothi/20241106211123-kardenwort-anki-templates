@@ -513,6 +513,70 @@
     <!-- Input Template/ -->
 
     <input
+    {{#WordGerman}}
+        {{#SentenceGerman}}
+            class="hide"
+        {{/SentenceGerman}}
+    {{/WordGerman}}
+
+    {{#WordGerman}}
+        {{^SentenceGerman}}
+            class="show"
+        {{/SentenceGerman}}
+    {{/WordGerman}}
+
+    {{^WordGerman}}
+        {{#SentenceGerman}}
+            class="hide"
+        {{/SentenceGerman}}
+    {{/WordGerman}}
+
+    {{^WordGerman}}
+        {{^SentenceGerman}}
+            class="hide"
+        {{/SentenceGerman}}
+    {{/WordGerman}}
+        id="hd-180" type="checkbox">
+    <label for="hd-180">English
+        {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
+        {{#SentenceGerman}}●{{/SentenceGerman}}{{^SentenceGerman}}○{{/SentenceGerman}}
+    </label>
+    <div>
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#WordGerman}}
+        <span>
+            {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
+        </span>
+        <br>
+        {{/WordGerman}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#WordGerman}}
+            {{WordGerman}}<br><br>
+            {{/WordGerman}}
+        </span>
+
+        <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+        {{#ToggleAlwaysEmptyField}}
+        {{#SentenceGerman}}
+        <span>
+            {{tts de_DE voices=gTTS speed=1.0:SentenceGerman}}
+        </span>
+        <br>
+        {{/SentenceGerman}}
+        {{/ToggleAlwaysEmptyField}}
+
+        <span>
+            {{#SentenceGerman}}
+            {{SentenceGerman}}<br><br>
+            {{/SentenceGerman}}
+        </span>
+    </div>
+    <br>
+
+    <input
     {{#WordEnglish}}
         {{#SentenceEnglish}}
             class="hide"
