@@ -164,7 +164,7 @@
             <input class="show" id="hd-40" type="checkbox">
             <label for="hd-40">Word
                 {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
-                {{#WordSourceMorphologyAI}}●{{/Wor  dSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
+                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
                 {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
                 {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
                 {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
