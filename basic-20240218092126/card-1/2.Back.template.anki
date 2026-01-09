@@ -2,9 +2,13 @@
 {{#WordSource}}
 <span class="field-hide">
     <span>
-        {{#WordSource}}{{WordSource}}{{/WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
+        {{#WordSource}}
+        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
+        {{/WordSource}}
+        {{#SentenceSource}}
         {{#SentenceSource}}{{SentenceSource}}{{/SentenceSource}}{{#SentenceDestination2}} - {{SentenceDestination2}}{{/SentenceDestination2}}
         {{#SentenceDestination}} - {{SentenceDestination}}{{/SentenceDestination}}
+        {{/SentenceSource}}
     </span>
 </span>
 {{/WordSource}}
