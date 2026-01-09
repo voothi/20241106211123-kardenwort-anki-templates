@@ -138,7 +138,7 @@
             <span>
                 {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
             </span>
-            <br>
+
             {{/WordGerman}}
             {{/ToggleAlwaysEmptyField}}
             
@@ -148,7 +148,7 @@
                 <!-- tts en_US voices=gTTS:WordEnglish -->
                 {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
             </span>
-            <br>
+
             {{/WordEnglish}}
             {{/ToggleAlwaysEmptyField}}
             
@@ -157,7 +157,7 @@
             <span>
                 {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
             </span>
-            <br>
+
             {{/WordUkrainian}}
             {{/ToggleAlwaysEmptyField}}
 
