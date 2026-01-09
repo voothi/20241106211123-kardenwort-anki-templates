@@ -3,9 +3,9 @@
 <span class="field-hide">
     <span>
         {{#WordSource}}
+            {{#WordSourceInflectedForm}}{{WordSourceInflectedForm}}{{/WordSourceInflectedForm}}
             {{#WordSource}}{{WordSource}}{{/WordSource}}
             {{#WordDestination}}{{WordDestination}}{{/WordDestination}}
-            {{#WordSourceInflectedForm}}{{WordSourceInflectedForm}}{{/WordSourceInflectedForm}}
             {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
         {{/WordSource}}
     </span>
