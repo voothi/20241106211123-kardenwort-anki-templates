@@ -1,7 +1,7 @@
 <!-- 20260108113810 -->
 <span class="field-hide">
     <span>
-        {{#WordSource}}{{#WordSourceInflectedForm}}{{WordSourceInflectedForm}} {{/WordSourceInflectedForm}}{{#WordSource}}{{WordSource}} {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}] {{/WordSourceIPA}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordEnglish}}{{WordEnglish}} {{/WordEnglish}}{{#WordGerman}}{{WordGerman}} {{/WordGerman}}{{#WordUkrainian}}{{WordUkrainian}} {{/WordUkrainian}}{{/WordSource}}{{#SentenceSource}}{{#SentenceSource}}● {{SentenceSource}} {{/SentenceSource}}{{#SentenceDestination}}{{SentenceDestination}} {{/SentenceDestination}}{{#SentenceDestination2}}{{SentenceDestination2}} {{/SentenceDestination2}}{{/SentenceSource}}<br><br>
+        {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}} {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}] {{/WordSourceIPA}}{{#WordEnglish}}{{WordEnglish}} {{/WordEnglish}}{{#WordGerman}}{{WordGerman}} {{/WordGerman}}{{#WordUkrainian}}{{WordUkrainian}} {{/WordUkrainian}}{{/WordSource}}{{#SentenceSource}}{{#SentenceSource}}● {{SentenceSource}} {{/SentenceSource}}{{#SentenceDestination2}}{{SentenceDestination2}} {{/SentenceDestination2}}{{#SentenceDestination}}{{SentenceDestination}} {{/SentenceDestination}}{{/SentenceSource}}<br><br>
     </span>
 </span>
 
