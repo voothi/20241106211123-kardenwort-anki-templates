@@ -13,6 +13,16 @@
 <span class="field-hide">
     <span>
         {{#SentenceSource}}
+            {{#SentenceSource}}{{SentenceSource}} {{/SentenceSource}}{{#SentenceDestination}}{{SentenceDestination}} {{/SentenceDestination}}{{#SentenceDestination2}}{{SentenceDestination2}} {{/SentenceDestination2}}
+        {{/SentenceSource}}
+    </span>
+</span>
+{{/SentenceSource}}
+
+{{#SentenceSource}}
+<span class="field-hide">
+    <span>
+        {{#SentenceSource}}
         {{SentenceSource}}<br>
         {{/SentenceSource}}
     </span>
