@@ -100,7 +100,7 @@
             {{/WordDestination}}
 
             {{#WordSourceMorphologyAI}}
-            {{^ToggleAlwaysEmptyField}}
+            {{#ToggleAlwaysEmptyField}}
             {{#Destination-en-GB}}
             <span>
                 {{tts en_GB voices=gTTS speed=1.0:WordSourceMorphologyAI}}
