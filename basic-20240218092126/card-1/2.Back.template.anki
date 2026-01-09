@@ -133,7 +133,7 @@
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
 
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordGerman}}
             <span>
                 {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
@@ -142,17 +142,17 @@
             {{/WordGerman}}
             {{/ToggleAlwaysEmptyField}}
             
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordEnglish}}
             <span>
-                <!-- tts en_GB voices=gTTS:WordEnglish -->
-                {{tts en_US voices=gTTS speed=1.0:WordEnglish}}
+                <!-- tts en_US voices=gTTS:WordEnglish -->
+                {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
             </span>
             <br>
             {{/WordEnglish}}
             {{/ToggleAlwaysEmptyField}}
             
-            {{#ToggleAlwaysEmptyField}}
+            {{^ToggleAlwaysEmptyField}}
             {{#WordUkrainian}}
             <span>
                 {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
