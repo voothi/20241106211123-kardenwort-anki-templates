@@ -3,53 +3,22 @@
 <span class="field-hide">
     <span>
         {{#WordSource}}
-        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}<br>{{/WordDestination}}{{/WordDestination}}
+        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
         {{/WordSource}}
     </span>
 </span>
 {{/WordSource}}
 
-{{#WordSourceIPA}}
-<span class="field-hide">
-    <span>
-        {{#WordSourceIPA}}
-        [{{WordSourceIPA}}]<br>
-        {{/WordSourceIPA}}
-    </span>
-</span>
-{{/WordSourceIPA}}
-
-
 
 {{#SentenceSource}}
 <span class="field-hide">
     <span>
-        {{#SentenceSource}}
-        {{SentenceSource}}<br>
-        {{/SentenceSource}}
+        {{#SentenceSource}}{{SentenceSource}}{{/SentenceSource}}{{#SentenceDestination}} - {{SentenceDestination}}{{/SentenceDestination}}{{#SentenceDestination2}} - {{SentenceDestination2}}{{/SentenceDestination2}}
     </span>
 </span>
 {{/SentenceSource}}
 
-{{#SentenceDestination}}
-<span class="field-hide">
-    <span>
-        {{#SentenceDestination}}
-        - {{SentenceDestination}}<br>
-        {{/SentenceDestination}}
-    </span>
-</span>
-{{/SentenceDestination}}
 
-{{#SentenceDestination2}}
-<span class="field-hide">
-    <span>
-        {{#SentenceDestination2}}
-        = {{SentenceDestination2}}<br>
-        {{/SentenceDestination2}}
-    </span>
-</span>
-{{/SentenceDestination2}}
 
 {{#WordDestinationDefinitionFirst}}
 <span class="field-hide">
