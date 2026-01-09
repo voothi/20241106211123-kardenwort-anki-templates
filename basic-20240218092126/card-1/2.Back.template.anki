@@ -5,8 +5,8 @@
         {{#WordSource}}
             {{#WordSourceInflectedForm}}{{WordSourceInflectedForm}}{{/WordSourceInflectedForm}}
             {{#WordSource}}{{WordSource}}{{/WordSource}}
-            {{#WordDestination}}{{WordDestination}}{{/WordDestination}}
             {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
+            {{#WordDestination}}{{WordDestination}}{{/WordDestination}}
         {{/WordSource}}
     </span>
 </span>
