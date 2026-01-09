@@ -172,11 +172,6 @@
                     {{WordDestination}}<br><br>
                     {{/WordDestination}}
                 </span>
-                <span>
-                    {{#WordSourceMorphologyAI}}
-                    {{WordSourceMorphologyAI}}<br><br>
-                    {{/WordSourceMorphologyAI}}
-                </span>
 
                 <span>
                     {{#WordEnglish}}
@@ -194,6 +189,12 @@
                     {{#WordUkrainian}}
                     {{WordUkrainian}}<br><br>
                     {{/WordUkrainian}}
+                </span>
+
+                <span>
+                    {{#WordSourceMorphologyAI}}
+                    {{WordSourceMorphologyAI}}<br><br>
+                    {{/WordSourceMorphologyAI}}
                 </span>
             </div>
         </td>
