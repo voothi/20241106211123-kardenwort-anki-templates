@@ -133,10 +133,41 @@
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
 
+            {{#ToggleAlwaysEmptyField}}
+            {{#WordGerman}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
+            </span>
+            <br>
+            {{/WordGerman}}
+            {{/ToggleAlwaysEmptyField}}
+            
+            {{#ToggleAlwaysEmptyField}}
+            {{#WordEnglish}}
+            <span>
+                <!-- tts en_GB voices=gTTS:WordEnglish -->
+                {{tts en_US voices=gTTS speed=1.0:WordEnglish}}
+            </span>
+            <br>
+            {{/WordEnglish}}
+            {{/ToggleAlwaysEmptyField}}
+            
+            {{#ToggleAlwaysEmptyField}}
+            {{#WordUkrainian}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
+            </span>
+            <br>
+            {{/WordUkrainian}}
+            {{/ToggleAlwaysEmptyField}}
+
             <input class="show" id="hd-40" type="checkbox">
             <label for="hd-40">Word
                 {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
-                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
+                {{#WordSourceMorphologyAI}}●{{/Wor  dSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
+                {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
+                {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
+                {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
             </label>
             <div>
                 <span>
@@ -148,6 +179,24 @@
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}<br><br>
                     {{/WordSourceMorphologyAI}}
+                </span>
+
+                <span>
+                    {{#WordGerman}}
+                    {{WordGerman}}<br><br>
+                    {{/WordGerman}}
+                </span>
+
+                <span>
+                    {{#WordEnglish}}
+                    {{WordEnglish}}<br><br>
+                    {{/WordEnglish}}
+                </span>
+
+                <span>
+                    {{#WordUkrainian}}
+                    {{WordUkrainian}}<br><br>
+                    {{/WordUkrainian}}
                 </span>
             </div>
         </td>
