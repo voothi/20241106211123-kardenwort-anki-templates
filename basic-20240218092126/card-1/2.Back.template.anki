@@ -7,6 +7,9 @@
             {{#WordSource}}{{WordSource}}{{/WordSource}}
             {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
             {{#WordDestination}}{{WordDestination}}{{/WordDestination}}
+            {{#WordEnglish}}{{WordEnglish}}{{/WordEnglish}}
+            {{#WordGerman}}{{WordGerman}}{{/WordGerman}}
+            {{#WordUkrainian}}{{WordUkrainian}}{{/WordUkrainian}}
         {{/WordSource}}
     </span>
 </span>
