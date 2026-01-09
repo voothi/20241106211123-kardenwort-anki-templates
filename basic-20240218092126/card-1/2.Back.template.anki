@@ -3,7 +3,7 @@
 <span class="field-hide">
     <span>
         {{#WordSource}}
-        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
+        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}} ({{#WordSourceInflectedForm}}[{{WordSourceInflectedForm}}]{{/WordSourceInflectedForm}})
         {{/WordSource}}
     </span>
 </span>
