@@ -1,7 +1,7 @@
 <!-- 20260108113810 -->
 <span class="field-hide">
     <span>
-        {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}} {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}] {{/WordSourceIPA}}{{/WordSource}}{{#SentenceSource}}{{#SentenceDestination2}}{{SentenceDestination2}} {{/SentenceDestination2}}{{#SentenceDestination}}{{^SentenceDestination2}}{{SentenceDestination}} {{/SentenceDestination2}}{{/SentenceDestination}}{{#SentenceSource}}{{SentenceSource}} {{/SentenceSource}}{{/SentenceSource}}<br><br>
+        {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}} {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}] {{/WordSourceIPA}}{{/WordSource}}{{#SentenceSource}}{{#SentenceDestination2}}● {{SentenceDestination2}} {{/SentenceDestination2}}{{#SentenceDestination}}{{SentenceDestination}} {{/SentenceDestination}}{{#SentenceSource}}{{SentenceSource}} {{/SentenceSource}}{{/SentenceSource}}<br><br>
     </span>
 </span>
 
