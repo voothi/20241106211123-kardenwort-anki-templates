@@ -2,23 +2,12 @@
 {{#WordSource}}
 <span class="field-hide">
     <span>
-        {{#WordSource}}
-        {{WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
-        {{/WordSource}}
-    </span>
-</span>
-{{/WordSource}}
-
-
-{{#SentenceSource}}
-<span class="field-hide">
-    <span>
+        {{#WordSource}}{{WordSource}}{{/WordSource}}{{#WordDestination}}{{#WordDestination}} - {{WordDestination}}{{/WordDestination}}{{/WordDestination}} {{#WordSourceIPA}}[{{WordSourceIPA}}]{{/WordSourceIPA}}
         {{#SentenceSource}}{{SentenceSource}}{{/SentenceSource}}{{#SentenceDestination2}} - {{SentenceDestination2}}{{/SentenceDestination2}}
         {{#SentenceDestination}} - {{SentenceDestination}}{{/SentenceDestination}}
     </span>
 </span>
-{{/SentenceSource}}
-
+{{/WordSource}}
 
 
 {{#WordDestinationDefinitionFirst}}
