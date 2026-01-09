@@ -98,6 +98,31 @@
             </span>
             {{/Destination-ru-RU}}
             {{/WordDestination}}
+            
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordEnglish}}
+            <span>
+                <!-- tts en_US voices=gTTS:WordEnglish -->
+                {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
+            </span>
+            {{/WordEnglish}}
+            {{/ToggleAlwaysEmptyField}}
+            
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordGerman}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
+            </span>
+            {{/WordGerman}}
+            {{/ToggleAlwaysEmptyField}}
+
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordUkrainian}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
+            </span>
+            {{/WordUkrainian}}
+            {{/ToggleAlwaysEmptyField}}
 
             {{#WordSourceMorphologyAI}}
             {{#ToggleAlwaysEmptyField}}
@@ -133,41 +158,13 @@
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
 
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordGerman}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
-            </span>
-
-            {{/WordGerman}}
-            {{/ToggleAlwaysEmptyField}}
-            
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordEnglish}}
-            <span>
-                <!-- tts en_US voices=gTTS:WordEnglish -->
-                {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
-            </span>
-
-            {{/WordEnglish}}
-            {{/ToggleAlwaysEmptyField}}
-            
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordUkrainian}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
-            </span>
-
-            {{/WordUkrainian}}
-            {{/ToggleAlwaysEmptyField}}
-
             <input class="show" id="hd-40" type="checkbox">
             <label for="hd-40">Word
                 {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
-                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
-                {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
                 {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
+                {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
                 {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
+                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
             </label>
             <div>
                 <span>
@@ -182,15 +179,15 @@
                 </span>
 
                 <span>
-                    {{#WordGerman}}
-                    {{WordGerman}}<br><br>
-                    {{/WordGerman}}
-                </span>
-
-                <span>
                     {{#WordEnglish}}
                     {{WordEnglish}}<br><br>
                     {{/WordEnglish}}
+                </span>
+
+                <span>
+                    {{#WordGerman}}
+                    {{WordGerman}}<br><br>
+                    {{/WordGerman}}
                 </span>
 
                 <span>
