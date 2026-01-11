@@ -301,7 +301,6 @@
                         {{/SentenceDestinationContextRight}}
                     </span>
                 </div>
-                <br>
                 {{/SentenceDestination}}
 
                 {{#SentenceDestination2}}
@@ -335,7 +334,6 @@
                 </div>
                 {{/SentenceDestination2}}
             </div>
-            <br>
         </td>
     </tr>
 </table>
