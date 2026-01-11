@@ -218,8 +218,10 @@ label[for="hd-20"], label[for="hd-260"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 6px 0 0;
-  float: left;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 label[for="hd-20"]::before, label[for="hd-260"]::before {
   content: "";
@@ -239,8 +241,10 @@ label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"]
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 6px 0 0;
-  float: left;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::before, label[for="hd-135"]::before {
   content: "";
@@ -261,8 +265,10 @@ label[for="hd-40"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 6px 0 0;
-  float: left;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 label[for="hd-40"]::before {
   content: "";
@@ -282,8 +288,10 @@ label[for="hd-200"], label[for="hd-210"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 6px 0 0;
-  float: left;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 label[for="hd-200"]::before, label[for="hd-210"]::before {
   content: "";
