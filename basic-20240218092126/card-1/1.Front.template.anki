@@ -157,9 +157,12 @@
             <label for="hd-20">●
             </label>
             <div>
-                <span>
+                <span class="context2">
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('20260111213815').style.display='block'; return false;">
+                        ... </a>
+                    <span id="20260111213815" class=hint style="display: none">{{WordSourceInflectedForm}}</span>
                     {{/WordSourceInflectedForm}}
                 </span>
                     
