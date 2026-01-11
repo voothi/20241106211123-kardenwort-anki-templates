@@ -38,39 +38,11 @@
     setTimeout(executeClickAction, 20);
 </script>
 
-<script>
-    function updateCheckboxVisibility() {
-        var isBackSide = document.getElementById("side2") !== null;
-
-        var checkboxIds = ["hd-20", "hd-10", "hd-40", "hd-155", "hd-295", "hd-15", "hd-75", "hd-195"]; //, "hd-195", "hd-90", "hd-130"
-
-        checkboxIds.forEach(function (id) {
-            var checkbox = document.getElementById(id);
-            if (checkbox) {
-                if (isBackSide) {
-                    checkbox.classList.remove("hide");
-                    checkbox.classList.add("show");
-                }
-            }
-        });
-    }
-
-    var isAndroid = /Android/i.test(navigator.userAgent);
-
-    if (isAndroid) {
-        document.addEventListener("DOMContentLoaded", updateCheckboxVisibility);
-    } else {
-        updateCheckboxVisibility();
-    }
-</script>
-
 {{#WordSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
             <!-- #WordSource -->
-            <input class="show" id="hd-20" type="checkbox">
-            <label for="hd-20">●
             {{^ToggleAlwaysEmptyField}}
             {{#WordSourceInflectedForm}}
             {{#Source-en-GB}}
@@ -115,16 +87,6 @@
             {{#Source-en-GB}}
             <span id="sound1">
                 {{tts en_GB voices=gTTS speed=1.0:WordSource}}
-                <!-- en_GB voices=Microsoft_Susan -->
-                <!-- en_US voices=gTTS -->
-                <!-- en_US voices=Microsoft_Zira -->
-                <!-- en_US voices=gTTS -->
-                <!-- de_DE voices=Microsoft_Stefan -->
-                <!-- de_DE voices=gTTS -->
-                <!-- tts uk_UA -->
-                <!-- tts uk_UA voices=gTTS -->
-                <!-- ru_RU voices=Microsoft_Irina -->
-                <!-- ru_RU voices=gTTS -->
             </span>
             {{/Source-en-GB}}
 
@@ -154,30 +116,25 @@
             {{/WordSourceAudio}}
             {{/WordSource}}
             {{/ToggleAlwaysEmptyField}}
+            <input class="show" id="hd-20" type="checkbox">
+            <label for="hd-20">●
             </label>
             <div>
-                <span class="context2">
+                <span>
                     {{#WordSourceInflectedForm}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('20260111213815').style.display='block'; return false;">
-                        ... </a>
-                    <span id="20260111213815" class=hint style="display: none">{{WordSourceInflectedForm}}</span>
+                    {{WordSourceInflectedForm}}
                     {{/WordSourceInflectedForm}}
                 </span>
-                    
                 <span>
                     {{#WordSource}}
                     {{WordSource}}
                     {{/WordSource}}
                 </span>
-
-                <span class="context2">
+                <span>
                     {{#WordSourceIPA}}
-                    <a class="hint" href="#"
-                        onclick="this.style.display='none'; document.getElementById('20260111214223').style.display='block'; return false;">
-                        ... </a>
-                    <span id="20260111214223" class=hint style="display: none">[{{WordSourceIPA}}]</span>
+                    {{WordSourceIPA}}
                     {{/WordSourceIPA}}
+                </span>
             </div>
         </td>
     </tr>
@@ -230,7 +187,6 @@
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
             {{/ToggleAlwaysEmptyField}}
-
             <input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show"
                 {{/WordSource}} id="hd-10" type="checkbox">
             <label for="hd-10">○
@@ -247,7 +203,7 @@
 
                 <span>
                     {{#SentenceSource}}
-                    {{SentenceSource}}
+                    {{SentenceSource}}<br>
                     {{/SentenceSource}}
                 </span>
 
@@ -265,130 +221,6 @@
 </table>
 {{/SentenceSourceRewriteAISentenceSource}}
 {{/SentenceSource}}
-
-{{#SentenceSourceRewriteAISentenceSource}}
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            <!-- ^WordSource -->
-            <!-- #SentenceDestination -->
-            {{^ToggleAlwaysEmptyField}}
-            <!-- { {^WordSourceMorphologyAI} } -->
-            {{#SentenceSourceRewriteAISentenceSource}}
-            {{#Source-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
-            </span>
-            {{/Source-en-GB}}
-
-            {{#Source-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
-            </span>
-            {{/Source-en-US}}
-
-            {{#Source-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
-            </span>
-            {{/Source-de-DE}}
-
-            {{#Source-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
-            </span>
-            {{/Source-uk-UA}}
-
-            {{#Source-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceSource}}
-                <!-- ru_RU voices=gTTS -->
-            </span>
-            {{/Source-ru-RU}}
-            {{/SentenceSourceRewriteAISentenceSource}}
-            <!-- /SentenceDestination -->
-            <!-- /WordSource -->
-            <!-- { {/WordSourceMorphologyAI} } -->
-            {{/ToggleAlwaysEmptyField}}
-
-            <!-- #SentenceSource -->
-            <input {{#WordSource}} class="hide" {{/WordSource}} {{^WordSource}} class="show"
-                {{/WordSource}} id="hd-15" type="checkbox">
-            <label for="hd-15">Sentence Rewrite
-            </label>
-            <div>
-                <span>
-                    {{#SentenceSourceRewriteAISentenceSource}}
-                    {{SentenceSourceRewriteAISentenceSource}}<br><br>
-                    {{/SentenceSourceRewriteAISentenceSource}}
-                </span>
-            </div>
-        </td>
-    </tr>
-</table>
-{{/SentenceSourceRewriteAISentenceSource}}
-
-{{#WordSourceDefinitionAISentenceSource}}
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            <span>
-                <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
-                <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
-                {{^ToggleAlwaysEmptyField}}
-                {{^WordSourceMorphologyAI}}
-                {{#WordSourceDefinitionAISentenceSource}}
-                {{#Source-en-GB}}
-                <span>
-                    {{tts en_GB voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                </span>
-                {{/Source-en-GB}}
-
-                {{#Source-en-US}}
-                <span>
-                    {{tts en_US voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                </span>
-                {{/Source-en-US}}
-
-                {{#Source-de-DE}}
-                <span>
-                    {{tts de_DE voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                </span>
-                {{/Source-de-DE}}
-
-                {{#Source-uk-UA}}
-                <span>
-                    {{tts uk_UA voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                </span>
-                {{/Source-uk-UA}}
-
-                {{#Source-ru-RU}}
-                <span>
-                    {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceSource}}
-                    <!-- ru_RU voices=gTTS -->
-                </span>
-                {{/Source-ru-RU}}
-                {{/WordSourceDefinitionAISentenceSource}}
-                {{/WordSourceMorphologyAI}}
-                {{/ToggleAlwaysEmptyField}}
-            </span>
-
-            <input {{#WordDestination}} class="hide" {{/WordDestination}} {{^WordDestination}} class="hide"
-                {{/WordDestination}} id="hd-155" type="checkbox">
-            <label for="hd-155">Definition
-            </label>
-            <div>
-                <span>
-                    {{#WordSourceDefinitionAISentenceSource}}
-                    {{WordSourceDefinitionAISentenceSource}}<br><br>
-                    {{/WordSourceDefinitionAISentenceSource}}
-                </span>
-            </div>
-            <br>
-        </td>
-    </tr>
-</table>
-{{/WordSourceDefinitionAISentenceSource}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
@@ -407,14 +239,14 @@
         <hr class="custom-hr">
         <!-- id=answer -->
         <span>☜</span>
-    </div <hr>
+    </div>
 </label>
 <div>
     <!-- /Input Template -->
     {{#WordSource}}
     <!-- br -->
     <input class="hide" id="hd-90" type="checkbox"><!-- hide | show -->
-    <label for="hd-90">Input
+    <label for="hd-90">○
     </label>
     <div>
         <span>
@@ -430,7 +262,7 @@
     {{#SentenceSource}}
     <!-- br -->
     <input class="hide" id="hd-130" type="checkbox"><!-- hide | show -->
-    <label for="hd-130">Input
+    <label for="hd-130">○
     </label>
     <div>
         <span>
@@ -443,7 +275,7 @@
     {{^SentenceSource}}
     <!-- br -->
     <input class="hide" id="hd-135" type="checkbox"><!-- hide | show -->
-    <label for="hd-135">Source Sentence Cloze Input
+    <label for="hd-135">○
     </label>
     <div>
         <span>

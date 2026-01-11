@@ -11,6 +11,8 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
+            <input class="show" id="hd-40" type="checkbox">
+            <label for="hd-40">●
             {{^ToggleAlwaysEmptyField}}
             {{#WordEnglish}}
             <span>
@@ -101,9 +103,6 @@
             {{/Destination-ru-RU}}
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
-
-            <input class="show" id="hd-40" type="checkbox">
-            <label for="hd-40">●
             </label>
             <div>
                 <span>
@@ -147,82 +146,9 @@
 </table>
 {{/WordDestination}}
 
-{{^SentenceSourceRewriteAISentenceDestination}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceDefinitionAISentenceDestination}}
-            {{#SentenceDestination}}
-            {{#Destination-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination}}
-            </span>
-            {{/Destination-en-GB}}
-
-            {{#Destination-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=1.0:SentenceDestination}}
-            </span>
-            {{/Destination-en-US}}
-
-            {{#Destination-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination}}
-            </span>
-            {{/Destination-de-DE}}
-
-            {{#Destination-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination}}
-            </span>
-            {{/Destination-uk-UA}}
-
-            {{#Destination-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination}}
-            </span>
-            {{/Destination-ru-RU}}
-            {{/SentenceDestination}}
-            {{/WordSourceDefinitionAISentenceDestination}}
-            {{/ToggleAlwaysEmptyField}}
-
-            {{^ToggleAlwaysEmptyField}}
-            {{^WordSourceDefinitionAISentenceDestination}}
-            {{#SentenceDestination2}}
-            {{#Destination-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination2}}
-            </span>
-            {{/Destination-en-GB}}
-
-            {{#Destination-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=1.0:SentenceDestination2}}
-            </span>
-            {{/Destination-en-US}}
-
-            {{#Destination-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination2}}
-            </span>
-            {{/Destination-de-DE}}
-
-            {{#Destination-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination2}}
-            </span>
-            {{/Destination-uk-UA}}
-
-            {{#Destination-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination2}}
-            </span>
-            {{/Destination-ru-RU}}
-            {{/SentenceDestination2}}
-            {{/WordSourceDefinitionAISentenceDestination}}
-            {{/ToggleAlwaysEmptyField}}
-
             <input
                 {{#WordDestination}}
                 {{#SentenceDestination}}
@@ -277,8 +203,74 @@
                 {{/WordDestination}}
                     id="hd-70" type="checkbox">
             <label for="hd-70">○
-            </label>
-            
+            {{^ToggleAlwaysEmptyField}}
+            {{#SentenceDestination}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceDestination}}
+            {{/ToggleAlwaysEmptyField}}
+
+            {{^ToggleAlwaysEmptyField}}
+            {{#SentenceDestination2}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination2}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceDestination2}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination2}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination2}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination2}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceDestination2}}
+            {{/ToggleAlwaysEmptyField}}
+            </label>            
             <div>
                 {{#SentenceDestination}}
                 <input class="show" id="hd-200" type="checkbox">
@@ -347,119 +339,5 @@
         </td>
     </tr>
 </table>
-{{/SentenceSourceRewriteAISentenceDestination}}
-
-{{#SentenceSourceRewriteAISentenceDestination}}
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            {{^ToggleAlwaysEmptyField}}
-            {{#SentenceSourceRewriteAISentenceDestination}}
-            {{#Destination-en-GB}}
-            <span>
-                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
-            </span>
-            {{/Destination-en-GB}}
-
-            {{#Destination-en-US}}
-            <span>
-                {{tts en_US voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
-            </span>
-            {{/Destination-en-US}}
-
-            {{#Destination-de-DE}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
-            </span>
-            {{/Destination-de-DE}}
-
-            {{#Destination-uk-UA}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
-            </span>
-            {{/Destination-uk-UA}}
-
-            {{#Destination-ru-RU}}
-            <span>
-                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceRewriteAISentenceDestination}}
-            </span>
-            {{/Destination-ru-RU}}
-            {{/SentenceSourceRewriteAISentenceDestination}}
-            {{/ToggleAlwaysEmptyField}}
-
-            <input class="show" id="hd-75" type="checkbox">
-            <label for="hd-75">Sentence Rewrite
-            </label>
-            <div>
-                <span>
-                    {{#SentenceSourceRewriteAISentenceDestination}}
-                    {{SentenceSourceRewriteAISentenceDestination}}<br><br>
-                    {{/SentenceSourceRewriteAISentenceDestination}}
-                </span>
-            </div>
-            <br>
-        </td>
-    </tr>
-</table>
-{{/SentenceSourceRewriteAISentenceDestination}}
-
-{{#WordSourceDefinitionAISentenceDestination}}
-<table class="fixed-table">
-    <tr>
-        <td class="fixed-cell">
-            <span>
-                {{^ToggleAlwaysEmptyField}}
-                {{^WordSourceMorphologyAI}}
-                {{#WordSourceDefinitionAISentenceDestination}}
-                {{#Destination-en-GB}}
-                <span>
-                    {{tts en_GB voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                </span>
-                {{/Destination-en-GB}}
-
-                {{#Destination-en-US}}
-                <span>
-                    {{tts en_US voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                </span>
-                {{/Destination-en-US}}
-
-                {{#Destination-de-DE}}
-                <span>
-                    {{tts de_DE voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                </span>
-                {{/Destination-de-DE}}
-
-                {{#Destination-uk-UA}}
-                <span>
-                    {{tts uk_UA voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                </span>
-                {{/Destination-uk-UA}}
-
-                {{#Destination-ru-RU}}
-                <span>
-                    {{tts ru_RU voices=gTTS speed=1.0:WordSourceDefinitionAISentenceDestination}}
-                </span>
-                {{/Destination-ru-RU}}
-                {{/WordSourceDefinitionAISentenceDestination}}
-                {{/WordSourceMorphologyAI}}
-                {{/ToggleAlwaysEmptyField}}
-            </span>
-
-            <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="show"
-                {{/WordDestination}} id="hd-295" type="checkbox">
-            <label for="hd-295">Definition
-            </label>
-            <div>
-                <span>
-                    {{#WordSourceDefinitionAISentenceDestination}}
-                    {{WordSourceDefinitionAISentenceDestination}}<br><br>
-                    {{/WordSourceDefinitionAISentenceDestination}}
-                </span>
-            </div>
-            <br>
-        </td>
-    </tr>
-</table>
-{{/WordSourceDefinitionAISentenceDestination}}
 
 <span id="side2"></span>
