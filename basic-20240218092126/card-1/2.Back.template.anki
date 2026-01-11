@@ -11,8 +11,6 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            <input class="show" id="hd-40" type="checkbox">
-            <label for="hd-40">●
             {{^ToggleAlwaysEmptyField}}
             {{#WordEnglish}}
             <span>
@@ -103,6 +101,8 @@
             {{/Destination-ru-RU}}
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
+            <input class="show" id="hd-40" type="checkbox">
+            <label for="hd-40">●
             </label>
             <div>
                 <span>
@@ -149,60 +149,6 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
-            <input
-                {{#WordDestination}}
-                {{#SentenceDestination}}
-                    {{#SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{#SentenceDestination}}
-                    {{^SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{^SentenceDestination}}
-                    {{#SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{^SentenceDestination}}
-                    {{^SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-                {{/WordDestination}}
-
-                {{^WordDestination}}
-                {{#SentenceDestination}}
-                    {{#SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{#SentenceDestination}}
-                    {{^SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{^SentenceDestination}}
-                    {{#SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-
-                {{^SentenceDestination}}
-                    {{^SentenceDestination2}}
-                        class="show"
-                    {{/SentenceDestination2}}
-                {{/SentenceDestination}}
-                {{/WordDestination}}
-                    id="hd-70" type="checkbox">
-            <label for="hd-70">○
             {{^ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
             {{#Destination-en-GB}}
@@ -270,6 +216,60 @@
             {{/Destination-ru-RU}}
             {{/SentenceDestination2}}
             {{/ToggleAlwaysEmptyField}}
+            <input
+                {{#WordDestination}}
+                {{#SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{#SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+                {{/WordDestination}}
+
+                {{^WordDestination}}
+                {{#SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{#SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{#SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+
+                {{^SentenceDestination}}
+                    {{^SentenceDestination2}}
+                        class="show"
+                    {{/SentenceDestination2}}
+                {{/SentenceDestination}}
+                {{/WordDestination}}
+                    id="hd-70" type="checkbox">
+            <label for="hd-70">○
             </label>            
             <div>
                 {{#SentenceDestination}}
