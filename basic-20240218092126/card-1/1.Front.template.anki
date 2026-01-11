@@ -38,30 +38,6 @@
     setTimeout(executeClickAction, 20);
 </script>
 
-<style>
-/* Reduce default audio playback icon size and align with text */
-.replaybutton svg, .replay-button svg, .soundLink svg, a.soundLink svg {
-    width: 20px !important;
-    height: 20px !important;
-    vertical-align: middle;
-}
-
-/* Optional: reduce surrounding padding/margins for tighter layout */
-.replaybutton, .replay-button, .soundLink {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px !important;
-    margin-right: 6px !important;
-}
-
-/* If Anki injects icons with class playImage, target that too */
-.playImage {
-    width: 20px !important;
-    height: 20px !important;
-}
-</style>
-
 <script>
     function updateCheckboxVisibility() {
         var isBackSide = document.getElementById("side2") !== null;
