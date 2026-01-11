@@ -167,16 +167,24 @@ a.hint {
 .spacer-cell { height:4px; width:0; }
 
 
-/* Audio: minimal triangle glyph */
-.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 0 0 6px; vertical-align:middle; text-decoration:none; float: right; }
+/* Audio: minimal triangle glyph - inline-flex for vertical centering */
+.soundLink, .replay-button, .replaybutton { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0; 
+  margin: 0 1px; 
+  vertical-align: middle; 
+  text-decoration: none;
+  width: 12px;
+  height: 12px;
+}
 .soundLink svg, .replay-button svg, .playImage { display:none !important; }
 .soundLink::before, .replay-button::before, .replaybutton::before {
   content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  vertical-align: middle;
-  margin: 0 2px;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -185,16 +193,18 @@ a.hint {
 
 /* Circular "mug" markers: outlined and filled variants, sized like the play icon */
 .mug, .dot, .circle, .bullet, .mug-filled {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  margin: 0 2px;
-  float: right;
+  padding: 0;
+  margin: 0 1px;
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -211,16 +221,18 @@ a.hint {
 label[for="hd-20"], label[for="hd-260"] {
   font-size: 0; /* hide raw character */
   line-height: 0;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  margin: 0 2px;
-  float: right;
+  padding: 0;
+  margin: 0 1px;
 }
 label[for="hd-20"]::before, label[for="hd-260"]::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -232,16 +244,18 @@ label[for="hd-20"]::before, label[for="hd-260"]::before {
 label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"] {
   font-size: 0;
   line-height: 0;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  margin: 0 2px;
-  float: right;
+  padding: 0;
+  margin: 0 1px;
 }
 label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::before, label[for="hd-135"]::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -254,16 +268,18 @@ label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::bef
 label[for="hd-40"] {
   font-size: 0;
   line-height: 0;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  margin: 0 2px;
-  float: right;
+  padding: 0;
+  margin: 0 1px;
 }
 label[for="hd-40"]::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -275,16 +291,18 @@ label[for="hd-40"]::before {
 label[for="hd-200"], label[for="hd-210"] {
   font-size: 0;
   line-height: 0;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  margin: 0 2px;
-  float: right;
+  padding: 0;
+  margin: 0 1px;
 }
 label[for="hd-200"]::before, label[for="hd-210"]::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
