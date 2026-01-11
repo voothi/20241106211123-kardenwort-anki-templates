@@ -98,8 +98,7 @@ a.hint {
   height: auto;
   border: none;
   vertical-align: top;
-  padding: 6px 6px 6px 28px;
-  position: relative;
+  padding: 6px 6px;
 }
 
 .spacer-cell { height:4px; width:0; }
@@ -164,7 +163,7 @@ a.hint {
 
 .fixed-table { width:100%; border-collapse:collapse; box-sizing: border-box; }
 .fixed-table td, .fixed-table th { box-sizing: border-box; border: 1px solid MediumSeaGreen; }
-.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px 6px 28px; position: relative; }
+.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px; }
 .spacer-cell { height:4px; width:0; }
 
 
@@ -190,10 +189,8 @@ a.hint {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 2px;
+  float: right;
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
   content: "";
@@ -218,10 +215,8 @@ label[for="hd-20"], label[for="hd-260"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 2px;
+  float: right;
 }
 label[for="hd-20"]::before, label[for="hd-260"]::before {
   content: "";
@@ -241,10 +236,8 @@ label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"]
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 2px;
+  float: right;
 }
 label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::before, label[for="hd-135"]::before {
   content: "";
@@ -265,10 +258,8 @@ label[for="hd-40"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 2px;
+  float: right;
 }
 label[for="hd-40"]::before {
   content: "";
@@ -288,10 +279,8 @@ label[for="hd-200"], label[for="hd-210"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 0 2px;
+  float: right;
 }
 label[for="hd-200"]::before, label[for="hd-210"]::before {
   content: "";
