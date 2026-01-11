@@ -270,13 +270,13 @@
                 {{/SentenceDestination}}
                 {{/WordDestination}}
                     id="hd-70" type="checkbox">
-            <label for="hd-70">Sentence
+            <label for="hd-70">○
             </label>
             
             <div>
                 {{#SentenceDestination}}
                 <input class="show" id="hd-200" type="checkbox">
-                <label for="hd-200">Sentence 1
+                <label for="hd-200">○
                 </label>
                 <div>
                     <span class="context">
@@ -308,7 +308,7 @@
 
                 {{#SentenceDestination2}}
                 <input class="show" id="hd-210" type="checkbox">
-                <label for="hd-210">Sentence 2
+                <label for="hd-210">○
                 </label>
                 <div>
                     <span class="context">

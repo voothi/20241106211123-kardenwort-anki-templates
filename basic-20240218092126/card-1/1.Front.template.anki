@@ -267,7 +267,7 @@
 
             <input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show"
                 {{/WordSource}} id="hd-10" type="checkbox">
-            <label for="hd-10">Sentence
+            <label for="hd-10">○
             </label>
             <div>
                 <span>
