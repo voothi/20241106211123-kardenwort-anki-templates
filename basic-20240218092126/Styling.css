@@ -241,5 +241,7 @@ html:not(.android) .ankidroidTtsButton {
   height: 18px;
   font-size: 16px;
   line-height: 18px;
-  color: inherit;
+  color: #ffffff !important; /* force strict white */
+  -webkit-text-fill-color: #ffffff !important; /* ensure WebKit paints glyph white */
+  text-shadow: none !important;
 }
