@@ -11,11 +11,6 @@
 html, body { box-sizing: border-box; max-width: 100%; }
 *, *::before, *::after { box-sizing: inherit; }
 
-:root {
-  --icon-size: 12px;
-  --icon-gap: 8px;
-}
-
 .cloze {
   font-weight: bold;
   color: MediumSeaGreen !important;
@@ -178,26 +173,24 @@ a.hint {
 .soundLink::before, .replay-button::before, .replaybutton::before {
   content: "";
   display: inline-block;
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
-  margin: 0 var(--icon-gap) 0 0;
+  margin: 0 2px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><polygon points='4,2 13,8 4,14' fill='none' stroke='%233CB371' stroke-width='1.2' stroke-linejoin='round'/></svg>");
-  box-sizing: content-box;
 }
 
 /* Circular "mug" markers: outlined and filled variants, sized like the play icon */
 .mug, .dot, .circle, .bullet, .mug-filled {
   display: inline-block;
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
-  margin: 0 var(--icon-gap) 0 0;
+  margin: 0 2px;
   float: right;
-  box-sizing: content-box;
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
   content: "";
@@ -208,11 +201,9 @@ a.hint {
   background-position: center;
   background-size: contain;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.2'/></svg>");
-  box-sizing: content-box;
 }
 .mug-filled::before {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.2'/></svg>");
-  box-sizing: content-box;
 }
 
 /* Replace literal ○ and ● characters in labels for specific checkboxes
