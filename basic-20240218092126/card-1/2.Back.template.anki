@@ -226,25 +226,25 @@
                 {{#WordDestination}}
                 {{#SentenceDestination}}
                     {{#SentenceDestination2}}
-                        class="hide"
+                        class="show"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
 
                 {{#SentenceDestination}}
                     {{^SentenceDestination2}}
-                        class="hide"
+                        class="show"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
 
                 {{^SentenceDestination}}
                     {{#SentenceDestination2}}
-                        class="hide"
+                        class="show"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
 
                 {{^SentenceDestination}}
                     {{^SentenceDestination2}}
-                        class="hide"
+                        class="show"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
                 {{/WordDestination}}
@@ -270,7 +270,7 @@
 
                 {{^SentenceDestination}}
                     {{^SentenceDestination2}}
-                        class="hide"
+                        class="show"
                     {{/SentenceDestination2}}
                 {{/SentenceDestination}}
                 {{/WordDestination}}
