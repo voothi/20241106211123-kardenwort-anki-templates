@@ -98,7 +98,8 @@ a.hint {
   height: auto;
   border: none;
   vertical-align: top;
-  padding: 6px 6px;
+  padding: 6px 6px 6px 28px;
+  position: relative;
 }
 
 .spacer-cell { height:4px; width:0; }
@@ -163,7 +164,7 @@ a.hint {
 
 .fixed-table { width:100%; border-collapse:collapse; box-sizing: border-box; }
 .fixed-table td, .fixed-table th { box-sizing: border-box; border: 1px solid MediumSeaGreen; }
-.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px; }
+.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px 6px 28px; position: relative; }
 .spacer-cell { height:4px; width:0; }
 
 
@@ -189,8 +190,10 @@ a.hint {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 6px 0 0;
-  float: left;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
   content: "";
