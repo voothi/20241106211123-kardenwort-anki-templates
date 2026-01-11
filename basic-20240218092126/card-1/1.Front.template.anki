@@ -243,8 +243,8 @@
                     <!-- { {hint:SentenceSourceContextLeft} }<br><br> -->
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
-                        ...</a>
-                    <span id="hint0ba529b0c8ad4af4" class=hint style="display: none">{{SentenceSourceContextLeft}}</span><br>
+                        ... </a>
+                    <span id="hint0ba529b0c8ad4af4" class=hint style="display: none">{{SentenceSourceContextLeft}}</span>
                     {{/SentenceSourceContextLeft}}
                 </span>
 
