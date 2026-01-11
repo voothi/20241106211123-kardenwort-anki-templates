@@ -190,11 +190,11 @@
             </label>
             <div>
                 <span>
-                    {{#WordSourceIPA}}
-                    [{{WordSourceIPA}}]
-                    {{/WordSourceIPA}}
+                    {{#WordSourceInflectedForm}}
+                    {{WordSourceInflectedForm}}
+                    {{/WordSourceInflectedForm}}
                 </span>
-
+                    
                 <span>
                     {{#WordSource}}
                     {{WordSource}}
@@ -202,15 +202,9 @@
                 </span>
 
                 <span>
-                    {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}
-                    {{/WordSourceInflectedForm}}
-                </span>
-
-                <span>
-                    {{#WordSourceContext}}
-                    {{WordSourceContext}}
-                    {{/WordSourceContext}}
+                    {{#WordSourceIPA}}
+                    [{{WordSourceIPA}}]
+                    {{/WordSourceIPA}}
                 </span>
             </div>
         </td>

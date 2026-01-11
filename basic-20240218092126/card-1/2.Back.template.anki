@@ -131,6 +131,12 @@
                 </span>
 
                 <span>
+                    {{#WordSource}}
+                    {{WordSource}}
+                    {{/WordSource}}
+                </span>
+
+                <span>
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}
                     {{/WordSourceMorphologyAI}}
