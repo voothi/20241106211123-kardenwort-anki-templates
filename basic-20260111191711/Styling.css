@@ -161,7 +161,8 @@ a.hint {
 }
 
 
-.fixed-table { width:100%; border-collapse:collapse; }
+.fixed-table { width:100%; border-collapse:collapse; box-sizing: border-box; }
+.fixed-table td, .fixed-table th { box-sizing: border-box; border: 1px solid MediumSeaGreen; }
 .fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px; }
 .spacer-cell { height:4px; width:0; }
 
