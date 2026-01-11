@@ -1,9 +1,11 @@
 .card {
-  font-family: Arial;
+  font-family: Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
   font-size: 16px;
   text-align: left;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .cloze {
@@ -46,58 +48,19 @@ a.hint {
   visibility: hidden;
 }
 
-.hide,
-.hide+label~div {
-  display: none;
-}
-
-.hide+label,
-.hide:checked+label {
+.hide, .hide+label~div, .show, .show+label~div { display: none; }
+.hide+label, .hide:checked+label, .show+label, .show:not(:checked)+label {
   padding: 0;
   color: MediumSeaGreen !important;
   cursor: pointer;
-  border-bottom: 1px dotted green;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
-
-.hide:checked+label {
-  color: red;
-  border-bottom: 0;
-}
-
-.hide:checked+label+div {
+.hide:checked+label, .show:not(:checked)+label { color: inherit; border-bottom: none; }
+.hide:checked+label+div, .show:not(:checked)+label+div {
   display: block;
   background: transparent;
-  -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-  -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-  box-shadow: inset 3px 3px 10px #7d8e8f;
-  padding: 10px;
-}
-
-.show,
-.show+label~div {
-  display: none;
-}
-
-.show+label,
-.show:not(:checked)+label {
-  padding: 0;
-  color: MediumSeaGreen !important;
-  cursor: pointer;
-  border-bottom: 1px dotted green;
-}
-
-.show:not(:checked)+label {
-  color: red;
-  border-bottom: 0;
-}
-
-.show:not(:checked)+label+div {
-  display: block;
-  background: transparent;
-  -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-  -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-  box-shadow: inset 3px 3px 10px #7d8e8f;
-  padding: 10px;
+  box-shadow: none;
+  padding: 6px 0;
 }
 
 .svg-container {
@@ -127,19 +90,15 @@ a.hint {
   visibility: hidden;
 }
 
-html:not(.android) .ankidroidTtsButton {
-  display: none;
-}
 
-#answer-delete {
+.fixed-cell {
+  height: auto;
   border: none;
-  height: 0;
-  visibility: hidden;
+  vertical-align: top;
+  padding: 6px 6px;
 }
 
-.right {
-  float: right;
-}
+.spacer-cell { height:4px; width:0; }
 
 .line-wrapper {
   display: flex;
@@ -148,9 +107,10 @@ html:not(.android) .ankidroidTtsButton {
 
 .custom-hr {
   flex: 1;
-  margin-right: 5px;
+  margin-right: 6px;
   border: none;
-  border-top: 1px solid MediumSeaGreen;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  height: 1px;
 }
 
 .layout-table {
@@ -159,9 +119,7 @@ html:not(.android) .ankidroidTtsButton {
   padding: 0;
 }
 
-.layout-table td {
-  padding: 10px 10px;
-}
+.layout-table td { padding:6px 6px; }
 
 .container-9333 {
   display: flex;
@@ -217,31 +175,8 @@ html:not(.android) .ankidroidTtsButton {
   width: 0;
 }
 
-/* Audio icon: use a single UTF-8 glyph, center it and tighten spacing */
-.soundLink, .replay-button, .replaybutton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0 4px 0 0; /* small gap to following text */
-  vertical-align: middle;
-  text-decoration: none;
-}
 
-/* Hide injected SVGs so only the glyph appears */
-.soundLink svg, .replay-button svg, .playImage { display: none !important; }
-
-/* Render a consistent play glyph sized to the text and centered */
-.soundLink::before, .replay-button::before, .replaybutton::before {
-  content: "▶";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff !important; /* force strict white */
-  -webkit-text-fill-color: #ffffff !important; /* ensure WebKit paints glyph white */
-  text-shadow: none !important;
-}
+/* Audio: minimal triangle glyph */
+.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 6px 0 0; vertical-align:middle; text-decoration:none; }
+.soundLink svg, .replay-button svg, .playImage { display:none !important; }
+.soundLink::before, .replay-button::before, .replaybutton::before { content:"▶"; font-size:14px; line-height:14px; color:#000 !important; text-shadow:none !important; }
