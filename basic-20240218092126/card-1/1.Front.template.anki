@@ -232,15 +232,8 @@
             <label for="hd-10">○
             </label>
             <div>
-                <span>
-                    {{#SentenceSourceIPA}}
-                    {{SentenceSourceIPA}}<br><br>
-                    {{/SentenceSourceIPA}}
-                </span>
-
                 <span class="context">
                     {{#SentenceSourceContextLeft}}
-                    <!-- { {hint:SentenceSourceContextLeft} }<br><br> -->
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
                         ... </a>
@@ -250,7 +243,7 @@
 
                 <span>
                     {{#SentenceSource}}
-                    {{SentenceSource}}<br><br>
+                    {{SentenceSource}}
                     {{/SentenceSource}}
                 </span>
 
@@ -259,8 +252,7 @@
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint51cebd3ef40e9ccb').style.display='block'; return false;">
                         ...</a>
-                    <span id="hint51cebd3ef40e9ccb" class=hint style="display: none">{{SentenceSourceContextRight}}</span><br>
-                    <!-- { {hint:SentenceSourceContextRight} }<br><br> -->
+                    <span id="hint51cebd3ef40e9ccb" class=hint style="display: none">{{SentenceSourceContextRight}}</span>
                     {{/SentenceSourceContextRight}}
                 </span>
             </div>
