@@ -106,6 +106,12 @@
             </label>
             <div>
                 <span>
+                    {{#WordDestination}}
+                    {{WordDestination}}
+                    {{/WordDestination}}
+                </span>
+
+                <span>
                     {{#WordEnglish}}
                     {{WordEnglish}}
                     {{/WordEnglish}}
@@ -121,12 +127,6 @@
                     {{#WordUkrainian}}
                     {{WordUkrainian}}
                     {{/WordUkrainian}}
-                </span>
-
-                <span>
-                    {{#WordDestination}}
-                    {{WordDestination}}
-                    {{/WordDestination}}
                 </span>
 
                 <span>
