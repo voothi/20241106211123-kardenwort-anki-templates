@@ -320,7 +320,7 @@
         {{/SentenceSource}}
     {{/WordSource}}
         id="hd-260" type="checkbox">
-    <label for="hd-260">Wordlist
+    <label for="hd-260">
         {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
     </label>
     <div>
