@@ -11,6 +11,31 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordEnglish}}
+            <span>
+                <!-- tts en_US voices=gTTS:WordEnglish -->
+                {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
+            </span>
+            {{/WordEnglish}}
+            {{/ToggleAlwaysEmptyField}}
+            
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordGerman}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
+            </span>
+            {{/WordGerman}}
+            {{/ToggleAlwaysEmptyField}}
+
+            {{^ToggleAlwaysEmptyField}}
+            {{#WordUkrainian}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
+            </span>
+            {{/WordUkrainian}}
+            {{/ToggleAlwaysEmptyField}}
+
             {{#WordDestination}}
             {{#Destination-en-GB}}
             <span id="sound2">
@@ -42,31 +67,6 @@
             </span>
             {{/Destination-ru-RU}}
             {{/WordDestination}}
-            
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordEnglish}}
-            <span>
-                <!-- tts en_US voices=gTTS:WordEnglish -->
-                {{tts en_GB voices=gTTS speed=1.0:WordEnglish}}
-            </span>
-            {{/WordEnglish}}
-            {{/ToggleAlwaysEmptyField}}
-            
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordGerman}}
-            <span>
-                {{tts de_DE voices=gTTS speed=1.0:WordGerman}}
-            </span>
-            {{/WordGerman}}
-            {{/ToggleAlwaysEmptyField}}
-
-            {{^ToggleAlwaysEmptyField}}
-            {{#WordUkrainian}}
-            <span>
-                {{tts uk_UA voices=gTTS speed=1.0:WordUkrainian}}
-            </span>
-            {{/WordUkrainian}}
-            {{/ToggleAlwaysEmptyField}}
 
             {{#WordSourceMorphologyAI}}
             {{#ToggleAlwaysEmptyField}}
@@ -107,12 +107,6 @@
             </label>
             <div>
                 <span>
-                    {{#WordDestination}}
-                    {{WordDestination}}
-                    {{/WordDestination}}
-                </span>
-
-                <span>
                     {{#WordEnglish}}
                     {{WordEnglish}}
                     {{/WordEnglish}}
@@ -128,6 +122,12 @@
                     {{#WordUkrainian}}
                     {{WordUkrainian}}
                     {{/WordUkrainian}}
+                </span>
+
+                <span>
+                    {{#WordDestination}}
+                    {{WordDestination}}
+                    {{/WordDestination}}
                 </span>
 
                 <span>
