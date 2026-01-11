@@ -203,13 +203,13 @@
 
                 <span>
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}<br><br>
+                    {{WordSourceInflectedForm}}
                     {{/WordSourceInflectedForm}}
                 </span>
 
                 <span>
                     {{#WordSourceContext}}
-                    {{WordSourceContext}}<br><br>
+                    {{WordSourceContext}}
                     {{/WordSourceContext}}
                 </span>
             </div>

@@ -104,40 +104,35 @@
 
             <input class="show" id="hd-40" type="checkbox">
             <label for="hd-40">Word
-                {{#WordDestination}}●{{/WordDestination}}{{^WordDestination}}○{{/WordDestination}}
-                {{#WordEnglish}}●{{/WordEnglish}}{{^WordEnglish}}○{{/WordEnglish}}
-                {{#WordGerman}}●{{/WordGerman}}{{^WordGerman}}○{{/WordGerman}}
-                {{#WordUkrainian}}●{{/WordUkrainian}}{{^WordUkrainian}}○{{/WordUkrainian}}
-                {{#WordSourceMorphologyAI}}●{{/WordSourceMorphologyAI}}{{^WordSourceMorphologyAI}}○{{/WordSourceMorphologyAI}}
             </label>
             <div>
                 <span>
                     {{#WordDestination}}
-                    {{WordDestination}}<br><br>
+                    {{WordDestination}}
                     {{/WordDestination}}
                 </span>
 
                 <span>
                     {{#WordEnglish}}
-                    {{WordEnglish}}<br><br>
+                    {{WordEnglish}}
                     {{/WordEnglish}}
                 </span>
 
                 <span>
                     {{#WordGerman}}
-                    {{WordGerman}}<br><br>
+                    {{WordGerman}}
                     {{/WordGerman}}
                 </span>
 
                 <span>
                     {{#WordUkrainian}}
-                    {{WordUkrainian}}<br><br>
+                    {{WordUkrainian}}
                     {{/WordUkrainian}}
                 </span>
 
                 <span>
                     {{#WordSourceMorphologyAI}}
-                    {{WordSourceMorphologyAI}}<br><br>
+                    {{WordSourceMorphologyAI}}
                     {{/WordSourceMorphologyAI}}
                 </span>
             </div>
@@ -276,9 +271,6 @@
                 {{/WordDestination}}
                     id="hd-70" type="checkbox">
             <label for="hd-70">Sentence
-                {{#SentenceDestinationContextLeft}}●{{/SentenceDestinationContextLeft}}{{^SentenceDestinationContextLeft}}○{{/SentenceDestinationContextLeft}}
-                {{#SentenceDestination}}●{{/SentenceDestination}}{{^SentenceDestination}}○{{/SentenceDestination}}
-                {{#SentenceDestinationContextRight}}●{{/SentenceDestinationContextRight}}{{^SentenceDestinationContextRight}}○{{/SentenceDestinationContextRight}}
             </label>
             
             <div>
@@ -391,7 +383,6 @@
 
             <input class="show" id="hd-75" type="checkbox">
             <label for="hd-75">Sentence Rewrite
-                {{#SentenceSourceRewriteAISentenceDestination}}●{{/SentenceSourceRewriteAISentenceDestination}}{{^SentenceSourceRewriteAISentenceDestination}}○{{/SentenceSourceRewriteAISentenceDestination}}
             </label>
             <div>
                 <span>
@@ -451,7 +442,6 @@
             <input {{#WordDestination}} class="show" {{/WordDestination}} {{^WordDestination}} class="show"
                 {{/WordDestination}} id="hd-295" type="checkbox">
             <label for="hd-295">Definition
-                {{#WordSourceDefinitionAISentenceDestination}}●{{/WordSourceDefinitionAISentenceDestination}}{{^WordSourceDefinitionAISentenceDestination}}○{{/WordSourceDefinitionAISentenceDestination}}
             </label>
             <div>
                 <span>
