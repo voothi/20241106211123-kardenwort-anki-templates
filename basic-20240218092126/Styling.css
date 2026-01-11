@@ -238,3 +238,37 @@ html:not(.android) .ankidroidTtsButton {
     width: 20px !important;
     height: 20px !important;
 }
+
+/* Use a UTF-8 play glyph instead of platform SVGs so icon is same size everywhere */
+/* Hide injected SVG icons (Anki/AnkiWeb/AnkiDroid may inject different markup) */
+.replaybutton svg,
+.replay-button svg,
+.soundLink svg,
+a.soundLink svg,
+.playImage {
+  display: none !important;
+}
+
+/* Insert a consistent UTF-8 glyph and size it with pixels for cross-platform parity */
+.soundLink::before,
+.replay-button::before,
+.replaybutton::before {
+  content: "▶";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-family: "Segoe UI Symbol", "Arial Unicode MS", "Noto Sans Symbols", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: inherit;
+  vertical-align: middle;
+}
+
+/* Keep clickable area consistent and centered */
+.soundLink, .replay-button, .replaybutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px !important;
+}
