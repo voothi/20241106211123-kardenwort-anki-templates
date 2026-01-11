@@ -253,7 +253,6 @@
             {{type:WordSource}}
         </span>
     </div>
-    <br>
     {{/WordSource}}
     <!-- Input Template/ -->
 
@@ -269,7 +268,6 @@
             {{type:SentenceSource}}
         </span>
     </div>
-    <br>
     {{/SentenceSource}}
 
     {{^SentenceSource}}
