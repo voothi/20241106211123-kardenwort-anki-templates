@@ -217,58 +217,29 @@ html:not(.android) .ankidroidTtsButton {
   width: 0;
 }
 
-/* Reduce default audio playback icon size and align with text */
-.replaybutton svg, .replay-button svg, .soundLink svg, a.soundLink svg {
-    width: 20px !important;
-    height: 20px !important;
-    vertical-align: middle;
-}
-
-/* Optional: reduce surrounding padding/margins for tighter layout */
-.replaybutton, .replay-button, .soundLink {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px !important;
-    margin-right: 6px !important;
-}
-
-/* If Anki injects icons with class playImage, target that too */
-.playImage {
-    width: 20px !important;
-    height: 20px !important;
-}
-
-/* Use a UTF-8 play glyph instead of platform SVGs so icon is same size everywhere */
-/* Hide injected SVG icons (Anki/AnkiWeb/AnkiDroid may inject different markup) */
-.replaybutton svg,
-.replay-button svg,
-.soundLink svg,
-a.soundLink svg,
-.playImage {
-  display: none !important;
-}
-
-/* Insert a consistent UTF-8 glyph and size it with pixels for cross-platform parity */
-.soundLink::before,
-.replay-button::before,
-.replaybutton::before {
-  content: "▶";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  font-family: "Segoe UI Symbol", "Arial Unicode MS", "Noto Sans Symbols", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: inherit;
-  vertical-align: middle;
-}
-
-/* Keep clickable area consistent and centered */
+/* Audio icon: use a single UTF-8 glyph, center it and tighten spacing */
 .soundLink, .replay-button, .replaybutton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 2px !important;
+  padding: 0;
+  margin: 0 4px 0 0; /* small gap to following text */
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/* Hide injected SVGs so only the glyph appears */
+.soundLink svg, .replay-button svg, .playImage { display: none !important; }
+
+/* Render a consistent play glyph sized to the text and centered */
+.soundLink::before, .replay-button::before, .replaybutton::before {
+  content: "▶";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
 }
