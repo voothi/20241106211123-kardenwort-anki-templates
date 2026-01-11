@@ -293,6 +293,87 @@
         {{/Image}}
     </span>
 
+    <!-- #SentenceSourceWordlist -->
+    {{#SentenceSourceWordlist}}
+    <input
+    {{#WordSource}}
+        {{#SentenceSource}}
+            class="hide"
+        {{/SentenceSource}}
+    {{/WordSource}}
+
+    {{#WordSource}}
+        {{^SentenceSource}}
+            class="hide"
+        {{/SentenceSource}}
+    {{/WordSource}}
+
+    {{^WordSource}}
+        {{#SentenceSource}}
+            class="show"
+        {{/SentenceSource}}
+    {{/WordSource}}
+
+    {{^WordSource}}
+        {{^SentenceSource}}
+            class="hide"
+        {{/SentenceSource}}
+    {{/WordSource}}
+        id="hd-260" type="checkbox">
+    <label for="hd-260">Wordlist
+        {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
+    </label>
+    <div>
+        <span>
+            <!-- WordSourceDefinitionClipping TTS Toggle Off  -->
+            <!-- Play : Toggle-Always-Empty-Field = ^ - show, # - hide  -->
+            {{#ToggleAlwaysEmptyField}}
+            {{#SentenceSourceWordlist}}
+            {{#Source-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceSourceWordlist}}
+            </span>
+            {{/Source-en-GB}}
+
+            {{#Source-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceSourceWordlist}}
+            </span>
+            {{/Source-en-US}}
+
+            {{#Source-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceSourceWordlist}}
+            </span>
+            {{/Source-de-DE}}
+
+            {{#Source-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceSourceWordlist}}
+            </span>
+            {{/Source-uk-UA}}
+
+            {{#Source-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceSourceWordlist}}
+                <!-- ru_RU voices=gTTS -->
+            </span>
+            {{/Source-ru-RU}}
+            <br>
+            {{/SentenceSourceWordlist}}
+            {{/ToggleAlwaysEmptyField}}
+        </span>
+
+        <span>
+            {{#SentenceSourceWordlist}}
+            {{SentenceSourceWordlist}}<br><br>
+            {{/SentenceSourceWordlist}}
+        </span>
+    </div>
+    <br>
+    {{/SentenceSourceWordlist}}
+    <!-- /SentenceSourceWordList -->
+
     <span>
         {{#Deck}}
         {{Deck}}<br><br>
