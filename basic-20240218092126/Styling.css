@@ -173,21 +173,21 @@ a.hint {
 .soundLink::before, .replay-button::before, .replaybutton::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><polygon points='4,2 13,8 4,14' fill='none' stroke='%233CB371' stroke-width='1.6' stroke-linejoin='round'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><polygon points='4,2 13,8 4,14' fill='none' stroke='%233CB371' stroke-width='1.2' stroke-linejoin='round'/></svg>");
 }
 
 /* Circular "mug" markers: outlined and filled variants, sized like the play icon */
 .mug, .dot, .circle, .bullet, .mug-filled {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   float: right;
@@ -200,10 +200,10 @@ a.hint {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
 .mug-filled::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
 
 /* Replace literal ○ and ● characters in labels for specific checkboxes
@@ -212,8 +212,8 @@ label[for="hd-20"], label[for="hd-260"] {
   font-size: 0; /* hide raw character */
   line-height: 0;
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   float: right;
@@ -226,15 +226,15 @@ label[for="hd-20"]::before, label[for="hd-260"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
 
 label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"] {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   float: right;
@@ -247,7 +247,7 @@ label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::bef
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
 
 /* Remaining labels in back template: hd-40 is a filled circle (●), hd-200/hd-210 are outlined (○) */
@@ -255,8 +255,8 @@ label[for="hd-40"] {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   float: right;
@@ -269,15 +269,15 @@ label[for="hd-40"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='%233CB371' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
 
 label[for="hd-200"], label[for="hd-210"] {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   vertical-align: middle;
   margin: 0 2px;
   float: right;
@@ -290,5 +290,5 @@ label[for="hd-200"]::before, label[for="hd-210"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='6' fill='none' stroke='%233CB371' stroke-width='1.2'/></svg>");
 }
