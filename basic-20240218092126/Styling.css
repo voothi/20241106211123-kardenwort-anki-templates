@@ -163,8 +163,7 @@ a.hint {
 
 .fixed-table { width:100%; border-collapse:collapse; box-sizing: border-box; }
 .fixed-table td, .fixed-table th { box-sizing: border-box; border: 1px solid MediumSeaGreen; }
-.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 72px 6px 6px; position:relative; }
-.fixed-cell > label { position: absolute; right: 12px; top: 10px; cursor: pointer; z-index: 9999; color: MediumSeaGreen !important; font-size: 18px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; width:28px; height:28px; border-radius:50%; background: transparent; pointer-events: auto; }
+.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px; }
 .spacer-cell { height:4px; width:0; }
 
 
