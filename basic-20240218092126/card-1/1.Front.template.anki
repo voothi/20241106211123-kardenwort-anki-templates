@@ -172,11 +172,13 @@
                     {{/WordSource}}
                 </span>
 
-                <span>
+                <span class="context2">
                     {{#WordSourceIPA}}
-                    [{{WordSourceIPA}}]
+                    <a class="hint" href="#"
+                        onclick="this.style.display='none'; document.getElementById('20260111214223').style.display='block'; return false;">
+                        ... </a>
+                    <span id="20260111214223" class=hint style="display: none">[{{WordSourceIPA}}]</span>
                     {{/WordSourceIPA}}
-                </span>
             </div>
         </td>
     </tr>
