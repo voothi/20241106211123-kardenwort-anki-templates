@@ -459,7 +459,8 @@
     {{/SentenceSource}} {{/WordSource}} id="hd-60" type="checkbox">
 <label for="hd-60">
     <div class="line-wrapper">
-        <hr id=answer class="custom-hr">
+        <hr class="custom-hr">
+        <!-- id=answer -->
         <span>☜</span>
     </div <hr>
 </label>
