@@ -178,6 +178,7 @@ a.hint {
   text-decoration: none;
   width: 12px;
   height: 12px;
+  float: right;
 }
 .soundLink svg, .replay-button svg, .playImage { display:none !important; }
 .soundLink::before, .replay-button::before, .replaybutton::before {
@@ -201,6 +202,7 @@ a.hint {
   vertical-align: middle;
   padding: 0;
   margin: 0 1px;
+  float: right;
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
   content: "";
@@ -229,6 +231,7 @@ label[for="hd-20"], label[for="hd-260"] {
   vertical-align: middle;
   padding: 0;
   margin: 0 1px;
+  float: right;
 }
 label[for="hd-20"]::before, label[for="hd-260"]::before {
   content: "";
@@ -252,6 +255,7 @@ label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"]
   vertical-align: middle;
   padding: 0;
   margin: 0 1px;
+  float: right;
 }
 label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::before, label[for="hd-135"]::before {
   content: "";
@@ -276,6 +280,7 @@ label[for="hd-40"] {
   vertical-align: middle;
   padding: 0;
   margin: 0 1px;
+  float: right;
 }
 label[for="hd-40"]::before {
   content: "";
@@ -299,6 +304,7 @@ label[for="hd-200"], label[for="hd-210"] {
   vertical-align: middle;
   padding: 0;
   margin: 0 1px;
+  float: right;
 }
 label[for="hd-200"]::before, label[for="hd-210"]::before {
   content: "";
