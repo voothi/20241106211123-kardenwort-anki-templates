@@ -8,6 +8,9 @@
   padding: 0;
 }
 
+html, body { box-sizing: border-box; max-width: 100%; }
+*, *::before, *::after { box-sizing: inherit; }
+
 .cloze {
   font-weight: bold;
   color: MediumSeaGreen !important;
@@ -109,7 +112,7 @@ a.hint {
   flex: 1;
   margin-right: 6px;
   border: none;
-  border-top: 1px solid rgba(0,0,0,0.12);
+  border-top: 1px solid MediumSeaGreen;
   height: 1px;
 }
 
@@ -157,23 +160,10 @@ a.hint {
   margin: 10px 0;
 }
 
-.fixed-table {
-  width: 100%;
-  height: 70px;
-  border-collapse: collapse;
-}
 
-.fixed-cell {
-  height: 20px;
-  border: 1px solid MediumSeaGreen;
-  vertical-align: middle;
-  padding: 10px;
-}
-
-.spacer-cell {
-  height: 20px;
-  width: 0;
-}
+.fixed-table { width:100%; border-collapse:collapse; }
+.fixed-cell { height:auto; border:none; vertical-align:middle; padding:6px 6px; }
+.spacer-cell { height:4px; width:0; }
 
 
 /* Audio: minimal triangle glyph */
