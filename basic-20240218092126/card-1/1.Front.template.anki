@@ -68,6 +68,9 @@
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
+            <!-- #WordSource -->
+            <input class="show" id="hd-20" type="checkbox">
+            <label for="hd-20">●
             {{^ToggleAlwaysEmptyField}}
             {{#WordSourceInflectedForm}}
             {{#Source-en-GB}}
@@ -151,10 +154,6 @@
             {{/WordSourceAudio}}
             {{/WordSource}}
             {{/ToggleAlwaysEmptyField}}
-
-            <!-- #WordSource -->
-            <input class="show" id="hd-20" type="checkbox">
-            <label for="hd-20">●
             </label>
             <div>
                 <span class="context2">
