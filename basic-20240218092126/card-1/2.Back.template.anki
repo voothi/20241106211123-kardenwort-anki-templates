@@ -103,7 +103,7 @@
             {{/WordSourceMorphologyAI}}
 
             <input class="show" id="hd-40" type="checkbox">
-            <label for="hd-40">Word
+            <label for="hd-40">●
             </label>
             <div>
                 <span>
