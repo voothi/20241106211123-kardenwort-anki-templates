@@ -8,23 +8,18 @@
   padding: 0;
 }
 
-/* Hide default Anki star/flag icon on the left */
-img[src*="star"], img[src*="_flag"], img[src*="marked"], #_mark, #_flag {
-  display: none !important;
+/* Move Anki star/flag to center bottom */
+#_mark, #_flag {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1000 !important;
 }
 
-/* Move marked/flagged indicator to the right side */
-.marked, [class*="marked"], [class*="flag"] {
-  position: relative;
-}
-.marked::after, [class*="marked"]::after, [class*="flag"]::after {
-  content: "★";
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: gold;
-  font-size: 18px;
-  pointer-events: none;
+/* Hide other star icons */
+img[src*="star"], img[src*="_flag"], img[src*="marked"] {
+  display: none !important;
 }
 
 html, body { box-sizing: border-box; max-width: 100%; }
