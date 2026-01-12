@@ -12,6 +12,7 @@
 #_mark, #_flag {
   position: fixed !important;
   left: 50% !important;
+  top: auto !important;
   bottom: 10px !important;
   transform: translateX(-50%) !important;
   z-index: 1000 !important;
