@@ -238,7 +238,7 @@
                     {{/SentenceDestinationContextLeft}}
                 </span>
 
-                <span>
+                <span {{^WordSource}}class="context" {{/WordSource}}>
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}
