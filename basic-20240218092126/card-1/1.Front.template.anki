@@ -364,6 +364,7 @@
             {{/SentenceSourceWordlist}}
         </span>
     </div>
+    <br>
     {{/SentenceSourceWordlist}}
     <!-- /SentenceSourceWordList -->
 
