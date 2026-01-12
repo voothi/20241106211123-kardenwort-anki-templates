@@ -107,37 +107,31 @@
             <div>
                 <span>
                     {{#WordDestination}}
-                    {{WordDestination}}
+                    {{WordDestination}}<br><br>
                     {{/WordDestination}}
                 </span>
 
                 <span>
                     {{#WordEnglish}}
-                    {{WordEnglish}}
+                    {{WordEnglish}}<br><br>
                     {{/WordEnglish}}
                 </span>
 
                 <span>
                     {{#WordGerman}}
-                    {{WordGerman}}
+                    {{WordGerman}}<br><br>
                     {{/WordGerman}}
                 </span>
 
                 <span>
                     {{#WordUkrainian}}
-                    {{WordUkrainian}}
+                    {{WordUkrainian}}<br><br>
                     {{/WordUkrainian}}
                 </span>
 
                 <span>
-                    {{#WordSource}}
-                    {{WordSource}}
-                    {{/WordSource}}
-                </span>
-
-                <span>
                     {{#WordSourceMorphologyAI}}
-                    {{WordSourceMorphologyAI}}
+                    {{WordSourceMorphologyAI}}<br><br>
                     {{/WordSourceMorphologyAI}}
                 </span>
             </div>

@@ -121,18 +121,18 @@
             </label>
             <div>
                 <span>
-                    {{#WordSource}}
-                    {{WordSource}}
-                    {{/WordSource}}
-                </span>
-                <span>
                     {{#WordSourceIPA}}
-                    [{{WordSourceIPA}}]
+                    [{{WordSourceIPA}}]<br><br>
                     {{/WordSourceIPA}}
                 </span>
                 <span>
+                    {{#WordSource}}
+                    {{WordSource}}<br><br>
+                    {{/WordSource}}
+                </span>
+                <span>
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}
+                    {{WordSourceInflectedForm}}<br><br>
                     {{/WordSourceInflectedForm}}
                 </span>
             </div>
