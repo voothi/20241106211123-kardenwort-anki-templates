@@ -238,13 +238,13 @@
             <input
             {{#WordSource}}
                 {{#SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
 
             {{#WordSource}}
                 {{^SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
 
@@ -256,7 +256,7 @@
 
             {{^WordSource}}
                 {{^SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
                 id="hd-200" type="checkbox">
@@ -293,13 +293,13 @@
             <input
             {{#WordSource}}
                 {{#SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
 
             {{#WordSource}}
                 {{^SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
 
@@ -311,7 +311,7 @@
 
             {{^WordSource}}
                 {{^SentenceSource}}
-                    class="show"
+                    class="hide"
                 {{/SentenceSource}}
             {{/WordSource}}
                 id="hd-210" type="checkbox">
