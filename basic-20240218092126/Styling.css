@@ -8,12 +8,12 @@
   padding: 0;
 }
 
-/* Move Anki star/flag to center bottom */
+/* Move Anki star/flag to bottom center */
 #_mark, #_flag {
   position: fixed !important;
   left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
+  bottom: 10px !important;
+  transform: translateX(-50%) !important;
   z-index: 1000 !important;
 }
 
