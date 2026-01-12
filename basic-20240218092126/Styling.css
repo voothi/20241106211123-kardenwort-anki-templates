@@ -52,6 +52,16 @@ body {
   color: rgb(165, 165, 165);
 }
 
+#sentence-source u {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nightMode #sentence-source u {
+  color: #fff;
+}
+
 .context2 {
   color: rgb(210, 210, 210);
 }
