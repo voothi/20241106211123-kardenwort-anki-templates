@@ -9,7 +9,7 @@
 }
 
 /* Hide default Anki star/flag icon on the left */
-img[src*="star"], img[src*="_flag"], img[src*="marked"] {
+img[src*="star"], img[src*="_flag"], img[src*="marked"], #_mark, #_flag {
   display: none !important;
 }
 
