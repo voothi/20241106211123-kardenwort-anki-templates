@@ -183,7 +183,7 @@ a.hint {
 
 
 /* Audio: minimal triangle glyph */
-.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 6px 0 4px; vertical-align:middle; text-decoration:none; float: right; }
+.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 4px; vertical-align:middle; text-decoration:none; float: right; }
 .soundLink svg, .replay-button svg, .playImage { display:none !important; }
 .soundLink::before, .replay-button::before, .replaybutton::before {
   content: "";
