@@ -8,6 +8,25 @@
   padding: 0;
 }
 
+/* Hide default Anki star/flag icon on the left */
+img[src*="star"], img[src*="_flag"], img[src*="marked"] {
+  display: none !important;
+}
+
+/* Move marked/flagged indicator to the right side */
+.marked, [class*="marked"], [class*="flag"] {
+  position: relative;
+}
+.marked::after, [class*="marked"]::after, [class*="flag"]::after {
+  content: "★";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: gold;
+  font-size: 18px;
+  pointer-events: none;
+}
+
 html, body { box-sizing: border-box; max-width: 100%; }
 *, *::before, *::after { box-sizing: inherit; }
 
