@@ -35,7 +35,44 @@
         }
     }
 
-    setTimeout(executeClickAction, 20);
+    function highlightWords() {
+        var wordsField = document.getElementById("words-to-highlight");
+        var sentenceElem = document.getElementById("sentence-source");
+        if (!wordsField || !sentenceElem) return;
+
+        var wordsText = wordsField.textContent.trim();
+        if (!wordsText) return;
+
+        // Split words by common delimiters: comma, semicolon, space, newline, parentheses
+        var words = wordsText.split(/[,;\s\n\(\)]+/).filter(w => w.length > 0);
+        var sentence = sentenceElem.innerHTML;
+
+        // Sort words by length descending to match longer phrases first
+        words.sort((a, b) => b.length - a.length);
+
+        words.forEach(function (word) {
+            // Escape regex special characters
+            var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            // Use Unicode-aware word boundaries
+            try {
+                var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
+                sentence = sentence.replace(regex, "<b>$1</b>");
+            } catch (e) {
+                // Fallback for older engines
+                var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
+                sentence = sentence.replace(simpleRegex, "$1<b>$2</b>");
+            }
+        });
+
+        sentenceElem.innerHTML = sentence;
+    }
+
+    function init() {
+        executeClickAction();
+        highlightWords();
+    }
+
+    setTimeout(init, 20);
 </script>
 
 {{#WordSource}}
@@ -132,7 +169,7 @@
                 </span>
                 <span class="context">
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}<br>
+                    <span id="words-to-highlight">{{WordSourceInflectedForm}}</span><br>
                     {{/WordSourceInflectedForm}}
                 </span>
             </div>
@@ -201,7 +238,7 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span>
+                <span id="sentence-source">
                     {{#SentenceSource}}
                     {{SentenceSource}}<br>
                     {{/SentenceSource}}
