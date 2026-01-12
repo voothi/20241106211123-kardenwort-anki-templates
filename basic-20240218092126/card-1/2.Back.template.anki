@@ -101,7 +101,31 @@
             {{/Destination-ru-RU}}
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
-            <input class="show" id="hd-40" type="checkbox">
+            <input
+            {{#WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{#WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+                id="hd-40" type="checkbox">
             <label for="hd-40">●
             </label>
             <div>
