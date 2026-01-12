@@ -216,10 +216,10 @@ a.hint {
   background-position: center;
   background-size: contain;
   /* Shift circle slightly left so right-side whitespace matches triangle */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
 .mug-filled::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
 
 /* Replace literal ○ and ● characters in labels for specific checkboxes
@@ -242,7 +242,7 @@ label[for="hd-20"]::before, label[for="hd-260"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
 
 label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"] {
@@ -263,7 +263,7 @@ label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::bef
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
 
 /* Remaining labels in back template: hd-40 is a filled circle (●), hd-200/hd-210 are outlined (○) */
@@ -285,7 +285,7 @@ label[for="hd-40"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='%233CB371' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
 
 label[for="hd-200"], label[for="hd-210"] {
@@ -306,5 +306,5 @@ label[for="hd-200"]::before, label[for="hd-210"]::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='7' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='6.5' cy='8' r='5.5' fill='none' stroke='%233CB371' stroke-width='1.6'/></svg>");
 }
