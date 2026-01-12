@@ -120,7 +120,7 @@
             <label for="hd-20">●
             </label>
             <div>
-                <span class="context2">
+                <span class="context">
                     {{#WordSourceIPA}}
                     [{{WordSourceIPA}}]<br>
                     {{/WordSourceIPA}}
@@ -130,7 +130,7 @@
                     {{WordSource}}<br>
                     {{/WordSource}}
                 </span>
-                <span class="context2">
+                <span class="context">
                     {{#WordSourceInflectedForm}}
                     {{WordSourceInflectedForm}}<br>
                     {{/WordSourceInflectedForm}}
@@ -200,7 +200,7 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span class="context2">
+                <span>
                     {{#SentenceSource}}
                     {{SentenceSource}}<br>
                     {{/SentenceSource}}

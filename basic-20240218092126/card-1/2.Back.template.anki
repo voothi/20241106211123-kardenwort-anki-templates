@@ -129,7 +129,7 @@
                     {{/WordUkrainian}}
                 </span>
 
-                <span class="context2">
+                <span>
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}<br>
                     {{/WordSourceMorphologyAI}}
@@ -224,7 +224,7 @@
                     {{/SentenceDestinationContextLeft}}
                 </span>
 
-                <span class="context2">
+                <span>
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}
@@ -255,7 +255,7 @@
                     {{/SentenceDestination2ContextLeft}}
                 </span>
 
-                <span class="context2">
+                <span>
                     {{#SentenceDestination2}}
                     {{SentenceDestination2}}
                     {{/SentenceDestination2}}
