@@ -1,7 +1,12 @@
 <!-- 20260108113810 -->
 <span class="field-hide">
     <span>
-        {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}} {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}] {{/WordSourceIPA}}{{/WordSource}}{{#SentenceSource}}{{#SentenceDestination2}}○ {{SentenceDestination2}} {{/SentenceDestination2}}{{#SentenceDestination}}○ {{SentenceDestination}} {{/SentenceDestination}}{{#SentenceSource}}○ {{SentenceSource}} {{/SentenceSource}}{{/SentenceSource}}<br>
+        {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}}
+        {{/WordSource}}{{#WordSourceIPA}}[{{WordSourceIPA}}]
+        {{/WordSourceIPA}}{{/WordSource}}{{#SentenceSource}}{{#SentenceDestination2}}○ {{SentenceDestination2}}
+        {{/SentenceDestination2}}{{#SentenceDestination}}○ {{SentenceDestination}}
+        {{/SentenceDestination}}{{#SentenceSource}}○ {{SentenceSource}}
+        {{/SentenceSource}}{{/SentenceSource}}<br>
     </span>
 </span>
 
@@ -51,7 +56,7 @@
             </span>
             {{/WordEnglish}}
             {{/ToggleAlwaysEmptyField}}
-            
+
             {{^ToggleAlwaysEmptyField}}
             {{#WordGerman}}
             <span>
@@ -101,31 +106,11 @@
             {{/Destination-ru-RU}}
             {{/ToggleAlwaysEmptyField}}
             {{/WordSourceMorphologyAI}}
-            <input
-            {{#WordSource}}
-                {{#SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{#WordSource}}
-                {{^SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{#SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{^SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-                id="hd-40" type="checkbox">
+            <input {{#WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{#WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} id="hd-40"
+                type="checkbox">
             <label for="hd-40">●
             </label>
             <div>
@@ -153,7 +138,7 @@
                     {{/WordUkrainian}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}<br>
                     {{/WordSourceMorphologyAI}}
@@ -235,31 +220,11 @@
             {{/SentenceDestination2}}
             {{/ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
-            <input
-            {{#WordSource}}
-                {{#SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{#WordSource}}
-                {{^SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{#SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{^SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-                id="hd-200" type="checkbox">
+            <input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{#WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} id="hd-200"
+                type="checkbox">
             <label for="hd-200">○
             </label>
             <div>
@@ -267,8 +232,9 @@
                     {{#SentenceDestinationContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
-                        </a>
-                    <span id="hint12cdbd3ef30e9dcb" class=hint style="display: none">{{SentenceDestinationContextLeft}}</span>
+                    </a>
+                    <span id="hint12cdbd3ef30e9dcb" class=hint
+                        style="display: none">{{SentenceDestinationContextLeft}}</span>
                     {{/SentenceDestinationContextLeft}}
                 </span>
 
@@ -282,39 +248,20 @@
                     {{#SentenceDestinationContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
-                        </a>
-                    <span id="hint31cgbd3ef2e1cab" class=hint style="display: none">{{SentenceDestinationContextRight}}</span>
+                    </a>
+                    <span id="hint31cgbd3ef2e1cab" class=hint
+                        style="display: none">{{SentenceDestinationContextRight}}</span>
                     {{/SentenceDestinationContextRight}}
                 </span>
             </div>
             {{/SentenceDestination}}
 
             {{#SentenceDestination2}}
-            <input
-            {{#WordSource}}
-                {{#SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{#WordSource}}
-                {{^SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{#SentenceSource}}
-                    class="show"
-                {{/SentenceSource}}
-            {{/WordSource}}
-
-            {{^WordSource}}
-                {{^SentenceSource}}
-                    class="hide"
-                {{/SentenceSource}}
-            {{/WordSource}}
-                id="hd-210" type="checkbox">
+            <input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{#WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} id="hd-210"
+                type="checkbox">
             <label for="hd-210">○
             </label>
             <div>
@@ -322,8 +269,9 @@
                     {{#SentenceDestination2ContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint12cdbd3sh30e9dcb').style.display='block'; return false;">
-                        </a>
-                    <span id="hint12cdbd3sh30e9dcb" class=hint style="display: none">{{SentenceDestination2ContextLeft}}</span>
+                    </a>
+                    <span id="hint12cdbd3sh30e9dcb" class=hint
+                        style="display: none">{{SentenceDestination2ContextLeft}}</span>
                     {{/SentenceDestination2ContextLeft}}
                 </span>
 
@@ -337,8 +285,9 @@
                     {{#SentenceDestination2ContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
-                        </a>
-                    <span id="hint31cgbsge2e1cab" class=hint style="display: none">{{SentenceDestination2ContextRight}}</span>
+                    </a>
+                    <span id="hint31cgbsge2e1cab" class=hint
+                        style="display: none">{{SentenceDestination2ContextRight}}</span>
                     {{/SentenceDestination2ContextRight}}
                 </span>
             </div>
