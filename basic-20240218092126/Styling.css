@@ -183,7 +183,7 @@ a.hint {
 
 
 /* Audio: minimal triangle glyph */
-.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 2px; vertical-align:middle; text-decoration:none; float: right; }
+.soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 4px; vertical-align:middle; text-decoration:none; float: right; }
 .soundLink svg, .replay-button svg, .playImage { display:none !important; }
 .soundLink::before, .replay-button::before, .replaybutton::before {
   content: "";
@@ -204,7 +204,7 @@ a.hint {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 2px;
+  margin: 0 4px;
   float: right;
 }
 .mug::before, .dot::before, .circle::before, .bullet::before {
@@ -231,7 +231,7 @@ label[for="hd-20"], label[for="hd-260"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 2px;
+  margin: 0 4px;
   float: right;
 }
 label[for="hd-20"]::before, label[for="hd-260"]::before {
@@ -252,7 +252,7 @@ label[for="hd-10"], label[for="hd-90"], label[for="hd-130"], label[for="hd-135"]
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 2px;
+  margin: 0 4px;
   float: right;
 }
 label[for="hd-10"]::before, label[for="hd-90"]::before, label[for="hd-130"]::before, label[for="hd-135"]::before {
@@ -274,7 +274,7 @@ label[for="hd-40"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 2px;
+  margin: 0 4px;
   float: right;
 }
 label[for="hd-40"]::before {
@@ -295,7 +295,7 @@ label[for="hd-200"], label[for="hd-210"] {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  margin: 0 2px;
+  margin: 0 4px;
   float: right;
 }
 label[for="hd-200"]::before, label[for="hd-210"]::before {
