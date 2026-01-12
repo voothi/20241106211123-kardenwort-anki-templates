@@ -56,11 +56,11 @@
             // Use Unicode-aware word boundaries
             try {
                 var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
-                sentence = sentence.replace(regex, "<b>$1</b>");
+                sentence = sentence.replace(regex, "<u>$1</u>");
             } catch (e) {
                 // Fallback for older engines
                 var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
-                sentence = sentence.replace(simpleRegex, "$1<b>$2</b>");
+                sentence = sentence.replace(simpleRegex, "$1<u>$2</u>");
             }
         });
 
