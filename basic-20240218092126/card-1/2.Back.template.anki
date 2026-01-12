@@ -220,10 +220,10 @@
             {{/SentenceDestination2}}
             {{/ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
-            <input {{#WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
-                {{#WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} id="hd-200"
+            <input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{#WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
+                {{^WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} id="hd-200"
                 type="checkbox">
             <label for="hd-200">○
             </label>
