@@ -235,7 +235,31 @@
             {{/SentenceDestination2}}
             {{/ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
-            <input class="show" id="hd-200" type="checkbox">
+            <input
+            {{#WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{#WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+                id="hd-200" type="checkbox">
             <label for="hd-200">○
             </label>
             <div>
@@ -266,7 +290,31 @@
             {{/SentenceDestination}}
 
             {{#SentenceDestination2}}
-            <input class="show" id="hd-210" type="checkbox">
+            <input
+            {{#WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{#WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{#SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+
+            {{^WordSource}}
+                {{^SentenceSource}}
+                    class="show"
+                {{/SentenceSource}}
+            {{/WordSource}}
+                id="hd-210" type="checkbox">
             <label for="hd-210">○
             </label>
             <div>
