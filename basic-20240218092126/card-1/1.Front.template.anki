@@ -122,17 +122,17 @@
             <div>
                 <span>
                     {{#WordSourceIPA}}
-                    [{{WordSourceIPA}}]<br><br>
+                    [{{WordSourceIPA}}]<br>
                     {{/WordSourceIPA}}
                 </span>
                 <span>
                     {{#WordSource}}
-                    {{WordSource}}<br><br>
+                    {{WordSource}}<br>
                     {{/WordSource}}
                 </span>
                 <span>
                     {{#WordSourceInflectedForm}}
-                    {{WordSourceInflectedForm}}<br><br>
+                    {{WordSourceInflectedForm}}<br>
                     {{/WordSourceInflectedForm}}
                 </span>
             </div>
@@ -287,7 +287,7 @@
 
     <span>
         {{#Image}}
-        {{Image}}<br><br>
+        {{Image}}<br>
         {{/Image}}
     </span>
 
@@ -364,7 +364,7 @@
 
         <span>
             {{#SentenceSourceWordlist}}
-            {{SentenceSourceWordlist}}<br><br>
+            {{SentenceSourceWordlist}}<br>
             {{/SentenceSourceWordlist}}
         </span>
     </div>
@@ -374,19 +374,19 @@
 
     <span>
         {{#Deck}}
-        {{Deck}}<br><br>
+        {{Deck}}<br>
         {{/Deck}}
     </span>
 
     <span>
         {{#Tags}}
-        {{Tags}}<br><br>
+        {{Tags}}<br>
         {{/Tags}}
     </span>
 
     <span>
         {{#Note}}
-        {{Note}}<br><br>
+        {{Note}}<br>
         {{/Note}}
     </span>
 </div>
