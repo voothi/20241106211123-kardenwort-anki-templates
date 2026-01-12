@@ -186,8 +186,8 @@
             {{/SentenceSourceAudio}}
             {{/SentenceSource}}
             {{/ToggleAlwaysEmptyField}}
-            <input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show"
-                {{/WordSource}} id="hd-10" type="checkbox">
+            <input {{#WordSource}} class="show" {{/WordSource}} {{^WordSource}} class="show" {{/WordSource}}
+                id="hd-10" type="checkbox">
             <label for="hd-10">○
             </label>
             <div>
@@ -195,8 +195,9 @@
                     {{#SentenceSourceContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
-                        </a>
-                    <span id="hint0ba529b0c8ad4af4" class=hint style="display: none">{{SentenceSourceContextLeft}}</span>
+                    </a>
+                    <span id="hint0ba529b0c8ad4af4" class=hint
+                        style="display: none">{{SentenceSourceContextLeft}}</span>
                     {{/SentenceSourceContextLeft}}
                 </span>
 
@@ -210,8 +211,9 @@
                     {{#SentenceSourceContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint51cebd3ef40e9ccb').style.display='block'; return false;">
-                        </a>
-                    <span id="hint51cebd3ef40e9ccb" class=hint style="display: none">{{SentenceSourceContextRight}}</span>
+                    </a>
+                    <span id="hint51cebd3ef40e9ccb" class=hint
+                        style="display: none">{{SentenceSourceContextRight}}</span>
                     {{/SentenceSourceContextRight}}
                 </span>
             </div>
@@ -290,31 +292,10 @@
 
     <!-- #SentenceSourceWordlist -->
     {{#SentenceSourceWordlist}}
-    <input
-    {{#WordSource}}
-        {{#SentenceSource}}
-            class="hide"
-        {{/SentenceSource}}
-    {{/WordSource}}
-
-    {{#WordSource}}
-        {{^SentenceSource}}
-            class="hide"
-        {{/SentenceSource}}
-    {{/WordSource}}
-
-    {{^WordSource}}
-        {{#SentenceSource}}
-            class="show"
-        {{/SentenceSource}}
-    {{/WordSource}}
-
-    {{^WordSource}}
-        {{^SentenceSource}}
-            class="hide"
-        {{/SentenceSource}}
-    {{/WordSource}}
-        id="hd-260" type="checkbox">
+    <input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} {{#WordSource}}
+        {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} {{^WordSource}} {{#SentenceSource}}
+        class="show" {{/SentenceSource}} {{/WordSource}} {{^WordSource}} {{^SentenceSource}} class="hide"
+        {{/SentenceSource}} {{/WordSource}} id="hd-260" type="checkbox">
     <label for="hd-260">●
     </label>
     <div>
@@ -370,19 +351,19 @@
 
     <span>
         {{#Deck}}
-        {{Deck}}<br>
+        {{Deck}}<br><br>
         {{/Deck}}
     </span>
 
     <span>
         {{#Tags}}
-        {{Tags}}<br>
+        {{Tags}}<br><br>
         {{/Tags}}
     </span>
 
     <span>
         {{#Note}}
-        {{Note}}<br>
+        {{Note}}<br><br>
         {{/Note}}
     </span>
 </div>
