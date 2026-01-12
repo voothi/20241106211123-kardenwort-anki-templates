@@ -248,7 +248,7 @@
     </label>
     <div>
         <span>
-            {{type:WordSource}}
+            {{type:WordSource}}<br>
         </span>
     </div>
     {{/WordSource}}
@@ -263,7 +263,7 @@
     </label>
     <div>
         <span>
-            {{type:SentenceSource}}
+            {{type:SentenceSource}}<br>
         </span>
     </div>
     {{/SentenceSource}}
@@ -275,7 +275,7 @@
     </label>
     <div>
         <span>
-            {{type:SentenceSourceCloze}}
+            {{type:SentenceSourceCloze}}<br>
         </span>
     </div>
     {{/SentenceSource}}
@@ -315,8 +315,7 @@
         {{/SentenceSource}}
     {{/WordSource}}
         id="hd-260" type="checkbox">
-    <label for="hd-260">
-        {{#SentenceSourceWordlist}}●{{/SentenceSourceWordlist}}{{^SentenceSourceWordlist}}○{{/SentenceSourceWordlist}}
+    <label for="hd-260">●
     </label>
     <div>
         <span>
