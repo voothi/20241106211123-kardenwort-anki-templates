@@ -182,16 +182,20 @@ a.hint {
 .spacer-cell { height:4px; width:0; }
 
 
-/* Audio: filled circle marker in different color */
+/* Audio: minimal triangle glyph */
 .soundLink, .replay-button, .replaybutton { display:inline-flex; align-items:center; justify-content:center; padding:0; margin:0 4px; vertical-align:middle; text-decoration:none; float: right; }
 .soundLink svg, .replay-button svg, .playImage { display:none !important; }
 .soundLink::before, .replay-button::before, .replaybutton::before {
-  content: "●";
+  content: "";
   display: inline-block;
-  font-size: 13px;
-  color: MediumSeaGreen;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
-  line-height: 1;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><polygon points='4,2 13,8 4,14' fill='none' stroke='%233CB371' stroke-width='1.6' stroke-linejoin='round'/></svg>");
 }
 
 /* Circular "mug" markers: outlined and filled variants, sized like the play icon */
