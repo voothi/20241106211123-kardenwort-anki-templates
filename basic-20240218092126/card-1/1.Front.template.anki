@@ -120,7 +120,7 @@
             <label for="hd-20">●
             </label>
             <div>
-                <span>
+                <span class="context2">
                     {{#WordSourceIPA}}
                     [{{WordSourceIPA}}]<br>
                     {{/WordSourceIPA}}
@@ -130,7 +130,7 @@
                     {{WordSource}}<br>
                     {{/WordSource}}
                 </span>
-                <span>
+                <span class="context2">
                     {{#WordSourceInflectedForm}}
                     {{WordSourceInflectedForm}}<br>
                     {{/WordSourceInflectedForm}}
@@ -142,7 +142,6 @@
 {{/WordSource}}
 
 {{#SentenceSource}}
-{{^SentenceSourceRewriteAISentenceSource}}
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -201,7 +200,7 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span>
+                <span class="context2">
                     {{#SentenceSource}}
                     {{SentenceSource}}<br>
                     {{/SentenceSource}}
@@ -219,7 +218,6 @@
         </td>
     </tr>
 </table>
-{{/SentenceSourceRewriteAISentenceSource}}
 {{/SentenceSource}}
 <!-- /SentenceSource -->
 <!-- Text Template/ -->

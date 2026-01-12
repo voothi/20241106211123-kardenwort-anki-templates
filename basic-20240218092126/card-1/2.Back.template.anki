@@ -111,25 +111,25 @@
                     {{/WordDestination}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#WordEnglish}}
                     {{WordEnglish}}<br>
                     {{/WordEnglish}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#WordGerman}}
                     {{WordGerman}}<br>
                     {{/WordGerman}}
                 </span>
 
-                <span>
+                <span class="context">
                     {{#WordUkrainian}}
                     {{WordUkrainian}}<br>
                     {{/WordUkrainian}}
                 </span>
 
-                <span>
+                <span class="context2">
                     {{#WordSourceMorphologyAI}}
                     {{WordSourceMorphologyAI}}<br>
                     {{/WordSourceMorphologyAI}}
@@ -224,7 +224,7 @@
                     {{/SentenceDestinationContextLeft}}
                 </span>
 
-                <span>
+                <span class="context2">
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}
@@ -255,7 +255,7 @@
                     {{/SentenceDestination2ContextLeft}}
                 </span>
 
-                <span>
+                <span class="context2">
                     {{#SentenceDestination2}}
                     {{SentenceDestination2}}
                     {{/SentenceDestination2}}
