@@ -154,6 +154,7 @@
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
+            {{#WordSource}}
             {{#Destination-en-GB}}
             <span>
                 {{tts en_GB voices=gTTS speed=1.0:SentenceDestination}}
@@ -183,11 +184,13 @@
                 {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination}}
             </span>
             {{/Destination-ru-RU}}
+            {{/WordSource}}
             {{/SentenceDestination}}
             {{/ToggleAlwaysEmptyField}}
 
             {{^ToggleAlwaysEmptyField}}
             {{#SentenceDestination2}}
+            {{^WordSource}}
             {{#Destination-en-GB}}
             <span>
                 {{tts en_GB voices=gTTS speed=1.0:SentenceDestination2}}
@@ -217,6 +220,7 @@
                 {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination2}}
             </span>
             {{/Destination-ru-RU}}
+            {{/WordSource}}
             {{/SentenceDestination2}}
             {{/ToggleAlwaysEmptyField}}
             {{#SentenceDestination}}
