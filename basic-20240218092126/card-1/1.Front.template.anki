@@ -238,7 +238,7 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span id="sentence-source" class="context">
+                <span id="sentence-source" {{#WordSource}}class="context" {{/WordSource}}>
                     {{#SentenceSource}}
                     {{SentenceSource}}<br>
                     {{/SentenceSource}}
