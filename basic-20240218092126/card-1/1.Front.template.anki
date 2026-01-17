@@ -232,7 +232,7 @@
                     {{#SentenceSourceContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
-                    </a>
+                    ...</a>
                     <span id="hint0ba529b0c8ad4af4" class=hint
                         style="display: none">{{SentenceSourceContextLeft}}</span>
                     {{/SentenceSourceContextLeft}}
@@ -240,7 +240,7 @@
 
                 <span id="sentence-source" {{#WordSource}}class="context" {{/WordSource}}>
                     {{#SentenceSource}}
-                    {{SentenceSource}}<br>
+                    {{SentenceSource}}
                     {{/SentenceSource}}
                 </span>
 
@@ -248,7 +248,7 @@
                     {{#SentenceSourceContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint51cebd3ef40e9ccb').style.display='block'; return false;">
-                    </a>
+                    ...</a>
                     <span id="hint51cebd3ef40e9ccb" class=hint
                         style="display: none">{{SentenceSourceContextRight}}</span>
                     {{/SentenceSourceContextRight}}
