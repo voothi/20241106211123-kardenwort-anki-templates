@@ -245,7 +245,7 @@
                 </span>
 
                 <span
-                    class="{{#WordDestinationInflectedForm}}sentence-destination{{/WordDestinationInflectedForm}} {{^WordSource}}context{{/WordSource}}">
+                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination{{/WordDestinationInflectedForm}} {{^WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}

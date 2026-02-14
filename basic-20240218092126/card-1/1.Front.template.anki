@@ -37,7 +37,76 @@
 
     function highlightWords() {
         highlightField("words-to-highlight", ["#sentence-source", ".sentence-source"]);
-        highlightField("words-destination-to-highlight", [".sentence-destination", ".sentence-destination-2"], /[;\n]+/);
+        var destField = document.getElementById("words-destination-to-highlight");
+        if (destField && destField.textContent.trim().length > 0) {
+            highlightField("words-destination-to-highlight", [".sentence-destination", ".sentence-destination-2"], /[;\n]+/);
+        } else {
+            autoHighlightDestination();
+        }
+    }
+
+    function autoHighlightDestination() {
+        var sourceWordsField = document.getElementById("words-to-highlight");
+        var sourceSentenceElem = document.getElementById("sentence-source");
+        if (!sourceWordsField || !sourceSentenceElem) return;
+
+        var sourceText = sourceWordsField.textContent.trim();
+        if (!sourceText) return;
+
+        // Find source word index
+        // Use textContent to ignore existing HTML tags (like <u>)
+        var sourceSentenceText = sourceSentenceElem.textContent;
+        // Split by non-letter characters to count words
+        var sourceWords = sourceSentenceText.split(/[^\p{L}0-9]+/u).filter(w => w.length > 0);
+        var searchWords = sourceText.split(/[,;\s\n\(\)]+/).filter(w => w.length > 0);
+
+        var sourceIndex = -1;
+        // Find first occurrence of any search word in source sentence
+        for (var i = 0; i < sourceWords.length; i++) {
+            for (var j = 0; j < searchWords.length; j++) {
+                if (sourceWords[i].toLowerCase() === searchWords[j].toLowerCase()) {
+                    sourceIndex = i;
+                    break;
+                }
+            }
+            if (sourceIndex !== -1) break;
+        }
+
+        if (sourceIndex === -1) return;
+
+        var destElems = document.querySelectorAll(".js-sentence-destination");
+        destElems.forEach(function (destElem) {
+            var destSentenceText = destElem.textContent;
+            // Split preserving delimiters to reconstruct later? No, easier to replace in HTML if we can identify unique words, 
+            // but here we need to highlight BY INDEX. 
+            // RegEx replacement by index is tricky if words repeat.
+            // Better to split, wrap, and join.
+            // But we need to preserve punctuation.
+            // Let's use a regex that captures separators.
+            var parts = destSentenceText.split(/([^\p{L}0-9]+)/u);
+            var wordCount = 0;
+            var wordIndices = []; // Maps relative word index to parts index
+            for (var k = 0; k < parts.length; k++) {
+                if (/[^\p{L}0-9]+/u.test(parts[k]) || parts[k].length === 0) continue;
+                wordIndices.push(k);
+            }
+
+            if (wordIndices.length === 0) return;
+
+            // Map source index to dest index
+            var destIndex = Math.round((sourceIndex / sourceWords.length) * wordIndices.length);
+            var start = Math.max(0, destIndex - 1);
+            var end = Math.min(wordIndices.length - 1, destIndex + 1);
+
+            for (var m = start; m <= end; m++) {
+                var partIndex = wordIndices[m];
+                parts[partIndex] = "<u>" + parts[partIndex] + "</u>";
+            }
+
+            destElem.innerHTML = parts.join("");
+            // Add class to trigger dimming
+            destElem.classList.add("sentence-destination");
+        });
     }
 
     function highlightField(wordsId, targetSelectors, delimiterRegex) {
