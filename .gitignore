@@ -98,3 +98,5 @@ terraform.tfvars
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.tfstate.lock.info
+
+20241223170748-kardenwort/
