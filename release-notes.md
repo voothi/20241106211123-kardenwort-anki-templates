@@ -1,5 +1,16 @@
 # Release Notes
 
+## [v1.46.2] - 2026-02-14
+
+### Added
+- **Destination Highlighting**: Implemented word and phrase highlighting for `SentenceDestination` and `SentenceDestination2`.
+- **Automatic Highlighting Fallback**: Introduced a smart algorithm that automatically highlights the approximate target area in translation sentences based on the source word's position.
+- **Phrase Support**: Highlighting logic now supports multi-word phrases in destination fields using a semicolon (`;`) separator.
+- **Dimmed Styling**: Enhanced visual focus by dimming destination sentences and making highlighted words stand out with bright colors.
+
+### Changed
+- **Generic Highlighting Engine**: Refactored JavaScript highlighting logic into a flexible `highlightField` function supporting custom delimiters and target selectors.
+
 ## [v1.42.2] - 2026-01-13
 
 ### Added
