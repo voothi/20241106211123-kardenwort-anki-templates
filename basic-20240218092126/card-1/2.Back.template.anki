@@ -185,6 +185,39 @@
             </span>
             {{/Destination-ru-RU}}
             {{/WordSource}}
+            {{^WordSource}}
+            {{^SentenceDestination2}}
+            {{#Destination-en-GB}}
+            <span>
+                {{tts en_GB voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span>
+                {{tts en_US voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span>
+                {{tts de_DE voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span>
+                {{tts uk_UA voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span>
+                {{tts ru_RU voices=gTTS speed=1.0:SentenceDestination}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/SentenceDestination2}}
+            {{/WordSource}}
             {{/SentenceDestination}}
             {{/ToggleAlwaysEmptyField}}
 
@@ -226,9 +259,11 @@
             {{#SentenceDestination}}
             <input {{#WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
                 {{#WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}} id="hd-200"
-                type="checkbox">
+                {{^WordSource}} {{#SentenceSource}} {{^SentenceDestination2}} class="show" {{/SentenceDestination2}}
+                {{#SentenceDestination2}} class="hide" {{/SentenceDestination2}} {{/SentenceSource}}
+                {{/WordSource}} {{^WordSource}} {{^SentenceSource}} {{^SentenceDestination2}} class="show"
+                {{/SentenceDestination2}} {{#SentenceDestination2}} class="hide" {{/SentenceDestination2}}
+                {{/SentenceSource}} {{/WordSource}} id="hd-200" type="checkbox">
             <label for="hd-200">○
             </label>
             <div>
