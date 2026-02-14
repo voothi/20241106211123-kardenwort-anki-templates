@@ -272,6 +272,7 @@
             <label for="hd-210">○
             </label>
             <div>
+                <span style="display:none;" id="words-destination-to-highlight">{{WordDestinationInflectedForm}}</span>
                 <span class="context">
                     {{#SentenceDestination2ContextLeft}}
                     <a class="hint" href="#"
@@ -282,7 +283,8 @@
                     {{/SentenceDestination2ContextLeft}}
                 </span>
 
-                <span {{#WordSource}}class="context" {{/WordSource}}>
+                <span
+                    class="{{#WordDestinationInflectedForm}}sentence-destination-2{{/WordDestinationInflectedForm}} {{#WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination2}}
                     {{SentenceDestination2}}
                     {{/SentenceDestination2}}

@@ -37,7 +37,7 @@
 
     function highlightWords() {
         highlightField("words-to-highlight", ["#sentence-source", ".sentence-source"]);
-        highlightField("words-destination-to-highlight", [".sentence-destination"]);
+        highlightField("words-destination-to-highlight", [".sentence-destination", ".sentence-destination-2"]);
     }
 
     function highlightField(wordsId, targetSelectors) {

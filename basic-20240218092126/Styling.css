@@ -74,6 +74,19 @@ body {
   color: #fff;
 }
 
+.sentence-destination-2 {
+  color: rgb(165, 165, 165);
+}
+
+.sentence-destination-2 u {
+  color: #000;
+  text-decoration: none;
+}
+
+.nightMode .sentence-destination-2 u {
+  color: #fff;
+}
+
 .context2 {
   color: rgb(210, 210, 210);
 }
