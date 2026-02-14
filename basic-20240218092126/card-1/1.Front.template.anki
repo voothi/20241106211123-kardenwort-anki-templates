@@ -36,35 +36,47 @@
     }
 
     function highlightWords() {
-        var wordsField = document.getElementById("words-to-highlight");
-        var sentenceElem = document.getElementById("sentence-source");
-        if (!wordsField || !sentenceElem) return;
+        highlightField("words-to-highlight", ["#sentence-source", ".sentence-source"]);
+        highlightField("words-destination-to-highlight", [".sentence-destination"]);
+    }
+
+    function highlightField(wordsId, targetSelectors) {
+        var wordsField = document.getElementById(wordsId);
+        if (!wordsField) return;
+
+        var sentences = [];
+        targetSelectors.forEach(function (sel) {
+            var elems = document.querySelectorAll(sel);
+            elems.forEach(function (e) { sentences.push(e); });
+        });
+        if (sentences.length === 0) return;
 
         var wordsText = wordsField.textContent.trim();
         if (!wordsText) return;
 
         // Split words by common delimiters: comma, semicolon, space, newline, parentheses
         var words = wordsText.split(/[,;\s\n\(\)]+/).filter(w => w.length > 0);
-        var sentence = sentenceElem.innerHTML;
 
         // Sort words by length descending to match longer phrases first
         words.sort((a, b) => b.length - a.length);
 
-        words.forEach(function (word) {
-            // Escape regex special characters
-            var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            // Use Unicode-aware word boundaries
-            try {
-                var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
-                sentence = sentence.replace(regex, "<u>$1</u>");
-            } catch (e) {
-                // Fallback for older engines
-                var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
-                sentence = sentence.replace(simpleRegex, "$1<u>$2</u>");
-            }
+        sentences.forEach(function (sentenceElem) {
+            var sentence = sentenceElem.innerHTML;
+            words.forEach(function (word) {
+                // Escape regex special characters
+                var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                // Use Unicode-aware word boundaries
+                try {
+                    var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
+                    sentence = sentence.replace(regex, "<u>$1</u>");
+                } catch (e) {
+                    // Fallback for older engines
+                    var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
+                    sentence = sentence.replace(simpleRegex, "$1<u>$2</u>");
+                }
+            });
+            sentenceElem.innerHTML = sentence;
         });
-
-        sentenceElem.innerHTML = sentence;
     }
 
     function init() {
@@ -232,7 +244,7 @@
                     {{#SentenceSourceContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint0ba529b0c8ad4af4').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint0ba529b0c8ad4af4" class=hint
                         style="display: none">{{SentenceSourceContextLeft}}</span>
                     {{/SentenceSourceContextLeft}}
@@ -248,7 +260,7 @@
                     {{#SentenceSourceContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint51cebd3ef40e9ccb').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint51cebd3ef40e9ccb" class=hint
                         style="display: none">{{SentenceSourceContextRight}}</span>
                     {{/SentenceSourceContextRight}}

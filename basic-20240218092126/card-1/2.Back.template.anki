@@ -232,17 +232,19 @@
             <label for="hd-200">○
             </label>
             <div>
+                <span style="display:none;" id="words-destination-to-highlight">{{WordDestinationInflectedForm}}</span>
+
                 <span class="context">
                     {{#SentenceDestinationContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint12cdbd3ef30e9dcb').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint12cdbd3ef30e9dcb" class=hint
                         style="display: none">{{SentenceDestinationContextLeft}}</span>
                     {{/SentenceDestinationContextLeft}}
                 </span>
 
-                <span {{^WordSource}}class="context" {{/WordSource}}>
+                <span class="sentence-destination {{^WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}
@@ -252,7 +254,7 @@
                     {{#SentenceDestinationContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbd3ef2e1cab').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint31cgbd3ef2e1cab" class=hint
                         style="display: none">{{SentenceDestinationContextRight}}</span>
                     {{/SentenceDestinationContextRight}}
@@ -273,7 +275,7 @@
                     {{#SentenceDestination2ContextLeft}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint12cdbd3sh30e9dcb').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint12cdbd3sh30e9dcb" class=hint
                         style="display: none">{{SentenceDestination2ContextLeft}}</span>
                     {{/SentenceDestination2ContextLeft}}
@@ -289,7 +291,7 @@
                     {{#SentenceDestination2ContextRight}}
                     <a class="hint" href="#"
                         onclick="this.style.display='none'; document.getElementById('hint31cgbsge2e1cab').style.display='block'; return false;">
-                    ...</a>
+                        ...</a>
                     <span id="hint31cgbsge2e1cab" class=hint
                         style="display: none">{{SentenceDestination2ContextRight}}</span>
                     {{/SentenceDestination2ContextRight}}
