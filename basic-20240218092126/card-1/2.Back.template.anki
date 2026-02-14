@@ -299,10 +299,13 @@
             {{/SentenceDestination}}
 
             {{#SentenceDestination2}}
-            <input {{#WordSource}} {{#SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
-                {{#WordSource}} {{^SentenceSource}} class="hide" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}}
-                {{^WordSource}} {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} id="hd-210"
+            <input {{#WordSource}} {{#SentenceSource}} {{^SentenceDestination}} class="show"
+                {{/SentenceDestination}} {{#SentenceDestination}} class="hide" {{/SentenceDestination}}
+                {{/SentenceSource}} {{/WordSource}} {{#WordSource}} {{^SentenceSource}} {{^SentenceDestination}}
+                class="show" {{/SentenceDestination}} {{#SentenceDestination}} class="hide"
+                {{/SentenceDestination}} {{/SentenceSource}} {{/WordSource}} {{^WordSource}}
+                {{#SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} {{^WordSource}}
+                {{^SentenceSource}} class="show" {{/SentenceSource}} {{/WordSource}} id="hd-210"
                 type="checkbox">
             <label for="hd-210">○
             </label>
