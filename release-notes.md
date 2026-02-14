@@ -1,5 +1,15 @@
 # Release Notes
 
+## [v1.46.4] - 2026-02-14
+
+### Added
+- **Sentence Fallback Logic**: Added support for phrase cards to use `SentenceDestination` as a fallback when `SentenceDestination2` is empty (display, TTS, and metadata).
+- **Automatic Vocabulary Expansion**: Implemented logic to automatically expand `SentenceDestination2` on vocabulary cards if the primary `SentenceDestination` is empty.
+
+### Fixed
+- **Missing Audio Handling**: Improved TTS selection on phrase cards to intelligently switch to fallback sentences when primary audio sources are missing.
+
+
 ## [v1.46.2] - 2026-02-14
 
 ### Added
