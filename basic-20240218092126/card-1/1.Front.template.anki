@@ -245,9 +245,15 @@
                     {{/WordSourceIPA}}
                 </span>
                 <span>
-                    {{#WordSource}}
-                    {{WordSource}}<br>
-                    {{/WordSource}}
+                    {{#WordSourceAI}}
+                    {{WordSourceAI}}<br>
+                    {{/WordSourceAI}}
+
+                    {{^WordSourceAI}}
+                        {{#WordSource}}
+                        {{WordSource}}<br>
+                        {{/WordSource}}
+                    {{/WordSourceAI}}
                 </span>
                 <span class="context">
                     {{#WordSourceInflectedForm}}
