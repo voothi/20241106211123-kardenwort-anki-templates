@@ -119,29 +119,34 @@
                     {{WordDestination}}<br>
                     {{/WordDestination}}
                 </span>
+                <a class="hint" href="#"
+                    onclick="this.style.display='none'; document.getElementById('hint20260221123403').style.display='block'; return false;">
+                    ...</a>
+                <span id="hint20260221123403" class=hint
+                    style="display: none">
+                    <span class="context">
+                        {{#WordEnglish}}
+                        {{WordEnglish}}<br>
+                        {{/WordEnglish}}
+                    </span>
 
-                <span class="context">
-                    {{#WordEnglish}}
-                    {{WordEnglish}}<br>
-                    {{/WordEnglish}}
-                </span>
+                    <span class="context">
+                        {{#WordGerman}}
+                        {{WordGerman}}<br>
+                        {{/WordGerman}}
+                    </span>
 
-                <span class="context">
-                    {{#WordGerman}}
-                    {{WordGerman}}<br>
-                    {{/WordGerman}}
-                </span>
+                    <span class="context">
+                        {{#WordUkrainian}}
+                        {{WordUkrainian}}<br>
+                        {{/WordUkrainian}}
+                    </span>
 
-                <span class="context">
-                    {{#WordUkrainian}}
-                    {{WordUkrainian}}<br>
-                    {{/WordUkrainian}}
-                </span>
-
-                <span class="context">
-                    {{#WordSourceMorphologyAI}}
-                    {{WordSourceMorphologyAI}}<br>
-                    {{/WordSourceMorphologyAI}}
+                    <span class="context">
+                        {{#WordSourceMorphologyAI}}
+                        {{WordSourceMorphologyAI}}<br>
+                        {{/WordSourceMorphologyAI}}
+                    </span>
                 </span>
             </div>
         </td>
