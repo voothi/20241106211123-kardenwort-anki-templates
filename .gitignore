@@ -100,3 +100,4 @@ terraform.tfstate.backup
 .terraform.tfstate.lock.info
 
 20241223170748-kardenwort/
+20241106211123-anki-templates.code-workspace
