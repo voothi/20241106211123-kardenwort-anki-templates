@@ -1,31 +1,22 @@
 ## Context
 
-The Anki template contains a "Source Destination" table (lines 157-349) that displays sentence translations. Currently, the table is displayed even if only one of the translation fields (`SentenceDestination` or `SentenceDestination2`) is populated. This can lead to an incomplete visual "frame" on the card.
+The Anki template contains a "Source Destination" table (lines 157-349) that displays sentence translations. Currently, the table is displayed even if no translations are present. The user wants to hide this table ONLY if both translation fields are empty.
 
 ## Goals / Non-Goals
 
 **Goals:**
-- Hide the entire translation table if `SentenceDestination` is empty.
-- Hide the entire translation table if `SentenceDestination2` is empty.
-- Maintain minimal changes to the existing complex logic within the table.
+- Hide the translation table if `SentenceDestination` AND `SentenceDestination2` are both empty.
+- Show the table if either field is non-empty.
 
 **Non-Goals:**
-- Refactoring the internal conditional logic of the table (TTS selection, checkboxes, etc.).
+- Duplicating the table HTML structure.
 
 ## Decisions
 
-- Wrap the `<table>` element starting at line 157 in a nested conditional block:
-  ```html
-  {{#SentenceDestination}}
-  {{#SentenceDestination2}}
-  <table class="fixed-table">
-    ...
-  </table>
-  {{/SentenceDestination2}}
-  {{/SentenceDestination}}
-  ```
-- This ensures the table only renders if both fields are non-empty.
+- Use Anki's conditional tags to conditionally add the `field-hide` CSS class to the table element.
+- The logic will be nested: `{{^SentenceDestination}}{{^SentenceDestination2}} field-hide{{/SentenceDestination2}}{{/SentenceDestination}}`.
+- This avoids code duplication and keeps the change minimally invasive.
 
 ## Risks / Trade-offs
 
-- **Risk**: If some cards are intentionally designed to have only one translation, those cards will now hide the translation table entirely. However, the user's request explicitly states that it should be hidden if "at least one ... is missing", implying both are required for this specific card type.
+- **Risk**: Overlapping conditional logic inside the table. However, since we are only adding a class to the outer tag, it should not interfere with the internal rendering.

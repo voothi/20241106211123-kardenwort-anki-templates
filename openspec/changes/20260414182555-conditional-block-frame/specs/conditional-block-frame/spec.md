@@ -1,16 +1,20 @@
 ## ADDED Requirements
 
 ### Requirement: Conditional Visibility of Translation Block
-The translation table must only be visible if both translation fields are populated.
+The translation table must be hidden if and only if both translation fields are empty.
 
 #### Scenario: Both fields present
 - **WHEN** `SentenceDestination` is non-empty AND `SentenceDestination2` is non-empty
-- **THEN** The table with CSS class `fixed-table` (starting at line 157) is displayed.
+- **THEN** The table is displayed.
 
-#### Scenario: SentenceDestination missing
-- **WHEN** `SentenceDestination` is empty
-- **THEN** The entire translation table is hidden.
+#### Scenario: Only one field present (1)
+- **WHEN** `SentenceDestination` is non-empty AND `SentenceDestination2` is empty
+- **THEN** The table is displayed (showing only the first translation).
 
-#### Scenario: SentenceDestination2 missing
-- **WHEN** `SentenceDestination2` is empty
-- **THEN** The entire translation table is hidden.
+#### Scenario: Only one field present (2)
+- **WHEN** `SentenceDestination` is empty AND `SentenceDestination2` is non-empty
+- **THEN** The table is displayed (showing only the second translation).
+
+#### Scenario: Both fields missing
+- **WHEN** `SentenceDestination` is empty AND `SentenceDestination2` is empty
+- **THEN** The table is hidden (e.g., via `field-hide` class).
