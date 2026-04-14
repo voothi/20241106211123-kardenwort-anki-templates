@@ -19,31 +19,31 @@
             {{^ToggleAlwaysEmptyField}}
             {{#WordDestination}}
             {{#Destination-en-GB}}
-            <span id="sound2">
+            <span id="x-sound2">
                 {{tts en_GB voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-en-GB}}
 
             {{#Destination-en-US}}
-            <span id="sound2">
+            <span id="x-sound2">
                 {{tts en_US voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-en-US}}
 
             {{#Destination-de-DE}}
-            <span id="sound2">
+            <span id="x-sound2">
                 {{tts de_DE voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-de-DE}}
 
             {{#Destination-uk-UA}}
-            <span id="sound2">
+            <span id="x-sound2">
                 {{tts uk_UA voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-uk-UA}}
 
             {{#Destination-ru-RU}}
-            <span id="sound2">
+            <span id="x-sound2">
                 {{tts ru_RU voices=gTTS speed=1.0:WordDestination}}
             </span>
             {{/Destination-ru-RU}}
