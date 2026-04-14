@@ -154,7 +154,7 @@
 </table>
 {{/WordDestination}}
 
-<table class="fixed-table">
+<table class="fixed-table{{^SentenceDestination}}{{^SentenceDestination2}} field-hide{{/SentenceDestination2}}{{/SentenceDestination}}">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
