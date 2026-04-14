@@ -12,8 +12,7 @@
 
 {{FrontSide}}
 
-{{#WordDestination}}
-<table class="fixed-table">
+<table class="fixed-table{{^WordDestination}}{{^WordEnglish}}{{^WordGerman}}{{^WordUkrainian}}{{^WordSourceMorphologyAI}} field-hide{{/WordSourceMorphologyAI}}{{/WordUkrainian}}{{/WordGerman}}{{/WordEnglish}}{{/WordDestination}}">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
@@ -152,7 +151,8 @@
         </td>
     </tr>
 </table>
-{{/WordDestination}}
+
+
 
 <table class="fixed-table{{^SentenceDestination}}{{^SentenceDestination2}} field-hide{{/SentenceDestination2}}{{/SentenceDestination}}">
     <tr>

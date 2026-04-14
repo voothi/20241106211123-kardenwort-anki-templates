@@ -1,22 +1,21 @@
 ## Context
 
-The Anki template contains a "Source Destination" table (lines 157-349) that displays sentence translations. Currently, the table is displayed even if no translations are present. The user wants to hide this table ONLY if both translation fields are empty.
+The Anki template contains two translation tables: one for sentences (lines 157-349) and one for words (lines 15-155). Both need robust visibility logic to avoid rendering empty "frames" when data is missing across multiple optional fields.
 
 ## Goals / Non-Goals
 
 **Goals:**
-- Hide the translation table if `SentenceDestination` AND `SentenceDestination2` are both empty.
-- Show the table if either field is non-empty.
-
-**Non-Goals:**
-- Duplicating the table HTML structure.
+- Hide the sentence table if `SentenceDestination` AND `SentenceDestination2` are both empty.
+- Hide the word table if `WordDestination`, `WordEnglish`, `WordGerman`, `WordUkrainian`, AND `WordSourceMorphologyAI` are all empty.
+- Maintain minimal code duplication.
 
 ## Decisions
 
-- Use Anki's conditional tags to conditionally add the `field-hide` CSS class to the table element.
-- The logic will be nested: `{{^SentenceDestination}}{{^SentenceDestination2}} field-hide{{/SentenceDestination2}}{{/SentenceDestination}}`.
-- This avoids code duplication and keeps the change minimally invasive.
+- **Sentence Block**: Already implemented with a nested conditional class `{{^SentenceDestination}}{{^SentenceDestination2}} field-hide{{/SentenceDestination2}}{{/SentenceDestination}}`.
+- **Word Block**: 
+  - Remove the `{{#WordDestination}}` guard at line 15 and its closing tag at line 155.
+  - Add a nested conditional class to the `<table>` at line 16: `{{^WordDestination}}{{^WordEnglish}}{{^WordGerman}}{{^WordUkrainian}}{{^WordSourceMorphologyAI}} field-hide{{/WordSourceMorphologyAI}}{{/WordUkrainian}}{{/WordGerman}}{{/WordEnglish}}{{/WordDestination}}`.
 
 ## Risks / Trade-offs
 
-- **Risk**: Overlapping conditional logic inside the table. However, since we are only adding a class to the outer tag, it should not interfere with the internal rendering.
+- **Risk**: The Word block is very large; removing the `{{#WordDestination}}` tag might reveal empty placeholders if none of the other fields are present either. The nested conditional class mitigates this by hiding the entire table if everything is empty.

@@ -1,20 +1,16 @@
 ## ADDED Requirements
 
-### Requirement: Conditional Visibility of Translation Block
-The translation table must be hidden if and only if both translation fields are empty.
+### Requirement: Conditional Visibility of Translation Blocks
+The translation tables must be hidden if and only if all their respective data fields are empty.
 
-#### Scenario: Both fields present
-- **WHEN** `SentenceDestination` is non-empty AND `SentenceDestination2` is non-empty
-- **THEN** The table is displayed.
+#### Scenario: Sentence block logic
+- **WHEN** `SentenceDestination` and `SentenceDestination2` are BOTH empty
+- **THEN** The sentence table is hidden.
 
-#### Scenario: Only one field present (1)
-- **WHEN** `SentenceDestination` is non-empty AND `SentenceDestination2` is empty
-- **THEN** The table is displayed (showing only the first translation).
+#### Scenario: Word block logic
+- **WHEN** `WordDestination`, `WordEnglish`, `WordGerman`, `WordUkrainian`, and `WordSourceMorphologyAI` are ALL empty
+- **THEN** The word table is hidden.
 
-#### Scenario: Only one field present (2)
-- **WHEN** `SentenceDestination` is empty AND `SentenceDestination2` is non-empty
-- **THEN** The table is displayed (showing only the second translation).
-
-#### Scenario: Both fields missing
-- **WHEN** `SentenceDestination` is empty AND `SentenceDestination2` is empty
-- **THEN** The table is hidden (e.g., via `field-hide` class).
+#### Scenario: Word block with partial data
+- **WHEN** `WordDestination` is empty but `WordEnglish` is non-empty
+- **THEN** The word table is displayed.
