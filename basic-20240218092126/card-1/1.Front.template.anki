@@ -244,17 +244,15 @@
                     [{{WordSourceIPA}}]<br>
                     {{/WordSourceIPA}}
                 </span>
-                <span id="words-to-highlight">
-                    <span>
-                        {{#WordSource}}
-                        {{WordSource}}<br>
-                        {{/WordSource}}
-                    </span>
-                    <span class="context">
-                        {{#WordSourceInflectedForm}}
-                        {{WordSourceInflectedForm}}<br>
-                        {{/WordSourceInflectedForm}}
-                    </span>
+                <span>
+                    {{#WordSource}}
+                    {{WordSource}}<br>
+                    {{/WordSource}}
+                </span>
+                <span class="context">
+                    {{#WordSourceInflectedForm}}
+                    <span id="words-to-highlight">{{WordSourceInflectedForm}}</span><br>
+                    {{/WordSourceInflectedForm}}
                 </span>
             </div>
         </td>
