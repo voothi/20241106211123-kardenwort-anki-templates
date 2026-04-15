@@ -157,7 +157,7 @@
     setTimeout(init, 20);
 </script>
 
-<div class="{{^WordSource}}{{^WordSourceInflectedForm}}field-hide{{/WordSourceInflectedForm}}{{/WordSource}}">
+<div class="{{^WordSource}}{{^WordSourceInflectedForm}}{{^WordSourceIPA}}{{^WordSourceAudio}}field-hide{{/WordSourceAudio}}{{/WordSourceIPA}}{{/WordSourceInflectedForm}}{{/WordSource}}">
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -260,7 +260,7 @@
 </table>
 </div>
 
-{{#SentenceSource}}
+<div class="{{^SentenceSource}}{{^SentenceSourceContextLeft}}{{^SentenceSourceContextRight}}{{^SentenceSourceAudio}}field-hide{{/SentenceSourceAudio}}{{/SentenceSourceContextRight}}{{/SentenceSourceContextLeft}}{{/SentenceSource}}">
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -339,7 +339,7 @@
         </td>
     </tr>
 </table>
-{{/SentenceSource}}
+</div>
 <!-- /SentenceSource -->
 <!-- Text Template/ -->
 <!-- L2 Template/ -->
