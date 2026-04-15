@@ -157,7 +157,7 @@
     setTimeout(init, 20);
 </script>
 
-{{#WordSource}}
+<div class="{{^WordSource}}{{^WordSourceInflectedForm}}field-hide{{/WordSourceInflectedForm}}{{/WordSource}}">
 <table class="fixed-table">
     <tr>
         <td class="fixed-cell">
@@ -258,7 +258,7 @@
         </td>
     </tr>
 </table>
-{{/WordSource}}
+</div>
 
 {{#SentenceSource}}
 <table class="fixed-table">
