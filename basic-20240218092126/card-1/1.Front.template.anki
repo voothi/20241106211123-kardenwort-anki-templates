@@ -249,7 +249,7 @@
                     {{WordSource}}<br>
                     {{/WordSource}}
                 </span>
-                <span class="context">
+                <span {{#WordSource}}class="context"{{/WordSource}}>
                     {{#WordSourceInflectedForm}}
                     <span id="words-to-highlight">{{WordSourceInflectedForm}}</span><br>
                     {{/WordSourceInflectedForm}}
