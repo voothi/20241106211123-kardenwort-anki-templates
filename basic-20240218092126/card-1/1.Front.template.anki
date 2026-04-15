@@ -320,7 +320,7 @@
                     {{/SentenceSourceContextLeft}}
                 </span>
 
-                <span id="sentence-source" {{#WordSource}}class="context" {{/WordSource}}>
+                <span id="sentence-source" class="{{#WordSource}}context{{/WordSource}}{{^WordSource}}{{#WordSourceInflectedForm}}context{{/WordSourceInflectedForm}}{{/WordSource}}">
                     {{#SentenceSource}}
                     {{SentenceSource}}
                     {{/SentenceSource}}
