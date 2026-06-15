@@ -12,7 +12,7 @@
 
 {{FrontSide}}
 
-<table class="fixed-table{{^WordDestination}}{{^WordEnglish}}{{^WordGerman}}{{^WordUkrainian}}{{^WordSourceMorphologyAI}} field-hide{{/WordSourceMorphologyAI}}{{/WordUkrainian}}{{/WordGerman}}{{/WordEnglish}}{{/WordDestination}}">
+<table class="fixed-table{{^WordDestination}}{{^WordDestinationInflectedForm}}{{^WordEnglish}}{{^WordGerman}}{{^WordUkrainian}}{{^WordSourceMorphologyAI}} field-hide{{/WordSourceMorphologyAI}}{{/WordUkrainian}}{{/WordGerman}}{{/WordEnglish}}{{/WordDestinationInflectedForm}}{{/WordDestination}}">
     <tr>
         <td class="fixed-cell">
             {{^ToggleAlwaysEmptyField}}
@@ -47,6 +47,38 @@
             </span>
             {{/Destination-ru-RU}}
             {{/WordDestination}}
+
+            {{#WordDestinationInflectedForm}}
+            {{#Destination-en-GB}}
+            <span id="sound2">
+                {{tts en_GB voices=gTTS speed=1.0:WordDestinationInflectedForm}}
+            </span>
+            {{/Destination-en-GB}}
+
+            {{#Destination-en-US}}
+            <span id="sound2">
+                {{tts en_US voices=gTTS speed=1.0:WordDestinationInflectedForm}}
+            </span>
+            {{/Destination-en-US}}
+
+            {{#Destination-de-DE}}
+            <span id="sound2">
+                {{tts de_DE voices=gTTS speed=1.0:WordDestinationInflectedForm}}
+            </span>
+            {{/Destination-de-DE}}
+
+            {{#Destination-uk-UA}}
+            <span id="sound2">
+                {{tts uk_UA voices=gTTS speed=1.0:WordDestinationInflectedForm}}
+            </span>
+            {{/Destination-uk-UA}}
+
+            {{#Destination-ru-RU}}
+            <span id="sound2">
+                {{tts ru_RU voices=gTTS speed=1.0:WordDestinationInflectedForm}}
+            </span>
+            {{/Destination-ru-RU}}
+            {{/WordDestinationInflectedForm}}
 
             {{#WordEnglish}}
             <span>
@@ -117,6 +149,9 @@
                     {{#WordDestination}}
                     {{WordDestination}}<br>
                     {{/WordDestination}}
+                    {{#WordDestinationInflectedForm}}
+                    {{WordDestinationInflectedForm}}<br>
+                    {{/WordDestinationInflectedForm}}
                 </span>
                 <a class="hint" href="#"
                     onclick="this.style.display='none'; document.getElementById('hint20260221123403').style.display='block'; return false;">
