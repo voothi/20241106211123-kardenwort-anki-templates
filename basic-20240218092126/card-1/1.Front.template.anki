@@ -152,45 +152,58 @@
     function init() {
         executeClickAction();
         highlightWords();
-
-        // Ensure the webview body is focused to capture keypress events
-        var active = document.activeElement;
-        if (!active || (active.tagName !== 'INPUT' && active.tagName !== 'TEXTAREA' && !active.isContentEditable)) {
-            document.body.tabIndex = 0;
-            document.body.focus();
-        }
     }
 
     setTimeout(init, 20);
 
-    // Register shortcut 1 to show answer on the front side of the card
-    if (window.ankiShowAnswerListener) {
-        document.removeEventListener('keydown', window.ankiShowAnswerListener);
-    }
-    window.ankiShowAnswerListener = function (e) {
-        if (e.key === '1' || e.code === 'Digit1' || e.code === 'Numpad1') {
+    // Keyboard shortcut: press 1 on front side to show answer
+    // Anki Desktop Qt6 intercepts keys at the app level.
+    // A focusable element inside the webview forces Qt to route key events here.
+    (function () {
+        var trapId = 'key-trap';
+        if (!document.getElementById(trapId)) {
+            var trap = document.createElement('div');
+            trap.id = trapId;
+            trap.contentEditable = true;
+            trap.style.cssText = 'position:fixed;opacity:0;width:0;height:0;overflow:hidden;pointer-events:none;';
+            trap.setAttribute('aria-hidden', 'true');
+            document.body.appendChild(trap);
+        }
+
+        function focusTrap() {
             var active = document.activeElement;
-            if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
-                return;
-            }
-            var isFront = document.getElementById("side2") === null;
-            if (isFront) {
-                e.preventDefault();
-                if (typeof pycmd !== 'undefined') {
-                    pycmd("ans"); // Anki Desktop
-                } else if (typeof showAnswer === 'function') {
-                    showAnswer(); // AnkiDroid
-                } else if (typeof study !== 'undefined' && study.drawAnswer) {
-                    study.drawAnswer(); // Older Anki Desktop
-                } else if (window.anki && window.sendMessage2) {
-                    window.sendMessage2("ankitap", "midCenter");
-                } else {
-                    console.log("Anki command function is not defined");
+            if (active && active.id === 'typeans') return;
+            var t = document.getElementById(trapId);
+            if (t) t.focus({ preventScroll: true });
+        }
+
+        setTimeout(focusTrap, 50);
+        setTimeout(focusTrap, 200);
+
+        if (window._ankiKeyListener) {
+            window.removeEventListener('keydown', window._ankiKeyListener, true);
+        }
+        window._ankiKeyListener = function (e) {
+            if (e.key === '1' || e.code === 'Digit1' || e.code === 'Numpad1') {
+                var active = document.activeElement;
+                if (active && active.id === 'typeans') return;
+
+                var isFront = document.getElementById('side2') === null;
+                if (isFront) {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    if (typeof pycmd === 'function') {
+                        pycmd('ans');
+                    } else if (typeof bridgeCommand === 'function') {
+                        bridgeCommand('ans');
+                    } else if (typeof showAnswer === 'function') {
+                        showAnswer();
+                    }
                 }
             }
-        }
-    };
-    document.addEventListener('keydown', window.ankiShowAnswerListener);
+        };
+        window.addEventListener('keydown', window._ankiKeyListener, true);
+    })();
 </script>
 
 <div class="{{^WordSource}}{{^WordSourceInflectedForm}}{{^WordSourceIPA}}{{^WordSourceAudio}}field-hide{{/WordSourceAudio}}{{/WordSourceIPA}}{{/WordSourceInflectedForm}}{{/WordSource}}">
