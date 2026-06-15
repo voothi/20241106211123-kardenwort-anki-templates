@@ -157,22 +157,29 @@
     setTimeout(init, 20);
 
     // Register shortcut 1 to show answer on the front side of the card
-    if (!window.ankiShowAnswerShortcutRegistered) {
-        window.ankiShowAnswerShortcutRegistered = true;
-        document.addEventListener('keydown', function (e) {
-            if (e.key === '1') {
-                var active = document.activeElement;
-                if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
-                    return;
-                }
-                var isFront = document.getElementById("side2") === null;
-                if (isFront) {
-                    e.preventDefault();
+    if (window.ankiShowAnswerListener) {
+        document.removeEventListener('keydown', window.ankiShowAnswerListener);
+    }
+    window.ankiShowAnswerListener = function (e) {
+        if (e.key === '1' || e.code === 'Digit1' || e.code === 'Numpad1') {
+            var active = document.activeElement;
+            if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
+                return;
+            }
+            var isFront = document.getElementById("side2") === null;
+            if (isFront) {
+                e.preventDefault();
+                if (typeof pycmd !== 'undefined') {
                     pycmd("ans");
+                } else if (typeof anki !== 'undefined' && anki.showAnswer) {
+                    anki.showAnswer();
+                } else {
+                    console.log("Anki command function is not defined");
                 }
             }
-        });
-    }
+        }
+    };
+    document.addEventListener('keydown', window.ankiShowAnswerListener);
 </script>
 
 <div class="{{^WordSource}}{{^WordSourceInflectedForm}}{{^WordSourceIPA}}{{^WordSourceAudio}}field-hide{{/WordSourceAudio}}{{/WordSourceIPA}}{{/WordSourceInflectedForm}}{{/WordSource}}">
