@@ -152,6 +152,13 @@
     function init() {
         executeClickAction();
         highlightWords();
+
+        // Ensure the webview body is focused to capture keypress events
+        var active = document.activeElement;
+        if (!active || (active.tagName !== 'INPUT' && active.tagName !== 'TEXTAREA' && !active.isContentEditable)) {
+            document.body.tabIndex = 0;
+            document.body.focus();
+        }
     }
 
     setTimeout(init, 20);
@@ -170,9 +177,13 @@
             if (isFront) {
                 e.preventDefault();
                 if (typeof pycmd !== 'undefined') {
-                    pycmd("ans");
-                } else if (typeof anki !== 'undefined' && anki.showAnswer) {
-                    anki.showAnswer();
+                    pycmd("ans"); // Anki Desktop
+                } else if (typeof showAnswer === 'function') {
+                    showAnswer(); // AnkiDroid
+                } else if (typeof study !== 'undefined' && study.drawAnswer) {
+                    study.drawAnswer(); // Older Anki Desktop
+                } else if (window.anki && window.sendMessage2) {
+                    window.sendMessage2("ankitap", "midCenter");
                 } else {
                     console.log("Anki command function is not defined");
                 }
