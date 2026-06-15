@@ -1,4 +1,5 @@
 schema: spec-driven
+projectRoot: "U:\\voothi\\20241106211123-anki-templates"
 
 # Project context (optional)
 # This is shown to AI when creating artifacts.
