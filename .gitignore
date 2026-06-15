@@ -101,3 +101,16 @@ terraform.tfstate.backup
 
 20241223170748-kardenwort/
 20241106211123-anki-templates.code-workspace
+
+# OpenSpec and agent configurations
+openspec/
+a/
+.agent/
+AGENTS.md
+vs-chromium-project.txt
+.pytest_cache/
+docs/
+
+
+
+
