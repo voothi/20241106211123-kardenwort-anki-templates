@@ -229,82 +229,94 @@
         var wordsText = wordsField.textContent.trim();
         if (!wordsText) return;
 
-        var regexDelim = delimiterRegex || /[,;\s\n\(\)]+/;
-        var words = wordsText.split(regexDelim).map(w => w.trim()).filter(w => w.length > 0);
-        words.sort((a, b) => b.length - a.length);
-
         var coords = parseCoordinates(coordsStr);
 
         sentences.forEach(function (sentenceElem) {
             var text = sentenceElem.textContent;
             var charWordIndices = getCharWordIndices(text);
             var sentence = sentenceElem.innerHTML;
+            var phraseHighlighted = false;
 
-            words.forEach(function (word) {
-                var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                
+            // Phase 1: Full phrase matching with coordinate disambiguation
+            // Matches the entire wordsText as a single unit (aligned with donor project).
+            // This ensures all word indices are compared against all coordinates together,
+            // which correctly disambiguates when individual words appear multiple times.
+            if (coords && coords.length > 0) {
+                var escapedPhrase = wordsText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
                 var regexForText, regexForInner;
                 try {
-                    regexForText = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
-                    regexForInner = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
+                    regexForText = new RegExp("(?<!\\p{L})(" + escapedPhrase + ")(?!\\p{L})", "gui");
+                    regexForInner = new RegExp("(?<!\\p{L})(" + escapedPhrase + ")(?!\\p{L})", "gui");
                 } catch (e) {
-                    regexForText = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
-                    regexForInner = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
+                    regexForText = new RegExp("(^|[^\\w\\p{L}])(" + escapedPhrase + ")(?![\\w\\p{L}])", "gui");
+                    regexForInner = new RegExp("(^|[^\\w\\p{L}])(" + escapedPhrase + ")(?![\\w\\p{L}])", "gui");
                 }
 
-                if (coords && coords.length > 0) {
-                    var matches = [];
-                    var m;
-                    while ((m = regexForText.exec(text)) !== null) {
-                        var wordStr = m.length > 2 ? m[2] : m[1];
-                        var wordIdx = m.length > 2 ? m.index + m[1].length : m.index;
-                        
-                        var wIdxList = [];
-                        var lastWIdx = 0;
-                        for (var i = wordIdx; i < wordIdx + wordStr.length; i++) {
-                            var wIdx = charWordIndices[i] || 0;
-                            if (wIdx > 0 && wIdx !== lastWIdx) {
-                                wIdxList.push(wIdx);
-                                lastWIdx = wIdx;
-                            }
-                        }
-                        matches.push({ wIdxList: wIdxList });
-                        if (m[0].length === 0) regexForText.lastIndex++;
-                    }
+                var matches = [];
+                var m;
+                while ((m = regexForText.exec(text)) !== null) {
+                    var wordStr = m.length > 2 ? m[2] : m[1];
+                    var wordIdx = m.length > 2 ? m.index + m[1].length : m.index;
 
-                    if (matches.length > 0) {
-                        var bestMatchIdx = -1;
-                        var minError = Infinity;
-                        for (var i = 0; i < matches.length; i++) {
-                            var errVal = getCoordsError(matches[i].wIdxList, coords);
-                            if (errVal < minError) {
-                                minError = errVal;
-                                bestMatchIdx = i;
-                            }
-                        }
-
-                        if (bestMatchIdx !== -1) {
-                            var innerMatches = [];
-                            var im;
-                            while ((im = regexForInner.exec(sentence)) !== null) {
-                                var wordStr = im.length > 2 ? im[2] : im[1];
-                                var wordIdx = im.length > 2 ? im.index + im[1].length : im.index;
-                                
-                                var before = sentence.substring(0, wordIdx);
-                                var insideTag = (before.split('<').length - 1) > (before.split('>').length - 1);
-                                if (!insideTag) {
-                                    innerMatches.push({ start: wordIdx, length: wordStr.length, str: wordStr });
-                                }
-                                if (im[0].length === 0) regexForInner.lastIndex++;
-                            }
-
-                            if (innerMatches[bestMatchIdx]) {
-                                var target = innerMatches[bestMatchIdx];
-                                sentence = sentence.substring(0, target.start) + "<u>" + target.str + "</u>" + sentence.substring(target.start + target.length);
-                            }
+                    var wIdxList = [];
+                    var lastWIdx = 0;
+                    for (var i = wordIdx; i < wordIdx + wordStr.length; i++) {
+                        var wIdx = charWordIndices[i] || 0;
+                        if (wIdx > 0 && wIdx !== lastWIdx) {
+                            wIdxList.push(wIdx);
+                            lastWIdx = wIdx;
                         }
                     }
-                } else {
+                    matches.push({ wIdxList: wIdxList });
+                    if (m[0].length === 0) regexForText.lastIndex++;
+                }
+
+                if (matches.length > 0) {
+                    var bestMatchIdx = -1;
+                    var minError = Infinity;
+                    for (var i = 0; i < matches.length; i++) {
+                        var errVal = getCoordsError(matches[i].wIdxList, coords);
+                        if (errVal < minError) {
+                            minError = errVal;
+                            bestMatchIdx = i;
+                        }
+                    }
+
+                    if (bestMatchIdx !== -1) {
+                        var innerMatches = [];
+                        var im;
+                        while ((im = regexForInner.exec(sentence)) !== null) {
+                            var imWordStr = im.length > 2 ? im[2] : im[1];
+                            var imWordIdx = im.length > 2 ? im.index + im[1].length : im.index;
+
+                            var before = sentence.substring(0, imWordIdx);
+                            var insideTag = (before.split('<').length - 1) > (before.split('>').length - 1);
+                            if (!insideTag) {
+                                innerMatches.push({ start: imWordIdx, length: imWordStr.length, str: imWordStr });
+                            }
+                            if (im[0].length === 0) regexForInner.lastIndex++;
+                        }
+
+                        if (innerMatches[bestMatchIdx]) {
+                            var target = innerMatches[bestMatchIdx];
+                            sentence = sentence.substring(0, target.start) + "<u>" + target.str + "</u>" + sentence.substring(target.start + target.length);
+                            phraseHighlighted = true;
+                        }
+                    }
+                }
+            }
+
+            // Phase 2: Fallback — individual word highlighting without coordinate disambiguation.
+            // Runs when no coordinates are present, or when the full phrase was not found in the text
+            // (e.g. comma-separated word lists, or text mismatch).
+            if (!phraseHighlighted) {
+                var regexDelim = delimiterRegex || /[,;\s\n\(\)]+/;
+                var words = wordsText.split(regexDelim).map(function(w) { return w.trim(); }).filter(function(w) { return w.length > 0; });
+                words.sort(function(a, b) { return b.length - a.length; });
+
+                words.forEach(function (word) {
+                    var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
                     try {
                         var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
                         sentence = sentence.replace(regex, "<u>$1</u>");
@@ -312,8 +324,9 @@
                         var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
                         sentence = sentence.replace(simpleRegex, "$1<u>$2</u>");
                     }
-                }
-            });
+                });
+            }
+
             sentenceElem.innerHTML = sentence;
         });
     }
