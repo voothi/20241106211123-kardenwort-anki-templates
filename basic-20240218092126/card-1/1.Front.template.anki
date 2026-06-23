@@ -317,13 +317,34 @@
 
                 words.forEach(function (word) {
                     var escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    var regex;
+                    var isModern = true;
                     try {
-                        var regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
-                        sentence = sentence.replace(regex, "<u>$1</u>");
+                        regex = new RegExp("(?<!\\p{L})(" + escapedWord + ")(?!\\p{L})", "gui");
                     } catch (e) {
-                        var simpleRegex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
-                        sentence = sentence.replace(simpleRegex, "$1<u>$2</u>");
+                        isModern = false;
+                        regex = new RegExp("(^|[^\\w\\p{L}])(" + escapedWord + ")(?![\\w\\p{L}])", "gui");
                     }
+
+                    sentence = sentence.replace(regex, function() {
+                        var match = arguments[0];
+                        var argsLen = arguments.length;
+                        var string = arguments[argsLen - 1];
+                        var offset = arguments[argsLen - 2];
+                        
+                        var before = string.substring(0, offset);
+                        var insideTag = (before.split('<').length - 1) > (before.split('>').length - 1);
+                        
+                        if (insideTag) {
+                            return match;
+                        }
+                        
+                        if (isModern) {
+                            return "<u>" + arguments[1] + "</u>";
+                        } else {
+                            return arguments[1] + "<u>" + arguments[2] + "</u>";
+                        }
+                    });
                 });
             }
 
