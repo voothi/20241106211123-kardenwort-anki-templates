@@ -460,6 +460,11 @@
                     {{#WordSourceInflectedForm}}
                     <span id="words-to-highlight">{{WordSourceInflectedForm}}</span><br>
                     {{/WordSourceInflectedForm}}
+                    {{^WordSourceInflectedForm}}
+                    {{#WordSource}}
+                    <span id="words-to-highlight">{{WordSource}}</span><br>
+                    {{/WordSource}}
+                    {{/WordSourceInflectedForm}}
                 </span>
             </div>
         </td>
