@@ -1,4 +1,4 @@
-<!-- 20260628140128 -->
+<!-- 20260628143601 -->
 <span class="field-hide">
     <span>
         {{#WordSource}}{{#WordDestination}}{{WordDestination}} {{/WordDestination}}{{#WordSource}}{{WordSource}}
@@ -307,7 +307,7 @@
             <label for="hd-200">○
             </label>
             <div>
-                <span style="display:none;" id="words-destination-to-highlight">{{WordDestinationInflectedForm}}</span>
+                <span style="display:none;" id="words-destination-to-highlight">{{#WordDestinationInflectedForm}}{{WordDestinationInflectedForm}}{{/WordDestinationInflectedForm}}{{^WordDestinationInflectedForm}}{{WordDestination}}{{/WordDestinationInflectedForm}}</span>
 
                 <span class="context">
                     {{#SentenceDestinationContextLeft}}
@@ -320,7 +320,7 @@
                 </span>
 
                 <span
-                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination{{/WordDestinationInflectedForm}} {{^WordSource}}context{{/WordSource}}">
+                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination{{/WordDestinationInflectedForm}}{{^WordDestinationInflectedForm}}{{#WordDestination}}sentence-destination{{/WordDestination}}{{/WordDestinationInflectedForm}} {{^WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination}}
                     {{SentenceDestination}}
                     {{/SentenceDestination}}
@@ -350,7 +350,7 @@
             <label for="hd-210">○
             </label>
             <div>
-                <span style="display:none;" id="words-destination-to-highlight">{{WordDestinationInflectedForm}}</span>
+                <span style="display:none;" id="words-destination-to-highlight">{{#WordDestinationInflectedForm}}{{WordDestinationInflectedForm}}{{/WordDestinationInflectedForm}}{{^WordDestinationInflectedForm}}{{WordDestination}}{{/WordDestinationInflectedForm}}</span>
                 <span class="context">
                     {{#SentenceDestination2ContextLeft}}
                     <a class="hint" href="#"
@@ -362,7 +362,7 @@
                 </span>
 
                 <span
-                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination-2{{/WordDestinationInflectedForm}} {{#WordSource}}context{{/WordSource}}">
+                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination-2{{/WordDestinationInflectedForm}}{{^WordDestinationInflectedForm}}{{#WordDestination}}sentence-destination-2{{/WordDestination}}{{/WordDestinationInflectedForm}} {{#WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination2}}
                     {{SentenceDestination2}}
                     {{/SentenceDestination2}}
