@@ -147,6 +147,10 @@
 
         highlightField("words-to-highlight", ["#sentence-source", ".sentence-source"], null, sourceIndexStr);
         var destField = document.getElementById("words-destination-to-highlight");
+        var dbgPath = document.createElement("div");
+        dbgPath.style.cssText = "position:fixed;top:30px;left:0;background:blue;color:white;padding:5px;z-index:9999;font-size:11px;max-width:80%;word-break:break-all;";
+        dbgPath.textContent = "destField=" + !!destField + " content='" + (destField ? destField.textContent.trim() : "NULL") + "' len=" + (destField ? destField.textContent.trim().length : -1);
+        document.body.appendChild(dbgPath);
         if (destField && destField.textContent.trim().length > 0) {
             highlightField("words-destination-to-highlight", [".sentence-destination", ".sentence-destination-2"], /[;\n]+/, null);
         } else {
@@ -155,12 +159,22 @@
     }
 
     function autoHighlightDestination(coordsStr) {
+        var dbg = document.createElement("div");
+        dbg.style.cssText = "position:fixed;top:0;left:0;background:red;color:white;padding:10px;z-index:9999;font-size:12px;max-width:80%;word-break:break-all;";
         var sourceWordsField = document.getElementById("words-to-highlight");
         var sourceSentenceElem = document.getElementById("sentence-source");
-        if (!sourceWordsField || !sourceSentenceElem) return;
+        if (!sourceWordsField || !sourceSentenceElem) {
+            dbg.textContent = "EARLY RETURN: wordsField=" + !!sourceWordsField + " sentenceElem=" + !!sourceSentenceElem;
+            document.body.appendChild(dbg);
+            return;
+        }
 
         var sourceText = sourceWordsField.textContent.trim();
-        if (!sourceText) return;
+        if (!sourceText) {
+            dbg.textContent = "EARLY RETURN: sourceText empty";
+            document.body.appendChild(dbg);
+            return;
+        }
 
         // Use textContent to ignore existing HTML tags
         var sourceSentenceText = sourceSentenceElem.textContent;
@@ -185,9 +199,15 @@
             }
         }
 
-        if (sourceIndex === -1) return;
+        if (sourceIndex === -1) {
+            dbg.textContent = "EARLY RETURN: sourceIndex=-1, sourceWords=[" + sourceWords.join(",") + "], searchWords=[" + searchWords.join(",") + "]";
+            document.body.appendChild(dbg);
+            return;
+        }
 
         var destElems = document.querySelectorAll(".js-sentence-destination");
+        dbg.textContent = "OK: sourceIndex=" + sourceIndex + " sourceWords.len=" + sourceWords.length + " destElems.len=" + destElems.length + " coordsStr='" + coordsStr + "'";
+        document.body.appendChild(dbg);
         destElems.forEach(function (destElem) {
             var destSentenceText = destElem.textContent;
             var partsRegex;
