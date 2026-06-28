@@ -332,6 +332,11 @@
                         var string = arguments[argsLen - 1];
                         var offset = arguments[argsLen - 2];
                         
+                        if (typeof string !== "string") {
+                            string = arguments[argsLen - 2];
+                            offset = arguments[argsLen - 3];
+                        }
+                        
                         var before = string.substring(0, offset);
                         var insideTag = (before.split('<').length - 1) > (before.split('>').length - 1);
                         

@@ -362,7 +362,7 @@
                 </span>
 
                 <span
-                    class="{{#WordDestinationInflectedForm}}sentence-destination-2{{/WordDestinationInflectedForm}} {{#WordSource}}context{{/WordSource}}">
+                    class="js-sentence-destination {{#WordDestinationInflectedForm}}sentence-destination-2{{/WordDestinationInflectedForm}} {{#WordSource}}context{{/WordSource}}">
                     {{#SentenceDestination2}}
                     {{SentenceDestination2}}
                     {{/SentenceDestination2}}
